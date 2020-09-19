@@ -311,7 +311,7 @@ b'this is string'
 Python allows you to insert special characters in a string literal. the following table contains a list of spetial characters:
 
 | Character | Description | Exemple |
-| --- | --- |
+| --- | --- | --- |
 | `\' and \"` | insert a single or double quote in a string literal | `>>> print("python\'s notes")` 
 `python's notes` |
 | `\n` | insert a new line | `>>> print("thats\r\nnice!")`

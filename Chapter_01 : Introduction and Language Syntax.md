@@ -310,18 +310,18 @@ b'this is string'
 
 Python allows you to insert special characters in a string literal. the following table contains a list of spetial characters:
 
-| Character | Description | Exemple |
+| \Character | Description | Exemple |
 | --- | --- | --- |
-| `\' and \"` | insert a single or double quote in a string literal | `>>> print("python\'s notes")` <br>`python's notes` |
+| `\'`, `\"` | insert a single or double quote in a string literal | `>>> print("python\'s notes")` <br>`python's notes` |
 | `\n` | insert a new line | `>>> print("thats\r\nnice!")`<br>`thats nice!` |
-| `\r\n` or `\r` | insert a new line in windows, \r on Mac, end of line character(EOL) | `>>> print("thats\r\nnice!")`<br>`thats nice!` |
+| `\r\n`, `\r` | insert a new line in windows, \r on Mac, end of line character(EOL) | `>>> print("thats\r\nnice!")`<br>`thats nice!` |
 | `\\` | insert a single backslash in a string literal. | `>>> print("The file is in D:\\files\\file1")`<br>`The file is in D:\files\file1` |
 | `\v` | insert a vertical tabulation | `>>> print("This is a vertical\v tabulation")`<br>`This is a vertical                   tabulation` |
 | `\t` | insert a Horizontal tabulation(tab) | `>>> print("This is a horizontal\t tabulation")`<br>`This is a horizontal     tabulation`
 | `\b` | erasing/deleting a previous character from a string literal | `>>> print("the last letter will be erased\bd")`<br>`the last letter will be erased` |
 | `\Oct` | insert an octal value of a character | `>>> print("\110i There!")`<br>`Hi There!` |
 | `\xHx` | insert an hexadecimal value of a character | `>>> print("\x48i There!")`<br>`Hi There!` |
-| `N{noun}` | insert a charater defined by a noun | `>>> print('\N{dollar sign}') `<br>`$`<br>`>>> print('\N{pound sign}')`<br>`£` |
+| `\N{noun}` | insert a charater defined by a noun | `>>> print('\N{dollar sign}') `<br>`$`<br>`>>> print('\N{pound sign}')`<br>`£` |
 
 Please refer to [this link](http://www.asciitable.com/) if you want to retrieve ASCII values.
 

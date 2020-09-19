@@ -15,10 +15,10 @@ Document's Author: Harmouch101
 	2.1	[Print Instruction](#3.1)    
 	2.2	[Variables](#3.2)    
 	2.3	[literals](#3.3)    
-	[TODO] 
-	.
-	.
-	.
+	[TODO]     
+	.    
+	.    
+	.    
 
 ## 1. A Tutorial Introduction <a name="1"></a>
 

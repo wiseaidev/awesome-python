@@ -27,22 +27,22 @@ The goal of this chapter is to get you familiar with python 3 and its essential 
 ## 1.1 What is Python ? <a name="1.1"></a>
 
 Python is a high-level programming language that has the following features:
-- It is designed to produce high quality, human-readable and maintainable code.
-- Portable: Python is a cross-platform programming language, it can be used on Linux, Windows, macOS...  
-- Easy to integrate code.
-- Object-Oriented programming language.
-- Completely Free.
-- Highly Productive: A program written in Python is typically 2 to 4 times shorter than an equivalent C++ program.
-- Dynamic: the source code is not compiled unlike other languages ​​like C, C++, java, but executed on the fly. It is called an interpreted language.
+- It is designed to produce high quality, human-readable and maintainable code;
+- Portable: Python is a cross-platform programming language, it can be used on Linux, Windows, macOS...;  
+- Easy to integrate code;
+- Object-Oriented programming language;
+- Completely Free;
+- Highly Productive: A program written in Python is typically 2 to 4 times shorter than an equivalent C++ program;
+- Dynamic: the source code is not compiled unlike other languages ​​like C, C++, java, but executed on the fly. It is called an interpreted language;
 
 ## 1.2 Why Python ? <a name="1.2"></a>
 
 This following list describes the different areas in which Python is mostly used:
-- System Administration: System administrators often need to design small programs to automate certain tasks. Therefore the usage of python because it is simpler and more direct.
-- Rapid Prototyping: [TODO]
-- Scientific Research: [TODO]
-- Management Applications: [TODO]
-- Web Applications: [TODO]
+- System Administration: System administrators often need to design small programs to automate certain tasks. Therefore the usage of python because it is simpler and more direct;
+- Rapid Prototyping: [TODO];
+- Scientific Research: [TODO];
+- Management Applications: [TODO];
+- Web Applications: [TODO].
 
 ## 1.3 Interpreted Language <a name="1.3"></a>
 
@@ -68,7 +68,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
-As you can see, the interpreter displays its copyright message and it is listening for statements from the user.
+As you can see, the interpreter displays its python version, the compiler version and the copyright message and it is listening for statements from the user.
 
 One of the most useful features in python is the interaction mode(shell), which allows the user to do operations and see results immediately on the shell.
 

@@ -316,8 +316,8 @@ Python allows you to insert special characters in a string literal. the followin
 | `\n` | insert a new line | `>>> print("thats\r\nnice!")`<br>`thats nice!` |
 | `\r\n`, `\r` | insert a new line in windows, \r on Mac, end of line character(EOL) | `>>> print("thats\r\nnice!")`<br>`thats nice!` |
 | `\\` | insert a single backslash in a string literal. | `>>> print("The file is in D:\\files\\file1")`<br>`The file is in D:\files\file1` |
-| `\v` | insert a vertical tabulation | `>>> print("This is a vertical\v tabulation")`<br>`This is a vertical                   tabulation` |
-| `\t` | insert a Horizontal tabulation(tab) | `>>> print("This is a horizontal\t tabulation")`<br>`This is a horizontal     tabulation`
+| `\v` | insert a vertical tabulation | `>>> print("This is a vertical\v tabulation")`<br>`This is a vertical`<br>`tabulation` |
+| `\t` | insert a Horizontal tabulation(tab) | `>>> print("This is a horizontal\t tabulation")`<br>`This is a horizontal    	tabulation`
 | `\b` | erasing/deleting a previous character from a string literal | `>>> print("the last letter will be erased\bd")`<br>`the last letter will be erased` |
 | `\Oct` | insert an octal value of a character | `>>> print("\110i There!")`<br>`Hi There!` |
 | `\xHx` | insert an hexadecimal value of a character | `>>> print("\x48i There!")`<br>`Hi There!` |

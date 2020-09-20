@@ -354,7 +354,7 @@ here we have multiple lines
 ```
 
 It is also possible to prefix strings with a character:
--  r or R : "raw string" :used with regular expressions and with strings that contain backslashs :
+-  **r** or **R** : "raw string" :used with regular expressions and with strings that contain backslashs :
 
 ```python
 >>> print('D:\files\file1')
@@ -367,7 +367,7 @@ D:\files\file1
 
 It seems like`\f` act as a new line with tabulation: `\n\t`, in other terms a vertical tabulation.
 
-- u or U : to indicate a Unicode string. Python 3 adopts the base Unicode standard, and the u prefix disappears.
+- **u** or **U** : to indicate a Unicode string. Python 3 adopts the base Unicode standard, and the u prefix disappears.
 
 ```python
 >>> unicode = u'i am a unicode string'
@@ -377,7 +377,15 @@ It seems like`\f` act as a new line with tabulation: `\n\t`, in other terms a ve
 <class 'str'>
 ```
 
-- b or B: to indicate a byte string.
+- **b** or **B**: to indicate a byte string. Each byte in a byte string corresponds to a certain value in this range [0; 255].
+
+```python
+>>> b'hi there'
+b'hi there'
+>>> b'hi there'[3]
+116
+```
+
 Encoding and decoding methods make it possible to convert from type str to type bytes, using a correspondence table, called codec and having a unique name(UTF-8 is used in the example).
 
 ```python
@@ -389,6 +397,7 @@ b'this is string'
 >>> decoded_string
 'this is a string'
 ```
+- **f** or **F**:  
 
 ### 3.4.1.1 Special characters <a name="3.4.1.1"></a>
 
@@ -407,7 +416,7 @@ Python allows you to insert special characters in a string literal. the followin
 | `\xHx` | insert an hexadecimal value of a character | `>>> print("\x48i There!")`<br>`Hi There!` |
 | `\N{noun}` | insert a charater defined by a noun | `>>> print('\N{dollar sign}') `<br>`$`<br>`>>> print('\N{pound sign}')`<br>`£` |
 
-Please refer to [this link](http://www.asciitable.com/) if you want to retrieve ASCII values.
+Please refer to [this link](http://www.asciitable.com/) if you want to search for ASCII characters.
 
 ### 3.4.2  Numeric literals <a name="3.4.2"></a>
 

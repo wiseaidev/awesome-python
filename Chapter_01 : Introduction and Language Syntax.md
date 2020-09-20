@@ -377,7 +377,7 @@ It seems like`\f` act as a new line with tabulation: `\n\t`, in other terms a ve
 <class 'str'>
 ```
 
-- **b** or **B**: to indicate a byte string. Each byte in a byte string corresponds to a certain value in this range [0; 255].
+- **b** or **B**: to indicate a byte string. Each byte in a byte string corresponds to a certain value in the range of [0; 255].
 
 ```python
 >>> b'hi there'
@@ -397,7 +397,40 @@ b'this is string'
 >>> decoded_string
 'this is a string'
 ```
-- **f** or **F**:  
+- **f** or **F**: this prefix has been added since python 3.6 which allows you to define a string as formatted. So using this prefix, you can add a placeholder for a certain variable with the help of curly braces `{}` to indicate the appearance of this variable(e.g. precision of a number to display).
+
+```python
+>>> from math import cos, pi
+>>> print(f'Value of PI with 4 digit precision: {pi:+1.4}')
+Value of PI with 4 digit precision: +3.1416
+>>> for i in range(1,20):
+...     x = cos(pi/i)
+...     print(f'|i = {i:^2}| cos(pi/{i:^2}) = {round(x,2):^+5.2}|') 
+... 	# ^ indicates the width of the column to display
+...
+|i = 1 | cos(pi/1 ) = -1.0 |
+|i = 2 | cos(pi/2 ) = +0.0 |
+|i = 3 | cos(pi/3 ) = +0.5 |
+|i = 4 | cos(pi/4 ) = +0.71|
+|i = 5 | cos(pi/5 ) = +0.81|
+|i = 6 | cos(pi/6 ) = +0.87|
+|i = 7 | cos(pi/7 ) = +0.9 |
+|i = 8 | cos(pi/8 ) = +0.92|
+|i = 9 | cos(pi/9 ) = +0.94|
+|i = 10| cos(pi/10) = +0.95|
+|i = 11| cos(pi/11) = +0.96|
+|i = 12| cos(pi/12) = +0.97|
+|i = 13| cos(pi/13) = +0.97|
+|i = 14| cos(pi/14) = +0.97|
+|i = 15| cos(pi/15) = +0.98|
+|i = 16| cos(pi/16) = +0.98|
+|i = 17| cos(pi/17) = +0.98|
+|i = 18| cos(pi/18) = +0.98|
+|i = 19| cos(pi/19) = +0.99|
+
+```
+
+So as you can see, the `f` prefix is very useful and faster than other string formating prefixes.
 
 ### 3.4.1.1 Special characters <a name="3.4.1.1"></a>
 

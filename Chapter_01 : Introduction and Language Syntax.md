@@ -14,11 +14,12 @@ Document's Author: Harmouch101
 3. [Language Syntax](#3)    
 	3.1	[Print Instruction](#3.1)   
 	3.2	[Comments](#3.2)   
-	3.3	[Variables](#3.3)    
+	3.3	[Variables](#3.3) 
+	    3.3.1 [Names](#3.3.1)  
 	3.4	[literals](#3.4)    
-		3.4.1 [String Literals](#3.4.1)    
-			3.4.1.1 [Special characters](#3.4.1.1)    
-		3.4.2 [Numeric literals](#3.4.2)    
+	    3.4.1 [String Literals](#3.4.1)    
+	    	3.4.1.1 [Special characters](#3.4.1.1)    
+	    3.4.2 [Numeric literals](#3.4.2)    
 	[TODO]     
 	.    
 	.    
@@ -128,7 +129,7 @@ Back to the interpreter, you can exit it by pressing `Ctrl + D` which signal the
 ~$ 
 ```
 
-you can also use the `exit()` method to exit from the interactive mode.
+you can also use the `exit()` method to exit the interactive prompt, aka the Read Eval Print Loop (REPL).
 
 
 ## 3. Language Syntax <a name="3"></a>
@@ -186,27 +187,33 @@ Python's Variables are object-based. Each object has :
 
 - **An Identifier**: It is a positive unique integer that is created once for all when the object is being created. It is calculated from the object's memory address.
 
-- **A Type**: The type of the object is immutable. you cannot change it during the run time.
+- **A Type**: The type of the object is immutable. you cannot change it during the runtime.
 
-- **A Value**: The value assigned to the object can be modified depending on the type of the object. For instance, string type objects cannot be modified after their creation. They are called immutable objects.
+- **A Value**: The value assigned to the object can be modified depending on the type of the object. For instance, string and tuple type objects cannot be modified after their creation. They are called immutable objects.
+
+- **Attributes**
+
+- **One or more base classes**
+
+- **Name**: an object must have a name.
 
 The following callable objects allow you reading each of the attributes described:
 - **id ()**: returns the identifier of an object;
 - **type ()**: returns the type of an object;
 - **dir ()**: lists all the features of an object.
 
-So as it is said before, Everything in python is stored in memory as an object.
+So as it is said before, Everything in python, at the runtime, is an object.
 
 ```python
->>> 32, id(a), type(a)
+>>> 32, id(32), type(32)
 (32, 94140309858016, '<class 'int'>')
->>> 32, id(a), type(a)
+>>> 32, id(32), type(32)
 (32, 94140309858016, '<class 'int'>')
->>> 32, id(a), type(a)
+>>> 32, id(32), type(32)
 (32, 94140309858016, '<class 'int'>')
 ```
 
-Every object has a value(32 here), an id which is used to indicate where it is stored in memory(94140309858016) and a data type(integer).
+Every object has a **value**(32 here), an id which is used to indicate where it is stored in memory(94140309858016) and a data type(integer).
 
 It is not convenient to use the identifier(id) as a name for the 32 value, Hence the need for assignments.
 
@@ -218,7 +225,18 @@ An assignment is made using the `=` symbol, like this:
 (32, 94140309858016, '<class 'int'>')
 ```
 
-Notice that the object **a** is always object 32, still stored at the same memory address(id = 94140309858016).
+Notice that the object **name** `a` has the same reference of object 32(id = 94140309858016).
+
+The object name `a` has the following **attributes** :
+
+```python
+>>> dir(a)
+['__abs__', '__add__', '__and__', '__bool__', '__ceil__', '__class__', '__delattr__', '__dir__', '__divmod__', '__doc__', '__eq__', '__float__', '__floor__', '__floordiv__', '__format__', '__ge__', '__getattribute__', '__getnewargs__', '__gt__', '__hash__', '__index__', '__init__', '__init_subclass__', '__int__', '__invert__', '__le__', '__lshift__', '__lt__', '__mod__', '__mul__', '__ne__', '__neg__', '__new__', '__or__', '__pos__', '__pow__', '__radd__', '__rand__', '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__', '__rmul__', '__ror__', '__round__', '__rpow__', '__rrshift__', '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', '__xor__', 'bit_length', 'conjugate', 'denominator', 'from_bytes', 'imag', 'numerator', 'real', 'to_bytes']
+>>> a.__str__()
+'32'
+```
+Notice that the private (`__`) **attribute** 'str' hold the value of a as string.
+
 Let's take the following example :
 
 ```python
@@ -229,14 +247,15 @@ Let's take the following example :
 (32, 94140309858016, '<class 'int'>')
 ```
 
-the interpreter takes the expression at the right side of the assignment symbol **=** and evaluates it. As a result, an object of type integer whose value is 96 is stored in memory and the reference of that value is assigned to b. Note that, the value of this particular object is already stored in memory. 
+the interpreter takes the expression at the right side of the assignment symbol **=** and evaluates it. As a result, an object of type integer whose value is 96 is created and stored in memory and the reference of that object is assigned to b. Note that, the value of this particular object is already stored in memory. 
 
 ```python
 >>> 96,id(96),type(96)
 (96, 94140309860064, '<class 'int'>')
 ```
 
-I think, in this particular example, the Python interpreter didn't store the 96 value in memory(because it is already stored at that id), it changes the reference of b only. This is only true because 32 is between -5 and 256.
+I think, in this particular example, the Python interpreter didn't create a new object of value `96` in memory(because it is already stored at that id for optimization porpuses), it changes the reference of b only. This is only true because 32 is between -5 and 256.
+
 From [python C-API documentation](https://docs.python.org/3/c-api/long.html), I found the following explanation: 
 
 >The current implementation keeps an array of integer objects for all integers between -5 and 256, when you create an int in that range you actually just get back a reference to the existing object. So it should be possible to change the value of 1. I suspect the behavior of Python, in this case, is undefined. :-)
@@ -277,8 +296,6 @@ you can assign one object to several variables simultaneously.
 (94232164422624, 94232164422624)
 ```
 
-[![namespace_memory!](./resources/namespace_memory.png)
-
 Notice that a and b point to the same object address in memory.
 
 you could assign multiple values to multiple variables at the same time.
@@ -298,7 +315,7 @@ In python, objects are destroyed automatically(not explicitly) from memory by th
  The reference counter of global variables never drops to zero.
 
 ```python
->>> a = 'Hi There!'
+>>> a = 8
 >>> sys.getrefcount(a)
 2
 >>> b = a
@@ -308,6 +325,57 @@ In python, objects are destroyed automatically(not explicitly) from memory by th
 >>> sys.getrefcount(a)
 2
 ```
+
+![namespace and memory](./resources/namespace_memory.png)
+
+## 3.3.1 Names <a name="3.3.1"></a>
+
+Names are used, as we saw previously, to refer to objects. Names are stored in the namespace as the following exemple shows:
+
+```python
+>>> dir()
+['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__', '__package__', '__spec__']
+
+```
+
+When you create a new object and give it a name, this name is stored in the namespace:
+
+```python
+>>> a = 16
+>>> dir()
+['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__', '__package__', '__spec__', 'a']
+```
+
+You can write a function that returns an object's name and value pair stored in the namespace as a dictionary:
+
+```Python
+>>> def names_values():
+...     obj = []
+...     for (name,value) in globals().items():
+...             if not name[:2] == '__':
+...                     obj.append((name,value))
+...     return dict(obj)
+... 
+
+```
+
+globals().items() returns a tuple of names and values.
+dir() returns only the name(key)
+
+```Python
+>>> names_values()
+{}
+>>> a = 8
+>>> b = 16
+>>> c = a
+>>> names_values()
+{'a': 8, 'b': 16, 'c': 8}
+>>> del c
+>>> names_values()
+{'a': 8, 'b': 16}
+```
+
+So it is all about storing and deleting names from the namespace. As it is said previously, the object will be destroyed from memory if the refcount reaches zero. So the object 8 won't be destroyed because it is also referenced by the name `a`.
 
 ## 3.4 Literals <a name="3.4"></a>
 

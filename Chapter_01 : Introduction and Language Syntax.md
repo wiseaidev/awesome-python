@@ -194,6 +194,7 @@ The following callable objects allow you reading each of the attributes describe
 - **id ()**: returns the identifier of an object;
 - **type ()**: returns the type of an object;
 - **dir ()**: lists all the features of an object.
+
 So as it is said before, Everything in python is stored in memory as an object.
 
 ```python

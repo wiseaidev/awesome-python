@@ -330,7 +330,7 @@ In python, objects are destroyed automatically(not explicitly) from memory by th
 
 ## 3.3.1 Names <a name="3.3.1"></a>
 
-Names are used, as we saw previously, to refer to objects. Names are stored in the namespace as the following exemple shows:
+Names are attached, as we saw previously, to objects. Names are stored in the namespace as the following exemple shows:
 
 ```python
 >>> dir()

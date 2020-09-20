@@ -277,7 +277,10 @@ you can assign one object to several variables simultaneously.
 (94232164422624, 94232164422624)
 ```
 
+[![namespace_memory!](./resources/namespace_memory.png)
+
 Notice that a and b point to the same object address in memory.
+
 you could assign multiple values to multiple variables at the same time.
 
 ```python
@@ -285,6 +288,7 @@ you could assign multiple values to multiple variables at the same time.
 ```
 
 In python, objects are destroyed automatically(not explicitly) from memory by the garbage collector, which keeps a reference counter for each object. This field is incremented by one if other objects reference a given object. An example where this variable increases :
+
 - assignment operator
 - passing arguments
 - inserting a new object into the list (the number of links for the object increases)
@@ -406,7 +410,8 @@ Value of PI with 4 digit precision: +3.1416
 >>> for i in range(1,20):
 ...     x = cos(pi/i)
 ...     print(f'|i = {i:^2}| cos(pi/{i:^2}) = {round(x,2):^+5.2}|') 
-... 	# ^ indicates the width of the column to display
+... 	# ^ indicates center alignement; < for left alignment; > for right alignment;
+...		#  the number after the synbol ^ indicate the width of the column to display
 ...
 |i = 1 | cos(pi/1 ) = -1.0 |
 |i = 2 | cos(pi/2 ) = +0.0 |

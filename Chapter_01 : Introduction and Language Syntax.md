@@ -194,6 +194,94 @@ The following callable objects allow you reading each of the attributes describe
 - **id ()**: returns the identifier of an object;
 - **type ()**: returns the type of an object;
 - **dir ()**: lists all the features of an object.
+So as it is said before, Everything in python is stored in memory as an object.
+
+```python
+>>> 32, id(a), type(a)
+(32, 94140309858016, '<class 'int'>')
+>>> 32, id(a), type(a)
+(32, 94140309858016, '<class 'int'>')
+>>> 32, id(a), type(a)
+(32, 94140309858016, '<class 'int'>')
+```
+
+Every object has a value(32 here), an id which is used to indicate where it is stored in memory(94140309858016) and a data type(integer).
+
+It is not convenient to use the identifier(id) as a name for the 32 value, Hence the need for assignments.
+
+An assignment is made using the `=` symbol, like this:
+
+```python
+>>> a = 32
+>>> a,id(a),type(a)
+(32, 94140309858016, '<class 'int'>')
+```
+
+Notice that the object **a** is always object 32, still stored at the same memory address(id = 94140309858016).
+Let's take the following example :
+
+```python
+>>> b = a * 3
+>>> b,id(b),type(b)
+(96, 94140309860064, '<class 'int'>')
+>>> a,id(a),type(a)
+(32, 94140309858016, '<class 'int'>')
+```
+
+the interpreter takes the expression at the right side of the assignment symbol **=** and evaluates it. As a result, an object of type integer whose value is 96 is stored in memory and the reference of that value is assigned to b. Note that, the value of this particular object is already stored in memory. 
+
+```python
+>>> 96,id(96),type(96)
+(96, 94140309860064, '<class 'int'>')
+```
+
+I think, in this particular example, the Python interpreter didn't store the 96 value in memory(because it is already stored at that id), it changes the reference of b only. This is only true because 32 is between -5 and 256.
+From [python C-API documentation](https://docs.python.org/3/c-api/long.html), I found the following explanation: 
+
+>The current implementation keeps an array of integer objects for all integers between -5 and 256, when you create an int in that range you actually just get back a reference to the existing object. So it should be possible to change the value of 1. I suspect the behavior of Python, in this case, is undefined. :-)
+
+let's try it for a number larger than 256 :
+
+```python
+>>> b = 257
+>>> id(b)
+140086582008304
+>>> id(257)
+140086582008272
+```
+
+So as you can see, b and 257 are different objects in memory.
+Now lets create a variable and increment it and see how much it takes space in memory:
+
+```python
+>>> a = 0
+>>> a += 1
+>>> a,id(a),type(a)
+(1, 94140309857024, '<class 'int'>')
+>>> a += 1
+>>> a,id(a),type(a)
+(2, 94140309857056, '<class 'int'>')
+>>> a += 1
+>>> a,id(a),type(a)
+(3, 94140309857088, '<class 'int'>')
+```
+
+The id increments by 32(i found some cases on the internet where the id has increased by 16, maybe because it was a 32-bit architecture), my computer is 64 bits address space, so i think each object in python is stored on 32 bytes if you have a 64 bit machine.
+
+you can assign one object to several variables simultaneously.
+
+```python
+>>> a = b = 8
+>>> id(a),id(b)
+(94232164422624, 94232164422624)
+```
+
+Notice that a and b point to the same object address in memory.
+you could assign multiple values to multiple variables at the same time.
+
+```python
+>>> a, b = 32, 64
+```
 
 ```python
 >>> dir(1)

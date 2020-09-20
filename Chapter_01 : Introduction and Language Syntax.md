@@ -15,11 +15,11 @@ Document's Author: Harmouch101
 	3.1	[Print Instruction](#3.1)   
 	3.2	[Comments](#3.2)   
 	3.3	[Variables](#3.3)    
-	    3.3.1 [Names](#3.3.1)     
+	&nbsp;&nbsp;&nbsp;&nbsp;3.3.1 [Names](#3.3.1)     
 	3.4	[literals](#3.4)    
-	    3.4.1 [String Literals](#3.4.1)    
-	    	3.4.1.1 [Special characters](#3.4.1.1)    
-	    3.4.2 [Numeric literals](#3.4.2)    
+	&nbsp;&nbsp;&nbsp;&nbsp;3.4.1 [String Literals](#3.4.1)    
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.1 [Special characters](#3.4.1.1)    
+	&nbsp;&nbsp;&nbsp;&nbsp;3.4.2 [Numeric literals](#3.4.2)    
 	[TODO]     
 	.    
 	.    

@@ -510,22 +510,34 @@ So as you can see, the `f` prefix is so much handy and useful. Alignment is done
 
 | Character | Description | Example | 
 | --- | --- | --- | 
-| `<` | align the object to the left. | `>>> print(f"|{'left alignement':<32}|")`<br>
-`|left alignement                 |`<br>`>>> print(f"|{'left':<<16}|")`<br>`|left<<<<<<<<<<<<|` | 
+| `<` | align the object to the left. | `>>> print(f"|{'left alignement':<32}|")` <br>
+`|left alignement                 |`<br>
+`>>> print(f"|{'left':<<16}|")`<br>
+`|left<<<<<<<<<<<<|` | 
 | `>` | align the object to the right. | `>>> print(f"|{'right alignement':>32}|")`<br>
-`|                right alignement|`<br>`>>> print(f"|{'right':>>16}|")`<br>`|>>>>>>>>>>>right|` |
+`|                right alignement|`<br>
+`>>> print(f"|{'right':>>16}|")`<br>
+`|>>>>>>>>>>>right|` |
 | `^` | align the object to the center. | `>>> print(f"|{'center alignement':^32}|")`<br>
-`|       center alignement        |`<br>`print(f"|{'center':^^16}|")`<br>`|^^^^^center^^^^^|` |
+`|       center alignement        |`<br>
+`print(f"|{'center':^^16}|")`<br>
+`|^^^^^center^^^^^|` |
 
 
 The sign option is used only for numbers with the following values:
 
 | Character | Description | Example |  
 | --- | --- | --- | 
-| `+` | the sign `-` and `+` will be used for all numbers. | `>>> print(f"|{+32:^+5}|")`<br>`| +32 |` |
-| `-` | `-` for negative numbers and nothing will be displayed otherwise. | `>>> print(f"|{+32:^-5}|")`<br>`| 32  |`
-| `Space` | `-` for negative numbers and whitespace for positives. |`>>> print(f"|{+32:^ 5}|")`<br>`|  32 |` |
-| `=` | Forces the padding to be placed after the sign (`+` or `-`) but before the digits. | `>>> print(f"|{+32:0=+5}|")`<br>`|+0032|`<br>`>>> print(f"|{+32:^=+10}|")`<br>`|+^^^^^^^32|` |
+| `+` | the sign `-` and `+` will be used for all numbers. | `>>> print(f"|{+32:^+5}|")`<br>
+`| +32 |` |
+| `-` | `-` for negative numbers and nothing will be displayed otherwise. | `>>> print(f"|{+32:^-5}|")`<br>
+`| 32  |` |
+| `Space` | `-` for negative numbers and whitespace for positives. | `>>> print(f"|{+32:^ 5}|")`<br>
+`|  32 |` |
+| `=` | Forces the padding to be placed after the sign (`+` or `-`) but before the digits. | `>>> print(f"|{+32:0=+5}|")`<br>
+`|+0032|`<br>
+`>>> print(f"|{+32:^=+10}|")`<br>
+`|+^^^^^^^32|` |
 
 
 ### 3.4.1.1 String Formatting <a name="3.4.1.1"></a>

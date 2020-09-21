@@ -191,15 +191,18 @@ Python's Variables are object-based. Each object has :
 
 - **A Value**: The value assigned to the object can be modified depending on the type of the object. For instance, string and tuple type objects cannot be modified after their creation. They are called immutable objects.
 
-- **Attributes**
-
-- **One or more base classes**
+- **Attributes**: properties of the object.
 
 - **Name**: an object must have a name.
 
+- **One or more base classes**
+
 The following callable objects allow you reading each of the attributes described:
+
 - **id ()**: returns the identifier of an object;
+
 - **type ()**: returns the type of an object;
+
 - **dir ()**: lists all the features of an object.
 
 So as it is said before, Everything in python, at the runtime, is an object.
@@ -330,7 +333,7 @@ In python, objects are destroyed automatically(not explicitly) from memory by th
 
 ## 3.3.1 Names <a name="3.3.1"></a>
 
-Names are attached, as we saw previously, to objects. Names are stored in the namespace as the following exemple shows:
+Names are attached, as we saw previously, to objects. The following method shows the names that are stored in the namespace:
 
 ```python
 >>> dir()
@@ -405,10 +408,9 @@ To see the difference between the built-in functions and the literals, you can c
 >>> a = list([1,2,3]) 	# creating a list using a built-in function
 >>> a = [1,2,3]		# creating a list using a list literal
 ```
-
 ### 3.4.1 String Literals <a name="3.4.1"></a>
 
-Strings are alphanumeric values ​​surrounded by quotes. Single or double quotes, or even three single or double-quotes.
+Strings are alphanumeric(text constant) values ​​surrounded by quotes. Single or double quotes, or even three single or double-quotes.
 
 ```python
 >>> print("here we have a one-line string with one double quote")
@@ -503,9 +505,28 @@ Value of PI with 4 digit precision: +3.1416
 
 ```
 
-So as you can see, the `f` prefix is very useful and faster than other string formating prefixes.
+So as you can see, the `f` prefix is so much handy and useful. Alignment is done using one of the following characters:
 
-### 3.4.1.1 Special characters <a name="3.4.1.1"></a>
+| Character | Description | 
+| --- | --- | 
+| '<' | align the object to the left. |
+| '>' | align the object to the right. |
+| '^' | align the object to the center. |
+
+The sign option is used only for numbers with the following values:
+
+| sign value | Description | 
+| --- | --- | 
+| '+' | the sign '-' and '+' will be used for all numbers. |
+| '-' | '-' for negative numbers and nothing will be displayed otherwise. |
+| 'Space' | '-' for negative numbers and space for positives. |
+
+
+### 3.4.1.1 String Formatting <a name="3.4.1.1"></a>
+
+
+
+### 3.4.1.2 Special characters <a name="3.4.1.2"></a>
 
 Python allows you to insert special characters in a string literal. the following table contains a list of spetial characters:
 
@@ -524,13 +545,20 @@ Python allows you to insert special characters in a string literal. the followin
 
 Please refer to [this link](http://www.asciitable.com/) if you want to search for ASCII characters.
 
+
 ### 3.4.2  Numeric literals <a name="3.4.2"></a>
 
 There are three types of numeric literals to represent values:
-- Integers;
+- Short/Long integers;
 - Floating points;
 - Complex numbers.
 
+| Type | Minimum Size | Range | Description | Example |
+| --- | --- | --- | --- | --- |
+| Decimal (long Int) | 4 bytes(32 bits) | -2147483648 to 2147483647 | 
+| Binary |
+| Octal |
+| Hexadecimal |
 
 
 

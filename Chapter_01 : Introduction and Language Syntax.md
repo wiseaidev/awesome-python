@@ -19,6 +19,7 @@ Document's Author: Harmouch101
 	3.4	[literals](#3.4)    
 	&nbsp;&nbsp;&nbsp;&nbsp;3.4.1 [String Literals](#3.4.1)    
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.1 [Special characters](#3.4.1.1)    
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.2 [String Formatting](#3.4.1.2)      
 	&nbsp;&nbsp;&nbsp;&nbsp;3.4.2 [Numeric literals](#3.4.2)    
 	[TODO]     
 	.    
@@ -528,12 +529,38 @@ The sign option is used only for numbers with the following values:
 
 There are three methods in python that can be used to format strings:
 
-- Using the **%** modulo sign with one of the following values:
+- Using the **%** modulo sign(borrowed from c language) with one of the following values:
 
 | %type | Description | Example | 
 | --- | --- | --- | 
 | `%d`,`%i`,`%u` | signed decimal, signed integer and unsigned decimal. | `>>> print("%d + %i = %u"%(10,15,10+15))`<br> 10 + 15 = 25 |
+| `%o` | unsigned octal | `>>> print(f"oct: %o"%41)` oct: 51<br> |
+| `%x` or `%X` | hexadecimal value, prefixed by 0x or 0X. | `>>> print(f"hex: %x %X"%(0x12,0X32))`<br>hex: 12 32 |
+| `%e` or `%E` | scientific notation of a number with a presicion of 6.('e' pr 'E' as exponent) | `>>>print('%E %e pounds' %(212345,212345))`<br>2.123450E+05 2.123450e+05 pounds  |
+| `%f` ou `%F` | fixed-point notation with a presicion of 6. | `>>>print('%f %F pounds' %(21.2345,21.2345))`<br>21.234500 21.234500 pounds |
+| `%g` or `%G` | for floating point values, equivalent to %e or %E if the exponent
+is greater than -4 or less than precision, otherwise equivalent to %f. | `>>> print('%g %G pounds' %(234512312,00000.21000312))`<br>2.34512e+08 0.210003 pounds |
+| `%c` | converts the integer to the corresponding unicode character.  | `>>> print('%c is a char' %(123))`<br>{ is a char | 
+| `%r` | return the value of the attribute `__repr__` | `>>> a = 10`<br>`>>>a.__repr__()`<br>'10'`>>> print("the value of a.__repr__() is %r"%a)`<br> the value of a.__repr__() is 10 |
+| `%r` | return the value of the attribute `__str__` | `>>> a.__str__()`<br>'10'`>>> print("the value of a.__repr__() is %s"%a)`<br>the value of a.__repr__() is 10 |
+| `%%` | insert the % sign. | `>>> print("score is %g %%"%95.1)`<br>score is 95.1 % |
+| `%(key)s` | insert the value of the key in the dictionnary. | `>>> print('%(key1)s %(key2)s %(key3)s'%{'key1':'value1','key2':'value2','key3':'value3'})`<br>value1 value2 value3 |
 
+- using the `format` method(borrowed from C# language) like the following examples :
+```python
+>>> '{0}, {1}, {2}'.format('1', '2', '3')
+'1, 2, 3'
+>>> '{}, {}, {}'.format('1', '2', '3') 
+'1, 2, 3'
+>>> '{2}, {1}, {0}'.format('1', '2', '3')
+'3, 2, 1'
+>>> '{2}, {1}, {0}'.format(*'123')      # unpacking argument sequence
+'3, 2, 1'
+>>> '{0}, {0}, {0}'.format('1', '2', '3')   # arguments' indices can be repeated
+'1, 1, 1'
+```
+- using the `f` prefix as the previous section explains.
+for more information about string formatting, you can read [python documentation](https://docs.python.org/3/library/string.html).
 
 ### 3.4.1.2 Special characters <a name="3.4.1.2"></a>
 
@@ -542,8 +569,8 @@ Python allows you to insert special characters in a string literal. the followin
 | \Character | Description | Example |
 | --- | --- | --- |
 | `\'`, `\"` | insert a single or double quote in a string literal. | `>>> print("python\'s notes")` <br>python's notes |
-| `\n` | insert a new line | `>>> print("that's\r\nnice!")`<br>that's nice! |
-| `\r\n`, `\r` | insert a new line in windows, \r on Mac, end of line character(EOL). | `>>> print("that's\r\nnice!")`<br>that's nice! |
+| `\n` | insert a new line | `>>> print("that's\nnice!")`<br>that's<br>nice! |
+| `\r\n`, `\r` | insert a new line in windows, \r on Mac, end of line character(EOL). | `>>> print("that's\r\nnice!")`<br>that's<br>nice! |
 | `\\` | insert a single backslash in a string literal. | `>>> print("The file is in D:\\files\\file1")`<br>The file is in D:\files\file1 |
 | `\v` | insert a vertical tabulation. | `>>> print("This is a vertical\v tabulation")`<br>This is a vertical<br>tabulation |
 | `\t` | insert a Horizontal tabulation(tab). | `>>> print("This is a horizontal\t tabulation")`<br>This is a horizontal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tabulation |
@@ -552,7 +579,7 @@ Python allows you to insert special characters in a string literal. the followin
 | `\xHx` | insert an hexadecimal value of a character. | `>>> print("\x48i There!")`<br>`Hi There! |
 | `\N{noun}` | insert a charater defined by a noun. | `>>> print('\N{dollar sign}')`<br>$<br>`>>> print('\N{pound sign}')`<br>£ |
 
-Please refer to [this link](http://www.asciitable.com/) if you want to search for ASCII characters.
+Please refer to [this link](http://www.asciitable.com/) if you want to search for ASCII characters or simply type `man ascii` in your terminal.
 
 
 ### 3.4.2  Numeric literals <a name="3.4.2"></a>

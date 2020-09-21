@@ -549,7 +549,7 @@ Please refer to [this link](http://www.asciitable.com/) if you want to search fo
 ### 3.4.2  Numeric literals <a name="3.4.2"></a>
 
 There are three types of numeric literals to represent values:
-- Short/Long integers;
+- integers;
 - Floating points;
 - Complex numbers.
 

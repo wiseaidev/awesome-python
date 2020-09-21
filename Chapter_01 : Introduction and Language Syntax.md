@@ -519,9 +519,9 @@ The sign option is used only for numbers with the following values:
 
 | Character | Description | Example |  
 | --- | --- | --- | 
-| `+` | the sign `-` and `+` will be used for all numbers. | `>>> print(f"[{+32:^+5}]")`<br>`[ +32 ]` |
-| `-` | `-` for negative numbers and nothing will be displayed otherwise. | `>>> print(f"[{+32:^-5}]")`<br>`[ 32  ]` |
-| `Space` | `-` for negative numbers and whitespace for positives. | `>>> print(f"[{+32:^ 5}]")`<br>`[  32 ]` |
+| `+` | `-` for negative numbers and `+` for positive numbers. | `>>> print(f"[{+32:^+5}]")`<br>`[ +32 ]`<br>`>>> print(f"[{-32:^+5}]")`<br>`[ -32 ]` |
+| `-` | `-` for negative numbers and nothing for positive numbers. | `>>> print(f"[{+32:^-5}]")`<br>`[ 32  ]` |
+| `Space` | `-` for negative numbers and whitespace for positive numbers. | `>>> print(f"[{+32:^ 5}]")`<br>`[  32 ]` |
 
 
 ### 3.4.1.1 String Formatting <a name="3.4.1.1"></a>

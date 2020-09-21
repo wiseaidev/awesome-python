@@ -553,12 +553,5 @@ There are three types of numeric literals to represent values:
 - Floating points;
 - Complex numbers.
 
-| Type | Minimum Size | Range | Description | Example |
-| --- | --- | --- | --- | --- |
-| Decimal (long Int) | 4 bytes(32 bits) | -2147483648 to 2147483647 | 
-| Binary |
-| Octal |
-| Hexadecimal |
-
 
 

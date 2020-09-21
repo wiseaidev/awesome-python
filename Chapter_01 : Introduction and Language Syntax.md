@@ -510,34 +510,32 @@ So as you can see, the `f` prefix is so much handy and useful. Alignment is done
 
 | Character | Description | Example | 
 | --- | --- | --- | 
-| `<` | align the object to the left. | `>>> print(f"|{'left alignement':<32}|")` <br>
-`|left alignement                 |`<br>
-`>>> print(f"|{'left':<<16}|")`<br>
-`|left<<<<<<<<<<<<|` | 
-| `>` | align the object to the right. | `>>> print(f"|{'right alignement':>32}|")`<br>
-`|                right alignement|`<br>
-`>>> print(f"|{'right':>>16}|")`<br>
-`|>>>>>>>>>>>right|` |
-| `^` | align the object to the center. | `>>> print(f"|{'center alignement':^32}|")`<br>
-`|       center alignement        |`<br>
-`print(f"|{'center':^^16}|")`<br>
-`|^^^^^center^^^^^|` |
+| `<` | align the object to the left. | `>>> print(f"[{'left alignement':<32}]")` <br>
+`[left alignement                 ]`<br>`>>> print(f"[{'left':<<16}]")`<br>`[left<<<<<<<<<<<<]` | 
+| `>` | align the object to the right. | `>>> print(f"[{'right alignement':>32}]")`<br>
+`[                right alignement]`<br>
+`>>> print(f"[{'right':>>16}]")`<br>
+`[>>>>>>>>>>>right]` |
+| `^` | align the object to the center. | `>>> print(f"[{'center alignement':^32}]")`<br>
+`[       center alignement        ]`<br>
+`print(f"|{'center':^^16}]")`<br>
+`[^^^^^center^^^^^]` |
 
 
 The sign option is used only for numbers with the following values:
 
 | Character | Description | Example |  
 | --- | --- | --- | 
-| `+` | the sign `-` and `+` will be used for all numbers. | `>>> print(f"|{+32:^+5}|")`<br>
-`| +32 |` |
-| `-` | `-` for negative numbers and nothing will be displayed otherwise. | `>>> print(f"|{+32:^-5}|")`<br>
-`| 32  |` |
-| `Space` | `-` for negative numbers and whitespace for positives. | `>>> print(f"|{+32:^ 5}|")`<br>
-`|  32 |` |
-| `=` | Forces the padding to be placed after the sign (`+` or `-`) but before the digits. | `>>> print(f"|{+32:0=+5}|")`<br>
-`|+0032|`<br>
-`>>> print(f"|{+32:^=+10}|")`<br>
-`|+^^^^^^^32|` |
+| `+` | the sign `-` and `+` will be used for all numbers. | `>>> print(f"[{+32:^+5}]")`<br>
+`[ +32 ]` |
+| `-` | `-` for negative numbers and nothing will be displayed otherwise. | `>>> print(f"[{+32:^-5}]")`<br>
+`[ 32  ]` |
+| `Space` | `-` for negative numbers and whitespace for positives. | `>>> print(f"[{+32:^ 5}]")`<br>
+`[  32 ]` |
+| `=` | Forces the padding to be placed after the sign (`+` or `-`) but before the digits. | `>>> print(f"[{+32:0=+5}]")`<br>
+`[+0032]`<br>
+`>>> print(f"[{+32:^=+10}]")`<br>
+`[+^^^^^^^32]` |
 
 
 ### 3.4.1.1 String Formatting <a name="3.4.1.1"></a>
@@ -558,8 +556,8 @@ Python allows you to insert special characters in a string literal. the followin
 | \Character | Description | Example |
 | --- | --- | --- |
 | `\'`, `\"` | insert a single or double quote in a string literal. | `>>> print("python\'s notes")` <br>python's notes |
-| `\n` | insert a new line | `>>> print("thats\r\nnice!")`<br>thats nice! |
-| `\r\n`, `\r` | insert a new line in windows, \r on Mac, end of line character(EOL). | `>>> print("thats\r\nnice!")`<br>thats nice! |
+| `\n` | insert a new line | `>>> print("that's\r\nnice!")`<br>that's nice! |
+| `\r\n`, `\r` | insert a new line in windows, \r on Mac, end of line character(EOL). | `>>> print("that's\r\nnice!")`<br>that's nice! |
 | `\\` | insert a single backslash in a string literal. | `>>> print("The file is in D:\\files\\file1")`<br>The file is in D:\files\file1 |
 | `\v` | insert a vertical tabulation. | `>>> print("This is a vertical\v tabulation")`<br>This is a vertical<br>tabulation |
 | `\t` | insert a Horizontal tabulation(tab). | `>>> print("This is a horizontal\t tabulation")`<br>This is a horizontal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tabulation |

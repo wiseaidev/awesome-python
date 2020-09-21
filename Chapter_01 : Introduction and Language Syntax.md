@@ -510,8 +510,7 @@ So as you can see, the `f` prefix is so much handy and useful. Alignment is done
 
 | Character | Description | Example | 
 | --- | --- | --- | 
-| `<` | align the object to the left. | `>>> print(f"[{'left alignement':<32}]")` <br>
-`[left alignement                 ]`<br>`>>> print(f"[{'left':<<16}]")`<br>`[left<<<<<<<<<<<<]` | 
+| `<` | align the object to the left. | `>>> print(f"[{'left alignement':<32}]")`<br>`[left alignement                 ]`<br>`>>> print(f"[{'left':<<16}]")`<br>`[left<<<<<<<<<<<<]` | 
 | `>` | align the object to the right. | `>>> print(f"[{'right alignement':>32}]")`<br>`[                right alignement]`<br>`>>> print(f"[{'right':>>16}]")`<br>`[>>>>>>>>>>>right]` |
 | `^` | align the object to the center. | `>>> print(f"[{'center alignement':^32}]")`<br>`[       center alignement        ]`<br>`print(f"|{'center':^^16}]")`<br>`[^^^^^center^^^^^]` |
 

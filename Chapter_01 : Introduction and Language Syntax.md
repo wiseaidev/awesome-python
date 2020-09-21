@@ -541,7 +541,7 @@ There are three methods in python that can be used to format strings:
 | `%g` or `%G` | for floating point values, equivalent to %e or %E if the exponent is greater than -4 or less than precision, otherwise equivalent to %f. | `>>> print('%g %G pounds' %(234512312,00000.21000312))`<br>2.34512e+08&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.210003 pounds |
 | `%c` | converts the integer to the corresponding unicode character.  | `>>> print('%c is a char' %(123))`<br>{ is a char | 
 | `%r` | return the value of the attribute `__repr__` | `>>> a = 10`<br>`>>>a.__repr__()`<br>'10'`>>> print("the value of a.__repr__() is %r"%a)`<br> the value of a.__repr__() is 10 |
-| `%r` | return the value of the attribute `__str__` | `>>> a.__str__()`<br>'10'`>>> print("the value of a.__repr__() is %s"%a)`<br>the value of a.__repr__() is 10 |
+| `%s` | return the value of the attribute `__str__` | `>>> a.__str__()`<br>'10'`>>> print("the value of a.__str__() is %s"%a)`<br>the value of a.__str__() is 10 |
 | `%%` | insert the % sign. | `>>> print("score is %g %%"%95.1)`<br>score is 95.1 % |
 | `%(key)s` | insert the value of the key in the dictionnary. | `>>> print('%(key1)s %(key2)s %(key3)s'%{'key1':'value1','key2':'value2','key3':'value3'})`<br>value1 value2 value3 |
 

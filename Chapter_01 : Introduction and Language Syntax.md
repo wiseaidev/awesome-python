@@ -18,8 +18,8 @@ Document's Author: Harmouch101
 	&nbsp;&nbsp;&nbsp;&nbsp;3.3.1 [Names](#3.3.1)     
 	3.4	[literals](#3.4)    
 	&nbsp;&nbsp;&nbsp;&nbsp;3.4.1 [String Literals](#3.4.1)    
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.1 [Special characters](#3.4.1.1)    
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.2 [String Formatting](#3.4.1.2)      
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.1 [String Formatting](#3.4.1.1)    
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.2 [Special characters](#3.4.1.2)      
 	&nbsp;&nbsp;&nbsp;&nbsp;3.4.2 [Numeric literals](#3.4.2)    
 	[TODO]     
 	.    
@@ -509,7 +509,7 @@ Value of PI with 4 digit precision: +3.1416
 
 So as you can see, the `f` prefix is so much handy and useful. Alignment is done using one of the following characters:
 
-| Character | Description | Example | 
+| align | Description | Example | 
 | --- | --- | --- | 
 | `<` | align the object to the left. | `>>> print(f"[{'left':<16}]")`<br>[left&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br>`>>> print(f"[{'left':<<16}]")`<br>[left<<<<<<<<<<<<] | 
 | `>` | align the object to the right. | `>>> print(f"[{'right':>16}]")`<br>[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;right]<br>`>>> print(f"[{'right':>>16}]")`<br>[>>>>>>>>>>>right] |
@@ -518,12 +518,18 @@ So as you can see, the `f` prefix is so much handy and useful. Alignment is done
 
 The sign option is used only for numbers with the following values:
 
-| Character | Description | Example |  
+| sign | Description | Example |  
 | --- | --- | --- | 
 | `+` | `-` for negative numbers and `+` for positive numbers. | `>>> print(f"[{+32:^+5}]")`<br>[&nbsp;+32&nbsp;]<br>`>>> print(f"[{-32:^+5}]")`<br>[&nbsp;-32&nbsp;] |
 | `-` | `-` for negative numbers and nothing for positive numbers. | `>>> print(f"[{+32:^-5}]")`<br>[&nbsp;32&nbsp;&nbsp;] |
 | `Space` | `-` for negative numbers and whitespace for positive numbers. | `>>> print(f"[{+32:^ 5}]")`<br>[&nbsp;&nbsp;&nbsp;32&nbsp;&nbsp;] |
 
+the general form of `f` strings is the following:
+```python
+{variable : fill_padding align sign column_width .precision type}
+>>> print(f"{-32.215663:*^+15.2f}")
+****-32.22*****
+```
 
 ### 3.4.1.1 String Formatting <a name="3.4.1.1"></a>
 

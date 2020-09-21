@@ -535,10 +535,10 @@ There are three methods in python that can be used to format strings:
 | --- | --- | --- | 
 | `%d`,`%i`,`%u` | signed decimal, signed integer and unsigned decimal. | `>>> print("%d + %i = %u"%(10,15,10+15))`<br> 10 + 15 = 25 |
 | `%o` | unsigned octal | `>>> print(f"oct: %o"%41)` oct: 51<br> |
-| `%x` or `%X` | hexadecimal value, prefixed by 0x or 0X. | `>>> print(f"hex: %x %X"%(0x12,0X32))`<br>hex: 12 32 |
-| `%e` or `%E` | scientific notation of a number with a presicion of 6.('e' pr 'E' as exponent) | `>>>print('%E %e pounds' %(212345,212345))`<br>2.123450E+05 2.123450e+05 pounds  |
-| `%f` ou `%F` | fixed-point notation with a presicion of 6. | `>>>print('%f %F pounds' %(21.2345,21.2345))`<br>21.234500 21.234500 pounds |
-| `%g` or `%G` | for floating point values, equivalent to %e or %E if the exponent is greater than -4 or less than precision, otherwise equivalent to %f. | `>>> print('%g %G pounds' %(234512312,00000.21000312))`<br>2.34512e+08 0.210003 pounds |
+| `%x` or `%X` | hexadecimal value, prefixed by 0x or 0X. | `>>> print(f"hex: %x %X"%(0x12,0X32))`<br>hex: 12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;32 |
+| `%e` or `%E` | scientific notation of a number with a presicion of 6.('e' pr 'E' as exponent) | `>>>print('%E %e pounds' %(212345,212345))`<br>2.123450E+05&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.123450e+05 pounds  |
+| `%f` ou `%F` | fixed-point notation with a presicion of 6. | `>>>print('%f %F pounds' %(21.2345,21.2345))`<br>21.234500&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;21.234500 pounds |
+| `%g` or `%G` | for floating point values, equivalent to %e or %E if the exponent is greater than -4 or less than precision, otherwise equivalent to %f. | `>>> print('%g %G pounds' %(234512312,00000.21000312))`<br>2.34512e+08&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.210003 pounds |
 | `%c` | converts the integer to the corresponding unicode character.  | `>>> print('%c is a char' %(123))`<br>{ is a char | 
 | `%r` | return the value of the attribute `__repr__` | `>>> a = 10`<br>`>>>a.__repr__()`<br>'10'`>>> print("the value of a.__repr__() is %r"%a)`<br> the value of a.__repr__() is 10 |
 | `%r` | return the value of the attribute `__str__` | `>>> a.__str__()`<br>'10'`>>> print("the value of a.__repr__() is %s"%a)`<br>the value of a.__repr__() is 10 |

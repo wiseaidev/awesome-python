@@ -522,7 +522,7 @@ The sign option is used only for numbers with the following values:
 | `+` | the sign `-` and `+` will be used for all numbers. | `>>> print(f"[{+32:^+5}]")`<br>`[ +32 ]` |
 | `-` | `-` for negative numbers and nothing will be displayed otherwise. | `>>> print(f"[{+32:^-5}]")`<br>`[ 32  ]` |
 | `Space` | `-` for negative numbers and whitespace for positives. | `>>> print(f"[{+32:^ 5}]")`<br>`[  32 ]` |
-| `=` | Forces the padding to be placed after the sign (`+` or `-`) but before the digits. | `>>> print(f"[{+32:0=+5}]")`<br>`[+0032]`<br>`>>> print(f"[{+32:^=+10}]")`<br>`[+^^^^^^^32]` |
+| `=` | forces the padding to be placed after the sign (`+` or `-`) but before the digits. | `>>> print(f"[{+32:0=+5}]")`<br>`[+0032]`<br>`>>> print(f"[{+32:^=+10}]")`<br>`[+^^^^^^^32]` |
 
 
 ### 3.4.1.1 String Formatting <a name="3.4.1.1"></a>

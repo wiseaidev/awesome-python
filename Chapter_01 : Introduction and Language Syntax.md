@@ -138,6 +138,8 @@ you can also use the `exit()` method to exit the interactive prompt, aka the Rea
 
 ## 3. Language Syntax <a name="3"></a>
 
+A complete documentation on Lexical analysis can be found on [Python Docs](https://docs.python.org/3/reference/lexical_analysis.html#lexical-analysis).
+
 ## 3.1 Print Instruction <a name="3.1"></a>
 
 ```python

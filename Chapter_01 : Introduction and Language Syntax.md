@@ -750,7 +750,7 @@ Where :
    - **min_10_exp**: minimum number **e** such that 10<sup>e</sup> is in [min , max];    
    - **dig**: maximum number of digits that can accurately display a number;    
    - **mant_dig**: maximum number of digits in the radix number system, which can accurately display a number(53 = 52 mant + 1 sign );    
-   - **epsilon**: difference between 1 and the smallest number is greater 1 which can be represented as a floating point number;    
+   - **epsilon**: difference between 1 and the smallest number that is greater than 1 which can be represented as a floating point number;    
    - **radix**: base of the number system used;    
    - **rounds**: integer constant defining the rounding mode.    
 

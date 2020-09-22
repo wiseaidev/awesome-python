@@ -823,6 +823,8 @@ True
 '0.20000000000000001110223024625156540423631668090820312500'
 ```
 
+For more information about Representation Error of floats, you can checkout [Pythom Docs](https://docs.python.org/3/tutorial/floatingpoint.html#representation-error).
+
 - **Imaginary**: the complex type, corresponds to a variable whose value is a complex number, stored as a couple of floats (so in approximate value). The complex number 1 + 5i is noted 1 + 5J, the number i is noted J.
 
 

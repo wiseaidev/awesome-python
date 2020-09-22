@@ -19,7 +19,10 @@ Document's Author: Harmouch101
 	3.4	[literals](#3.4)    
 	&nbsp;&nbsp;&nbsp;&nbsp;3.4.1 [String Literals](#3.4.1)    
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.1 [String Formatting](#3.4.1.1)    
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.2 [Special characters](#3.4.1.2)      
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.2 [Special characters](#3.4.1.2)    
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.3 [More Strings Examples](#3.4.1.3)    
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.4 [Useful Strings Functions](#3.4.1.4)    
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.5 [More Strings Methods Examples](#3.4.1.5)          
 	&nbsp;&nbsp;&nbsp;&nbsp;3.4.2 [Numeric literals](#3.4.2)    
 	[TODO]     
 	.    
@@ -411,6 +414,7 @@ To see the difference between the built-in functions and the literals, you can c
 ```
 ### 3.4.1 String Literals <a name="3.4.1"></a>
 
+[Python Docs](https://docs.python.org/3/reference/lexical_analysis.html) 
 Strings are alphanumeric(text constant) values ​​surrounded by quotes. Single or double quotes, or even three single or double-quotes.
 
 ```python
@@ -535,7 +539,7 @@ the general form of `f` strings is the following:
 
 There are three methods in python that can be used to format strings:
 
-- Using the **%** modulo sign(borrowed from c language) with one of the following values:
+- Using the **`%`** modulo sign(borrowed from c language) with one of the following values:
 
 | %type | Description | Example | 
 | --- | --- | --- | 
@@ -551,7 +555,7 @@ There are three methods in python that can be used to format strings:
 | `%%` | insert the % sign. | `>>> print("score is %g %%"%95.1)`<br>score is 95.1 % |
 | `%(key)s` | insert the value of the key in the dictionnary. | `>>> print('%(key1)s %(key2)s %(key3)s'%{'key1':'value1','key2':'value2','key3':'value3'})`<br>value1 value2 value3 |
 
-- using the `format` method(borrowed from C# language) like the following examples :
+- using the **format** method(borrowed from C# language) like the following examples :
 ```python
 >>> '{0}, {1}, {2}'.format('1', '2', '3')
 '1, 2, 3'
@@ -564,7 +568,7 @@ There are three methods in python that can be used to format strings:
 >>> '{0}, {0}, {0}'.format('1', '2', '3')   # arguments' indices can be repeated
 '1, 1, 1'
 ```
-- using the `f` prefix as the previous section explains.
+- using the **`f`** prefix as the previous section explains.
 for more information about string formatting, you can read [python documentation](https://docs.python.org/3/library/string.html).
 
 ### 3.4.1.2 Special characters <a name="3.4.1.2"></a>
@@ -586,13 +590,139 @@ Python allows you to insert special characters in a string literal. the followin
 
 Please refer to [this link](http://www.asciitable.com/) if you want to search for ASCII characters or simply type `man ascii` in your terminal.
 
+### 3.4.1.3 More Strings Examples <a name="3.4.1.3"></a>
+
+```python
+>>> a = 'Python is cool'  # String type.
+>>> b = r'Python is cool'  # raw String.
+>>> a == b   # both strings have the same value.
+True
+>>> a is b   # but they are not the same object.
+False
+>>> id(a),id(b)    
+(140092435297776, 140092435297904)    # each string points to a different object in memory.
+>>> a = 'Python\t is cool'
+>>> a = 'Python\tis cool'
+>>> b = r'Python\tis cool'
+>>> a,type(a),id(a)
+('Python\tis cool', <class 'str'>, 140092435297776)	
+>>> b,type(b),id(b)
+('Python\\tis cool', <class 'str'>, 140092435297840)
+Both objects share the same type str but different values and references.
+>>> a is b
+False
+>>> a == b
+False
+>>> a = r'£'
+>>> b = '\u00A3'
+>>> c = '\N{pound sign}'
+>>> a == b == c
+True
+>>> a is b is c   
+True
+>>> id(a),id(b),id(c)  
+(140578043342896, 140578043342896, 140578043342896)  # a, b and c are the same object in memory .
+>>> a,b,c
+('£', '£', '£')   # Same Value.
+>>> a = '512512'
+>>> b = a.encode(encoding = 'ascii') # create a new object in memory.
+>>> b
+b'512512'
+>>> c = b.decode(encoding = 'ascii') # create another new object in memory and not reference a !!!
+>>> c
+'512512'
+>>> a == c  # same value.
+True
+>>> a is c  # different objects.
+False
+>>> a = int(a) # create a new object in memory.
+>>> c = int(c) # create another new object in memory.
+>>> a is c # same type and value but different objects.
+False
+
+Exception numbers between -5 and 256 as it said earlier
+>>> a = '128'
+>>> b = a.encode(encoding = 'ascii')
+>>> c = b.decode(encoding = 'ascii')
+>>> a is c
+False
+>>> c = int(c)
+>>> a = int(a)
+>>> a is c  # because it is between -5 and 256.
+True
+``` 
+### 3.4.1.4 Useful Strings Functions <a name="3.4.1.4"></a>
+
+For a complete list of string methods, you can refer to[python docs](https://docs.python.org/3/library/stdtypes.html#string-methods).
+
+| Function | Description | Example |
+| --- | --- | --- |
+| `len(s)` | return the number of element in `s`. | `>>> s = 'this is a string'`<br>`>>> len(s)`<br>16 |
+| `min(s)` | return the minimum value in `s`. | `>>> [ord(char) for char in s]`<br>[116, 104, 105, 115, 32, 105, 115, 32, 97, 32, 115, 116, 114, 105, 110, 103]<br>`>>> min(s)`
+<br>'  	'<br>`>>> ord(min(s))`32 |
+| `max(s)` | return the maximum value in `s`. | `>>> max(s)`<br>'t'<br>`>>> ord(max(s))`<br>116 |
+| `sorted(s)` | sort values from lowest to highest. | `>>> sorted(s)`<br>[' ', ' ', ' ', 'a', 'g', 'h', 'i', 'i', 'i', 'n', 'r', 's', 's', 's', 't', 't'] |
+| `list(reversed(s))` or `list(s[::-1])` | reverse the order of the values in the string(index 0 becomes index -1...)   | `>>> list(reversed(s))`<br>['g', 'n', 'i', 'r', 't', 's', ' ', 'a', ' ', 's', 'i', ' ', 's', 'i', 'h', 't']<br>`>>>s[::-1]`<br>'gnirts a si siht'<br>`>>> list(s[::-1])`<br>['g', 'n', 'i', 'r', 't', 's', ' ', 'a', ' ', 's', 'i', ' ', 's', 'i', 'h', 't'] |
+| `s.startswith('str')` | return `True` only if `s` starts with `str`, otherwise it return `False` | `>>> s`<br>'this is a string'<br>`>>> s.startswith('h')`<br>False`>>> s.startswith('t')`<br>True<br>`>>> s.startswith('th')`<br>True<br>`>>> s.startswith('this')`<br>True |
+| `s.endswith('str')` | return `True` only if `s` ends with `str`, otherwise it return `False` | `>>> s.endswith('ng')`<br>True<br>`>>> s.endswith('gn')`<br>False |
+| `s.upper()` | converts a string to uppercase. | `>>> s.upper()`<br>'THIS IS A STRING' |
+| `s.lower()` | converts a string to lowercase. | `>>> s.lower()`<br>'this is a string' |
+| `s.strip()` | removes whitespaces from start and end of the string `s`. | `>>> s = '   Remove start and end whitespaces        '`<br>'`>>> s`'<br>'&nbsp;&nbsp;&nbsp;Remove start and end whitespaces&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'<br>`>>> s.strip()`<br>'Remove start and end whitespaces' |
+| `s.lstrip()` or `s.rstrip()` | removes whitespaces from start or from end of the string `s`, respectively. | `>>> s.lstrip()`<br>'Remove start whitespaces&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'<br>`>>> s.rstrip()`<br>'&nbsp;&nbsp;&nbsp;&nbsp;Remove end whitespaces' |
+| `s.find('str', start_index)` | return first from left occurrence index of `str` in `s` starting from index `start_index` if found, otherwise return -1 | `>>> s = 'python is so cool'`<br>`>>> s.find('o',5)`<br>11 |
+| `s.index('str', start_index)` | same as find except it will throw a `ValueError` exception if `str` is not in `s` | `>>> s.find('1',5)`<br>-1`>>> s.index('1')`<br>Traceback (most recent call last):<br>`File "<stdin>", line 1, in <module>`<br>
+ValueError: substring not found |
+| `s.count('str', start_index)` | count the occurrence of `str` in `s` starting from `start_index`. | `>>> s.count(' ',7)`<br>2 |
+
+### 3.4.1.5 More Strings Methods Examples <a name="3.4.1.5"></a>
+
+```python
+>>> s = 'string'
+>>> sorted(s)
+['g', 'i', 'n', 'r', 's', 't'] # lowest to highest sorting.
+>>> sorted(s, reverse = True)
+['t', 's', 'r', 'n', 'i', 'g'] # highest to lowest sorting.
+>>> list(reversed(s))
+['g', 'n', 'i', 'r', 't', 's'] # reverse ordering of the string.
+>>> s.upper()
+'STRING'
+>>> s.lower()
+'string'
+>>> s.title()
+'String'
+>>> s.istitle()
+False
+>>> s.title().swapcase()
+'sTRING'
+>>> 'st' in s
+True
+>>> s += s
+>>> s
+'stringstring'
+>>> s.find('i')
+3
+>>> s.find('i',5)
+9
+>>> s.find('i',s.find('i') + 1)
+9
+>>> s.index('i',s.index('i')+1)
+9
+>>> s.index('1')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: substring not found
+>>> s.find('1')
+-1
+>>> s.count('i')
+2
+```
 
 ### 3.4.2  Numeric literals <a name="3.4.2"></a>
 
 There are three types of numeric literals to represent values:
-- integers;
-- Floating points;
-- Complex numbers.
+- Integers;
+- Floating points numbers;
+- Imaginary numbers.
 
 
 

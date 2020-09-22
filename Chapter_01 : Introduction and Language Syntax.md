@@ -722,9 +722,9 @@ ValueError: substring not found
 
 There are three types of numeric literals to represent values:
 - **Integers** : reserved for a variable whose value is a stored relative integer in exact value. The possible values ​​for such a variable are only limited by the capabilities of the computer;
-- Floating points numbers : it is a variable whose value is a real number, stored as an approximate value in the form of a triplet (s, m, e) where **s** is the **sign** in {-1,1}, **m** **mantissa** and **e** **exponent**. Such a triplet represents the decimal number s*m*b^e in scientific notation where b is the base of representation, namely: 2 on the computers. By varying e, we make the decimal point "float".
+- **Floating Point**: it is a variable whose value is a real number, stored as an approximate value in the form of a triplet (s, m, e) where **s** is the **sign** in {-1,1}, **m** **mantissa** and **e** **exponent**. Such a triplet represents the decimal number s*m*b^e in scientific notation where b is the base of representation, namely: 2 on the computers. By varying e, we make the decimal point "float".
 The real numbers are stored in Python according to the **double precision** format
-specified by the IEEE 754 standard. Thus, the sign is coded on 1 bit, the exponent on 11
+specified by the **IEEE 754** standard. Thus, the sign is coded on 1 bit, the exponent on 11
 bit and the 52-bit mantissa ,  11 + 1 + 52 -1 = 64 bits; the precision being 52 bits, thus 15 significant digits.
 
 <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Number = ± mantissa</font><sup><font style="vertical-align: inherit;">exponent</font></sup><font style="vertical-align: inherit;"> base</font></font><sup><font style="vertical-align: inherit;"></font></sup></p>
@@ -733,8 +733,27 @@ bit and the 52-bit mantissa ,  11 + 1 + 52 -1 = 64 bits; the precision being 52 
 	|sign|---exponent----|---------mantissa----------|      
 	|1bit|----11bits-----|----------52bits-----------|       
 
+To find information about float numbers used in python, you can use the command sys.float_info like the following:
 
-- Imaginary numbers.
+```python
+>>> import sys
+>>> sys.float_info
+sys.float_info(max=1.7976931348623157e+308, max_exp=1024, max_10_exp=308, min=2.2250738585072014e-308, min_exp=-1021, min_10_exp=-307, dig=15, mant_dig=53, epsilon=2.220446049250313e-16, radix=2, rounds=1)
+```
+&nbsp;&nbsp;Where :
+&nbsp;&nbsp;&nbsp;&nbsp;- **max**: maximum representable number;
+&nbsp;&nbsp;&nbsp;&nbsp;- **max_exp**: maximum degree base **2** (11 bits for the exponent ==> 2<sup>(11-1)</sup> = 1024);
+&nbsp;&nbsp;&nbsp;&nbsp;- **max_10_exp**: maximum number **e** such that 10<sup>e</sup> is in [min , max];
+&nbsp;&nbsp;&nbsp;&nbsp;- **min**: minimum representable number;
+&nbsp;&nbsp;&nbsp;&nbsp;- **min_exp**: minimum degree 2;
+&nbsp;&nbsp;&nbsp;&nbsp;- **min_10_exp**: minimum number **e** such that 10<sup>e</sup> is in [min , max];
+&nbsp;&nbsp;&nbsp;&nbsp;- **dig**: maximum number of digits that can accurately display a number;
+&nbsp;&nbsp;&nbsp;&nbsp;- **mant_dig**: maximum number of digits in the radix number system, which can accurately display a number(53 = 52 mant + 1 sign );
+&nbsp;&nbsp;&nbsp;&nbsp;- **epsilon**: difference between 1 and the smallest number is greater 1 which can be represented as a floating point number;
+&nbsp;&nbsp;&nbsp;&nbsp;- **radix**: base of the number system used;
+&nbsp;&nbsp;&nbsp;&nbsp;- **rounds**: integer constant defining the rounding mode.
+
+- **Imaginary**: the complex type, corresponds to a variable whose value is a complex number, stored as a couple of floats (so in approximate value). The complex number 1 + 5i is noted 1 + 5J, the number i is noted J.
 
 
 

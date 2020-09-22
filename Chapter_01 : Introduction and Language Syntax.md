@@ -386,6 +386,8 @@ So it is all about storing and deleting names from the namespace. As it is said 
 
 ## 3.4 Literals <a name="3.4"></a>
 
+A complete documentation on Literals can be found on [Python Docs](https://docs.python.org/3/reference/lexical_analysis.html#literals).
+
 A literal in python is the simplest way to create an object, but at the same time it can be a constant, but which does not mean objects. A variable is assigned at the runtime, whereas a literal is assigned at the compile time.
 
 ```python
@@ -414,7 +416,6 @@ To see the difference between the built-in functions and the literals, you can c
 ```
 ### 3.4.1 String Literals <a name="3.4.1"></a>
 
-[Python Docs](https://docs.python.org/3/reference/lexical_analysis.html) 
 Strings are alphanumeric(text constant) values ​​surrounded by quotes. Single or double quotes, or even three single or double-quotes.
 
 ```python

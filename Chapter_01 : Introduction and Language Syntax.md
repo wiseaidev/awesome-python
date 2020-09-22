@@ -742,17 +742,17 @@ sys.float_info(max=1.7976931348623157e+308, max_exp=1024, max_10_exp=308, min=2.
 ```
 
 Where :    
-&nbsp;&nbsp;&nbsp;&nbsp;- **max**: maximum representable number;    
-&nbsp;&nbsp;&nbsp;&nbsp;- **max_exp**: maximum degree base **2** (11 bits for the exponent ==> 2<sup>(11-1)</sup> = 1024);    
-&nbsp;&nbsp;&nbsp;&nbsp;- **max_10_exp**: maximum number **e** such that 10<sup>e</sup> is in [min , max];    
-&nbsp;&nbsp;&nbsp;&nbsp;- **min**: minimum representable number;    
-&nbsp;&nbsp;&nbsp;&nbsp;- **min_exp**: minimum degree 2;    
-&nbsp;&nbsp;&nbsp;&nbsp;- **min_10_exp**: minimum number **e** such that 10<sup>e</sup> is in [min , max];    
-&nbsp;&nbsp;&nbsp;&nbsp;- **dig**: maximum number of digits that can accurately display a number;    
-&nbsp;&nbsp;&nbsp;&nbsp;- **mant_dig**: maximum number of digits in the radix number system, which can accurately display a number(53 = 52 mant + 1 sign );    
-&nbsp;&nbsp;&nbsp;&nbsp;- **epsilon**: difference between 1 and the smallest number is greater 1 which can be represented as a floating point number;    
-&nbsp;&nbsp;&nbsp;&nbsp;- **radix**: base of the number system used;    
-&nbsp;&nbsp;&nbsp;&nbsp;- **rounds**: integer constant defining the rounding mode.    
+   - **max**: maximum representable number;    
+   - **max_exp**: maximum degree base **2** (11 bits for the exponent ==> 2<sup>(11-1)</sup> = 1024);    
+   - **max_10_exp**: maximum number **e** such that 10<sup>e</sup> is in [min , max];    
+   - **min**: minimum representable number;    
+   - **min_exp**: minimum degree 2;    
+   - **min_10_exp**: minimum number **e** such that 10<sup>e</sup> is in [min , max];    
+   - **dig**: maximum number of digits that can accurately display a number;    
+   - **mant_dig**: maximum number of digits in the radix number system, which can accurately display a number(53 = 52 mant + 1 sign );    
+   - **epsilon**: difference between 1 and the smallest number is greater 1 which can be represented as a floating point number;    
+   - **radix**: base of the number system used;    
+   - **rounds**: integer constant defining the rounding mode.    
 
 - **Imaginary**: the complex type, corresponds to a variable whose value is a complex number, stored as a couple of floats (so in approximate value). The complex number 1 + 5i is noted 1 + 5J, the number i is noted J.
 

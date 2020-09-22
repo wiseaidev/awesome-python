@@ -728,13 +728,12 @@ specified by the IEEE 754 standard. Thus, the sign is coded on 1 bit, the expone
 bit and the 53-bit mantissa with the 1 to the left of the comma omitted, i.e. 11 + 1 + 53 -1 = 64 bits; the precision being 52 bits, thus 15 significant digits.
 <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Number = ± mantissa</font><sup><font style="vertical-align: inherit;">exponent</font></sup><font style="vertical-align: inherit;"> base</font></font><sup><font style="vertical-align: inherit;"></font></sup></p>
 
->
-> +----+---------------+---------------------------+      
-> |-63-|62-----------52|51------------------------0|      
-> |sign|---exponent----|---------mantissa----------|      
-> |1bit|----11bits-----|----------52bits-----------|      
-> +----+---------------+---------------------------+      
-> 
+
+	|-63-|62-----------52|51------------------------0|      
+	|sign|---exponent----|---------mantissa----------|      
+	|1bit|----11bits-----|----------52bits-----------|       
+
+
 - Imaginary numbers.
 
 

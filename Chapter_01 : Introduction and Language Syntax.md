@@ -725,9 +725,9 @@ There are three types of numeric literals to represent values:
 - Floating points numbers : it is a variable whose value is a real number, stored as an approximate value in the form of a triplet (s, m, e) where **s** is the **sign** in {-1,1}, **m** **mantissa** and **e** **exponent**. Such a triplet represents the decimal number s*m*b^e in scientific notation where b is the base of representation, namely: 2 on the computers. By varying e, we make the decimal point "float".
 The real numbers are stored in Python according to the **double precision** format
 specified by the IEEE 754 standard. Thus, the sign is coded on 1 bit, the exponent on 11
-bit and the 53-bit mantissa with the 1 to the left of the comma omitted, i.e. 11 + 1 + 53 -1 = 64 bits; the precision being 52 bits, thus 15 significant digits.
-<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Number = ± mantissa</font><sup><font style="vertical-align: inherit;">exponent</font></sup><font style="vertical-align: inherit;"> base</font></font><sup><font style="vertical-align: inherit;"></font></sup></p>
+bit and the 52-bit mantissa ,  11 + 1 + 52 -1 = 64 bits; the precision being 52 bits, thus 15 significant digits.
 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Number = ± mantissa</font><sup><font style="vertical-align: inherit;">exponent</font></sup><font style="vertical-align: inherit;"> base</font></font><sup><font style="vertical-align: inherit;"></font></sup></p>
 
 	|-63-|62-----------52|51------------------------0|      
 	|sign|---exponent----|---------mantissa----------|      

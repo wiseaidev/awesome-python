@@ -722,6 +722,12 @@ ValueError: substring not found
 
 There are three types of numeric literals to represent values:
 - **Integers** : reserved for a variable whose value is a stored relative integer in exact value. The possible values ​​for such a variable are only limited by the capabilities of the computer;
+
+```python
+>>> 10**1024 # no limit for integers in python!
+10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+```
+
 - **Floating Point**: it is a variable whose value is a real number, stored as an approximate value in the form of a triplet (s, m, e) where **s** is the **sign** in {-1,1}, **m** **mantissa** and **e** **exponent**. Such a triplet represents the decimal number s*m*b^e in scientific notation where b is the base of representation, namely: 2 on the computers. By varying e, we make the decimal point "float".
 The real numbers are stored in Python according to the **double precision** format
 specified by the **IEEE 754** standard. Thus, the sign is coded on 1 bit, the exponent on 11
@@ -752,7 +758,70 @@ Where :
    - **mant_dig**: maximum number of digits in the radix number system, which can accurately display a number(53 = 52 mant + 1 sign );    
    - **epsilon**: difference between 1 and the smallest number that is greater than 1 which can be represented as a floating point number;    
    - **radix**: base of the number system used;    
-   - **rounds**: integer constant defining the rounding mode.    
+   - **rounds**: integer constant defining the rounding mode.        
+
+```python
+>>> import math
+>>> math.pow(10.0,308) # max_10_exp=308
+1e+308
+>>> math.pow(10.0,309)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+OverflowError: math range error
+>>> pow(10.0,309)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+OverflowError: (34, 'Numerical result out of range')
+>>> 10.0e309
+inf
+>>> 10.0**309
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+OverflowError: (34, 'Numerical result out of range')
+>>> 10.0e309 + 10.0e309 # sum of two infinite is infinit;
+inf
+>>> 10.0e309 - 10.0e309 # sub of two infinite is not a number(nan);
+nan
+>>> pow(10.0,-323)
+1e-323
+>>> pow(10.0,-324) # idk why, i should be -308 since min_10_exp=-307;
+0.0
+>>> f'{0.2 + 0.2 + 0.2 - 0.6:.55f}'
+'0.0000000000000001110223024625156540423631668090820312500'
+>>> 0.2 + 0.2 + 0.2 == 0.6
+False
+>>> 0.2 + 0.2 + 0.2
+0.6000000000000001
+>>> 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1
+0.6
+```
+> So as you can it is not recommended to accurately compare float numbers, even if they are equal for you, their representations may differ if the numbers are obtained in different ways.
+
+```python
+>>> x = 1/3
+>>> x.as_integer_ratio() # get the exact representation of the float x.
+(6004799503160661, 18014398509481984) # so x = 6004799503160661 / 18014398509481984
+>>> x == 6004799503160661/18014398509481984
+True
+``` 
+
+Let's how computer represents 0.2:
+
+```python
+# the closest value to 0.2 is equal to J/2**N where 2 / 10 ~= J / (2**N) ==> J ~= 2**N / 5
+>>> 2**52 <=  2**55 // 5  < 2**53 # by trial and error N = 55
+True
+>>> q, r = divmod(2**55, 5)  #  
+>>> r
+3 # < 2.5 ==> Since the remainder is more than half of 5, the best approximation is obtained by rounding up: 
+>>> q + 1
+7205759403792794
+>>> 7205759403792794 * 10 ** 55 // 2 ** 55  # int division
+2000000000000000111022302462515654042363166809082031250 # the exact number stored in the computer which is the closest to 0.2 is     0.2000000000000000111022302462515654042363166809082031250     
+# Lets verify the result
+>>> f'{0.2:.56f}'
+'0.20000000000000001110223024625156540423631668090820312500'
+```
 
 - **Imaginary**: the complex type, corresponds to a variable whose value is a complex number, stored as a couple of floats (so in approximate value). The complex number 1 + 5i is noted 1 + 5J, the number i is noted J.
 

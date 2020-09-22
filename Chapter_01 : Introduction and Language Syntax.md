@@ -805,7 +805,7 @@ False
 True
 ``` 
 
-Let's how computer represents 0.2:
+Let's see how computer represents 0.2:
 
 ```python
 # the closest value to 0.2 is equal to J/2**N where 2 / 10 ~= J / (2**N) ==> J ~= 2**N / 5

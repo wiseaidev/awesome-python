@@ -893,7 +893,7 @@ you can extract a sequence from another sequence :
 where:   
 - x: the starting index(included);   
 - y: the ending index(excluded);   
-- z: the number of step.
+- z: the number of steps.
 
 <p>
 

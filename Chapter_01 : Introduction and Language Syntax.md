@@ -754,6 +754,69 @@ There are four types of numeric literals to represent values:
 00000000000000000000000000000000000000000000000000000000000000001
 ```
 
+let's examine how python stores this insane number into memory. To do so, the sys module provides us a helpful attribute:
+
+```python
+>>> for element in dir(sys): 
+...     if 'int' in element.lower():
+...             print(element)
+... 
+__breakpointhook__
+__interactivehook__
+breakpointhook
+getcheckinterval
+getswitchinterval
+int_info  # this attribute gives the information about integers;
+intern
+setcheckinterval
+setswitchinterval
+>>> sys.int_info
+sys.int_info(bits_per_digit=30, sizeof_digit=4)
+```
+
+So in python, there is a custom method to store integers larger than 2<sup>30</sup>; the interpreter takes that number and divide it into a sequence of digits written in base 2<sup>30</sup> numerical system and store the result in a 4 bytes array.
+
+```python
+23479521057823154763809
+>>> divmod(23479521057823154763809, 2**30) return a tuple of form (quotient,Remainder)
+(21867008002310, 219150369)  
+>>> divmod(21867008002310, 2**30)
+(20365, 255756550)
+stop here because the quotient is less than 2**30 (0 <= ob_digit[i] <= MASK =2**30)
+
+```  
+From [C-Python](https://github.com/python/cpython/blob/c5bace2bf7874cf47ef56e1d8d19f79ad892eef5/Include/longintrepr.h#L69) repo, you can find the following explanaition on the representation of long integer:
+
+>
+	/* Long integer representation.
+	   The absolute value of a number is equal to
+	   	SUM(for i=0 through abs(ob_size)-1) ob_digit[i] * 2**(SHIFT*i)
+	   Negative numbers are represented with ob_size < 0;
+	   zero is represented by ob_size == 0.
+	   In a normalized number, ob_digit[abs(ob_size)-1] (the most significant
+	   digit) is never zero.  Also, in all cases, for all valid i,
+	   	0 <= ob_digit[i] <= MASK.
+	   The allocation function takes care of allocating extra memory
+	   so that ob_digit[0] ... ob_digit[abs(ob_size)-1] are actually available.
+	   CAUTION:  Generic code manipulating subtypes of PyVarObject has to
+	   aware that ints abuse  ob_size's sign bit.
+	*/
+>
+
+So the number *23479521057823154763809* will be stored as:
+
+>
+	+-----------------+------------------------+------------+
+	|     index       |     0     |      1     |      2     | 
+	+-----------------+-----------+------------+------------+   
+	| ob_digit[index] | 219150369 |  255756550 |    20365   |
+	+-----------------+-----------+------------+------------+
+	|  	 ob_size	  |			  3		       | 
+	+-----------------+------------------------+
+>
+
+219150369 * 2<sup>30 * 0</sup> + 255756550 * 2<sup>30 * 1</sup> + 20365 * 2<sup>30 * 2</sup> = 23479521057823154763809
+
 - **Floating Point**: it is a variable whose value is a real number, stored as an approximate value in the form of a triplet (s, m, e) where **s** is the **sign** in {-1,1}, **m** **mantissa** and **e** **exponent**. Such a triplet represents the decimal number s*m*b^e in scientific notation where b is the base of representation, namely: 2 on the computers. By varying e, we make the decimal point "float".
 The real numbers are stored in Python according to the **double precision** format
 specified by the **IEEE 754** standard. Thus, the sign is coded on 1 bit, the exponent on 11

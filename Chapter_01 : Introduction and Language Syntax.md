@@ -22,8 +22,20 @@ Document's Author: Harmouch101
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.2 [Special characters](#3.4.1.2)    
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.3 [More Strings Examples](#3.4.1.3)    
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.4 [Useful Strings Functions](#3.4.1.4)    
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.5 [More Strings Methods Examples](#3.4.1.5)          
-	&nbsp;&nbsp;&nbsp;&nbsp;3.4.2 [Numeric literals](#3.4.2)    
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.5 [More Strings Methods Examples](#3.4.1.5)     
+	&nbsp;&nbsp;&nbsp;&nbsp;3.4.2 [Numeric literals](#3.4.2)      
+	3.5 [Sequences](#3.5)     
+	&nbsp;&nbsp;&nbsp;&nbsp;3.5.1 [Immutable Sequences](#3.5.1)    
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.1.1 [Strings](#3.5.1.1)    
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.1.2 [Tuples](#3.5.1.2)    
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.1.3 [Bytes](#3.5.1.3)    
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.1.4 [Frozenset](#3.5.1.4)    
+	&nbsp;&nbsp;&nbsp;&nbsp;3.5.2 [Mutable Sequences](#3.5.1)    
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.1 [Lists](#3.5.2.1)    
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.2 [Bytearray](#3.5.2.2)    
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.3 [Set](#3.5.2.3)    
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.4 [Array](#3.5.2.4)    
+
 	[TODO]     
 	.    
 	.    
@@ -201,7 +213,7 @@ Python's Variables are object-based. Each object has :
 
 - **Name**: an object must have a name.
 
-- **One or more base classes**
+- **One or more base classes** : for exemple an object of type int has the 'object class' as base class(parent class).
 
 The following callable objects allow you reading each of the attributes described:
 
@@ -720,7 +732,7 @@ ValueError: substring not found
 
 ### 3.4.2  Numeric literals <a name="3.4.2"></a>
 
-There are three types of numeric literals to represent values:
+There are four types of numeric literals to represent values:
 - **Integers** : reserved for a variable whose value is a stored relative integer in exact value. The possible values ​​for such a variable are only limited by the capabilities of the computer;
 
 ```python
@@ -817,7 +829,7 @@ True
 3 # < 2.5 ==> Since the remainder is more than half of 5, the best approximation is obtained by rounding up: 
 >>> q + 1
 7205759403792794
->>> 7205759403792794 * 10 ** 55 // 2 ** 55  # int division
+>>> 7205759403792794 * 10 ** 55 // 2 ** 55  # Discard the fractional part.
 2000000000000000111022302462515654042363166809082031250 # the exact number stored in the computer which is the closest
 #to 0.2 is   0.2000000000000000111022302462515654042363166809082031250     
 # Lets verify the result
@@ -827,7 +839,174 @@ True
 
 For more information about Representation Error of floats, you can checkout [Pythom Docs](https://docs.python.org/3/tutorial/floatingpoint.html#representation-error).
 
-- **Imaginary**: the complex type, corresponds to a variable whose value is a complex number, stored as a couple of floats (so in approximate value). The complex number 1 + 5i is noted 1 + 5J, the number i is noted J.
+- **Imaginary**: Complex data type, corresponds to a variable whose value is a complex number, stored as a couple of floats (so in approximate value). The complex number 1 + 2i(math repr) is noted 1 + 2j, where the letter i is noted J.
 
+```python
+>>> i  = 1+2j
+>>> type(i)
+<class 'complex'>
+>>> i.conjugate()
+(1-2j)
+>>> i.imag
+2.0
+>>> i.real
+1.0
+```
 
+- **Boolean**: Boolean data type that can be True or False.
+
+```python
+>>> a = True
+>>> a
+True
+>>> not a
+False
+>>> type(a)
+<class 'bool'>
+>>> a.__int__()
+1
+>>> isinstance (a, int)
+True
+```
+
+It should be noted that this data type(bool) is a subtype of int as the current example shows.
+
+### 3.5  Sequences <a name="3.5"></a>
+
+A sequence is a container of elements, indexed by numbers positive. These numbers vary from 0 to n-1 for a sequence containing n elements. The notation to refer to the ith element of the sequence is:
+
+> sequence[i-1] or sequence[-n+(i-1)]
+
+To index the last element :
+
+> sequence[-1] or sequence[n-1]
+
+To index the first element :
+
+> sequence[0] or sequence[-n]
+
+you can extract a sequence from another sequence :
+
+> sequence0 = sequence[2:-2] equivalent to sequence[2:-2: 1]   
+> sequencex = sequence[x:y:z]    
+
+where:   
+- x: the starting index(included);   
+- y: the ending index(excluded);   
+- z: the number of step.
+
+>
+  +----------+---+---+---+---+      
+  |-----i----| 1 | 2 | 3 | 4 | n = 4;      
+  +----------+---+---+---+---+   
+  |-sequence-| 3 | 8 | 9 | 9 | length = 4;   
+  +----------+---+---+---+---+   
+  |-(+)index-| 0 | 1 | 2 | 3 | for i = 3; sequence[3-1] = sequence[-4+(3-1)];   
+  +----------+---+---+---+---+     
+  |-(-)index-|-4 |-3 |-2 |-1 | sequence[2] = sequence[-2] and this is True for 0 < i <= n;     
+  +----------+---+---+---+---+    
+>
+
+There are two types of sequences:      
+- Immutable sequences, which can no longer be modified after creation;      
+- Mutable sequences, which can be modified after creation;      
+
+### 3.5.1  Immutable Sequences <a name="3.5.1"></a>
+
+Immutable sequences are objects whose value can no longer be changed after creation.
+Those are :   
+- **strings**;   
+- **tuples**;   
+- **bytes**;   
+- **frozenset**.   
+
+### 3.5.1.1  Strings <a name="3.5.1.1"></a>
+
+Strings are sequences of characters. A character is a value encoded on **8 bits**;, to represent a value between **0** and **255**. This corresponds to a sign of **ASCII** table **(0 and 127)** or extended table **(128 to 255)** for values higher.
+
+Unlike other languages, there is no type specific Python for a character, and a character is nothing other than a string of length **1**. There are, however, two character-specific primitives, which allow you to do the conversion between the character and its integer value: **ord()** and **chr()**.
+
+```python
+>>> chr(65),chr(90),chr(97),chr(122)
+('A', 'Z', 'a', 'z')
+>>> ord('A'),ord('Z'),ord('a'),ord('z')
+(65, 90, 97, 122)
+```
+
+### 3.5.1.2  Tuples <a name="3.5.1.2"></a>
+
+A tuple is basically an immutable list with a smaller size in memory.
+
+```python
+>>> a = [1,2,3]
+>>> b = (1,2,3)
+>>> a.__sizeof__()   # return the size in bytes
+64
+>>> b.__sizeof__()
+48
+```
+
+A tuple can be used as dictionary keys and that's not True for a list :
+
+```python
+>>> notes = {('math','physics','biology'):85}
+>>> colors
+{('math','phisics','biology'):85}
+>>> notes = {['math','phisics','biology']:85}
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unhashable type: 'list'
+>>> a = tuple()  # create an empty tuple using the built-in tuple () function.
+>>> a = ()  # create an empty tuple using a tuple literal.
+>>> a = ('string') # create a string not a tuple!!!!
+>>> a
+'string'
+>>> type(a)
+<class 'str'>
+>>> a = ('string',) # If you want to create a tupe with one element, use the comma ',' . 
+>>> type(a)
+<class 'tuple'> 
+>>> a
+('string',)
+>>> a = 'string', # It's all about the comma ','!!!!
+>>> a
+('string',)
+>>> a = tuple("string") # using the built-in tuple() function.
+>>> a
+('s', 't', 'r', 'i', 'n', 'g')
+```
+
+### 3.5.1.3 Bytes <a name="3.5.1.3"></a>
+
+Python allows you to handle integers from 0 to 127 corresponding to the ASCII table. It can be initialized by values ​​in a sequence prefixed with b, or by a string of type str.
+
+```python
+>>> byte0 = b'\x41' # hex value of the char 'A': string literal
+>>> byte1 = b'A' # string literal
+>>> byte2 = bytes('A', 'utf-8') # using the built-in function bytes()
+>>> byte0, byte1, byte2
+(b'A', b'A', b'A')
+>>> type(byte0), type(byte1), type(byte2)
+(<class 'bytes'>, <class 'bytes'>, <class 'bytes'>)
+>>> id(byte0),id(byte1), id(byte2)	# they reference the same object in memory !!!
+(139812271740512, 139812271740512, 139812271740512)
+>>> byte0[0], byte1[0], byte2[0] # same object in memory because their value is between -5 and 256 !!!
+(65, 65, 65)
+```
+
+### 3.5.1.4 Frozenset <a name="3.5.1.4"></a>
+
+The frozenset type is an immutable version of the set type. It is presented with the type set in the next section.
+
+### 3.5.2 Mutable Sequences <a name="3.5.2"></a>
+
+Mutable sequences implement a number of methods that allow you to add, remove or modify each of the elements that compose them.    
+Python offers several types of Mutable sequences:
+
+- **list**;
+- **bytearray**;
+- **set**;
+- **array**.
+
+### 3.5.2.1 List <a name="3.5.2.1"></a>
 

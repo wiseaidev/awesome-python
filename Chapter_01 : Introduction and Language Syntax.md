@@ -766,7 +766,7 @@ __interactivehook__
 breakpointhook
 getcheckinterval
 getswitchinterval
-int_info  # this attribute gives the information about integers;
+int_info  # this attribute gives us the information about integers;
 intern
 setcheckinterval
 setswitchinterval
@@ -785,7 +785,7 @@ So in python, there is a custom method to store integers larger than 2<sup>30</s
 stop here because the quotient is less than 2**30 (0 <= ob_digit[i] <= MASK =2**30)
 
 ```  
-From [C-Python](https://github.com/python/cpython/blob/c5bace2bf7874cf47ef56e1d8d19f79ad892eef5/Include/longintrepr.h#L69) repo, you can find the following explanaition on the representation of long integer:
+From [C-Python](https://github.com/python/cpython/blob/c5bace2bf7874cf47ef56e1d8d19f79ad892eef5/Include/longintrepr.h#L69) repo, you can find the following explanation on the representation of long integer:
 
 >
 	/* Long integer representation.

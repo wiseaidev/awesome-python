@@ -6,12 +6,14 @@ Document's Author: Harmouch101
 
 ## Table Of Content <a name="TOC"></a>
 
-1. [A Tutorial Introduction](#1)    
+1. [A Tutorial Introduction](#1)   
+
 	1.1	[What is Python ?](#1.1)    
 	1.2	[Why Python ?](#1.2)    
 	1.3 [Interpreted Language](#1.3)    
 2. [Running Python](#2)    
-3. [Language Syntax](#3)    
+3. [Language Syntax](#3)   
+
 	3.1	[Print Instruction](#3.1)   
 	3.2	[Comments](#3.2)   
 	3.3	[Variables](#3.3)    
@@ -898,13 +900,13 @@ where:
 <p>
 
 	+----------+---+---+---+---+
-	|-----i----| 1 | 2 | 3 | 4 | n = 4;
+	|    i     | 1 | 2 | 3 | 4 | n = 4;
 	+----------+---+---+---+---+
-	|-sequence-| 3 | 8 | 9 | 9 | length = 4;   
+	| sequence | 3 | 8 | 9 | 9 | length = 4;   
 	+----------+---+---+---+---+   
-	|-(+)index-| 0 | 1 | 2 | 3 | for i = 3; sequence[3-1] = sequence[-4+(3-1)];   
+	| (+)index | 0 | 1 | 2 | 3 | for i = 3; sequence[3-1] = sequence[-4+(3-1)];   
 	+----------+---+---+---+---+     
-	|-(-)index-|-4 |-3 |-2 |-1 | sequence[2] = sequence[-2] and this is True for 0 < i <= n;     
+	| (-)index |-4 |-3 |-2 |-1 | sequence[2] = sequence[-2] and this is True for 0 < i <= n;     
 	+----------+---+---+---+---+    
 </p>
 There are two types of sequences:

@@ -895,18 +895,18 @@ where:
 - y: the ending index(excluded);   
 - z: the number of step.
 
-  +----------+---+---+---+---+      
-  |-----i----| 1 | 2 | 3 | 4 | n = 4;      
-  +----------+---+---+---+---+   
-  |-sequence-| 3 | 8 | 9 | 9 | length = 4;   
-  +----------+---+---+---+---+   
-  |-(+)index-| 0 | 1 | 2 | 3 | for i = 3; sequence[3-1] = sequence[-4+(3-1)];   
-  +----------+---+---+---+---+     
-  |-(-)index-|-4 |-3 |-2 |-1 | sequence[2] = sequence[-2] and this is True for 0 < i <= n;     
-  +----------+---+---+---+---+    
+<p>
 
-
-
+	+----------+---+---+---+---+
+	|-----i----| 1 | 2 | 3 | 4 | n = 4;
+	+----------+---+---+---+---+
+	|-sequence-| 3 | 8 | 9 | 9 | length = 4;   
+	+----------+---+---+---+---+   
+	|-(+)index-| 0 | 1 | 2 | 3 | for i = 3; sequence[3-1] = sequence[-4+(3-1)];   
+	+----------+---+---+---+---+     
+	|-(-)index-|-4 |-3 |-2 |-1 | sequence[2] = sequence[-2] and this is True for 0 < i <= n;     
+	+----------+---+---+---+---+    
+</p>
 There are two types of sequences:      
 - Immutable sequences, which can no longer be modified after creation;      
 - Mutable sequences, which can be modified after creation;      

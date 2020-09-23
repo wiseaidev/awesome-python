@@ -908,13 +908,14 @@ where:
 	+----------+---+---+---+---+    
 </p>
 There are two types of sequences:
-      
+
 - Immutable sequences, which can no longer be modified after creation;      
 - Mutable sequences, which can be modified after creation;      
 
 ### 3.5.1  Immutable Sequences <a name="3.5.1"></a>
 
-Immutable sequences are objects whose value can no longer be changed after creation.
+Immutable sequences are objects whose values can no longer be changed after creation.
+
 Those are :   
 - **strings**;   
 - **tuples**;   

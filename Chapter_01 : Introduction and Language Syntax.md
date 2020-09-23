@@ -895,7 +895,7 @@ where:
 - y: the ending index(excluded);   
 - z: the number of step.
 
-` +----------+---+---+---+---+      
+  +----------+---+---+---+---+      
   |-----i----| 1 | 2 | 3 | 4 | n = 4;      
   +----------+---+---+---+---+   
   |-sequence-| 3 | 8 | 9 | 9 | length = 4;   
@@ -904,7 +904,7 @@ where:
   +----------+---+---+---+---+     
   |-(-)index-|-4 |-3 |-2 |-1 | sequence[2] = sequence[-2] and this is True for 0 < i <= n;     
   +----------+---+---+---+---+    
-`
+
 
 
 There are two types of sequences:      

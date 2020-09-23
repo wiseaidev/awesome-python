@@ -907,7 +907,8 @@ where:
 	|-(-)index-|-4 |-3 |-2 |-1 | sequence[2] = sequence[-2] and this is True for 0 < i <= n;     
 	+----------+---+---+---+---+    
 </p>
-There are two types of sequences:      
+There are two types of sequences:
+      
 - Immutable sequences, which can no longer be modified after creation;      
 - Mutable sequences, which can be modified after creation;      
 

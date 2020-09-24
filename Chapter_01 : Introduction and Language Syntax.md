@@ -60,7 +60,7 @@ Python is a high-level programming language that has the following features:
 - Highly Productive: A program written in Python is typically 2 to 4 times shorter than an equivalent C++ program;
 - Dynamic: the source code is not compiled unlike other languages ​​like C, C++, java, but executed on the fly. It is called an interpreted language;
 
-## 1.2 Why Python ?. [Go To Toc](#TOC). <a name="1.2"></a> 
+## 1.2 Why Python ?. <h5>[Go To Toc](#TOC).</h5> <a name="1.2"></a> 
 
 Python is a good programming language to start with for a beginner who doesn't know programming at first. Python is very powerful and it is used in a lot of domains. The following list describes the different areas in which Python is mostly used:
 

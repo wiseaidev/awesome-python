@@ -4,7 +4,7 @@ Document's Author: Harmouch101
 
 ---
 
-## Table Of Content <a name="TOC"></a>
+## TOC: Table Of Content <a name="TOC"></a>
 
 1. [A Tutorial Introduction](#1)   
 	1.1	[What is Python ?](#1.1)    
@@ -43,12 +43,11 @@ Document's Author: Harmouch101
 	[TODO]     
 	.    
 	.    
-	. 
+	.    
 
-<details>
-		<summary style="font-size:25px; color:#999; font-weight:bold;">1. A Tutorial Introduction<a name="1"></a></summary>    
+## 1. A Tutorial Introduction <a name="1"></a>
+
 The goal of this chapter is to get you familiar with python 3 and its essential features.
-</details>
 
 ## 1.1 What is Python ? <a name="1.1"></a>
 
@@ -61,7 +60,7 @@ Python is a high-level programming language that has the following features:
 - Highly Productive: A program written in Python is typically 2 to 4 times shorter than an equivalent C++ program;
 - Dynamic: the source code is not compiled unlike other languages ​​like C, C++, java, but executed on the fly. It is called an interpreted language;
 
-## 1.2 Why Python ? <a name="1.2"></a>
+## 1.2 Why Python ?. [Go To Toc](#TOC). <a name="1.2"></a> 
 
 Python is a good programming language to start with for a beginner who doesn't know programming at first. Python is very powerful and it is used in a lot of domains. The following list describes the different areas in which Python is mostly used:
 
@@ -70,7 +69,7 @@ Python is a good programming language to start with for a beginner who doesn't k
 - Scientific Research: Python is much easier to learn for a researcher who does not have the knowledge of programming. Memory management, the use of pointers, the typing of variables, and all the details of the implementation of a program are all constraints that are far away from the first concerns of a researcher;
 - Web Applications: A lot of web frameworks, written in Python(e.g. Twisted, Django ...) are very popular and active which allows python to the forefront of the scene in web development.
 
-## 1.3 Interpreted Language <a name="1.3"></a>
+## 1.3 Interpreted Language. [Go To Toc](#TOC). <a name="1.3"></a>
 
 Python commands and instructions are executed by the interpreter, which is written in C language and has different implementations like :
 - CPython: C implementation, which is the default implementation of Python;

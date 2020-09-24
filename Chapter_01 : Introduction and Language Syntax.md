@@ -44,11 +44,12 @@ Document's Author: Harmouch101
 	.    
 	.    
 	. 
-
-<details>
-	<summary><1. A Tutorial Introduction<a name="1"></a></summary>    
+<h2>
+	<details>
+		<summary>1. A Tutorial Introduction<a name="1"></a></summary>    
+</h2>
 The goal of this chapter is to get you familiar with python 3 and its essential features.
-</details>
+	</details>
 
 ## 1.1 What is Python ? <a name="1.1"></a>
 

@@ -44,10 +44,10 @@ Document's Author: Harmouch101
 	.    
 	.    
 	.    
-
-## 1. A Tutorial Introduction <a name="1"></a>
-
+<details>    
+  <summary><h2> 1. A Tutorial Introduction</h2> <a name="1"></a></summary>    
 The goal of this chapter is to get you familiar with python 3 and its essential features.
+</details>
 
 ## 1.1 What is Python ? <a name="1.1"></a>
 
@@ -1003,7 +1003,7 @@ The following table contains the common operations and methods for all sequences
 | `len(sequence)`|  return the number of elements in the sequence. | `>>> set0 = set([1,2,3])`<br>`>>> tuple0 = (1,2,3)`<br>`>>> list0 = ['s', 't', 'r']`<br>`>>> string0 = 'str'`<br>`>>> len(set0), len(tuple0), len(list0), len(string0)`<br>(3, 3, 3, 3) |
 | `min(sequence)`, `max(sequence)`|  return the minimum and the maximum value in the sequence. | `>>> min(set0), max(tuple0), min(list0), max(string0)`<br>(1, 3, 'r', 't') |
 | `sum(sequence)` |  return the sum of values in the sequence. | `>>> sum(set0), sum(tuple0)`<br>(6, 6) |
-| `all(sequence)`, `any(sequence)` |  `all` return True if all elements in the sequence are True; `any` return True if at least one element in the sequence is True | `>>> list0 = [1,'2',1,[0,46,78]]`<br>`>>> any(list0)`<br>True<br>`>>> all(list0)`<br>True<br>`>>> list0 = [1,'2',0,[1,46,78]]`<br>`>>> all(list0)`<br>False<br>`>>> any(list0)`<br>True |
+| `all(sequence)`, `any(sequence)` |  `all` return True if all elements in the sequence are True; `any` return True if at least one element in the sequence is True | `>>> list0 = [1,'2',1,[0,46,78]]`<br>`>>> any(list0)`<br>True<br>`>>> all(list0)`<br>True<br>`>>> list0 = [1,'2',0,[1,46,78]]`<br>`>>> all(list0)`<br>False<br>`>>> any(list0)`<br>True. |
 
 
 ### 3.5.1  Immutable Sequences <a name="3.5.1"></a>
@@ -1183,5 +1183,5 @@ The table below groups together useful methods associated to lists :
 | `list0.append(e)` | add the element `e` at the end of the list `list0` while operating on the same list. | `>>> list0 = [1,2,3]`<br>`>>> id(list0)`<br>140274420933408<br>`>>> list0.append(4)`<br>`>>> list0,id(list0)`<br>([1, 2, 3, 4], 140274420933408) |
 | `list0.extend(list1)` | adds the elements of `list1` at the end of the list `list0` while operating on the same list. | `>>> list0.extend([5,6,7])`<br>`>>> list0, id(list0)`<br>([1, 2, 3, 4, 5, 6, 7], 140274420933408) |
 | `list0.insert(p,e)` | insert an element `e` at position `p` in the `list0`. | `>>> list0.insert(2,8)`<br>`>>> id(list0)`<br>140274420933408<br>`>>> list0`<br>[1, 2, 8, 3, 4, 5, 6, 7] |
-| `list0.insert(p,e)` | Removes the first occurrence of `e` from the list. If no element found, a ValueError exception will be raised. | `>>> list0.remove(8)`<br>`>>> list0`<br>[1, 2, 3, 4, 5, 6, 7]<br>`>>> list0.remove(8)`<br>Traceback (most recent call last):<br>File `"<stdin>"`, line 1, in `<module>`<br>ValueError: list.remove(x): x not in list|
+| `list0.remove(e)` | remove the first occurrence of `e` from the list. If no elements found, a ValueError exception will be raised. | `>>> list0.remove(8)`<br>`>>> list0`<br>[1, 2, 3, 4, 5, 6, 7]<br>`>>> list0.remove(8)`<br>Traceback (most recent call last):<br>File `"<stdin>"`, line 1, in `<module>`<br>ValueError: list.remove(x): x not in list |
 

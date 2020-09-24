@@ -34,7 +34,7 @@ Document's Author: Harmouch101
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.1.3 [Bytes](#3.5.1.3)    
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.1.4 [Frozenset](#3.5.1.4)    
 	    
-	&nbsp;&nbsp;&nbsp;&nbsp;3.5.2 [Mutable Sequences](#3.5.1)    
+	&nbsp;&nbsp;&nbsp;&nbsp;3.5.2 [Mutable Sequences](#3.5.2)    
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.1 [Lists](#3.5.2.1)    
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.2 [Bytearray](#3.5.2.2)    
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.3 [Set](#3.5.2.3)    
@@ -987,7 +987,19 @@ where:
 There are two types of sequences:
 
 - Immutable sequences, which can no longer be modified after creation;      
-- Mutable sequences, which can be modified after creation;      
+- Mutable sequences, which can be modified after creation;  
+
+The following table contains the common operations and methods for all sequences:
+
+| operation/method | Description | Example(strings(Immutable),list(Mutable)) |
+| --- | --- | --- |
+| `sequence[i]`, `sequence[-n + i]` | return the element at index `i`. | `>>> string = "i am a string"`<br>`>>> string[2]`<br>'a'<br>`>>> string[-len(string) + 2]`<br>'a' |
+| `sequence[i : j]`, `sequence[-n + i : -n + j]` | slicing: extract a sequence from another sequence strating from index `i`(included) and ending at index `j`(excluded). | `>>> string[7:10]`'str'<br>`>>> string[-len(string) + 7:-len(string) + 10]`<br>'str' |
+| `sequence[i : j : step_size]`, `sequence[-n + i : -n + j: step_size]`,  | slicing: extract a sequence from another sequence strating from index `i`(included) and ending at index `j`(excluded) while iterating over the sequence with a `step_size`. | `>>> string[7:10:2]`<br>'sr'<br>`>>> string[-len(string) + 7:-len(string) + 10:2]`<br>'sr' |
+| `sequence[i] = value`, `sequence[-n + i] = value` | assign a value to the sequence at index `i`. | `>> list0 = list('list')`<br>`>>> list0`<br>['l', 'i', 's', 't']<br>`>>> list0[1] = 'a'`<br>`>>> list0`<br>['l', 'a', 's', 't']<br>`>>> list0[-len(list0) + 1] = 'i'`<br>`>>> list0`<br>['l', 'i', 's', 't']|
+| `sequence[i : j] = [values]`, `sequence[-n + i : -n + j] = [values]` | slicing assignement: assign a slice of a sequence to `[values]` starting from index `i`(included) and ending at index `j`(excluded). | `>>> list0[1:3] = 1,2`<br>`>>> list0`<br>['l', 1, 2, 't']<br>`>>> list0[-len(list0) + 1: -len(list0) + 3] = 'i','s'`<br>`>>> list0`<br>['l', 'i', 's', 't'] |
+| `sequence[i : j : step_size] = [values]`, `sequence[-n + i : -n + j: step_size] = [values]` |  slicing assignement: assign a slice of a sequence to `[values]` starting from index `i`(included) and ending at index `j`(excluded). with a `step_size`. | `>>> list0[0:3:2] = 1,2`<br>`>>> list0`<br>[1, 'i', 2, 't']<br>`>>> list0[-len(list0) : -len(list0) + 3: 2 ] = 'l','s'`<br>`>>> list0`<br>['l', 'i', 's', 't'] |
+| `del sequence[i]`, `del sequence[i:j]`,`del sequence[i:j:step_size]`|  delete elements from sequence. | `>>> del list0[1]`<br>`>>> list0`<br>['l', 's', 't']<br>`>>> del list0[0:3]`<br>`>>> list0`<br>[] |
 
 ### 3.5.1  Immutable Sequences <a name="3.5.1"></a>
 
@@ -1088,4 +1100,83 @@ Python offers several types of Mutable sequences:
 - **array**.
 
 #### 3.5.2.1 List <a name="3.5.2.1"></a>
+
+In a list, each item is separated by a comma, and the whole is surrounded by brackets.therefore, an empty list is written []. Lists are indexed by integers. Lists can be nested: list inside another list. Each item in the list can be of any data type.
+
+The basic C structure of lists in Python ([CPython](https://github.com/python/cpython/blob/master/Objects/listobject.c)) may look like this:
+
+```c
+typedef struct {
+    PyObject_HEAD;	// macro used for something similar to inheritance.
+    Py_ssize_t allocated; //amount of memory allocated
+    PyObject **items; //an array of pointers
+} listiterobject;
+```
+
+Python allocates a space in memory to store this list, then allocates pointers to elements of the list. Therefore, a list in Python is an array of pointers.
+
+For more information about object structures in python, you can refer to [python doc](https://docs.python.org/3/c-api/structures.html#c.PyObject).
+
+There are multiple ways to create a list in Python. For example, you can create a list using literals or with the list built-in function :
+```python
+>>> list0 = list ('list') 	 # Using the built-in function list().
+>>> list0
+['l', 'i', 's', 't']
+>>> list1 = ['l', 'i', 's', 't']	# Using the list literal.
+>>> list0 == list1 		# they share the same values.
+True
+>>> id(list0), id(list1)
+(139976621720192, 139976622957824)   # But they are different objects in memory.
+>>> list2 = ['l', 'i', ['list'], 4,list0]   # list can be nested(list inside a list).
+>>> list0 in list2
+True
+>>> list2
+['l', 'i', ['list'], 4, ['l', 'i', 's', 't']]
+>>> len(list2)
+5
+>>> list2[1] = list1	# lists are mutable sequence
+>>> list2
+['l', ['l', 'i', 's', 't'], ['list'], 4, ['l', 'i', 's', 't']]
+>>> list2[2:4]     # return list2[2], list2[3].
+[['listt'], 4]
+>>> list2[1][:]     # return second row with all columns.
+['l', 'i', 's', 't']
+>>> list2[1][:len(list2[:])]  # same operation.
+['l', 'i', 's', 't']
+>>> del list2[1][:]  # delete(dec refcount) all elements of the list(empty list).
+>>> list2
+['l', [], ['list'], 4, ['l', 'i', 's', 't']]
+>>> del list2[1]  # delete the second element of the list
+>>> list2   
+['l', ['list'], 4, ['l', 'i', 's', 't']]
+>>> list2[3][1] = list0
+>>> list2
+['l', ['list'], 4, ['l', ['l', 'i', 's', 't'], 's', 't']]
+>>> list2[3][1][3]
+'t'
+>>> copy = list2[ : ]  # the interpreter create new list list2[:] and then name it copy(set the reference to it).
+>>> id (copy), id(list2)  # so they are not the same object;
+(140274421284688, 140274420833168)
+>>> copy1 = list2
+>>> id (copy1) , id(list2)   # so they are the same object;
+(140274420833168, 140274420833168)
+>>> list2 = list2 + [5]   # the interpreter evaluate the right expression and create a new object.  
+>>> id(list2)
+140274420932928
+>>> list2 += ['1',2]    # the interpreter in this statement doesn't create a new object since there are no operation at the right side of the equation.
+>>> id(list2)     
+140274420932928
+>>> list2.append(1)    # same as before, the append() method operate on the same list.
+>>> id(list2)
+140274420932928
+```
+
+The table below groups together the common methods associated to lists :
+
+| Function | Description | Example |
+| --- | --- | --- |
+| `list0.append(e)` | add the element `e` at the end of the list `list0` while operating on the same list. | `>>> list0 = [1,2,3]`<br>`>>> id(list0)`<br>140274420933408<br>`>>> list0.append(4)`<br>`>>> list0,id(list0)`<br>([1, 2, 3, 4], 140274420933408) |
+| `list0.extend(list1)` | adds the elements of `list1` at the end of the list `list0` while operating on the same list. | `>>> list0.extend([5,6,7])`<br>`>>> list0, id(list0)`<br>([1, 2, 3, 4, 5, 6, 7], 140274420933408) |
+| `list0.insert(p,e)` | insert an element `e` at position `p` in the `list0`. | `>>> list0.insert(2,8)`<br>`>>> id(list0)`<br>140274420933408<br>`>>> list0`<br>[1, 2, 8, 3, 4, 5, 6, 7] |
+| `list0.insert(p,e)` | Removes the first occurrence of `e` from the list. If no element found, a ValueError exception will be raised. | `>>> list0.remove(8)`<br>`>>> list0`<br>[1, 2, 3, 4, 5, 6, 7]<br>`>>> list0.remove(8)`<br>Traceback (most recent call last):<br>File `"<stdin>"`, line 1, in `<module>`<br>ValueError: list.remove(x): x not in list|
 

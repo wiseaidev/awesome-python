@@ -4,6 +4,14 @@ Document's Author: Harmouch101
 
 ---
 
+<style> 
+	summary { 
+		font-size:40px; 
+		color:#090; 
+		font-weight:bold; 
+	} 
+</style> 
+
 ## Table Of Content <a name="TOC"></a>
 
 1. [A Tutorial Introduction](#1)   
@@ -44,10 +52,9 @@ Document's Author: Harmouch101
 	.    
 	.    
 	. 
-<h2>
+
 <details>
 		<summary>1. A Tutorial Introduction<a name="1"></a></summary>    
-	</h2>
 The goal of this chapter is to get you familiar with python 3 and its essential features.
 </details>
 

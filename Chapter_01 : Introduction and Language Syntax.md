@@ -44,7 +44,7 @@ Document's Author: Harmouch101
 	.    
 	.    
 	. 
-	<h2>
+<h2>
 <details>
 		<summary>1. A Tutorial Introduction<a name="1"></a></summary>    
 	</h2>

@@ -1000,6 +1000,11 @@ The following table contains the common operations and methods for all sequences
 | `sequence[i : j] = [values]`, `sequence[-n + i : -n + j] = [values]` | slicing assignement: assign a slice of a sequence to `[values]` starting from index `i`(included) and ending at index `j`(excluded). | `>>> list0[1:3] = 1,2`<br>`>>> list0`<br>['l', 1, 2, 't']<br>`>>> list0[-len(list0) + 1: -len(list0) + 3] = 'i','s'`<br>`>>> list0`<br>['l', 'i', 's', 't'] |
 | `sequence[i : j : step_size] = [values]`, `sequence[-n + i : -n + j: step_size] = [values]` |  slicing assignement: assign a slice of a sequence to `[values]` starting from index `i`(included) and ending at index `j`(excluded). with a `step_size`. | `>>> list0[0:3:2] = 1,2`<br>`>>> list0`<br>[1, 'i', 2, 't']<br>`>>> list0[-len(list0) : -len(list0) + 3: 2 ] = 'l','s'`<br>`>>> list0`<br>['l', 'i', 's', 't'] |
 | `del sequence[i]`, `del sequence[i:j]`,`del sequence[i:j:step_size]`|  delete elements from sequence. | `>>> del list0[1]`<br>`>>> list0`<br>['l', 's', 't']<br>`>>> del list0[0:3]`<br>`>>> list0`<br>[] |
+| `len(sequence)`|  return the number of elements in the sequence. | `>>> set0 = set([1,2,3])`<br>`>>> tuple0 = (1,2,3)`<br>`>>> list0 = ['s', 't', 'r']`<br>`>>> string0 = 'str'`<br>`>>> len(set0), len(tuple0), len(list0), len(string0)`<br>(3, 3, 3, 3) |
+| `min(sequence)`, `max(sequence)`|  return the minimum and the maximum value in the sequence. | `>>> min(set0), max(tuple0), min(list0), max(string0)`<br>(1, 3, 'r', 't') |
+| `sum(sequence)` |  return the sum of values in the sequence. | `>>> sum(set0), sum(tuple0)`<br>(6, 6) |
+| `all(sequence)`, `any(sequence)` |  `all` return True if all elements in the sequence are True; `any` return True if at least one element in the sequence is True | `>>> list0 = [1,'2',1,[0,46,78]]`<br>`>>> any(list0)`<br>True<br>`>>> all(list0)`<br>True<br>`>>> list0 = [1,'2',0,[1,46,78]]`<br>`>>> all(list0)`<br>False<br>`>>> any(list0)`<br>True |
+
 
 ### 3.5.1  Immutable Sequences <a name="3.5.1"></a>
 
@@ -1171,7 +1176,7 @@ True
 140274420932928
 ```
 
-The table below groups together the common methods associated to lists :
+The table below groups together useful methods associated to lists :
 
 | Function | Description | Example |
 | --- | --- | --- |

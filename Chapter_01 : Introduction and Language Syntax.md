@@ -79,7 +79,7 @@ Python commands and instructions are executed by the interpreter, which is writt
 - Stackless Python: a variant of CPython, slightly faster.
 
 ## 2.. Running Python. <a name="2"></a><h5>[Go To TOC](#TOC).</h5> 
-<h5>[Go To TOC](#TOC).</h5> 
+
 You can run the interpreter by simply entering the 'Python3' command in your terminal :
 
 ```sh
@@ -203,7 +203,7 @@ SyntaxError: EOL while scanning string literal
 
 ```
 
-## 3.3 Variables <a name="3.3"></a>
+## 3.3 Variables. <a name="3.3"></a><h5>[Go To TOC](#TOC).</h5> 
 
 Python's Variables are object-based. Each object has :
 
@@ -353,7 +353,7 @@ In python, objects are destroyed automatically(not explicitly) from memory by th
 
 ![namespace and memory](./resources/namespace_memory.png)
 
-## 3.3.1 Names <a name="3.3.1"></a>
+## 3.3.1 Names. <a name="3.3.1"></a><h5>[Go To TOC](#TOC).</h5> 
 
 Names are attached, as we saw previously, to objects. The following method shows the names that are stored in the namespace:
 
@@ -402,7 +402,7 @@ dir() returns only the name(key)
 
 So it is all about storing and deleting names from the namespace. As it is said previously, the object will be destroyed from memory if the refcount reaches zero. So the object 8 won't be destroyed because it is also referenced by the name `a`.
 
-## 3.4 Literals <a name="3.4"></a>
+## 3.4 Literals. <a name="3.4"></a><h5>[Go To TOC](#TOC).</h5> 
 
 A complete documentation on Literals can be found on [Python Docs](https://docs.python.org/3/reference/lexical_analysis.html#literals).
 
@@ -432,7 +432,7 @@ To see the difference between the built-in functions and the literals, you can c
 >>> a = list([1,2,3]) 	# creating a list using a built-in function
 >>> a = [1,2,3]		# creating a list using a list literal
 ```
-### 3.4.1 String Literals <a name="3.4.1"></a>
+### 3.4.1 String Literals. <a name="3.4.1"></a><h5>[Go To TOC](#TOC).</h5> 
 
 Strings are alphanumeric(text constant) values ​​surrounded by quotes. Single or double quotes, or even three single or double-quotes.
 
@@ -554,7 +554,7 @@ the general form of `f` strings is the following:
 ****-32.22*****
 ```
 
-#### 3.4.1.1 String Formatting <a name="3.4.1.1"></a>
+#### 3.4.1.1 String Formatting. <a name="3.4.1.1"></a><h5>[Go To TOC](#TOC).</h5> 
 
 There are three methods in python that can be used to format strings:
 
@@ -590,7 +590,7 @@ There are three methods in python that can be used to format strings:
 - using the **`f`** prefix as the previous section explains.
 for more information about string formatting, you can read [python documentation](https://docs.python.org/3/library/string.html).
 
-#### 3.4.1.2 Special characters <a name="3.4.1.2"></a>
+#### 3.4.1.2 Special characters. <a name="3.4.1.2"></a><h5>[Go To TOC](#TOC).</h5> 
 
 Python allows you to insert special characters in a string literal. the following table contains a list of spetial characters:
 
@@ -609,7 +609,7 @@ Python allows you to insert special characters in a string literal. the followin
 
 Please refer to [this link](http://www.asciitable.com/) if you want to search for ASCII characters or simply type `man ascii` in your terminal.
 
-#### 3.4.1.3 More Strings Examples <a name="3.4.1.3"></a>
+#### 3.4.1.3 More Strings Examples. <a name="3.4.1.3"></a><h5>[Go To TOC](#TOC).</h5> 
 
 ```python
 >>> a = 'Python is cool'  # String type.
@@ -670,7 +670,7 @@ False
 >>> a is c  # because it is between -5 and 256.
 True
 ``` 
-#### 3.4.1.4 Useful Strings Functions <a name="3.4.1.4"></a>
+#### 3.4.1.4 Useful Strings Functions. <a name="3.4.1.4"></a><h5>[Go To TOC](#TOC).</h5> 
 
 For a complete list of string methods, you can refer to[python docs](https://docs.python.org/3/library/stdtypes.html#string-methods).
 
@@ -691,7 +691,7 @@ For a complete list of string methods, you can refer to[python docs](https://doc
 | `s.index('str', start_index)` | same as find except it will throw a `ValueError` exception if `str` is not in `s` | `>>> s.find('1',5)`<br>-1<br>`>>> s.index('1')`<br>Traceback (most recent call last):<br>File `"<stdin>"`, line 1, in `<module>`<br>ValueError : substring not found |
 | `s.count('str', start_index)` | count the occurrence of `str` in `s` starting from `start_index`. | `>>> s.count(' ',7)`<br>2 |
 
-#### 3.4.1.5 More Strings Methods Examples <a name="3.4.1.5"></a>
+#### 3.4.1.5 More Strings Methods Examples. <a name="3.4.1.5"></a><h5>[Go To TOC](#TOC).</h5> 
 
 ```python
 >>> s = 'string'
@@ -734,7 +734,7 @@ ValueError: substring not found
 2
 ```
 
-### 3.4.2  Numeric literals <a name="3.4.2"></a>
+### 3.4.2  Numeric literals. <a name="3.4.2"></a><h5>[Go To TOC](#TOC).</h5> 
 
 There are four types of numeric literals to represent values:
 - **Integers** : reserved for a variable whose value is a stored relative integer in exact value. The possible values ​​for such a variable are only limited by the capabilities of the computer;
@@ -948,7 +948,7 @@ True
 
 It should be noted that this data type(bool) is a subtype of int as the current example shows.
 
-## 3.5  Sequences <a name="3.5"></a>
+## 3.5  Sequences. <a name="3.5"></a><h5>[Go To TOC](#TOC).</h5> 
 
 A sequence is a container of elements, indexed by numbers positive. These numbers vary from 0 to n-1 for a sequence containing n elements. The notation to refer to the ith element of the sequence is:
 
@@ -1006,7 +1006,7 @@ The following table contains the common operations and methods for all sequences
 | `all(sequence)`, `any(sequence)` |  `all` return True if all elements in the sequence are True; `any` return True if at least one element in the sequence is True | `>>> list0 = [1,'2',1,[0,46,78]]`<br>`>>> any(list0)`<br>True<br>`>>> all(list0)`<br>True<br>`>>> list0 = [1,'2',0,[1,46,78]]`<br>`>>> all(list0)`<br>False<br>`>>> any(list0)`<br>True. |
 
 
-### 3.5.1  Immutable Sequences <a name="3.5.1"></a>
+### 3.5.1  Immutable Sequences. <a name="3.5.1"></a><h5>[Go To TOC](#TOC).</h5> 
 
 Immutable sequences are objects whose values can no longer be changed after creation.
 
@@ -1016,7 +1016,7 @@ Those are :
 - **bytes**;   
 - **frozenset**.   
 
-#### 3.5.1.1  Strings <a name="3.5.1.1"></a>
+#### 3.5.1.1  Strings. <a name="3.5.1.1"></a><h5>[Go To TOC](#TOC).</h5> 
 
 Strings are sequences of characters. A character is a value encoded on **8 bits**;, to represent a value between **0** and **255**. This corresponds to a sign of **ASCII** table **(0 and 127)** or extended table **(128 to 255)** for values higher.
 
@@ -1029,7 +1029,7 @@ Unlike other languages, there is no type specific Python for a character, and a 
 (65, 90, 97, 122)
 ```
 
-#### 3.5.1.2  Tuples <a name="3.5.1.2"></a>
+#### 3.5.1.2  Tuples. <a name="3.5.1.2"></a><h5>[Go To TOC](#TOC).</h5> 
 
 A tuple is basically an immutable list with a smaller size in memory.
 
@@ -1072,7 +1072,7 @@ TypeError: unhashable type: 'list'
 ('s', 't', 'r', 'i', 'n', 'g')
 ```
 
-#### 3.5.1.3 Bytes <a name="3.5.1.3"></a>
+#### 3.5.1.3 Bytes. <a name="3.5.1.3"></a><h5>[Go To TOC](#TOC).</h5> 
 
 Python allows you to handle integers from 0 to 127 corresponding to the ASCII table. It can be initialized by values ​​in a sequence prefixed with b, or by a string of type str.
 
@@ -1090,11 +1090,11 @@ Python allows you to handle integers from 0 to 127 corresponding to the ASCII ta
 (65, 65, 65)
 ```
 
-#### 3.5.1.4 Frozenset <a name="3.5.1.4"></a>
+#### 3.5.1.4 Frozenset. <a name="3.5.1.4"></a><h5>[Go To TOC](#TOC).</h5> 
 
 The frozenset type is an immutable version of the set type. It is presented with the type set in the next section.
 
-### 3.5.2 Mutable Sequences <a name="3.5.2"></a>
+### 3.5.2 Mutable Sequences. <a name="3.5.2"></a><h5>[Go To TOC](#TOC).</h5> 
 
 Mutable sequences implement a number of methods that allow you to add, remove or modify each of the elements that compose them.    
 Python offers several types of Mutable sequences:
@@ -1104,7 +1104,7 @@ Python offers several types of Mutable sequences:
 - **set**;
 - **array**.
 
-#### 3.5.2.1 List <a name="3.5.2.1"></a>
+#### 3.5.2.1 List. <a name="3.5.2.1"></a><h5>[Go To TOC](#TOC).</h5> 
 
 In a list, each item is separated by a comma, and the whole is surrounded by brackets.therefore, an empty list is written []. Lists are indexed by integers. Lists can be nested: list inside another list. Each item in the list can be of any data type.
 

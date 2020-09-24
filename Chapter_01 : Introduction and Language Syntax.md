@@ -43,8 +43,10 @@ Document's Author: Harmouch101
 	[TODO]     
 	.    
 	.    
-	.    
-<details><summary><h2>1. A Tutorial Introduction</h2> <a name="1"></a></summary>    
+	. 
+	   
+<details>
+	<summary><h2>1. A Tutorial Introduction</h2> <a name="1"></a></summary>    
 The goal of this chapter is to get you familiar with python 3 and its essential features.
 </details>
 

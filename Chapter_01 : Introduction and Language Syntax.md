@@ -4,14 +4,6 @@ Document's Author: Harmouch101
 
 ---
 
-<style> 
-	summary { 
-		font-size:40px; 
-		color:#090; 
-		font-weight:bold; 
-	} 
-</style> 
-
 ## Table Of Content <a name="TOC"></a>
 
 1. [A Tutorial Introduction](#1)   

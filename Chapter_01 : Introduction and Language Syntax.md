@@ -45,7 +45,7 @@ Document's Author: Harmouch101
 	.    
 	. 
 
-<details>
+<details style="font-size:25px; color:#999; font-weight:bold;">
 		<summary>1. A Tutorial Introduction<a name="1"></a></summary>    
 The goal of this chapter is to get you familiar with python 3 and its essential features.
 </details>

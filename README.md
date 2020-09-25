@@ -15,7 +15,7 @@ This repository is used to be documentation during my journey in mastering the p
 - *Python for Kids* by Jason R. Briggs, 1st Edition. \[[Amazon\]](https://www.amazon.com/dp/1593274076/?tag=devdetailpage02-20) \[[Publisher\]](https://nostarch.com/pythonforkids)
 - *Core Python Programming* by Wesley J. Chun, 2nd Edition. \[[Amazon\]](https://www.amazon.com/Core-Python-Programming-Wesley-Chun/dp/0132269937) \[[Publisher\]](https://www.oreilly.com/library/view/core-python-programming/0132269937/)
 - *Programming Python* by Mark Lutz, 4th Edition. \[[Amazon\]](https://www.amazon.com/_/dp/0596158106?tag=oreilly20-20) \[[Publisher\]](https://www.oreilly.com/library/view/programming-python-4th/9781449398712/)
-- *Learning Python* by Mark Lutz, 5th Edition. \[[Amazon\]](https://www.amazon.com/Learning-Python-5th-Mark-Lutz/dp/1449355730) [Publisher](https://www.oreilly.com/library/view/learning-python-5th/9781449355722/)
+- *Learning Python* by Mark Lutz, 5th Edition. \[[Amazon\]](https://www.amazon.com/Learning-Python-5th-Mark-Lutz/dp/1449355730) \[[Publisher\]](https://www.oreilly.com/library/view/learning-python-5th/9781449355722/)
 - *Think Python* by Allen B. Downey, 2nd Edition. \[[Amazon\]](https://www.amazon.com/Think-Python-Like-Computer-Scientist/dp/1491939362) \[[Publisher\]](https://greenteapress.com/wp/think-python-2e/)
 
 ### Intermediate Level

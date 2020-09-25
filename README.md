@@ -1,8 +1,8 @@
 # Python-3-Notes
 This repository is used to be documentation during my journey in mastering the python programming language while reading the below list of books and online resources.
 
-:books: 
-## Python Books.
+
+## :books: Python Books.
 
 ### Beginner Level
 

@@ -41,7 +41,7 @@ Document's Author: Harmouch101
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.4 [Array](#3.5.2.4)    
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.5 [Dictionary](#3.5.2.5)    
 	        
-	&nbsp;&nbsp;&nbsp;&nbsp;3.5.1 [Sequences Exercices](#3.5.3)     
+	&nbsp;&nbsp;&nbsp;&nbsp;3.5.3 [Sequences Exercices](#3.5.3)     
 	[TODO]     
 	.    
 	.    

@@ -1371,5 +1371,5 @@ The following table contains dictionary's methods :
 | `dict0.update([('key','value'),...])` | updates the dictionary by adding the (key, value) pairs . Existing keys are overwritten. | `>>> d = {'key0': 'new_value', 'key1': 'value1', 'key2': 'value2', 'key3': 'value3',  0: 1}`<br>`>>> d.update([('key0','value0')])`<br>`>>> d`<br>{'key0': 'value0', 'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 0: 1}<br>`>>> d.update([('key4','value4')])`<br>`>>> d`<br>{'key0': 'value0', 'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 0: 1, 'key4': 'value4'} |
 
 
-#### 3.5.2.3 Sequences Exercices. <a name="3.5.2.4"></a><h5>[Go To TOC](#TOC).</h5> 
+#### 3.5.3 Sequences Exercices. <a name="3.5.3"></a><h5>[Go To TOC](#TOC).</h5> 
 

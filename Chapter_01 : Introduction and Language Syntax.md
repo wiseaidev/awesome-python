@@ -1373,3 +1373,124 @@ The following table contains dictionary's methods :
 
 #### 3.5.3 Sequences Exercices. <a name="3.5.3"></a><h5>[Go To TOC](#TOC).</h5> 
 
+```python
+>>> list_ = [1,2,3,4,5]   # create a list from literal 
+>>> list_ +=6		# can't concatenate list and int
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'int' object is not iterable
+>>> list_ +=[6]
+>>> list_
+[1, 2, 3, 4, 5, 6]
+>>> list_ +=(6,) 
+>>> list_
+[1, 2, 3, 4, 5, 6, 6]
+>>> list_ +=(6,7)
+>>> list_
+[1, 2, 3, 4, 5, 6, 6, 6, 7]
+>>> list_[-1]
+7
+>>> list_.append(['a','b','c'])
+>>> list_
+[1, 2, 3, 4, 5, 6, 6, 6, 7, ['a', 'b', 'c']]
+>>> list_.append('a','b','c')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: append() takes exactly one argument (3 given)
+>>> del list_[-1]
+>>> list_
+[1, 2, 3, 4, 5, 6, 6, 6, 7]
+>>> list_.extend(['a','b','c'])
+>>> list_
+[1, 2, 3, 4, 5, 6, 6, 6, 7, 'a', 'b', 'c']
+>>> 'a' in list_
+True
+>>> not 'a' in list_
+False
+>>> 'a' not in list_
+False
+>>> ['a','b'] not in list_
+True
+>>> ('a','b') in list_
+False
+>>> *numbers, a, b, c = list_
+>>> a
+'a'
+>>> b
+'b'
+>>> c
+'c'
+>>> numbers
+[1, 2, 3, 4, 5, 6, 6, 6, 7]
+>>> str_ = 'this is a string'.split()
+>>> str_
+['this', 'is', 'a', 'string']
+>>> ','.join(str_)
+'this,is,a,string'
+>>> str_.sort()		# alphabetical sort and return None
+>>> str_
+['a', 'is', 'string', 'this']
+>>> str_.reverse()
+>>> str_
+['this', 'string', 'is', 'a']
+>>> str_.sort().reverse()	# str_.sort() returns a None type.
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'NoneType' object has no attribute 'reverse'
+>>> a = sorted(numbers)
+>>> a
+[1, 2, 3, 4, 5, 6, 6, 6, 7]
+>>> a = reversed(a)   # return a generator
+>>> a
+<list_reverseiterator object at 0x7f901529ab10>
+>>> a = list(a)
+>>> a
+[7, 6, 6, 6, 5, 4, 3, 2, 1]
+>>> days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+>>> days[1]
+'Tuesday'
+>>> days[-1]
+'Sunday'
+>>> days[0:3]
+['Monday', 'Tuesday', 'Wednesday']
+>>> days[0:-1]
+['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+>>> days[0:]
+['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+>>> days[0:1000]
+['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+>>> days2 = list(days)
+>>> days3 = days.copy()
+>>> days4 = days
+>>> id(days),id(days2),id(days3),id(days4)
+(140256807093424, 140256807093584, 140256807953344, 140256807093424)
+>>> days2 is days
+False
+>>> days4 is days
+True
+>>> days[1:1] = [1,2]  # that's kinda weird, it seems that it doen't check the upper slice
+>>> days
+['Monday', 1, 2, 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+>>> days[1:3] = [1,2]
+>>> days
+['Monday', 1, 2, 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+>>> days[1:4] = [1,2]
+>>> days
+['Monday', 1, 2, 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+>>> days[1] = [1,2]
+>>> days
+['Monday', [1, 2], 2, 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+>>> days[1:4:2] = [1,2] 
+>>> days
+['Monday', 1, 2, 2, 'Thursday', 'Friday', 'Saturday', 'Sunday']
+>>> days[1:1:2] = [1,2] # this error makes sense
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: attempt to assign sequence of size 2 to extended slice of size 1
+>>> list(range(0,1000, 100))
+[0, 100, 200, 300, 400, 500, 600, 700, 800, 900]
+>>> list(range(1000, 0, -100))
+[1000, 900, 800, 700, 600, 500, 400, 300, 200, 100]
+>>> [i for i in range(20) if i % 2 == 0]  # list comprehension, filter even numbers
+[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+```

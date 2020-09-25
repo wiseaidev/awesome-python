@@ -814,7 +814,6 @@ So the number *23479521057823154763809* will be stored as:
 	|    ob_size      |           3            | 
 	+-----------------+------------------------+
 >
-
 219150369 * 2<sup>30 * 0</sup> + 255756550 * 2<sup>30 * 1</sup> + 20365 * 2<sup>30 * 2</sup> = 23479521057823154763809
 
 - **Floating Point**: it is a variable whose value is a real number, stored as an approximate value in the form of a triplet (s, m, e) where **s** is the **sign** in {-1,1}, **m** **mantissa** and **e** **exponent**. Such a triplet represents the decimal number s*m*b^e in scientific notation where b is the base of representation, namely: 2 on the computers. By varying e, we make the decimal point "float".
@@ -1178,10 +1177,143 @@ True
 
 The table below groups together useful methods associated to lists :
 
-| Function | Description | Example |
+| Method | Description | Example |
 | --- | --- | --- |
 | `list0.append(e)` | add the element `e` at the end of the list `list0` while operating on the same list. | `>>> list0 = [1,2,3]`<br>`>>> id(list0)`<br>140274420933408<br>`>>> list0.append(4)`<br>`>>> list0,id(list0)`<br>([1, 2, 3, 4], 140274420933408) |
 | `list0.extend(list1)` | adds the elements of `list1` at the end of the list `list0` while operating on the same list. | `>>> list0.extend([5,6,7])`<br>`>>> list0, id(list0)`<br>([1, 2, 3, 4, 5, 6, 7], 140274420933408) |
 | `list0.insert(p,e)` | insert an element `e` at position `p` in the `list0`. | `>>> list0.insert(2,8)`<br>`>>> id(list0)`<br>140274420933408<br>`>>> list0`<br>[1, 2, 8, 3, 4, 5, 6, 7] |
 | `list0.remove(e)` | remove the first occurrence of `e` from the list. If no elements found, a ValueError exception will be raised. | `>>> list0.remove(8)`<br>`>>> list0`<br>[1, 2, 3, 4, 5, 6, 7]<br>`>>> list0.remove(8)`<br>Traceback (most recent call last):<br>File `"<stdin>"`, line 1, in `<module>`<br>ValueError: list.remove(x): x not in list |
+| `list0.index(e,start,end)` | return the index of first occurrence of `e` in `list0` starting from `start` to `end`. If the element is not in the list ==> raise a ValueError excepetion. | `>>> list0 = [1,2,5,6,8]`<br>`>>> list0.index(5,1,4)`<br>2`>>> list0.index(5,6,4)`<br>Traceback (most recent call last):<br>File `<stdin>`, line 1, in `<module>`<br>ValueError: 5 is not in list |
+| `list0.count(e)` | count the occurrence of `e` in `list0` | `>>> list0.count(1)`<br>1 |
+| `list0.sort(function,reverse)` | sort the items in the list. `function` and `reverse` are optional. It returns a None type. | `>>> list0 = [7,4,8,1,9,2]`<br>`>>> list1 = list(list0)`<br>`>>> list1.sort()` `>>> list1`<br>[1, 2, 4, 7, 8, 9]<br>`>>> list2 = list0`<br>`>>> list2.sort(reverse=True)`<br>`>>> list2`<br>[9, 8, 7, 4, 2, 1] |
+| `list0.pop(index)` | removes and returns element at index `index` from the list. If index is not provided, the last item will be removed. | `>>> list2list0 = [7,4,8,1,9,2]`<br>`>>> list0 = [7,4,8,1,9,2]`<br>`>>> a = list0.pop()`<br>`>>> a`<br>2<br>`>>> list0`<br>[7, 4, 8, 1, 9]<br>`>>> list0.pop(2)`<br>8 | 
+| `list0.reverse()` | modify the list by reversing the order of the elements, and returns a None type. |`>>> list0`<br>[7, 4, 1, 9]<br>`>>> list0.reverse()`<br>`>>> list0`<br>[9, 1, 4, 7] |
+| `list0.copy()` | create a new list object with the elements of list0 |`>>> list0 = [1,2,3,4]`<br>`>>> list1 = list0.copy()`<br>`>>> list1`<br>[1, 2, 3, 4]<br>`>>> id(list0), id(list1)`<br>(140148949288192, 140148947950560) |
+| `list0.clear()` | remove all the element in list0. |`>>> list0.clear()`<br>`>>> list0`<br>[] |
+
+#### 3.5.2.2 Bytearray. <a name="3.5.2.2"></a><h5>[Go To TOC](#TOC).</h5> 
+
+The bytearray type is equivalent to the bytes type but it is mutuble instead. It implements some methods of the type str, such as startswith,endswith or find. It also allows to manipulate the data like a sequence, and implements some list methods, like append or pop.
+
+```python
+>>> array = bytearray([71, 95 , 46])
+>>> array
+bytearray(b'G_.')
+>>> array.startswith(b'G')
+True
+>>> array.endswith(b'_')
+False
+>>> array.find(b'_')
+1
+>>> array.index(b'_')
+1
+>>> array.append(123)
+>>> array
+bytearray(b'G_.{')
+>>> array.pop()
+123
+>>> array[0] = 250
+>>> array
+bytearray(b'\xfa_.')
+```
+
+#### 3.5.2.3 Set. <a name="3.5.2.3"></a><h5>[Go To TOC](#TOC).</h5>
+
+A set in python is a "container" containing **non-repeating** **hashable** elements in **random order**. Hashable elements are all objects of constant value. The *hash* method is used to return an error if the object does not have a constant value.
+
+```python
+>>> a  =  { 'h', 'i', 't', 'h', 'e','r','e' }  # set literal.
+>>> a 
+{'t', 'i', 'r', 'e', 'h'}
+>>> a = set('hithere')   # built-in function set().
+>>> a
+{'t', 'i', 'r', 'e', 'h'}
+>>> a  =  { i*i for i in range(20) if i%2 == 0}   # set generator.
+>>> a
+{0, 64, 256, 4, 36, 100, 196, 324, 16, 144}
+>>> a  =  {}    # you can't create an empty set from literal. 
+>>> type(a)
+<class 'dict'>
+>>> hash('hithere')   # unique value
+1627860905157545572
+>>> hash('hithere')
+1627860905157545572
+>>> hash('hithere')
+1627860905157545572
+>>> a.add('123')   # sets are mutable.
+>>> a
+{'t', 'i', 'r', 'e', 'h', '123'}
+```
+
+To test if an element exists in a set, the hash of that element is computed, then compare that hash with the one that exists in a hash table. But iterating over a set is much slower as the example below shows:
+
+```python
+>>> a = [ i*i for i in range(2000)]
+>>> b = set(a)
+>>> timeit.timeit("for i in a: pass", "from __main__ import a")  # iterating over the list.
+30.985541039000054
+>>> timeit.timeit("for i in b: pass", "from __main__ import b")  # iterating over the set is slower.
+54.14052559299989
+>>> timeit.timeit("if 10000 in a: pass", "from __main__ import a")  # test if 10000 exists in the list.
+2.3482788399996934
+>>> timeit.timeit("if 10000 in b: pass", "from __main__ import b") # test if 10000 exists in the set is way much faster than a list.
+0.08669805399995312
+```
+>
+	+--------------+-----------+------------+------------+------------+
+	|    index     |     0     |      1     |    ...     |    1999    |  
+	+--------------+-----------+------------+------------+------------+  To chech if 10000 in the set a,
+	|  	elements   |     0     |      1     |    ...     |   3996001  | the interpreter computes the hash
+	+--------------+-----------+------------+------------+------------+ of 10000 and compare to the existing 
+	|    hashes    |    h(0)   |    h(1)    |    ...     | h(3996001) | hashes, if exists than stop.
+	+--------------+-----------+------------+------------+------------+
+>
+
+**Frozenset** is a set which is **immutable** and allows to freeze the contents of sequence and provide powerful and **rapid** new comparison methods.
+
+```python
+>>> c = frozenset(a)
+>>> timeit.timeit("if 10000 in c: pass", "from __main__ import c")  # faster than a set.
+0.07721891600067465
+>>> b == c    # same value.
+True
+>>> type(b) == type(c)    # but not the same type.
+False
+```
+
+Both types of sets share common methods:
+
+| Methods | Description | Example |
+| --- | --- | --- |
+| `set0.isdisjoint(set1)` | Returns True if `set0` and `set1` have no elements in common. | `>>> set0 = set('abcde')`<br>`>>> set0`<br>{'d', 'b', 'e', 'c', 'a'}<br>`>>> frozenset = set('fghij')`<br>`>>> set1`<br>{'h', 'j', 'g', 'f', 'i'}<br>`>>> set0.isdisjoint(set1)`<br>True |
+| `set0.issubset(set1)`,`set0 <= set1` | Returns True if all elements of `set0` belong to `set1` | `>>> set2 = set('abc')`<br>`>>> set2`<br>{'b', 'a', 'c'}<br>`>>> set0.issubset(set2)`<br>False<br>`>>> set2.issubset(set0)`<br>True<br>`>>> set2 <= set0`<br>True |
+| `set0.issuperset(set1)`, `set0 >= set1` | Returns True if all elements of `set1` belong to `set0` | `>>> set0.issuperset(set2)`<br>True<br>`>>> set2.issuperset(set0)`<br>False<br>`>>> set0 >= set2`<br>True |
+| `set0.union(set1, ...)`, `set0 | set1 |...` | Returns all items in `set0` or `set1` or ... | `>>> set0.union(set1,set2)`<br>{'d', 'h', 'j', 'g', 'b', 'e', 'c', 'a', 'f', 'i'}<br>`>>> set0 | set1 | set2`<br>{'d', 'h', 'j', 'g', 'b', 'e', 'c', 'a', 'f', 'i'} |
+| `set0.intersection(set1, ...)`, `set0 & set1 &...` | Returns all items that are in `set0` and in `set1` and in ... | `>>> set0.intersection(set2)`<br>{'b', 'a', 'c'} |
+| `set0.difference (set1, ...)`, `set0 - set1 - ...` | Remove from `set0` all common elements with `set1`, otherwise return set1 . | `>>> set0`<br>{'d', 'b', 'e', 'c', 'a'}<br>`>>> set2`<br>{'b', 'a', 'c'}<br>`>>> set0`<br>{'d', 'b', 'e', 'c', 'a'}<br>`>>> set1`<br>{'h', 'j', 'g', 'f', 'i'}<br>`>>> set2`<br>{'b', 'a', 'c'}<br>`>>> set0 - set1`<br>{'d', 'b', 'e', 'c', 'a'}<br>`>>> set0 - set2`<br>{'d', 'e'} |
+| `set0.symmetric_difference(set1, ...)`, `set0 ^ set1` | Returns all unique elements of both sets(union - intersection). | `>>> set0`<br>{'d', 'b', 'e', 'c', 'a'}<br>`>>> set2`<br>{'b', 'a', 'c'}<br>`>>> set0 ^ set2`{'d', 'e'}<br>`>>> (set0 | set2) - (set0 & set2)`<br>{'d', 'e'} |
+| `set0.copy()` | Makes a copy of `set0` into a new set object. | `>>> set1 = set0.copy()`<br>`>>> id(set0), id(set1)`<br>(139623648877216, 139623649788704) |
+
+Mutable sets additionally have the methods described in the following table:
+
+| Methods | Description | Example |
+| --- | --- | --- |
+| `set0.update (set1, ...)`, `set0 | = set1 | ...` | Updates `set0` with the union of `set0` and `set1` and ... | `>>> set0 = set('abcd')`<br>`>>> set1 = set('defg')`<br>`>>> set0`<br>{'b', 'a', 'd', 'c'}<br>`>>> set1`<br>{'d', 'e', 'g', 'f'}<br>`>>> set0 |= set1`<br>`>>> set0`<br>{'d', 'g', 'b', 'e', 'c', 'a', 'f'} |
+| `set0.intersection_update(set1, ...)`, `set0 & = set1 & ...` | Updates `set0` with the intersection of `set0` and `set1` and ... | `>>> set0 &= set1`<br>`>>> set0`<br>{'d', 'e', 'g', 'f'} |
+| `set0.difference_update(set1, ...)`, `set0 - = set1 | ...` | Substract from `set0` the shared elements with `set1` and ... | `>>> set0 = {'d', 'g', 'b', 'e', 'c', 'a', 'f'}`<br>`>>> set1 = {'d', 'e', 'g', 'f'}`<br>`>>> set0.difference_update(set1)`<br>`>>> set0`<br>{'b', 'c', 'a'}<br>`>>> set0 = {'d', 'g', 'b', 'e', 'c', 'a', 'f'}`<br>`>>> set0 -= set1 | {'a'}`<br>`>>> set0`<br>{'b', 'c'} |
+| `set0.symmetric_difference_update(set1)`, `set0 ^ = set1` |  return a set of elements that appear in one set but do not appear both sets. | `>>> set0 = {'d', 'g', 'b', 'e', 'c', 'a', 'f'}`<br>`>>> set0 ^= set1`<br>`>>> set0`<br>{'b', 'c', 'a'} |
+| `set0.add(e)` | add an element to `set0` | `>>> set0.add('d')`<br>`>>> set0`<br>{'b', 'd', 'c', 'a'} |
+| `set0.remove(e)` | remove an element from `set0` if exists, otherwise throw a KeyError exception. | `>>> set0.remove('d')`<br>`>>> set0`<br>{'b', 'c', 'a'}<br>`>>> set0.remove('d')`<br>Traceback (most recent call last):<br>   File `"<stdin>"`, line 1, in `<module>`<br>KeyError: 'd' |
+| `set0.discard(e)` | Removes an element from the set. | `>>> set0`<br>{'b', 'c', 'a'}<br>`>>> set0.discard('b')`<br>`>>> set0`<br>{'c', 'a'}<br>`>>> set0.discard('b')`<br>`>>> set0`<br>{'c', 'a'} |
+| `set0.pop()` | removes an item from the set. | `>>> set0 = {'d', 'g', 'b', 'e', 'c', 'a', 'f'}`<br>`>>> set0.pop()`<br>'b'<br>`>>> set0`<br>{'d', 'e', 'g', 'f', 'c', 'a'}<br>`>>> set0.pop()`<br>'d'<br>`>>> set0`<br>{'e', 'g', 'f', 'c', 'a'}<br>`>>> set0.pop()`<br>'e'<br>`>>> set0`<br>{'g', 'f', 'c', 'a'}<br>`>>> set0.pop()`<br>'g' |
+| `set0.clear()` | remove all elements from the set. | `>>> set0 = {'d', 'g', 'b', 'e', 'c', 'a', 'f'}`<br>`>>> set0.clear()`<br>`>>> set0`<br>set() |
+
+For more information about sets and frozensets, you can refer to [python docs](https://docs.python.org/3.8/library/stdtypes.html#set-types-set-frozenset).
+
+#### 3.5.2.4 Array. <a name="3.5.2.4"></a><h5>[Go To TOC](#TOC).</h5> 
+
+An **array** is a 1-dimensional array with a limitation on the **data type** and **size** of each element. Arrays are more memory efficient.
+For more information about array, you can read [python doc](https://docs.python.org/3/library/array.html).
+
+
 

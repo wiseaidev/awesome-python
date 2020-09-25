@@ -39,7 +39,9 @@ Document's Author: Harmouch101
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.2 [Bytearray](#3.5.2.2)    
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.3 [Set](#3.5.2.3)    
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.4 [Array](#3.5.2.4)    
-
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.5 [Dictionary](#3.5.2.5)    
+	        
+	&nbsp;&nbsp;&nbsp;&nbsp;3.5.1 [Sequences Exercices](#3.5.3)     
 	[TODO]     
 	.    
 	.    
@@ -1102,6 +1104,7 @@ Python offers several types of Mutable sequences:
 - **bytearray**;
 - **set**;
 - **array**.
+- **Dictionary**
 
 #### 3.5.2.1 List. <a name="3.5.2.1"></a><h5>[Go To TOC](#TOC).</h5> 
 
@@ -1283,7 +1286,7 @@ False
 
 Both types of sets share common methods:
 
-| Methods | Description | Example |
+| Method | Description | Example |
 | --- | --- | --- |
 | `set0.isdisjoint(set1)` | Returns True if `set0` and `set1` have no elements in common. | `>>> set0 = set('abcde')`<br>`>>> set0`<br>{'d', 'b', 'e', 'c', 'a'}<br>`>>> frozenset = set('fghij')`<br>`>>> set1`<br>{'h', 'j', 'g', 'f', 'i'}<br>`>>> set0.isdisjoint(set1)`<br>True |
 | `set0.issubset(set1)`,`set0 <= set1` | Returns True if all elements of `set0` belong to `set1` | `>>> set2 = set('abc')`<br>`>>> set2`<br>{'b', 'a', 'c'}<br>`>>> set0.issubset(set2)`<br>False<br>`>>> set2.issubset(set0)`<br>True<br>`>>> set2 <= set0`<br>True |
@@ -1296,7 +1299,7 @@ Both types of sets share common methods:
 
 Mutable sets additionally have the methods described in the following table:
 
-| Methods | Description | Example |
+| Method | Description | Example |
 | --- | --- | --- |
 | `set0.update (set1, ...)`, `set0 \| = set1 \| ...` | Updates `set0` with the union of `set0` and `set1` and ... | `>>> set0 = set('abcd')`<br>`>>> set1 = set('defg')`<br>`>>> set0`<br>{'b', 'a', 'd', 'c'}<br>`>>> set1`<br>{'d', 'e', 'g', 'f'}<br>`>>> set0 \|= set1`<br>`>>> set0`<br>{'d', 'g', 'b', 'e', 'c', 'a', 'f'} |
 | `set0.intersection_update(set1, ...)`, `set0 & = set1 & ...` | Updates `set0` with the intersection of `set0` and `set1` and ... | `>>> set0 &= set1`<br>`>>> set0`<br>{'d', 'e', 'g', 'f'} |
@@ -1313,7 +1316,60 @@ For more information about sets and frozensets, you can refer to [python docs](h
 #### 3.5.2.4 Array. <a name="3.5.2.4"></a><h5>[Go To TOC](#TOC).</h5> 
 
 An **array** is a 1-dimensional array with a limitation on the **data type** and **size** of each element. Arrays are more memory efficient.
-For more information about array, you can read [python doc](https://docs.python.org/3/library/array.html).
+For more information about array, you can read [python docs](https://docs.python.org/3/library/array.html).
+
+#### 3.5.2.5 Dictionary. <a name="3.5.2.5"></a><h5>[Go To TOC](#TOC).</h5> 
+
+Dictionary in python is unordered mutable collection of arbitrary key-value objects. it is sometimes also called associative array or hash table.
+
+From [cpython](https://github.com/python/cpython/blob/master/Objects/dict-common.h), you can find the implementation of dictionaries in c:
+
+```c
+typedef struct {
+    /* Cached hash code of me_key. */
+    Py_hash_t me_hash;  //cached hash code
+    PyObject *me_key;   // a pointer to keys object;
+    PyObject *me_value; // a pointer to values object;
+} PyDictKeyEntry;
+```
+
+So as you can see, dictionaries store pointers and not the values ​​themselves. You can create a dictionary like the following :
+
+```python
+>>> d = {'key1':'value1','key2':'value2'}   # ceate a dictionary using literal
+>>> d
+{'key1': 'value1', 'key2': 'value2'}
+>>> d = dict(key1 = 'value1', key2 = 'value2') # using the built-in func
+>>> d
+{'key1': 'value1', 'key2': 'value2'}
+>>> d = dict([('key1', 'value1'),('key2', 'value2')])   # from list of tuples
+>>> d
+{'key1': 'value1', 'key2': 'value2'}
+>>> d  =  { 'key'+str(i) : 'value'+str(i) for i  in  range ( 4 )} # using generators
+>>> d
+{'key0': 'value0', 'key1': 'value1', 'key2': 'value2', 'key3': 'value3'}
+>>> d['key0'] = 'new_value'   # dictionaries are mutable
+>>> d
+{'key0': 'new_value', 'key1': 'value1', 'key2': 'value2', 'key3': 'value3'}
+>>> d[0] = 1      # if key doesn't exist => create a new element in dict
+>>> d
+{'key0': 'new_value', 'key1': 'value1', 'key2': 'value2', 'key3': 'value3',  0: 1}
+```
+
+The following table contains dictionary's methods :
+
+| Method | Description | Example |
+| --- | --- | --- |
+| `dict0.copy()`, | create a new copy of dict0. | `>>> d1 = d.copy()`<br>`>>> id(d1),id(d)`<br>(140526876838560, 140526876807808) |
+| `dict.fromkeys(['key0','key1', ...], value)` | create a dictionary with the same value(None by default) for all keys. | `>>> dict.fromkeys(['key0','key1'])`<br>{'key0': None, 'key1': None}<br>`>>> dict.fromkeys(['key0','key1'],'value01')`<br>{'key0': 'value01', 'key1': 'value01'} |
+| `dict0.get(key0, ..., default )` | returns the value of the dictionary at the specified key,but if it does not exist, it returns default (by default None). | `>>> d.get('key0')`<br>'new_value'<br>`>>> d.get('key','no key match')`<br>'no key match' |
+| `dict0.items()` | Returns (key, value) pairs as a dict_items type. | `>>> d.items()`<br>dict_items([('key0', 'new_value'), ('key1', 'value1'), ('key2', 'value2'), ('key3', 'value3'), (0, 1)]) 
+| `dict0.key()` | Returns a list of keys. | `d.keys()`<br>dict_keys(['key0', 'key1', 'key2', 'key3', 0]) | 
+| `dict0.values()` | Returns a list of values. | `>>> d.values()`<br>dict_values(['new_value', 'value1', 'value2', 'value3', 1]) |
+| `dict0.pop(key)` | removes the existing key and returns its value. | `>>> d.pop('key0')`'<br>new_value'<br>`>>> d`{'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 0: 1}<br>`>>> d.pop('notexisted')`<br>Traceback (most recent call last):<br>  File `"<stdin>"`, line 1, in `<module>`<br>KeyError: 'notexisted' |
+| `dict0.popitem()` | Removes a (key, value) pair from the dictionary and returns it as a tuple. LIFO(last in first out) | {'key1': 'value1', 'key2': 'value2', 'key3': 'value3'}<br>`>>> d.popitem ()`<br>('key3', 'value3')<br>`>>> d.popitem ()`<br>('key2', 'value2') | 
+| `dict0.update([('key','value'),...])` | updates the dictionary by adding the (key, value) pairs . Existing keys are overwritten. | `>>> d = {'key0': 'new_value', 'key1': 'value1', 'key2': 'value2', 'key3': 'value3',  0: 1}`<br>`>>> d.update([('key0','value0')])`<br>`>>> d`<br>{'key0': 'value0', 'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 0: 1}<br>`>>> d.update([('key4','value4')])`<br>`>>> d`<br>{'key0': 'value0', 'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 0: 1, 'key4': 'value4'} |
 
 
+#### 3.5.2.3 Sequences Exercices. <a name="3.5.2.4"></a><h5>[Go To TOC](#TOC).</h5> 
 

@@ -1263,7 +1263,7 @@ To test if an element exists in a set, the hash of that element is computed, the
 	+--------------+-----------+------------+------------+------------+
 	|    index     |     0     |      1     |    ...     |    1999    |  
 	+--------------+-----------+------------+------------+------------+  To chech if 10000 in the set a,
-	|  	elements   |     0     |      1     |    ...     |   3996001  | the interpreter computes the hash
+	|elements  |     0     |      1     |    ...     |   3996001  | the interpreter computes the hash
 	+--------------+-----------+------------+------------+------------+ of 10000 and compare to the existing 
 	|    hashes    |    h(0)   |    h(1)    |    ...     | h(3996001) | hashes, if exists than stop.
 	+--------------+-----------+------------+------------+------------+

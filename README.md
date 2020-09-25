@@ -24,9 +24,9 @@ This repository is used to be documentation during my journey in mastering the p
 - *Murach's Python Programming* by Michael Urban. \[[Amazon\]](https://www.amazon.com/Murachs-Python-Programming-Michael-Urban/dp/1890774979) \[[Publisher\]](https://www.murach.com/shop/murach-s-python-programming-detail)
 - *Python Cookbook* by David Beazley, 3rd Edition. \[[Amazon\]](https://www.amazon.com/_/dp/1449340377?tag=oreilly20-20) \[[Publisher\]](https://www.oreilly.com/library/view/python-cookbook-3rd/9781449357337/)
 - *Effective Python: 59 Specific Ways to Write Better Python* by Brett Slatkin, 1st Edition. \[[Amazon\]](https://www.amazon.com/Effective-Python-Specific-Software-Development/dp/0134034287) \[[Publisher\]](https://www.oreilly.com/library/view/effective-python-59/9780134034416/)
-- *Python Tricks: A Buffet of Awesome Python Features* by Dan Bader, 1st Edition. \[[Amazon\]](amazon.com/Effective-Python-Specific-Software-Development/dp/0134034287) \[Publisher\]](https://realpython.com/products/real-python-course/)
+- *Python Tricks: A Buffet of Awesome Python Features* by Dan Bader, 1st Edition. \[[Amazon\]](amazon.com/Effective-Python-Specific-Software-Development/dp/0134034287) \[[Publisher\]](https://realpython.com/products/real-python-course/)
 - *Intermediate Python* by Obi Ike-Nwosu, 1st Edition. \[[Publisher\]](https://leanpub.com/intermediatepython)
-- *Python 3 Object Oriented Programming* by Dusty Phillips, 1st Edition. \[[Amazon]](https://www.amazon.com/Python-3-Object-Oriented-Programming/dp/1849511268) \[[Publisher\]](https://www.packtpub.com/product/python-3-object-oriented-programming-third-edition/9781789615852)
+- *Python 3 Object Oriented Programming* by Dusty Phillips, 1st Edition. \[[Amazon\]](https://www.amazon.com/Python-3-Object-Oriented-Programming/dp/1849511268) \[[Publisher\]](https://www.packtpub.com/product/python-3-object-oriented-programming-third-edition/9781789615852)
 - *Problem Solving with Algorithms and Data Structures Using Python* by Bradley N. Miller \[[Amazon\]](https://www.amazon.com/Problem-Solving-Algorithms-Structures-Python/dp/1590282574)
 - *Practices of the Python Pro* by Dane Hillard, 1st Edition. \[[Amazon\]](https://www.amazon.com/Practices-Python-Pro-Dane-Hillard/dp/1617296082) \[[Publisher\]](https://www.oreilly.com/library/view/practices-of-the/9781617296086/)
 

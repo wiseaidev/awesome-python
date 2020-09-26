@@ -810,11 +810,11 @@ So in python, there is a custom method to store integers larger than 2<sup>30</s
 
 ```python
 23479521057823154763809
->>> divmod(23479521057823154763809, 2**30) return a tuple of form (quotient,Remainder)
+>>> divmod(23479521057823154763809, 2**30) #return a tuple of form (quotient,Remainder)
 (21867008002310, 219150369)  
 >>> divmod(21867008002310, 2**30)
 (20365, 255756550)
-stop here because the quotient is less than 2**30 (0 <= ob_digit[i] <= MASK =2**30)
+#stop here because the quotient is less than 2**30 (0 <= ob_digit[i] <= MASK =2**30)
 
 ```  
 From [C-Python](https://github.com/python/cpython/blob/c5bace2bf7874cf47ef56e1d8d19f79ad892eef5/Include/longintrepr.h#L69) repo, you can find the following explanation on the representation of long integer:

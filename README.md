@@ -33,7 +33,7 @@ This repository is used to be documentation during my journey in mastering the p
 ### Advanced Level
 - *Fluent Python* by Luciano Ramalho, 1st Edition. \[[Amazon\]](https://www.amazon.com/_/dp/1491946008?tag=oreilly20-20) \[[Publisher\]](https://www.oreilly.com/library/view/fluent-python/9781491946237/)
 - *Mastering Python High Performance* by Fernando Doglio, 1st Edition. \[[Amazon\]](https://www.amazon.com/Mastering-Python-Performance-Fernando-Doglio/dp/1783989300) \[[Publisher\]](https://www.packtpub.com/product/mastering-python-high-performance/9781783989300)
-
+- *Python Testing with pytest: Simple, Rapid, Effective, and Scalable* by Brian Okken, 1st Edition. \[[Amazon\]](https://www.amazon.com/Python-Testing-pytest-Effective-Scalable/dp/1680502409) \[[Publisher\]](https://pragprog.com/titles/bopytest/python-testing-with-pytest/)
 
 [TODO]
 .

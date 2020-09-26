@@ -4,6 +4,18 @@ Document's Author: Harmouch101
 
 ---
 
+**Reset your brain**.
+
+Remember that you can't remember everything, so you need to take notes.
+
+Theory without Practice is useless; Practice without Theory is blind.
+
+Practice/coding is key to success as a programmer.
+
+Don't give up. Difficult roads **often** lead to beautiful destinations. 
+
+---
+
 ## Table Of Content(TOC) <a name="TOC"></a>
 
 1. [A Tutorial Introduction](#1)   
@@ -53,7 +65,7 @@ The goal of this chapter is to get you familiar with python 3 and its essential 
 
 ## 1.1 What is Python ? <a name="1.1"></a>
 
-Python is a high-level programming language that has the following features:
+Python is a high-level, general-purpose, programming language that has the following features:
 - It is designed to produce high quality, human-readable and maintainable code;
 - Portable: Python is a cross-platform programming language, it can be used on Linux, Windows, macOS...;  
 - Easy to integrate code;
@@ -178,6 +190,24 @@ text goes here!
     print(text goes here!)
                   ^
 SyntaxError: invalid syntax
+>>> print(3,4,6,"a",'b')
+3 4 6 a b
+>>> print(3,4,6,"a",'b', sep = " ") # By default, print uses a whitespace as a seperator.
+3 4 6 a b
+>>> print(3,4,6,"a",'b', sep = " ", end = "\n") # By default, print uses \n to mark as the end of line.
+3 4 6 a b
+>>> print(3,4,6,"a",'b', sep = " ", end = "<<\n")
+3 4 6 a b<<
+>>> print(3,4,6,"a",'b', sep = ":", end = "<<\n")
+3:4:6:a:b<<
+>>> print(3,4,6,"a",'b', sep = ":", end = None) # By default, same behavior as end = "\n"
+3:4:6:a:b
+>>> import sys
+>>> print(sys.version)
+3.7.6 (default, Jan  8 2020, 19:59:22) 
+[GCC 7.3.0]
+>>> print(sys.version_info)
+sys.version_info(major=3, minor=7, micro=6, releaselevel='final', serial=0)
 >>> 
 ```
 
@@ -1427,6 +1457,8 @@ False
 ['this', 'is', 'a', 'string']
 >>> ','.join(str_)
 'this,is,a,string'
+>>> ','.join(str_)*2
+'this,is,a,stringthis,is,a,string'
 >>> str_.sort()		# alphabetical sort and return None
 >>> str_
 ['a', 'is', 'string', 'this']
@@ -1493,4 +1525,47 @@ ValueError: attempt to assign sequence of size 2 to extended slice of size 1
 [1000, 900, 800, 700, 600, 500, 400, 300, 200, 100]
 >>> [i for i in range(20) if i % 2 == 0]  # list comprehension, filter even numbers
 [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+>>> a = list(range(0,1000, 100))
+>>> a[1:2] = [1,2]
+>>> a
+[0, 1, 2, 200, 300, 400, 500, 600, 700, 800, 900]
+>>> a = list(range(0,1000, 100))
+>>> a[1:3] = [1,2]
+>>> a
+[0, 1, 2, 300, 400, 500, 600, 700, 800, 900]
+>>> a[1:-1] = [1,2]
+>>> a
+[0, 1, 2, 900]
+>>> a = list(range(0,1000, 100))
+>>> a[1:-400] = [1,2]
+>>> a
+[0, 1, 2, 100, 200, 300, 400, 500, 600, 700, 800, 900]
+>>> a[1:+400] = [1,2]
+>>> a
+[0, 1, 2]
+>>> s1 = set(1, 2, 3)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: set expected at most 1 arguments, got 3
+>>> s1 = set([1, 2, 3])
+>>> s1
+{1, 2, 3}
+>>> s2 = set(range(1,7))
+>>> s2
+{1, 2, 3, 4, 5, 6}
+>>> s1 < s2
+True
+>>> s1 <= s2
+True
+>>> s2 <= s2
+True
+>>> s2 < s2
+False
+>>> s2 -= s1
+>>> s2
+{4, 5, 6}
+>>> s2 |= s1
+>>> s2
+{2, 1, 4, 5, 6, 3}
+>>>
 ```

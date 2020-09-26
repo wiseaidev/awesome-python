@@ -57,8 +57,8 @@ Don't give up. Difficult roads **often** lead to beautiful destinations.
 	3.6 [Conditional Statements](#3.6)     
 	&nbsp;&nbsp;&nbsp;&nbsp;3.6.1 [If Statement](#3.6.1)    
 	&nbsp;&nbsp;&nbsp;&nbsp;3.6.2 [If-Else Statements](#3.6.2)    
-	&nbsp;&nbsp;&nbsp;&nbsp;3.6.3 [If-Elif Statements](#3.5.3)    
-	&nbsp;&nbsp;&nbsp;&nbsp;3.6.3 [Nested If-Else Statements](#3.5.3)    
+	&nbsp;&nbsp;&nbsp;&nbsp;3.6.3 [If-Elif Statements](#3.6.3)    
+	&nbsp;&nbsp;&nbsp;&nbsp;3.6.4 [Nested If-Else Statements](#3.6.4)    
 	[TODO]     
 	.    
 	.    

@@ -54,6 +54,11 @@ Don't give up. Difficult roads **often** lead to beautiful destinations.
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.5 [Dictionary](#3.5.2.5)    
 	        
 	&nbsp;&nbsp;&nbsp;&nbsp;3.5.3 [Sequences Exercices](#3.5.3)     
+	3.6 [Conditional Statements](#3.6)     
+	&nbsp;&nbsp;&nbsp;&nbsp;3.6.1 [If Statement](#3.6.1)    
+	&nbsp;&nbsp;&nbsp;&nbsp;3.6.2 [If-Else Statements](#3.6.2)    
+	&nbsp;&nbsp;&nbsp;&nbsp;3.6.3 [If-Elif Statements](#3.5.3)    
+	&nbsp;&nbsp;&nbsp;&nbsp;3.6.3 [Nested If-Else Statements](#3.5.3)    
 	[TODO]     
 	.    
 	.    
@@ -230,11 +235,8 @@ These comments are ignored by the interpreter which considers, in this case, the
 ...     here!")
 text goes       here!
 >>> print("text goes \ # you can't insert a comment here!!!!!
-  File "<stdin>", line 1
-    print("text goes \ # you can't insert a comment here!!!!!
-                                                       ^
+  File "<stdin>", line 1                                                       ^
 SyntaxError: EOL while scanning string literal
-
 ```
 
 ## 3.3 Variables. <a name="3.3"></a><h5>[Go To TOC](#TOC).</h5> 
@@ -1571,3 +1573,95 @@ False
 {2, 1, 4, 5, 6, 3}
 >>>
 ```
+## 3.6 Conditional Statement. <a name="3.6"></a><h5>[Go To TOC](#TOC).</h5> 
+
+These statements exists to allow you forcing the program to execute certain sections of code only under certain conditions. So if the condition is met, the code will be executed.
+
+### 3.6.1 If Statement. <a name="3.6.1"></a><h5>[Go To TOC](#TOC).</h5>
+
+In this case, if the condition is met, then we go into the body of the indented block and execute the code in it. Otherwise, we skip this block and the program continue the excution normaly.
+
+```python
+if <condition> :
+....
+....BLock of code
+....
+....
+rest of program
+
+```
+
+![if statement](./resources/if.png)
+
+```python
+a = 2
+if a % 2 == 0:
+	print("a is even")
+
+# continue
+```
+
+### 3.6.2 If-Else Statements. <a name="3.6.2"></a><h5>[Go To TOC](#TOC).</h5>
+
+Figuratively, we can divide this statement into two parts. The first part is an if statement with a condition and a body, and the second is an else statement with a body only.
+
+![if statement](./resources/if_else.png)
+
+```python
+a = 2
+if a % 2 == 0:
+	print("a is even")
+else:
+	print("a is odd")
+```
+
+### 3.6.3 If-Elif Statements. <a name="3.6.3"></a><h5>[Go To TOC](#TOC).</h5>
+
+In this case, we only get into the body of the statement that the interpreter meets first, and as you may know, the interpreter scans the code from top to bottom(like switch-case in C# or C or ...).
+
+![if statement](./resources/if_elif.png)
+
+```python
+a = 75
+if a >= 90:
+	print("Excellent")
+elif a >= 80:
+	print("Very Good")
+elif a <= 70:
+	print("Good")
+else:
+	print("Not Bad")
+# continue
+```
+
+### 3.6.4 Nested If-Else Statements. <a name="3.6.4"></a><h5>[Go To TOC](#TOC).</h5>
+
+Here we check another condition if certain condition is met.
+
+![if statement](./resources/nested_if_else.png)
+
+```python
+a = 12
+if a%2 == 0:
+	if a > 10:
+		if a >20:
+			#code or another condition goes here
+		else :
+			print("even between 10 and 20")
+	else:
+		print("even less than 10")
+else:
+	print("odd")
+# Continue
+```
+
+The previous snippet of code is just a proof of concept on using the nested if-else and not a real example, I just used this example to demonstrate the mechanism of that conditional statement.  In fact, you can rewrite the previous nested if-else conditionals into if-elif conditionals.
+
+```python
+a = 12
+if a%2 ==0 and a>10 and a <=20:  # or if a%2 ==0 and 10 < a <=20:
+	print("even between 10 and 20")
+elif a%2 == 0 and a <= 10:
+	print("even less than 10")
+else:
+	print("odd") 

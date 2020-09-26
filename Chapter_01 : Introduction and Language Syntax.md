@@ -92,6 +92,8 @@ Python commands and instructions are executed by the interpreter, which is writt
 - IronPython: implementation for .NET and Mono;
 - Stackless Python: a variant of CPython, slightly faster.
 
+**Note** that the major drawback of Python is that it is a dynamically typed language(not statically typed). This means that the interpreter doesn't check for variables types before runtime. this can lead to slowing down the speed of execution of the code while checking the type of the variables during runtime since there is no compile stage before runtime. So Python is very slow compared to other statically typed languages like Java, C#, C...
+
 ## 2.. Running Python. <a name="2"></a><h5>[Go To TOC](#TOC).</h5> 
 
 You can run the interpreter by simply entering the 'Python3' command in your terminal :

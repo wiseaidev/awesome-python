@@ -6,7 +6,7 @@ This repository is used to be documentation during my journey in mastering the p
 
 ### Beginner Level
 
-- *Head-First Python: A Brain-Friendly Guide* by Paul Barry, 2nd Edition. \[[Amazon\]](https://www.amazon.com/_/dp/1491919531?tag=oreilly20-20) \[[Publisher\]](https://www.oreilly.com/library/view/head-first-python/9781491919521/)
+- *Head-First Python: A Brain-Friendly Guide* by Paul Barry, 2nd Edition. \[[Amazon](https://www.amazon.com/_/dp/1491919531?tag=oreilly20-20) \[[Publisher\]](https://www.oreilly.com/library/view/head-first-python/9781491919521/)\]
 - *Python for Everybody: Exploring Data in Python 3* by Dr. Charles Russell Severance. \[[Amazon\]](https://www.amazon.com/Python-Everybody-Exploring-Data/dp/1530051126) \[[Site\]](https://www.py4e.com/book)
 - *Learn Python 3 the Hard Way* by Zed A. Shaw, 1st Edition  \[[Amazon\]](https://www.amazon.com/dp/0134692888/?tag=devdetailpage02-20) \[[Publisher\]](https://learnpythonthehardway.org/python3/)
 - *Python Programming for the Absolute Beginner* by Michael Dawson, 3rd Edition. \[[Amazon\]](https://www.amazon.com/Python-Programming-Absolute-Beginner-3rd/dp/1435455002)

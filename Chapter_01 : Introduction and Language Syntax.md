@@ -6,11 +6,11 @@ Document's Author: Harmouch101
 
 **Reset your brain**.
 
-Remember that you can't remember everything, so you need to take notes.
+You can't remember everything, so you need to take notes and write things down.
 
 Theory without Practice is useless; Practice without Theory is blind.
 
-Practice/coding is key to success as a programmer.
+Practice/coding is the key to success as a programmer.
 
 Don't give up. Difficult roads **often** lead to beautiful destinations. 
 

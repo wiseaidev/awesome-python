@@ -59,6 +59,7 @@ Don't give up. Difficult roads **often** lead to beautiful destinations.
 	&nbsp;&nbsp;&nbsp;&nbsp;3.6.2 [If-Else Statements](#3.6.2)    
 	&nbsp;&nbsp;&nbsp;&nbsp;3.6.3 [If-Elif Statements](#3.6.3)    
 	&nbsp;&nbsp;&nbsp;&nbsp;3.6.4 [Nested If-Else Statements](#3.6.4)    
+	&nbsp;&nbsp;&nbsp;&nbsp;3.6.5 [Exercices](#3.6.5)    
 	[TODO]     
 	.    
 	.    
@@ -1665,3 +1666,35 @@ elif a%2 == 0 and a <= 10:
 	print("even less than 10")
 else:
 	print("odd") 
+```
+
+### 3.6.5 Exercices. <a name="3.6.5"></a><h5>[Go To TOC](#TOC).</h5>
+
+```python
+>>> if []:
+...     print("True")
+... else:
+...     print("False")
+... 
+False
+>>> bool([])
+False
+>>> bool(['1'])
+True
+>>> bool([None])
+True
+>>> bool('False')
+True
+>>> bool(True)
+True
+>>> bool(False)
+False
+>>> int(bool(False))
+0
+>>> int(bool(True))
+1
+>>> int(bool('False'))
+1
+>>> int(bool(None))
+0
+```

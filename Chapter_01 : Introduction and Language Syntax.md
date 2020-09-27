@@ -1827,7 +1827,7 @@ for variable_name in iterable:
 4.98198106000018
 ```
 
-#### 3.7.3 For/While Else. <a name="3.7.2"></a><h5>[Go To TOC](#TOC).</h5>
+#### 3.7.3 For/While Else. <a name="3.7.3"></a><h5>[Go To TOC](#TOC).</h5>
 
 The `else` keyword is used, in a for or while loop, to check if the loop was exited nicely or something else interrupts its execution. if it exited nicely, the body of else statement will be executed.
 

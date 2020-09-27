@@ -60,6 +60,10 @@ Don't give up. Difficult roads **often** lead to beautiful destinations.
 	&nbsp;&nbsp;&nbsp;&nbsp;3.6.3 [If-Elif Statements](#3.6.3)    
 	&nbsp;&nbsp;&nbsp;&nbsp;3.6.4 [Nested If-Else Statements](#3.6.4)    
 	&nbsp;&nbsp;&nbsp;&nbsp;3.6.5 [Exercices](#3.6.5)    
+	3.7 [Loops](#3.7)     
+	&nbsp;&nbsp;&nbsp;&nbsp;3.7.1 [While loop.](#3.7.1)    
+	&nbsp;&nbsp;&nbsp;&nbsp;3.7.2 [For loop.](#3.7.2)    
+	&nbsp;&nbsp;&nbsp;&nbsp;3.7.3 [For/While Else loop.](#3.7.3)   
 	[TODO]     
 	.    
 	.    
@@ -1697,4 +1701,154 @@ False
 1
 >>> int(bool(None))
 0
+```
+
+So in python, objects that hold content(values) are considered True(e.g. 1, [1,2,3], (0,), "Hello",..), any other objects that doesn't contain any value in it are considered False(e.g. [],(), ([]), None, 0, ""...). We can also say that if the len method(if the object has the attribute "\_\_len\_\_") returns a value greater than or equal to 1, the truthiness of that object is considered True, otherwise it is False.
+
+```python
+>>> bool([1])
+True
+>>> len([1])
+1
+>>> bool([])
+False
+>>> len([])
+0
+>>> bool([[]])
+True
+>>> len([[]])
+1
+>>> len([[[[]]]])
+1
+>>> bool(None)
+False
+>>> len(None)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: object of type 'NoneType' has no len()
+>>> [].__len__()
+0
+>>> None.__len__()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'NoneType' object has no attribute '__len__'
+>>> bool([None])
+True
+>>> bool((None))  # this is not a typle because no comma in it ! 
+False
+>>> bool((None,))  # tuple contains something(Nonetype object)
+True
+```
+
+### 3.7 Loops. <a name="3.7"></a><h5>[Go To TOC](#TOC).</h5>
+
+As said earlier, statements are executed sequentially from top to bottom. However, if you want to execute a block of code multiple times, you can use a loop.
+
+But before diving in into loops, you need to have knowledge of some vocabulary:
+
+- **Iterable**: In python, an iterable is an object that you can loop(iterate) over(e.g. list, dict, string...).
+- **Iteration**: It is one excecution of the loop.
+- **Index**: A variable used to keep track of the current iteration.
+
+#### 3.7.1 While Loop. <a name="3.7.1"></a><h5>[Go To TOC](#TOC).</h5>
+
+While loop means execute the body of this loop as long as the loop condition is true.
+
+```python
+while condition:
+	
+	body
+
+>>> x = 10
+>>> while x >= 0: 
+...     print(x)
+...     x -= 1
+... 
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+```
+
+So the interpreter first checks the condition if it is True or False, if True then executes the body statements, otherwise skip the body and continue with the rest of the program.
+
+In python, you can also write an infinite loop. Using the break keyword, you can stop excecuting the body of the loop, or the continue keyword to skip the next iteration.
+
+```python
+>>> while True:
+...     print(x)
+...     if x == 5:
+...             break
+...     else:
+...             x -= 1
+...     continue
+...     print("this statement will never be executed")
+... 
+10
+9
+8
+7
+6
+5
+```
+
+#### 3.7.2 For Loop. <a name="3.7.2"></a><h5>[Go To TOC](#TOC).</h5>
+
+This loop iterates over any iterable object and executes the body of the loop during each iteration. For loops are much faster than while loops.
+```python
+for variable_name in iterable:
+
+	body
+
+>>> for x in range(10,-1,-1):
+...     print(x)
+... 
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+>>> timeit.timeit('x=10000\nwhile x>0: x-=1', number=10000)
+9.10978822099969
+>>> timeit.timeit('for x in range(10000,0,-1): x = x', number=10000) # for loops are much faster because of the range function.
+4.98198106000018
+```
+
+#### 3.7.3 For/While Else. <a name="3.7.2"></a><h5>[Go To TOC](#TOC).</h5>
+
+The `else` keyword is used, in a for or while loop, to check if the loop was exited nicely or something else interrupts its execution. if it exited nicely, the body of else statement will be executed.
+
+```python
+>>> for i in range(5):
+...     print(i)
+... else:
+...     print("Nothing interrupts the for loop!")
+... 
+0
+1
+2
+3
+4
+Nothing interrupts the for loop!
+>>> for i in range(20):
+...     if i == 10:
+...             print("else will not be executed!")
+...             break
+... else:
+...     print("else")
+... 
+else will not be executed!
 ```

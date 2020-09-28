@@ -1880,7 +1880,7 @@ In Python, operations have different priorities. The following table lists arith
 | `^` | Bitwise XOR. | `>>> bin(0b1101 & 0b0111 ^ 0b001)`<br>'0b100' |
 | `\|` | Bitwise OR. | `>>> bin(0b1101 & 0b0111 ^ 0b001 \| 0b001)`<br>'0b101' |
 
-## 3.9 Iterables. <a name="3.8"></a><h5>[Go To TOC](#TOC).</h5>
+## 3.9 Iterables. <a name="3.9"></a><h5>[Go To TOC](#TOC).</h5>
 
 
 Each time an object is used in a for loop, the interpreter generates an iterator with which it works. An iterator is an object that contains a **next()** method which is called at each iteration to returns the sequence, element by element. When there are no more elements, the iterator raises an exception of type **StopIteration**. There are a lot of objects that are iterable(e.g. elements of a list, characters of a string, keys of dict...).

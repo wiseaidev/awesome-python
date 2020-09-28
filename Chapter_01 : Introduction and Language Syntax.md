@@ -63,7 +63,8 @@ Don't give up. Difficult roads **often** lead to beautiful destinations.
 	3.7 [Loops](#3.7)     
 	&nbsp;&nbsp;&nbsp;&nbsp;3.7.1 [While loop.](#3.7.1)    
 	&nbsp;&nbsp;&nbsp;&nbsp;3.7.2 [For loop.](#3.7.2)    
-	&nbsp;&nbsp;&nbsp;&nbsp;3.7.3 [For/While Else loop.](#3.7.3)   
+	&nbsp;&nbsp;&nbsp;&nbsp;3.7.3 [For/While Else loop.](#3.7.3)    
+	3.8 [Operations](#3.8)     
 	[TODO]     
 	.    
 	.    
@@ -1852,3 +1853,30 @@ Nothing interrupts the for loop!
 ... 
 else will not be executed!
 ```
+
+#### 3.8 Operations. <a name="3.8"></a><h5>[Go To TOC](#TOC).</h5>
+
+In Python, operations have different priorities. The following table lists arithmetic and logical operations from highest to lowest priority:
+
+
+| Operation | Description | Example |
+| --- | --- | --- |
+| `()` | Parentheses. | `>>> (2+1)*(3-1)`<br>6 |
+| `**` | Exponentiation. |  `>>> (2+1)**(3-1)`<br>9 |
+| `~` | Inversion(bitwise NOT). ~n = -(n+1). | `>>> ~19  `<br>-20<br>`>>> ~19 + 1`<br>-21 |
+| `+ -` | Negation, identity. | `>>> -2 +1`<br>-1 |
+| `/`, `//` | Division and Truncation Division. | `>>> 2/3 ; 3//2.0`<br>0.6666666666666666<br>1.0 |
+| `%` | Remainder. | `>>> 2%3`<br>2<br>`>>> 4%2`<br>0<br>`>>> 27/3 % 5`<br>4.0 |
+| `*` | Multiplication. | `>>> 27/3 % 5 * 2`<br>8.0 | `>>> 3 ** 3 / 3 % 5 * 2`<br>8.0 |
+| `+ -` | Addition, Subtraction. | `>>> 3 ** 3 / 3 % 5 * 2 + 4 - 1`<br>11.0 |
+| `<< >>` | Shift left and shift right. | `>>> 4<<1`<br>8<br>`>>> 4>>1`<br>2 |
+| `&` | Bitwise AND. | `>>> bin(0b1101 & 0b0111)`<br>'0b101' |
+| `^` | Bitwise XOR. | `>>> bin(0b1101 & 0b0111 ^ 0b001)`<br>'0b100' |
+| `|` | Bitwise OR. | `>>> bin(0b1101 & 0b0111 ^ 0b001 | 0b001)`<br>'0b101' |
+
+
+
+
+
+
+

@@ -53,18 +53,24 @@ Don't give up. Difficult roads **often** lead to beautiful destinations.
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.4 [Array](#3.5.2.4)    
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.5 [Dictionary](#3.5.2.5)    
 	        
-	&nbsp;&nbsp;&nbsp;&nbsp;3.5.3 [Sequences Exercices](#3.5.3)     
+	&nbsp;&nbsp;&nbsp;&nbsp;3.5.3 [Sequences Exercices](#3.5.3)    
+
 	3.6 [Conditional Statements](#3.6)     
 	&nbsp;&nbsp;&nbsp;&nbsp;3.6.1 [If Statement](#3.6.1)    
 	&nbsp;&nbsp;&nbsp;&nbsp;3.6.2 [If-Else Statements](#3.6.2)    
 	&nbsp;&nbsp;&nbsp;&nbsp;3.6.3 [If-Elif Statements](#3.6.3)    
 	&nbsp;&nbsp;&nbsp;&nbsp;3.6.4 [Nested If-Else Statements](#3.6.4)    
-	&nbsp;&nbsp;&nbsp;&nbsp;3.6.5 [Exercices](#3.6.5)    
+	&nbsp;&nbsp;&nbsp;&nbsp;3.6.5 [Exercices](#3.6.5)     
+
 	3.7 [Loops](#3.7)     
 	&nbsp;&nbsp;&nbsp;&nbsp;3.7.1 [While loop.](#3.7.1)    
 	&nbsp;&nbsp;&nbsp;&nbsp;3.7.2 [For loop.](#3.7.2)    
-	&nbsp;&nbsp;&nbsp;&nbsp;3.7.3 [For/While Else loop.](#3.7.3)    
-	3.8 [Operations](#3.8)     
+	&nbsp;&nbsp;&nbsp;&nbsp;3.7.3 [Loop Else.](#3.7.3)    
+
+	3.8 [Operations](#3.8)    
+
+	3.9 [Iterables](#3.9)
+
 	[TODO]     
 	.    
 	.    
@@ -1828,7 +1834,7 @@ for variable_name in iterable:
 4.98198106000018
 ```
 
-#### 3.7.3 For/While Else. <a name="3.7.3"></a><h5>[Go To TOC](#TOC).</h5>
+#### 3.7.3 Loop Else. <a name="3.7.3"></a><h5>[Go To TOC](#TOC).</h5>
 
 The `else` keyword is used, in a for or while loop, to check if the loop was exited nicely or something else interrupts its execution. if it exited nicely, the body of else statement will be executed.
 
@@ -1854,7 +1860,7 @@ Nothing interrupts the for loop!
 else will not be executed!
 ```
 
-#### 3.8 Operations. <a name="3.8"></a><h5>[Go To TOC](#TOC).</h5>
+## 3.8 Operations. <a name="3.8"></a><h5>[Go To TOC](#TOC).</h5>
 
 In Python, operations have different priorities. The following table lists arithmetic and logical operations from highest to lowest priority:
 
@@ -1874,9 +1880,94 @@ In Python, operations have different priorities. The following table lists arith
 | `^` | Bitwise XOR. | `>>> bin(0b1101 & 0b0111 ^ 0b001)`<br>'0b100' |
 | `\|` | Bitwise OR. | `>>> bin(0b1101 & 0b0111 ^ 0b001 \| 0b001)`<br>'0b101' |
 
+## 3.9 Iterables. <a name="3.8"></a><h5>[Go To TOC](#TOC).</h5>
 
 
+Each time an object is used in a for loop, the interpreter generates an iterator with which it works. An iterator is an object that contains a **next()** method which is called at each iteration to returns the sequence, element by element. When there are no more elements, the iterator raises an exception of type **StopIteration**. There are a lot of objects that are iterable(e.g. elements of a list, characters of a string, keys of dict...).
 
+![iterators](./resources/iterators.png)
 
+```python
+for element in range(5): # list ==> elements
+	print(element)
+------------------------
+for char in "string":  # string ==> chars
+	print(char)
+------------------------
+dict_ = {'key0': 1, 'key1': 2, 'key2': 3 } 
+for key in dict_:  # dict ==> keys
+	print(dict_[key])
+for value in dict_.values():   # a dict is not ordered, but when you iterate over it, it returns ordered values.
+for key,value in dict_.items():   
+for key in iter(dict_):
+------------------------
+for number in itertools.count():  # infinite iterable
+```
 
+Iterators can be created using the built-in **iter()** method which takes an iterable as a parameter.
+
+```python
+>>> list_ = [3,4,5,6,7]
+>>> iterator = iter(list_)
+>>> iterator
+<list_iterator object at 0x7fc5fd0b1d10>
+>>> dir(iterator)
+['__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__length_hint__', '__lt__', '__ne__', '__new__', '__next__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setstate__', '__sizeof__', '__str__', '__subclasshook__']
+>>> next(iterator)
+3
+>>> next(iterator)
+4
+>>> next(iterator)
+5
+>>> next(iterator)
+6
+>>> next(iterator)
+7
+>>> next(iterator)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+StopIteration
+>>> next(iterator)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+StopIteration
+>>> b = reversed(list_)
+>>> b
+<list_reverseiterator object at 0x7fc5fd0b1d90>
+>>> next(b)
+7
+>>> next(b)
+6
+>>> next(b)
+5
+>>> next(b)
+4
+>>> next(b)
+3
+>>> next(b)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+StopIteration
+>>> type(b)
+<class 'list_reverseiterator'> 
+>>> list_.__getitem__(0)
+3
+>>> list_.__getitem__(0)
+3
+>>> list_.__getitem__(1)
+4
+>>> list_.__getitem__(3)
+6
+>>> list_[1]
+4
+>>> list_[2]
+5
+>>> list_[3]
+6
+>>> hasattr(b,'__next__')
+True
+>>> hasattr(list_,'__next__')
+False
+
+```
 

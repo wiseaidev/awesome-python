@@ -1872,7 +1872,7 @@ In Python, operations have different priorities. The following table lists arith
 | `<< >>` | Shift left and shift right. | `>>> 4<<1`<br>8<br>`>>> 4>>1`<br>2 |
 | `&` | Bitwise AND. | `>>> bin(0b1101 & 0b0111)`<br>'0b101' |
 | `^` | Bitwise XOR. | `>>> bin(0b1101 & 0b0111 ^ 0b001)`<br>'0b100' |
-| `\|` | Bitwise OR. | `>>> bin(0b1101 & 0b0111 ^ 0b001 | 0b001)`<br>'0b101' |
+| `\|` | Bitwise OR. | `>>> bin(0b1101 & 0b0111 ^ 0b001 \| 0b001)`<br>'0b101' |
 
 
 

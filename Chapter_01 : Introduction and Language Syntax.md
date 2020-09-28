@@ -68,8 +68,8 @@ Don't give up. Difficult roads **often** lead to beautiful destinations.
 	&nbsp;&nbsp;&nbsp;&nbsp;3.7.3 [Loop Else.](#3.7.3)    
 
 	3.8 [Operations](#3.8)    
-
-	3.9 [Iterables](#3.9)
+	3.9 [Iterables](#3.9)    
+	3.10 [List Comprehensions](#3.10)    
 
 	[TODO]     
 	.    
@@ -1970,4 +1970,25 @@ True
 False
 
 ```
+
+## 3.10 List Comprehensions. <a name="3.10"></a><h5>[Go To TOC](#TOC).</h5>
+
+List comprehensions are expressions used to generate lists in a very compact way, without having to use loops.
+
+The general form of list comprehension is :
+
+> [func(element) for element in sequence if condition]
+
+```python
+>>> [i for i in range(100) if i%3 == 0 or i%5 == 0]
+[0, 3, 5, 6, 9, 10, 12, 15, 18, 20, 21, 24, 25, 27, 30, 33, 35, 36, 39, 40, 42, 45, 48, 50, 51, 54, 55, 57, 60, 63, 65, 66, 69, 70, 72, 75, 78, 80, 81, 84, 85, 87, 90, 93, 95, 96, 99]
+>>> list_ = []
+>>> for i in range(100):
+... 	if i%3 == 0 or i%5 == 0:
+... 		list_.append(i)
+...
+>>> list_
+[0, 3, 5, 6, 9, 10, 12, 15, 18, 20, 21, 24, 25, 27, 30, 33, 35, 36, 39, 40, 42, 45, 48, 50, 51, 54, 55, 57, 60, 63, 65, 66, 69, 70, 72, 75, 78, 80, 81, 84, 85, 87, 90, 93, 95, 96, 99]
+```
+
 

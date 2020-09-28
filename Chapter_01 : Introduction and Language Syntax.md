@@ -70,6 +70,8 @@ Don't give up. Difficult roads **often** lead to beautiful destinations.
 	3.8 [Operations](#3.8)    
 	3.9 [Iterables](#3.9)    
 	3.10 [List Comprehensions](#3.10)    
+	3.11 [Generator Expression](#3.11)    
+  
 
 	[TODO]     
 	.    
@@ -1980,7 +1982,7 @@ The general form of list comprehension is :
 > [func(element) for element in sequence if condition]
 
 ```python
->>> [i for i in range(100) if i%3 == 0 or i%5 == 0]
+>>> [i for i in range(100) if i%3 == 0 or i%5 == 0] # return multiples of 3 and 5 less than 100
 [0, 3, 5, 6, 9, 10, 12, 15, 18, 20, 21, 24, 25, 27, 30, 33, 35, 36, 39, 40, 42, 45, 48, 50, 51, 54, 55, 57, 60, 63, 65, 66, 69, 70, 72, 75, 78, 80, 81, 84, 85, 87, 90, 93, 95, 96, 99]
 >>> list_ = []
 >>> for i in range(100):
@@ -1991,4 +1993,22 @@ The general form of list comprehension is :
 [0, 3, 5, 6, 9, 10, 12, 15, 18, 20, 21, 24, 25, 27, 30, 33, 35, 36, 39, 40, 42, 45, 48, 50, 51, 54, 55, 57, 60, 63, 65, 66, 69, 70, 72, 75, 78, 80, 81, 84, 85, 87, 90, 93, 95, 96, 99]
 ```
 
+## 3.11 Generator Expression. <a name="3.11"></a><h5>[Go To TOC](#TOC).</h5>
 
+A generator expression is a way to create a generator, which is iterable. These expressions are in a form equivalent to list comprehensions: (expression for element in iterable condition) and return a generator object(instead of calling it tuple comprehension, it is called genexp). 
+
+```python
+>>> genexp = (i for i in range(100) if i % 3 == 0 or i % 5 == 0)
+>>> type(genexp)
+<class 'generator'>
+>>> next(genexp) # Elements are generated lazely :-)
+0
+>>> next(genexp)
+3
+>>> list(genexp)
+[5, 6, 9, 10, 12, 15, 18, 20, 21, 24, 25, 27, 30, 33, 35, 36, 39, 40, 42, 45, 48, 50, 51, 54, 55, 57, 60, 63, 65, 66, 69, 70, 72, 75, 78, 80, 81, 84, 85, 87, 90, 93, 95, 96, 99]
+>>> next(genexp)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+StopIteration
+```

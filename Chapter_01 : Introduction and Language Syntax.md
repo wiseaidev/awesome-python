@@ -6,7 +6,7 @@ Document's Author: Harmouch101
 
 **Reset your brain**.
 
-You can't remember everything, so you need to take notes and write things down.
+Don't try to memorize everything because you don't have to, just remember that something exists to know what you are looking for.
 
 Theory without Practice is useless; Practice without Theory is blind.
 
@@ -63,14 +63,16 @@ Don't give up. Difficult roads **often** lead to beautiful destinations.
 	&nbsp;&nbsp;&nbsp;&nbsp;3.6.5 [Exercices](#3.6.5)     
 
 	3.7 [Loops](#3.7)     
-	&nbsp;&nbsp;&nbsp;&nbsp;3.7.1 [While loop.](#3.7.1)    
-	&nbsp;&nbsp;&nbsp;&nbsp;3.7.2 [For loop.](#3.7.2)    
-	&nbsp;&nbsp;&nbsp;&nbsp;3.7.3 [Loop Else.](#3.7.3)    
+	&nbsp;&nbsp;&nbsp;&nbsp;3.7.1 [While loop](#3.7.1)    
+	&nbsp;&nbsp;&nbsp;&nbsp;3.7.2 [For loop](#3.7.2)    
+	&nbsp;&nbsp;&nbsp;&nbsp;3.7.3 [Loop Else](#3.7.3)    
 
-	3.8 [Operations](#3.8)    
-	3.9 [Iterables](#3.9)    
-	3.10 [List Comprehensions](#3.10)    
-	3.11 [Generator Expression](#3.11)    
+	3.8 [Operations.](#3.8)    
+	3.9 [Iterables.](#3.9)    
+	3.10 [List Comprehensions](#3.10) 
+	3.11 [Generators](#3.11)   
+	&nbsp;&nbsp;&nbsp;&nbsp;3.11.1 [Generator Function](#3.11.1)    
+	&nbsp;&nbsp;&nbsp;&nbsp;3.11.2 [Generator Expression](#3.11.2)    
   
 
 	[TODO]     
@@ -1993,7 +1995,44 @@ The general form of list comprehension is :
 [0, 3, 5, 6, 9, 10, 12, 15, 18, 20, 21, 24, 25, 27, 30, 33, 35, 36, 39, 40, 42, 45, 48, 50, 51, 54, 55, 57, 60, 63, 65, 66, 69, 70, 72, 75, 78, 80, 81, 84, 85, 87, 90, 93, 95, 96, 99]
 ```
 
-## 3.11 Generator Expression. <a name="3.11"></a><h5>[Go To TOC](#TOC).</h5>
+## 3.11 Generators. <a name="3.11"></a><h5>[Go To TOC](#TOC).</h5>
+
+Generators are functions that can be paused(with `yield`) and resumed(with `next()`) while they are running. Their return value is an iterable object. Unlike lists, they are **lazy** and therefore only work on the current item when requested. Thus, they are much more memory efficient when dealing with large datasets(this is not true with small dataset).
+
+### 3.11.1 Generator Function. <a name="3.11.1"></a><h5>[Go To TOC](#TOC).</h5>
+
+```python
+>>> def iterable(n):
+...     for i in range(n):
+...             print("pause")
+...             yield i
+...             print("resume")
+...     print("return")
+...
+>>> for element in iterable(5):
+...     print(element)
+... 
+pause
+0
+resume
+pause
+1
+resume
+pause
+2
+resume
+pause
+3
+resume
+pause
+4
+resume
+return
+```
+
+`yield` saves the state of the local variables and where the function statement was left. The next call to the function will resume at this point. The for loop `for element in iterable(5):` will call next on the generator each iteration.
+
+### 3.11.2 Generator Expression. <a name="3.11.2"></a><h5>[Go To TOC](#TOC).</h5>
 
 A generator expression is a way to create a generator, which is iterable. These expressions are in a form equivalent to list comprehensions: (expression for element in iterable condition) and return a generator object(instead of calling it tuple comprehension, it is called genexp). 
 
@@ -2011,4 +2050,12 @@ A generator expression is a way to create a generator, which is iterable. These 
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 StopIteration
+>>> timeit.timeit("sum(i for i in range (100))") # genexp
+8.194617394000034
+>>> timeit.timeit("sum([i for i in range (100)])") # list comp
+6.147775573999752
+>>> print ( sys. getsizeof([i for i in range (10000)])) 
+87632
+>>> print ( sys. getsizeof((i for i in range (10000)))) 
+128
 ```

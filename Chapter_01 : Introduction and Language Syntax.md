@@ -69,7 +69,7 @@ Don't give up. Difficult roads **often** lead to beautiful destinations.
 
 	3.8 [Operations.](#3.8)    
 	3.9 [Iterables.](#3.9)    
-	3.10 [List Comprehensions](#3.10) 
+	3.10 [List Comprehensions](#3.10)   
 	3.11 [Generators](#3.11)   
 	&nbsp;&nbsp;&nbsp;&nbsp;3.11.1 [Generator Function](#3.11.1)    
 	&nbsp;&nbsp;&nbsp;&nbsp;3.11.2 [Generator Expression](#3.11.2)    

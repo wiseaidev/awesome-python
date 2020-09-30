@@ -23,7 +23,7 @@ Don't give up. Difficult roads **often** lead to beautiful destinations.
 	1.2	[Why Python ?](#1.2)    
 	1.3 [Interpreted Language](#1.3)
 2. [Running Python](#2)
-3. [Language Syntax](#3)   
+3. [Python Syntax](#3)   
 	3.1	[Print Instruction](#3.1)   
 	3.2	[Comments](#3.2)   
 	3.3	[Variables](#3.3)   
@@ -73,13 +73,9 @@ Don't give up. Difficult roads **often** lead to beautiful destinations.
 	3.11 [Generators](#3.11)   
 	&nbsp;&nbsp;&nbsp;&nbsp;3.11.1 [Generator Function](#3.11.1)    
 	&nbsp;&nbsp;&nbsp;&nbsp;3.11.2 [Generator Expression](#3.11.2)    
+	3.12 [Input](#3.12)   
+	3.13 [Exceptions](#3.13)   
   
-
-	[TODO]     
-	.    
-	.    
-	.    
-
 ## 1. A Tutorial Introduction <a name="1"></a>
 
 The goal of this chapter is to get you familiar with python 3 and its essential features.
@@ -1997,6 +1993,8 @@ The general form of list comprehension is :
 
 ## 3.11 Generators. <a name="3.11"></a><h5>[Go To TOC](#TOC).</h5>
 
+[Python Docs](https://docs.python.org/3/glossary.html#term-generator).
+
 Generators are functions that can be paused(with `yield`) and resumed(with `next()`) while they are running. Their return value is an iterable object. Unlike lists, they are **lazy** and therefore only work on the current item when requested. Thus, they are much more memory efficient when dealing with large datasets(this is not true with small dataset).
 
 ### 3.11.1 Generator Function. <a name="3.11.1"></a><h5>[Go To TOC](#TOC).</h5>
@@ -2058,4 +2056,101 @@ StopIteration
 87632
 >>> print ( sys. getsizeof((i for i in range (10000)))) 
 128
+```
+
+### 3.12 Input. <a name="3.12"></a><h5>[Go To TOC](#TOC).</h5>
+
+Using the built-in `input()` method, you can get information from the user. It has an optional parameter `prompt` which prints a string on the screen.
+
+```python
+>>> n = eval(input("please give me a number and press <return> : ")) # eval converts the input to int.
+please give me a number and press <return> : 10
+>>> for i in range(n):
+...     print(' ' * ( n - i - 1 ) + '*' * ( 2 * i + 1 ))
+... 
+         *     # i = 0 : 9 spaces and 1 asterisk ==> nb spaces =  n - i - 1 = 10 - 0 - 1 = 9
+        ***	   # i = 1 : 8 spaces and 3 asterisks ==> nb asterisks =  2 * i + 1 = 2*0 +1 = 1
+       *****
+      *******
+     *********
+    ***********
+   *************
+  ***************
+ *****************
+*******************
+>>> for i in list(range(n)) + list(range(n-2,-1,-1)): # concatenate two lists
+...     print(' ' * ( n - i - 1 ) + '*' * ( 2 * i + 1 ))
+... 
+         *
+        ***
+       *****
+      *******
+     *********
+    ***********
+   *************
+  ***************
+ *****************
+*******************
+ *****************
+  ***************
+   *************
+    ***********
+     *********
+      *******
+       *****
+        ***
+         *
+>>> for i in range(n):
+...     print('*' * ( i + 1 ))
+... 
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+**********
+>>> for i in range(n):
+...     print(' ' * ( n - i - 1 ) + '*' * ( i + 1 ))
+... 
+         *
+        **
+       ***
+      ****
+     *****
+    ******
+   *******
+  ********
+ *********
+**********
+>>> for i in range(n-1,-1,-1):
+...     print(' ' * ( n - i - 1 ) + '*' * ( i + 1 ))
+... 
+**********
+ *********
+  ********
+   *******
+    ******
+     *****
+      ****
+       ***
+        **
+         *
+>>> for i in range(n-1,-1,-1):
+...     print('*' * ( i + 1 ))
+... 
+**********
+*********
+********
+*******
+******
+*****
+****
+***
+**
+*
+
 ```

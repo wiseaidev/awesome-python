@@ -2154,3 +2154,108 @@ please give me a number and press <return> : 10
 *
 
 ```
+
+### 3.13 Exceptions. <a name="3.13"></a><h5>[Go To TOC](#TOC).</h5>
+From [python docs](https://docs.python.org/3/library/exceptions.html#exception-hierarchy), The class hierarchy for built-in exceptions is:
+>
+    BaseException # The root of all exceptions.
+    +-- SystemExit # Exception thrown by the sys.exit function.
+    +-- KeyboardInterrupt # Ctrl + C
+    +-- GeneratorExit  #  Exception thrown by close method of the generator.
+    +-- Exception
+	      +-- StopIteration # Thrown by the built-in next function when the iterator becomes empty.
+	      +-- StopAsyncIteration
+	      +-- ArithmeticError
+	      |    +-- FloatingPointError # Thrown when a floating point operation fails.
+	      |    +-- OverflowError  # arithmetic operation is too large to represent.
+	      |    +-- ZeroDivisionError # division by zero.
+	      +-- AssertionError  # The expression in the assert function is false.
+	      +-- AttributeError  # The object has no given attribute.
+	      +-- BufferError  # The operation with the buffer cannot be performed.
+	      +-- EOFError  # End of the file error.
+	      +-- ImportError  # Failed to import a module.
+	      |    +-- ModuleNotFoundError  
+	      +-- LookupError  # Index or key is not valid.
+	      |    +-- IndexError   # The index is not in the range of elements.
+	      |    +-- KeyError   # Non-existent key 
+	      +-- MemoryError   # Out of memory.
+	      +-- NameError   # Name was not found.
+	      |    +-- UnboundLocalError
+	      +-- OSError   # System related errors.
+	      |    +-- BlockingIOError
+	      |    +-- ChildProcessError
+	      |    +-- ConnectionError
+	      |    |    +-- BrokenPipeError
+	      |    |    +-- ConnectionAbortedError
+	      |    |    +-- ConnectionRefusedError
+	      |    |    +-- ConnectionResetError
+	      |    +-- FileExistsError
+	      |    +-- FileNotFoundError
+	      |    +-- InterruptedError
+	      |    +-- IsADirectoryError
+	      |    +-- NotADirectoryError
+	      |    +-- PermissionError
+	      |    +-- ProcessLookupError
+	      |    +-- TimeoutError
+	      +-- ReferenceError
+	      +-- RuntimeError
+	      |    +-- NotImplementedError
+	      |    +-- RecursionError
+	      +-- SyntaxError
+	      |    +-- IndentationError
+	      |         +-- TabError
+	      +-- SystemError
+	      +-- TypeError
+	      +-- ValueError
+	      |    +-- UnicodeError
+	      |         +-- UnicodeDecodeError
+	      |         +-- UnicodeEncodeError
+	      |         +-- UnicodeTranslateError
+	      +-- Warning
+	           +-- DeprecationWarning
+	           +-- PendingDeprecationWarning
+	           +-- RuntimeWarning
+	           +-- SyntaxWarning
+	           +-- UserWarning
+	           +-- FutureWarning
+	           +-- ImportWarning
+	           +-- UnicodeWarning
+	           +-- BytesWarning
+	           +-- ResourceWarning
+>
+
+The try - except construct is used to handle exceptions.
+
+```python
+>>> try: 
+...     print(16/0)
+... except:
+...     print("Error occurred!!")
+... 
+Error occurred!!
+
+>>> try: 
+...     print(16/0)
+... except ZeroDivisionError:
+...     print('+inf')
+... 
++inf
+>>> try: 
+...     print(16/2)
+... except ZeroDivisionError:
+...     print('+inf')
+... finally:
+...     print('this statement will be executed anyway!')
+... 
+8.0
+this statement will be executed anyway!
+>>> try: 
+...     print(16/2)
+... except ZeroDivisionError:
+...     print('+inf')
+... else:
+...     print('No exception occurred')
+... 
+8.0
+No exception occurred
+```

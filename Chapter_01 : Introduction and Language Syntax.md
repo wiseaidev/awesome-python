@@ -16,7 +16,7 @@ Don't give up. Difficult roads **often** lead to beautiful destinations.
 
 ---
 
-## Table Of Content(TOC) <a name="TOC"></a>
+## Table Of Content (TOC) <a name="TOC"></a>
 
 1. [A Tutorial Introduction](#1)   
 	1.1	[What is Python ?](#1.1)    

@@ -2,7 +2,7 @@
 # The computer picks a random word and then "jumbles" it
 # The player has to guess the original word
 import random
-# words and hints extracted from https://www.k5learning.com/worksheets/vocabulary/5th-grade-jumbled-words-1.pdf
+# words and hints are extracted from https://www.k5learning.com/worksheets/vocabulary/5th-grade-jumbled-words-1.pdf
 WORDS = ['lightly',
 'worth',
 'afford',

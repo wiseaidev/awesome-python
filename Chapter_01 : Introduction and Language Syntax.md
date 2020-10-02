@@ -18,16 +18,16 @@ Don't give up. Difficult roads **often** lead to beautiful destinations.
 
 ## Table Of Content (TOC) <a name="TOC"></a>
 
-1. [A Tutorial Introduction](#1)
-    1.1	[What is Python ?](#1.1)
-    1.2	[Why Python ?](#1.2)
-    1.3 [Interpreted Language](#1.3)
+1. [A Tutorial Introduction](#1)   
+	1.1	[What is Python ?](#1.1)    
+	1.2	[Why Python ?](#1.2)    
+	1.3 [Interpreted Language](#1.3)
 2. [Running Python](#2)
-3. [Python Syntax](#3)
-    3.1	[Print Instruction](#3.1)
-    3.2	[Comments](#3.2)
-    3.3	[Variables](#3.3)
-        3.3.1 [Names](#3.3.1)
+3. [Python Syntax](#3)   
+	3.1	[Print Instruction](#3.1)   
+	3.2	[Comments](#3.2)   
+	3.3	[Variables](#3.3)   
+	&nbsp;&nbsp;&nbsp;&nbsp;3.3.1 [Names](#3.3.1)   
 
 	3.4	[literals](#3.4)    
 	&nbsp;&nbsp;&nbsp;&nbsp;3.4.1 [String Literals](#3.4.1)    

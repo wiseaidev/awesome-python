@@ -1,6 +1,5 @@
 """
-File: rot_decipher.py
-Encrypts an input encrypted message and prints its plain result. 
+Decrypts an encrypted message(lowercase only) and prints its plaintext result. 
 The other input is rotation value.
 """
 if __name__ == "__main__":

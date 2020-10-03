@@ -1,6 +1,5 @@
 """
-File: rot_cipher.py
-Encrypts an input message and prints the result. 
+Encrypts an input message(lowercase only) and prints the result. 
 The other input is rotation value.
 """
 if __name__ == "__main__":
@@ -11,7 +10,7 @@ if __name__ == "__main__":
 		ordvalue = ord(char)
 		cipherValue = ordvalue + rot_val
 		'''
-		| ord('a')--------ordvalue----------------ord('z') | -----ordvalue + rot_val----- |
+		| ord('a')--------ordvalue----------------ord('z') | -----ordvalue + rot_val----- ord('A')|
 		'''
 		if cipherValue > ord('z'):
 			cipherValue = ord('a') + rot_val - (ord('z') - ordvalue + 1)

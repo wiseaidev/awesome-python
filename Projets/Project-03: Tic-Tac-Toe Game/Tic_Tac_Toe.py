@@ -1,6 +1,7 @@
 # Tic-Tac-Toe
 # Plays the game of tic-tac-toe against a human opponent
 # global constants
+# A modified version of the code from: https://www.cs.ucdavis.edu/~gusfield/cs10sp11/tictactoe.py
 X = "X"
 O = "O"
 TIE = "TIE"
@@ -141,7 +142,7 @@ def congrat_winner(the_winner, computer, human):
 	elif the_winner == human:
 		print("No, no!	 It cannot be!	 Somehow you tricked me, human. \n" \
 			"But never again!	 I, the computer, so swear it!")
-	elif the_winner == TIE:
+	else:
 		print("You were most lucky, human, and somehow managed to tie me. \n" \
 			"Celebrate today... for this is the best you will ever achieve.")
 

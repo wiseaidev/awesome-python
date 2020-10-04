@@ -2,18 +2,18 @@
 from mod import Mod
 def isprime1(number):
 	# fast
-	return False if number <  1 else len([x for x in range(2, int(number**0.5) + 1) if number % x == 0]) == 0
+	return number > 1 if number <=  3 else len([x for x in range(2, int(number**0.5) + 1) if number % x == 0]) == 0
 
 def isprime2(number):
 	# Fermat's Little Theorem
 	# https://brilliant.org/wiki/fermats-little-theorem/
 	# slow
-	return len([b for b in range(2,number) if b**(number) != Mod(b,number)]) == 0 
+	return number > 1 if number <=  3 else len([b for b in range(2,number) if b**(number) != Mod(b,number)]) == 0 
 
 def arecoprime(a, b):
 	return False if len([i for i in range(2, min(a, b) + 1) 
 		if a % i == 0 and b % i == 0]) != 0 else True
-	
+
 def coprimes(number):
 	return (i for i in range(2, number + 1) if arecoprime(i,number))
 
@@ -28,7 +28,7 @@ if __name__ == "__main__":
 				primes0.append(i)
 			#if isprime2(i):
 			#	primes1.append(i)
-		print(f"Primes of numbers lower than {number} are: {primes0}")
+		print(f"Primes of numbers lower than {number} are: {primes1}")
 		#assert len(primes1) == len(primes0)
 		assert arecoprime(11, 23)
 		assert not arecoprime(9, 12)

@@ -1,5 +1,6 @@
 # https://pypi.org/project/mod/
 from mod import Mod
+
 def isprime1(number):
 	# fast
 	return number > 1 if number <=  3 else len([x for x in range(2, int(number**0.5) + 1) if number % x == 0]) == 0
@@ -20,7 +21,7 @@ def coprimes(number):
 if __name__ == "__main__":
 	try:
 		number = int(input("Enter you number: "))
-		print(f"coprimes with {number} are: {list(coprimes(number))} ",end="\n\n")
+		#print(f"coprimes with {number} are: {list(coprimes(number))} ",end="\n\n")
 		primes0 = []
 		primes1 = []
 		for i in range(1,number + 1):
@@ -28,7 +29,7 @@ if __name__ == "__main__":
 				primes0.append(i)
 			#if isprime2(i):
 			#	primes1.append(i)
-		print(f"Primes of numbers lower than {number} are: {primes1}")
+		print(f"\nPrimes of numbers lower than {number} are: \n{primes0}")
 		#assert len(primes1) == len(primes0)
 		assert arecoprime(11, 23)
 		assert not arecoprime(9, 12)

@@ -1,4 +1,4 @@
-# Chapter_01: Introduction and Language Syntax.
+# Chapter_01: Introduction.
 
 Document's Author: Harmouch101
 

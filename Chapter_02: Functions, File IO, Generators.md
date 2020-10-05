@@ -236,7 +236,7 @@ As you can notice, the normal function is slightly faster than the lambda functi
 
 **Converting a normal function to lambda**
 
-It is easy to rewrite a given function in lambda form. All you need is to replace 'def func_name' with `lambda` keyword, declare parameters after lambda, and continue the logic of the program after ':'.
+It is easy to rewrite a given function into a lambda form. All you need is to do is to replace the 'def func_name' with the `lambda` keyword, declare parameters after lambda, and continue the logic of the program after ':'.
 
 ```python
 
@@ -250,9 +250,10 @@ lambda a,b : a + b
 
 `map()` is a built-in function that Accepts a **function** and **sequence**(dataset) as an argument. It works by applying the passed function to each element. Map avoids loops.
 
-**syntax**
+**Syntax**
 
 > map(function, sequence)
+
 > returns an object map
 
 ```python

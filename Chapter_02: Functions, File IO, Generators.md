@@ -20,9 +20,9 @@ Don't give up. Difficult roads **often** lead to beautiful destinations.
 
 1. [Functions](#1)   
 	1.1	[Function's Arguments](#1.1)   
-	1.2	[Functional Programming](#1.2) 
-	    1.2.1 [Anonymous Functions](#1.2.1)   	  
-	    1.2.2 [Map](#1.2.2) 
+	1.2	[Functional Programming](#1.2)   
+	    1.2.1 [Anonymous Functions](#1.2.1)   
+	    1.2.2 [Map](#1.2.2)   
 	    1.2.3 [Filter](#1.2.3)   
 	    1.2.4 [Reduce](#1.2.4)   
 

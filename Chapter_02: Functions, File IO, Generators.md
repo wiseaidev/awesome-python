@@ -4,15 +4,15 @@ Document's Author: Mahmoud Harmouch
 
 ---
 
-**Reset your brain**.
+**Quotes**.
 
-Don't try to memorize everything because you don't have to, just remember that something exists to know what you are looking for.
+> “It’s better to be individual than a clone of someone else.” ― Fennel Hudson
 
-Theory without Practice is useless; Practice without Theory is blind.
+> “You are amazing person with unique talents. Have faith in your abilities.” ― Lailah Gifty Akita
 
-Practice/coding is the key to success as a programmer.
+> “You can be all that you want to be. Keep dreaming and reach out to your dreams.” ― Lailah Gifty Akita
 
-Don't give up. Difficult roads **often** lead to beautiful destinations. 
+> “Be yourself....and make the world adjust!” ― Germany Kent
 
 ---
 
@@ -146,7 +146,7 @@ So `kargs` is a dictionary object.
 
 ## 1.2. Functional Programming. <a name="1.2"></a>
 
-Functional Programming is a often used to describe a piece of code that has no effects on other pieces(immutable data). A functional function is a function that does not change the value of data outside it.
+Functional Programming is a often used to describe a piece of code that has no effects on other pieces(immutable data). A functional function is a function that does not change the value of data outside it(no shared variables).
 
 ```python
 # Non functional function:
@@ -161,7 +161,7 @@ def add(a,b):
 	return a + b
 ```
 
-## 1.2.1 Anonymous Functions. <a name="1.2.1"></a>
+### 1.2.1 Anonymous Functions. <a name="1.2.1"></a>
 
 An anonymous function, also called lambda function, is a function that doesn't have a name and it is defined using the keyword `lambda`.
 
@@ -246,7 +246,7 @@ def mul(a,b):
 lambda a,b : a + b
 ```
 
-## 1.2.2 Map. <a name="1.2.2"></a>
+### 1.2.2 Map. <a name="1.2.2"></a>
 
 `map()` is a built-in function that accepts a **function** and a **sequence**(dataset) as arguments. It works by applying the passed function to each element. Map can replace a loop.
 
@@ -283,4 +283,28 @@ lambda a,b : a + b
 >>> timeit.timeit("for e in list_: list2.append(e**2)","from __main__ import list_,list2",number=100000)
 0.18769715700000233
 ```
+
+### 1.2.3 Filter. <a name="1.2.3"></a>
+
+`filter()` is a built-in function that filters the sequence of an iterable. Like `map()` function, it takes a **function** and a **sequence** as parameters.
+
+**Syntax**
+
+> filter(function, sequence)
+
+> returns a filter object.
+
+**Filter with lambda**
+
+```python
+>>> list_ = [1,2,3,4,5]
+>>> filter(lambda x: x == 2, list_)
+<filter object at 0x7fc6d38726d0>
+>>> list(filter(lambda x: x == 2, list_)) # it works like a loop with an if statement
+[2]
+>>> list(filter(lambda x: x % 2 == 0, list_))
+[2, 4]
+```
+
+### 1.2.4 Reduce. <a name="1.2.4"></a>
 

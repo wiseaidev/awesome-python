@@ -248,7 +248,7 @@ lambda a,b : a + b
 
 ## 1.2.2 Map. <a name="1.2.2"></a>
 
-`map()` is a built-in function that Accepts a **function** and **sequence**(dataset) as an argument. It works by applying the passed function to each element. Map avoids loops.
+`map()` is a built-in function that accepts a **function** and a **sequence**(dataset) as arguments. It works by applying the passed function to each element. Map can replace a loop.
 
 **Syntax**
 
@@ -277,7 +277,7 @@ lambda a,b : a + b
 >>> list2
 [4, 16, 25, 49]
 >>> timeit.timeit("list2 = list(map(lambda x: x**2,list_))","from __main__ import list_",number=100000)
-0.24455913900055748  # when you convert it to list,it becomes is slower
+0.24455913900055748  # when you convert it to list,it becomes slower
 >>> timeit.timeit("map(lambda x: x**2,list_)","from __main__ import list_",number=100000)
 0.02997873599997547  # faster than a loop
 >>> timeit.timeit("for e in list_: list2.append(e**2)","from __main__ import list_,list2",number=100000)

@@ -16,7 +16,7 @@ Don't give up. Difficult roads **often** lead to beautiful destinations.
 
 ---
 
-## Table Of Content (TOC) <a name="TOC"></a>
+## Table Of Content (TOC). <a name="TOC"></a>
 
 1. [A Tutorial Introduction](#1)   
 	1.1	[What is Python ?](#1.1)    
@@ -28,45 +28,37 @@ Don't give up. Difficult roads **often** lead to beautiful destinations.
 	3.2	[Comments](#3.2)   
 	3.3	[Variables](#3.3)   
 	&nbsp;&nbsp;&nbsp;&nbsp;3.3.1 [Names](#3.3.1)   
-
 	3.4	[literals](#3.4)    
 	&nbsp;&nbsp;&nbsp;&nbsp;3.4.1 [String Literals](#3.4.1)    
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.1 [String Formatting](#3.4.1.1)    
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.2 [Special characters](#3.4.1.2)    
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.3 [More Strings Examples](#3.4.1.3)    
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.1 [String Formatting](#3.4.1.1)   
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.2 [Special characters](#3.4.1.2)   
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.3 [More Strings Examples](#3.4.1.3)   
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.4 [Useful Strings Functions](#3.4.1.4)    
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.5 [More Strings Methods Examples](#3.4.1.5)   
-
 	&nbsp;&nbsp;&nbsp;&nbsp;3.4.2 [Numeric literals](#3.4.2)   
-
 	3.5 [Sequences](#3.5)     
 	&nbsp;&nbsp;&nbsp;&nbsp;3.5.1 [Immutable Sequences](#3.5.1)    
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.1.1 [Strings](#3.5.1.1)    
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.1.2 [Tuples](#3.5.1.2)    
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.1.3 [Bytes](#3.5.1.3)    
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.1.4 [Frozenset](#3.5.1.4)    
-	    
 	&nbsp;&nbsp;&nbsp;&nbsp;3.5.2 [Mutable Sequences](#3.5.2)    
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.1 [Lists](#3.5.2.1)    
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.2 [Bytearray](#3.5.2.2)    
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.3 [Set](#3.5.2.3)    
 	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.4 [Array](#3.5.2.4)    
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.5 [Dictionary](#3.5.2.5)    
-	        
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.5 [Dictionary](#3.5.2.5)      
 	&nbsp;&nbsp;&nbsp;&nbsp;3.5.3 [Sequences Exercices](#3.5.3)    
-
 	3.6 [Conditional Statements](#3.6)     
 	&nbsp;&nbsp;&nbsp;&nbsp;3.6.1 [If Statement](#3.6.1)    
 	&nbsp;&nbsp;&nbsp;&nbsp;3.6.2 [If-Else Statements](#3.6.2)    
 	&nbsp;&nbsp;&nbsp;&nbsp;3.6.3 [If-Elif Statements](#3.6.3)    
 	&nbsp;&nbsp;&nbsp;&nbsp;3.6.4 [Nested If-Else Statements](#3.6.4)    
 	&nbsp;&nbsp;&nbsp;&nbsp;3.6.5 [Exercices](#3.6.5)     
-
 	3.7 [Loops](#3.7)     
 	&nbsp;&nbsp;&nbsp;&nbsp;3.7.1 [While loop](#3.7.1)    
 	&nbsp;&nbsp;&nbsp;&nbsp;3.7.2 [For loop](#3.7.2)    
 	&nbsp;&nbsp;&nbsp;&nbsp;3.7.3 [Loop Else](#3.7.3)    
-
 	3.8 [Operations.](#3.8)    
 	3.9 [Iterables.](#3.9)    
 	3.10 [List Comprehensions](#3.10)   

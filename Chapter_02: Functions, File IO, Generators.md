@@ -4,7 +4,7 @@ Document's Author: Mahmoud Harmouch
 
 ---
 
-**Quotes**.
+## **Quotes**.
 
 > “It’s better to be individual than a clone of someone else.” ― Fennel Hudson
 
@@ -25,10 +25,9 @@ Document's Author: Mahmoud Harmouch
 	&nbsp;&nbsp;&nbsp;&nbsp;1.2.2 [Map](#1.2.2)   
 	&nbsp;&nbsp;&nbsp;&nbsp;1.2.3 [Filter](#1.2.3)   
 	&nbsp;&nbsp;&nbsp;&nbsp;1.2.4 [Reduce](#1.2.4)   
-
-
+	&nbsp;&nbsp;&nbsp;&nbsp;1.2.5 [Zip](#1.2.5)   
+	1.3 [Builtin Functions](#1.3)   
 2. [File I/O](#2)
-
 3. [Generators](#3)
 
 ## 1. Functions. <a name="1"></a>
@@ -146,7 +145,7 @@ So `kargs` is a dictionary object.
 
 ## 1.2. Functional Programming. <a name="1.2"></a>
 
-Functional Programming is a often used to describe a piece of code that has no effects on other pieces(immutable data). A functional function is a function that does not change the value of data outside it(no shared variables).
+Functional Programming is a often used to describe a piece of code that has no effects on other pieces(immutable data). A functional function is a function that does not change the value of data outside it(no shared variables). 
 
 ```python
 # Non functional function:
@@ -161,6 +160,8 @@ def add(a,b):
 	return a + b
 ```
 
+When talking about the elements of functional programming in Python, the following functions are meant: lambda , map , filter , reduce , zip .
+
 ### 1.2.1 Anonymous Functions. <a name="1.2.1"></a>
 
 An anonymous function, also called lambda function, is a function that doesn't have a name and it is defined using the keyword `lambda`.
@@ -168,6 +169,8 @@ An anonymous function, also called lambda function, is a function that doesn't h
 **Syntax**
 
 > lambda arguments: expression
+
+> returns a lambda object(iterable)
 
 ```python
 >>> f = lambda x : x ** 3 + x ** 2 - x + 1
@@ -254,7 +257,7 @@ lambda a,b : a + b
 
 > map(function, sequence)
 
-> returns an object map
+> returns an object map(iterable)
 
 ```python
 >>> list_ = ['first', 'second',123]
@@ -268,7 +271,7 @@ lambda a,b : a + b
 
 ```python
 >>> list_ = [2,4,5,7]
->>> list(map(lambda x: x**2,list_)) # it is more convinient to use lambda and not a normal function ! 
+>>> list(map(lambda x: x**2,list_)) # it is more convenient to use lambda and not a normal function ! 
 [4, 16, 25, 49]
 >>> list2 = []
 >>> for e in list_:
@@ -286,13 +289,13 @@ lambda a,b : a + b
 
 ### 1.2.3 Filter. <a name="1.2.3"></a>
 
-`filter()` is a built-in function that filters the sequence of an iterable. Like `map()` function, it takes a **function** and a **sequence** as parameters.
+`filter()` is a built-in function that filters(selects) items from a sequence of an iterable. Like `map()` function, it takes a **function** and a **sequence** as parameters.
 
 **Syntax**
 
 > filter(function, sequence)
 
-> returns a filter object.
+> returns a filter object(iterable).
 
 **Filter with lambda**
 
@@ -302,9 +305,155 @@ lambda a,b : a + b
 <filter object at 0x7fc6d38726d0>
 >>> list(filter(lambda x: x == 2, list_)) # it works like a loop with an if statement
 [2]
->>> list(filter(lambda x: x % 2 == 0, list_))
+>>> list(filter(lambda x: x % 2 == 0, list_)) # selects even numbers.
 [2, 4]
+>>> list0 = [1,2,3,4,5]
+>>> list1 = [2,4,7,8,9]
+>>> inter = list(filter(lambda e: e in list1, list0))
+>>> inter
+[2, 4]
+>>> list(set(list0) & set(list1))
+[2, 4]
+>>> timeit.timeit("list(set(list0) & set(list1))","from __main__ import list0,list1",number = 100000)
+0.1329232750013034
+>>> timeit.timeit("list(filter(lambda e: e in list1, list0))","from __main__ import list0,list1",number = 100000)
+0.18562702400049602
+>>> timeit.timeit("filter(lambda e: e in list1, list0)","from __main__ import list0,list1",number = 100000)
+0.03419653799937805
+>>> timeit.timeit("set(list0) & set(list1)","from __main__ import list0,list1",number = 100000)
+0.10309240099923045
 ```
 
+**Difference between Map() and Filter()**
+
+The following example will illustrate the main difference between the two.
+
+```python
+>>> list(filter(lambda e: e in list1, list0))  # selects(filters) the elements that match the condition: e in list1
+[2, 4]
+>>> list(map(lambda e: e in list1, list0)) # runs(map) the expression 'e in list1' on list1
+[False, True, False, True, False]
+>>> list(map(lambda e: e**2, list0)) # squares the numbers in list0
+[1, 4, 9, 16, 25]
+>>> list(filter(lambda e: e**2, list0)) # does nothing, it returns list0 because e**2 is always True
+>>> list(filter(lambda e: True, list0)) 
+[1, 2, 3, 4, 5]
+>>> list(filter(lambda e: False, list0))
+[]
+```
+  
 ### 1.2.4 Reduce. <a name="1.2.4"></a>
+
+Visit [Python Docs](https://docs.python.org/3/library/functools.html#functools.reduce) for more information.
+
+`Reduce()` is a built-in function that combines items(e.g. add, mul..) in a sequence of an iterable. Like the previous functions, it takes a **function** and a **sequence** as parameters. But, it returns a single value. 
+
+**Syntax**
+
+> Reduce(function, sequence)
+
+> returns a value of the function on the sequence.
+
+```python
+>>> from functools import reduce
+>>> def add(a,b):
+...     print(f"{a} + {b}")
+...     return a + b
+... 
+>>> reduce(add,[1,2,3,4,5,6])
+1 + 2
+3 + 3
+6 + 4
+10 + 5
+15 + 6
+21
+>>> reduce(lambda a,b : a+b,[1,2,3,4,5,6])
+21
+```
+
+First, the function adds the first two elements of the sequence. Then the result of the function is used with the third element of the sequence to call the function again, and so on.
+
+```python
+-----------------------Exercice-------------------------
+>>> persons = [{'name': 'Joe', 'weight': 60},
+...     {' name ': 'David', 'weight': 70},
+...     {' name ': 'Emma', 'weight': 55},
+...     {'name': 'Marla'}]
+>>> total_weight = 0
+>>> count_weight = 0
+>>> for person in persons:
+...     if 'weight' in person:
+...         total_weight += person['weight']
+...         count_weight += 1
+... 
+>>> average_weight = total_weight / count_weight
+>>> print("the average weight is {:.2f}".format(average_weight))
+the average weight is 61.67
+
+--------------------map filter reduce ------------------
+>>> from functools import reduce
+>>> weights = map(lambda x: x['weight'], filter(lambda x: 'weight' in x, persons))
+>>> average_weight = reduce(lambda a,b: a+b , weights) # the weights variable is consumed here!
+>>> average_weight/3
+61.666666666666664 
+>>> list(weights) # already consumed in average_weight!
+[]
+```
+
+**Using filter() inside map()**
+
+The elements are first selected by the `filter` function and then the `map` apply the function on these elements.
+
+```python
+>>> y = map(lambda x: x * x, filter (lambda x: (x >= 5), (3,4,5,6,7,8,9,10,11)))
+>>> list(y)
+[25, 36, 49, 64, 81, 100, 121]
+>>> list(y)
+[]
+```
+
+**Using map() inside filter()**
+
+When you use the `map` function inside the `filter` function, the iterations are first handled by the `map` function and then the `filter` condition is applied to them.
+
+```python
+>>> y = filter (lambda x: (x >= 5), map (lambda x: x * x, (3,4,5,6,7,8,9,10,11)))
+>>> list(y)
+[9, 16, 25, 36, 49, 64, 81, 100, 121]
+```
+
+**Using filter() and map() inside reduce()**
+
+The internal functions are executed first and then the reduce() function.
+
+```python
+>>> d = reduce (lambda x, y: x * y, map (lambda x: x + x, filter (lambda x: (x >= 5), (3,4,5,6,7,8,9,10,11))))
+>>> d
+212889600
+```
+
+### 1.2.5 Zip. <a name="1.2.5"></a>
+
+It Concatenates sequences into tuples.
+
+**Syntax**
+
+> zip(sequence_1, sequence_2)
+
+> returns a tuples list.
+
+```python
+>>> list(zip(range(5),range(2,10)))
+[(0, 2), (1, 3), (2, 4), (3, 5), (4, 6)]   # stops at the lowest upper band of the two lists(4)
+>>> list(zip(range(3,5),range(2,10)))  # think of it as two loops run in parallel.
+[(3, 2), (4, 3)]
+>>> keys = ['name', 'age', 'job']
+>>> values = ['Joe', '22', 'Python Developer']
+>>> dict_ = dict(zip(keys,values))
+>>> dict_
+{'name': 'Joe', 'age': '22', 'job': 'Python Developer'}
+```
+
+For more information about functionnal progamming, please refer to [python docs](https://docs.python.org/3.8/howto/functional.html).
+
 

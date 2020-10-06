@@ -26,7 +26,7 @@ Document's Author: Mahmoud Harmouch
 	&nbsp;&nbsp;&nbsp;&nbsp;1.2.3 [Filter](#1.2.3)   
 	&nbsp;&nbsp;&nbsp;&nbsp;1.2.4 [Reduce](#1.2.4)   
 	&nbsp;&nbsp;&nbsp;&nbsp;1.2.5 [Zip](#1.2.5)   
-	1.3 [Builtin Functions](#1.3)   
+	1.3 [Other Builtin Functions](#1.3)   
 2. [File I/O](#2)
 3. [Generators](#3)
 
@@ -456,4 +456,120 @@ It Concatenates sequences into tuples.
 
 For more information about functionnal progamming, please refer to [python docs](https://docs.python.org/3.8/howto/functional.html).
 
+## 1.3 Other Builtin Functions. <a name="1.3"></a>
+
+These functions are grouped together in the `__builtins__` module.
+
+```python
+>>> dir(__builtins__)
+['abs', 'all', 'any', 'ascii', 'bin', 'bool', 'breakpoint', 'bytearray', 'bytes', 'callable', 
+ 'chr', 'classmethod', 'compile', 'complex', 'copyright', 'credits', 'delattr', 'dict', 'dir', 
+ 'divmod', 'enumerate', 'eval', 'exec', 'exit', 'filter', 'float', 'format', 'frozenset', 
+ 'getattr', 'globals', 'hasattr', 'hash', 'help', 'hex', 'id', 'input', 'int', 'isinstance', 
+ 'issubclass', 'iter', 'len', 'license', 'list', 'locals', 'map', 'max', 'memoryview', 'min', 
+ 'next', 'object', 'oct', 'open', 'ord', 'pow', 'print', 'property', 'quit', 'range', 'repr', 
+ 'reversed', 'round', 'set', 'setattr', 'slice', 'sorted', 'staticmethod', 'str', 'sum', 'super',
+ 'tuple', 'type', 'vars', 'zip']
+ 73 Functions.
+```
+
+**import**
+
+`import` is used to import a module from a given list.
+
+```python
+>>> help(__import__)
+__import__(name, globals=None, locals=None, fromlist=(), level=0) -> module
+```
+
+The **local** and **global** environment can be passed as a parameter, and fromlist specify the directive. The level is a flag which allows determining if the imports are relative(1,2...n) or absolute( 0).
+
+```python
+>>> __import__('math', fromlist=['math.pi'],level=0)
+<module 'math' from '/home/.../math.cpython-37m-x86_64-linux-gnu.so'>
+
+# Same as the following.
+
+>>> from math import pi
+
+>>> globals().items()  # the name of the module is stored in the namespace.  
+dict_items([('__name__', '__main__'), ('__doc__', None), ('__package__', None), ...
+	('math', <module 'math' from '/home/.../math.cpython-37m-x86_64-linux-gnu.so'>), 
+	('pi', 3.141592653589793)])
+```
+
+**abs**
+
+It returns the absolute value of a given number(reel or complex).
+
+```python
+>>> abs(-13)
+13
+>>> abs(4 + 3j)   # returns sqrt(4**2 + 3**2)
+5.0
+```
+
+**all**
+
+```python
+>>> help(all)
+all(iterable, /)
+    Return True if bool(x) is True for all values x in the iterable.
+    
+    If the iterable is empty, return True.
+
+>>> list_ = [1,'2',3]
+>>> all([isinstance(e, int) for e in list_])
+False
+```
+
+**any**
+
+```python
+>>> help(any)
+any(iterable, /)
+    Return True if bool(x) is True for any x in the iterable.
+    
+    If the iterable is empty, return False.
+
+>>> list_ = [1,2,3]
+>>> any([isinstance(e, int) for e in list_])
+True
+```
+**ascii**
+
+```python
+>>> help(ascii)
+ascii(obj, /)
+    Return an ASCII-only representation of an object.
+
+>>> ascii(0x33)
+'51'
+>>> type(ascii(0x33))
+<class 'str'>
+>>> ascii(0x33)[0]
+'5'
+>>> ascii([1,2,3])
+'[1, 2, 3]'
+>>> ascii('213a\asd\t')
+"'213a\\x07sd\\t'"
+>>> ascii('\a\b\t\n\v\f\r')
+"'\\x07\\x08\\t\\n\\x0b\\x0c\\r'"
+>>> ascii(0x0B)
+'11'
+>>> str(int('b',16))
+'11'
+	   from the ascii table $ man ascii
+       Oct   Dec   Hex   Char                        Oct   Dec   Hex   Char
+       ────────────────────────────────────────────────────────────────────────
+ 	   007   7     07    BEL '\a' (bell)             107   71    47    G
+       010   8     08    BS  '\b' (backspace)        110   72    48    H
+       011   9     09    HT  '\t' (horizontal tab)   111   73    49    I
+       012   10    0A    LF  '\n' (new line)         112   74    4A    J
+       013   11    0B    VT  '\v' (vertical tab)     113   75    4B    K
+       014   12    0C    FF  '\f' (form feed)        114   76    4C    L
+       015   13    0D    CR  '\r' (carriage ret)     115   77    4D    M
+```
+
+**callable**
 

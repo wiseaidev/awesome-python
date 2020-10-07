@@ -475,7 +475,7 @@ These functions are grouped together in the `__builtins__` module.
 
 **import**
 
-`import` is used to import a module from a given list.
+It is used to import a module from a given list.
 
 ```python
 >>> help(__import__)
@@ -515,12 +515,13 @@ It returns the absolute value of a given number(reel or complex).
 >>> help(all)
 all(iterable, /)
     Return True if bool(x) is True for all values x in the iterable.
-    
     If the iterable is empty, return True.
 
 >>> list_ = [1,'2',3]
 >>> all([isinstance(e, int) for e in list_])
 False
+>>> all([])
+True
 ```
 
 **any**
@@ -536,6 +537,7 @@ any(iterable, /)
 >>> any([isinstance(e, int) for e in list_])
 True
 ```
+
 **ascii**
 
 ```python
@@ -571,5 +573,343 @@ ascii(obj, /)
        015   13    0D    CR  '\r' (carriage ret)     115   77    4D    M
 ```
 
+**bin**
+
+```python
+bin(number, /)
+    Return the binary representation of an integer.
+
+>>> bin(8)
+'0b1000'
+>>> int('0b1000',2)
+8
+```
+
+**bool**
+
+```python
+>>> help(bool)
+	Returns True when the argument is true, False otherwise.
+
+>>> bool([])
+False
+>>> bool(())
+False
+>>> bool(1)
+True
+>>> bool("")
+False
+>>> bool([""])
+True
+>>> bool((''))
+False
+>>> bool(('',))
+True
+```
+
+**breakpoint**
+
+This function was introduced in Python 3.7 which does the job of importing pdb and calling pdb.set_trace().
+
+```python
+>>> help(breakpoint)
+breakpoint(...)
+    breakpoint(*args, **kws)
+    
+    Call sys.breakpointhook(*args, **kws).  sys.breakpointhook() must accept
+    whatever arguments are passed.
+    
+    By default, this drops you into the pdb debugger.
+
+-------without breakpoint----
+# file.py
+import pdb
+x = 1
+y = 2
+print ( x ) 
+pdb.set_trace()
+print ( y )
+z = x + y
+-------with breakpoint----
+# file.py
+x = 1
+y = 2
+print ( x ) 
+breakpoint()
+print ( y )
+z = x + y
+
+$ python3 file.py
+
+-> print ( y )
+(Pdb) l  (l stands for list)
+  1     x = 1
+  2     y = 2
+  3     print ( x )
+  4     breakpoint()
+  5  -> print ( y )
+  6     z = x + y
+[EOF]
+(Pdb) x
+1
+(Pdb) y
+2
+(Pdb) z
+*** NameError: name 'z' is not defined
+(Pdb) n  (n stands for next)
+2
+-> z = x + y
+(Pdb) n
+--Return--
+-> z = x + y
+(Pdb) z
+3
+(Pdb) n
+```
+
+**bytearray**
+
+Construct a **mutable** bytearray object.
+
+```python
+bytearray(iterable_of_ints) -> bytearray
+>>> bytearray([1,2,3])
+bytearray(b'\x01\x02\x03')
+
+bytearray(string, encoding[, errors]) -> bytearray
+>>> bytearray("123",'utf-8')
+bytearray(b'123')
+
+bytearray(bytes_or_buffer) -> mutable copy of bytes_or_buffer
+>>> bytearray(b'123')
+bytearray(b'123')
+
+bytearray(int) -> bytes array of size given by the parameter initialized with null bytes
+>>> bytearray(2)
+bytearray(b'\x00\x00')
+
+bytearray() -> empty bytes array
+>>> bytearray()
+bytearray(b'')
+
+>>> a = bytearray(b'123')  
+>>> a[1] = 3   # mutable
+>>> a
+bytearray(b'1\x033')
+```
+
+**bytes**
+
+Construct an **immutable** array of bytes.
+
+```python
+bytes(iterable_of_ints) -> bytes
+bytes(string, encoding[, errors]) -> bytes
+bytes(bytes_or_buffer) -> immutable copy of bytes_or_buffer
+bytes(int) -> bytes object of size given by the parameter initialized with null bytes
+bytes() -> empty bytes object
+
+>>> a =  bytes([1,2,3])
+>>> a
+b'\x01\x02\x03'
+>>> a[1] = 1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'bytes' object does not support item assignment
+```
+
 **callable**
+
+Returns True if the passed object is a function or a method.
+
+```python
+>>> callable(callable)
+True
+>>> def func():
+...     print("hi there!")
+... 
+>>> callable(func)
+True
+>>> string = 'abc'
+>>> callable(string)
+False
+```
+
+**chr**
+
+Returns a string that represents the character whose ASCII code is the integer argument.
+
+```python
+>>> help(chr)
+chr(i, /)
+    Return a Unicode string of one character with ordinal i; 0 <= i <= 0x10ffff.
+
+>>> chr(65)
+'A'
+>>> chr(50 + 15)
+'A'
+>>> ord('A')
+65
+```
+
+** classmethod**
+
+Converts a function to a class method. A class method is a method which is associated with a class and not with its instances.
+
+```python
+>>> class car:
+...      def __init__(self, speed, model):
+...          self.speed = speed
+...          self.model = model
+...      def run(cls, speed, model):
+...          return cls( speed, model)
+...      def print(self):
+...          print(self.model + "'s speed is: " + str(self.speed))
+...      run = classmethod(run)
+... 
+>>> car0 = car(50,'mercedes')
+>>> car0.print()
+mercedes's speed is: 50
+>>> car1 = car.run(60,'bmw')
+>>> car1.print()
+bmw's speed is: 60
+```
+
+You can use the `classmethod` as a decorator.
+
+```python
+>>> class car:
+...      def __init__(self, speed, model):
+...          self.speed = speed
+...          self.model = model
+...      @classmethod
+...      def run(cls, speed, model):
+...          return cls( speed, model)
+```
+
+**compile**
+
+Python allows source code to be compiled on the fly. The result of this compilation can then be interpreted using the exec() or eval() methods.
+
+```python
+>>> help(compile)
+compile(source, filename, mode, flags=0, dont_inherit=False, optimize=-1)
+    Compile source into a code object that can be executed by exec() or eval().
+The mode must be 'exec' to compile a module, 'single' to compile a
+    single (interactive) statement, or 'eval' to compile an expression.
+>>> bytes_ = compile("print('Hi There!')", '/dev/null','eval')
+>>> exec(bytes_)
+Hi There!
+```
+
+**complex**
+
+Returns a complex number.
+
+```python
+>>> help(complex)
+class complex(object)
+   complex(real=0, imag=0)
+>>> complex(3,4)
+(3+4j)
+```
+
+**credits**, **copyright**
+
+```python
+>>> credits()
+    Thanks to CWI, CNRI, BeOpen.com, Zope Corporation and a cast of thousands
+    for supporting Python development.  See www.python.org for more information.
+>>> copyright()
+Copyright (c) 2001-2019 Python Software Foundation.
+All Rights Reserved.
+
+Copyright (c) 2000 BeOpen.com.
+All Rights Reserved.
+
+Copyright (c) 1995-2001 Corporation for National Research Initiatives.
+All Rights Reserved.
+
+Copyright (c) 1991-1995 Stichting Mathematisch Centrum, Amsterdam.
+All Rights Reserved.
+```
+
+**delattr**
+
+Removes an attribute from an object. Equivalent to del object.attribute_name.
+
+```python
+>>> class car:
+...     speed = 10
+... 
+>>> car.speed
+10
+>>> delattr(car,'speed')
+>>> car.speed
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: type object 'car' has no attribute 'speed'
+>>> class car:
+...     speed = 10
+... 
+>>> del car.speed
+>>> car.speed
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: type object 'car' has no attribute 'speed'
+```
+
+**dict**
+
+Creates a dictionary object.
+
+```python
+>>> dict([('key0','val0'),('key1','val1')])
+{'key0': 'val0', 'key1': 'val1'}
+```
+
+**dir**
+
+Returns a list of the object's attributes.
+
+```python
+>>> dir() # attributes of the namespace
+['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__', '__package__', '__spec__', 'byte_code', 'bytes_', 'car']
+>>> class car:
+...     speed = 10
+...     model = 'mercedes'
+... 
+>>> dir(car)
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'model', 'speed']
+>>> car. # using the <tab> key
+car.model car.speed
+```
+
+**divmod**
+
+Returns the tuple: ((a-a% b) / b, a% b) which is an integer division followed by modulo.
+
+```python
+>>> divmod(10,3)
+(3, 1)
+>>> divmod(1,3)
+(0, 1)
+```
+
+**enumerate**
+
+Returns an object of type enumerate from an iterable(e.g. lists or tuples).
+
+```python
+>>> enumerate(range(10))
+<enumerate object at 0x7fd271b73f00>
+>>> for index, element in enumerate([1, 2, 3]):
+...     print(index, element)   
+... 
+0 1
+1 2
+2 3
+```
+
+**eval**
 

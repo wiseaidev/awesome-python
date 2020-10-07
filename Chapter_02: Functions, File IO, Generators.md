@@ -913,3 +913,44 @@ Returns an object of type enumerate from an iterable(e.g. lists or tuples).
 
 **eval**
 
+```python
+>>> help(eval)
+
+eval(source, globals=None, locals=None, /)
+    Evaluate the given source in the context of globals and locals.
+    
+    The source may be a string representing a Python expression
+    or a code object as returned by compile().
+
+>>> eval('1+2')
+3
+>>> eval('a+2', {'a': 1})
+3
+>>> eval('f"a equal to {a}"', {'a': 1+2})
+'a equal to 3'
+```
+
+**exec**
+
+Executes a python script.
+
+```python
+>>> exec('a = 2; print(a)')
+2
+>>> exec('f"a equal to {a}"', {'a': 1+2}) # returns nothing
+```
+
+If you want to see the difference between eval, exec, and compile, you can refer to the following answer @[stackoverflow](https://stackoverflow.com/questions/2220699/whats-the-difference-between-eval-exec-and-compile), or you can read [python docs](https://docs.python.org/3.7/library/functions.html#eval) for more details about these functions.
+
+**exit**
+
+```python
+>>> exit
+Use exit() or Ctrl-D (i.e. EOF) to exit
+```
+
+**filter**
+
+Already described in [this section](#1.2.3).
+
+ 

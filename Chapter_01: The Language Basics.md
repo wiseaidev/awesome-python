@@ -391,7 +391,7 @@ In python, objects are destroyed automatically(not explicitly) from memory by th
 2
 ```
 
-![namespace and memory](./resources/namespace_memory.png)
+![namespace and memory](./Images/namespace_memory.png)
 
 ## 3.3.1 Names. <a name="3.3.1"></a><h5>[Go To TOC](#TOC).</h5> 
 
@@ -1595,7 +1595,7 @@ rest of program
 
 ```
 
-![if statement](./resources/if.png)
+![if statement](./Images/if.png)
 
 ```python
 a = 2
@@ -1609,7 +1609,7 @@ if a % 2 == 0:
 
 Figuratively, we can divide this statement into two parts. The first part is an if statement with a condition and a body, and the second is an else statement with a body only.
 
-![if statement](./resources/if_else.png)
+![if statement](./Images/if_else.png)
 
 ```python
 a = 2
@@ -1623,7 +1623,7 @@ else:
 
 In this case, we only get into the body of the statement that the interpreter meets first, and as you may know, the interpreter scans the code from top to bottom(like switch-case in C# or C or ...).
 
-![if statement](./resources/if_elif.png)
+![if statement](./Images/if_elif.png)
 
 ```python
 a = 75
@@ -1642,7 +1642,7 @@ else:
 
 Here we check another condition if certain condition is met.
 
-![if statement](./resources/nested_if_else.png)
+![if statement](./Images/nested_if_else.png)
 
 ```python
 a = 12
@@ -1877,7 +1877,7 @@ In Python, operations have different priorities. The following table lists arith
 
 Each time an object is used in a for loop, the interpreter generates an iterator with which it works. An iterator is an object that contains a **next()** method which is called at each iteration to returns the sequence, element by element. When there are no more elements, the iterator raises an exception of type **StopIteration**. There are a lot of objects that are iterable(e.g. elements of a list, characters of a string, keys of dict...).
 
-![iterators](./resources/iterators.png)
+![iterators](./Images/iterators.png)
 
 ```python
 for element in range(5): # list ==> elements

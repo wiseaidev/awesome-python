@@ -949,8 +949,909 @@ If you want to see the difference between eval, exec, and compile, you can refer
 Use exit() or Ctrl-D (i.e. EOF) to exit
 ```
 
-**filter**
+[**filter**](#1.2.3)
 
-Already described in [this section](#1.2.3).
+**float**, **format**, **frozenset**
 
- 
+Explained in *chapter_01*.
+
+**getattr**
+
+Returns the attribute's value of an object. Same as object.attr_name.
+
+```python
+>>> class car:
+...     speed = 50
+... 
+>>> getattr(car,'speed')
+50
+>>> car.speed
+50
+>>> getattr(car,'speed1')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: type object 'car' has no attribute 'speed1'
+>>> getattr(car,'speed1','attr not found!')
+'attr not found!'
+```
+
+**globals**
+
+Returns a dictionary containing all the global variables of the namespace.
+
+```python
+>>> globals()
+{'__name__': '__main__', '__doc__': None, '__package__': None, '__loader__': <class 
+'_frozen_importlib.BuiltinImporter'>, '__spec__': None, '__annotations__': {}, 
+'__builtins__': <module 'builtins' (built-in)>, 'car': <class '__main__.car'>}
+>>> x = 16
+>>> globals()
+{'__name__': '__main__', '__doc__': None, '__package__': None, '__loader__': <class 
+'_frozen_importlib.BuiltinImporter'>, '__spec__': None, '__annotations__': {}, 
+'__builtins__': <module 'builtins' (built-in)>, 'car': <class '__main__.car'>, 'x': 16}
+
+```
+
+**hasattr**
+
+
+Returns True if the object has the given attribute's name.
+
+```python
+>>> hasattr(car, 'speed')
+True
+```
+
+**hash**
+
+Returns a unique hash of an object.
+
+```python
+>>> x = 'string'
+>>> y = 'string'
+>>> hash(x)
+5126848504124768093
+>>> hash(y)
+5126848504124768093
+>>> hash(123)
+123
+>>> hash(True)
+1
+>>> hash('0')
+3652700342679621854
+>>> hash('1')
+-1863168594792410958
+>>> hash('')
+0
+>>> hash('2')
+-8901682508772374836
+>>> hash('3')
+4439948147711810720
+>>> hash('4')
+-6245016655141321378
+```
+
+**help**
+
+```python
+>>> help()
+
+Welcome to Python 3.7's help utility!
+
+If this is your first time using Python, you should definitely check out
+the tutorial on the Internet at https://docs.python.org/3.7/tutorial/.
+
+Enter the name of any module, keyword, or topic to get help on writing
+Python programs and using Python modules.  To quit this help utility and
+return to the interpreter, just type "quit".
+
+To get a list of available modules, keywords, symbols, or topics, type
+"modules", "keywords", "symbols", or "topics".  Each module also comes
+with a one-line summary of what it does; to list the modules whose name
+or summary contain a given string such as "spam", type "modules spam".
+
+help> hash
+
+Help on built-in function hash in module builtins:
+
+hash(obj, /)
+    Return the hash value for the given object.
+    
+    Two objects that compare equal must also have the same hash value, but the
+    reverse is not necessarily true.
+```
+
+**hex**
+
+Returns a string representing the hexadecimal form of an integer.
+
+```python
+>>> hex(16)
+'0x10'
+```
+
+**id**
+
+Returns a unique identifier of an object. When two objects of immutable type have the same value, the interpreter can decide to keep only one object in memory.
+
+```python
+>>> string0 = 'abc'
+>>> string1 = 'abc'
+>>> id(string0), id(string1)
+(139658273441008, 139658273441008)
+```
+
+**input**
+
+Executes a user-supplied expression.
+
+```python
+>>> x = input()
+1
+>>> x
+'1'
+>>> y = eval(input("Enter your number: ")) # same as int(input("Enter your number: ")
+Enter your number: 1
+>>> y
+1
+```
+
+**int**
+
+Converts a string or number to an integer of a given base.
+
+```python
+>>> int('20',16)
+32
+>>> int('20',10)
+20
+>>> int('20')  # by default base = 10
+20
+```
+
+**isinstance**
+
+Tests whether an object is of a given type or an instance of a class.
+
+```python
+>>> isinstance(10, int)
+True
+>>> isinstance('string', str)
+True
+```
+
+**issubclass**
+
+Checks if a given class derives from another class.
+
+```python
+>>> class x:
+...     pass
+... 
+>>> class y(x):
+...     pass
+... 
+>>> issubclass(y,x)
+True
+>>> issubclass(x,y)
+False
+```
+
+**iter**
+
+Returns an iterator from a given object.
+
+```python
+>>> it = iter([1, 2, 3])
+>>> it
+<list_iterator object at 0x7f04b98f0fd0>
+>>> next(it)
+1
+>>> next(it)
+2
+>>> next(it)
+3
+>>> next(it)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+StopIteration
+
+>>> x = 0
+>>> def iterator():
+...     global x
+...     x += 1
+...     return x
+... 
+>>> it = iter(iterator,5)
+>>> it
+<callable_iterator object at 0x7f04b98f0fd0>
+>>> next(it)
+2
+>>> next(it)
+3
+>>> next(it)
+4
+>>> next(it)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+StopIteration
+```
+
+**len**
+
+Returns the number of elements in a given sequence.
+
+```python
+>>> dict = {'key0': 'val0', 'key1': 'val1'}
+>>> len(dict)
+2
+>>> string = "abc"
+>>> len(string)
+3
+```
+
+**license**
+
+Displays the license information and the history of Python versions.
+
+```python
+A. HISTORY OF THE SOFTWARE
+==========================
+
+Python was created in the early 1990s by Guido van Rossum at Stichting
+Mathematisch Centrum (CWI, see http://www.cwi.nl) in the Netherlands
+as a successor of a language called ABC.  Guido remains Python's
+principal author, although it includes many contributions from others.
+
+In 1995, Guido continued his work on Python at the Corporation for
+National Research Initiatives (CNRI, see http://www.cnri.reston.va.us)
+in Reston, Virginia where he released several versions of the
+software.
+
+In May 2000, Guido and the Python core development team moved to
+BeOpen.com to form the BeOpen PythonLabs team.  In October of the same
+year, the PythonLabs team moved to Digital Creations, which became
+Zope Corporation.  In 2001, the Python Software Foundation (PSF, see
+https://www.python.org/psf/) was formed, a non-profit organization
+created specifically to own Python-related Intellectual Property.
+Zope Corporation was a sponsoring member of the PSF.
+
+All Python releases are Open Source (see http://www.opensource.org for
+the Open Source Definition).  Historically, most, but not all, Python
+Hit Return for more, or q (and Return) to quit: 
+```
+
+**list**
+
+Generates a new list object. `list_ = list ()` is equivalent to `list_ = []`.
+
+```python
+>>> list()
+[]
+>>> list({'key0':'val0'})
+['key0']
+>>> list(('a','b'))
+['a', 'b']
+>>> list(('abc'))
+['a', 'b', 'c']
+```
+
+**locals**
+
+Returns a dictionary object containing the local variables of the current scope.
+
+```python
+>>> def add(a,b):
+...     x = a + b
+...     print(locals())
+... 
+>>> add(1,2)
+{'a': 1, 'b': 2, 'x': 3}
+```
+
+[**map**](#1.2.2)
+
+**max**
+
+Returns the largest element in the sequence. If several sequences are provided, returns the largest one.
+
+```python
+>>> max(1,2,3)
+3
+>>> max([1,2,3])
+3
+>>> max([1,2,3],[1,2,3,4])
+[1, 2, 3, 4]
+>>> max([1,2,3],[1,2,3])
+[1, 2, 3]
+>>> max([1,2,3],[1,3])
+[1, 3]
+>>> max([1,2,3],[1,2])
+[1, 2, 3]
+>>> max([1,2,3],[1,5])
+[1, 5]
+>>> max('abc')
+'c'
+>>> max('hi', 'Hi')
+'hi'
+```
+
+**memoryview**
+
+Creates a new memoryview object which references the given object.
+
+```python
+>>> a = bytes(b'\a\bsd')
+>>> a
+b'\x07\x08sd'
+>>> memoryview(a)
+<memory at 0x7f21c6e08ae0>
+>>> memoryview(a)
+<memory at 0x7f21c6e08c80>
+>>> memoryview(a)
+<memory at 0x7f21c6e08ae0>
+```
+
+**min**
+
+Returns the lowest value in a given sequence.
+
+```python
+>>> min('abcd')
+'a'
+>>> min(['abcd'])
+'abcd'
+>>> min(1,2,4)
+1
+>>> min(1, 2)
+1
+>>> min([1, 2], [1])
+[1]
+>>> min([1, 3], [1, 2])
+[1, 2]
+>>> min([3, 1], [1, 2])
+[1, 2]
+>>> min([1, 1], [1, 2])
+[1, 1]
+>>> min([1, 1], [2, 1])
+[1, 1]
+```
+
+**next**
+
+Returns the next element of an iterable.
+
+```python
+>>> it = iter([1,2,3,4,5])
+>>> next(it)
+1
+>>> next(it)
+2
+>>> next(it)
+3
+```
+
+**object**
+
+Creates an object without any features.
+
+```python
+>>> a = object()
+>>> a
+<object object at 0x7f21c71d8d60>
+>>> object() == object()
+False
+>>> object() is object()
+False
+```
+
+**oct**
+
+Returns an octal representation of an integer.
+
+```python
+>>> oct(8)
+'0o10'
+```
+
+**open**
+
+Returns a file object.
+
+```python
+>>> f = open('replay_pid4677.log')
+>>> f
+<_io.TextIOWrapper name='replay_pid4677.log' mode='r' encoding='UTF-8'>
+>>> f.readline()
+'JvmtiExport can_access_local_variables 0\n'
+```
+**ord**
+
+Returns an integer Unicode code value of a character.
+
+```python
+>>> ord('a')
+97
+>>> list(map(ord,'asdqwr'))
+[97, 115, 100, 113, 119, 114]
+```
+
+**pow**
+
+Computes the power for a given number. It is equivalent to x ** y and (x ** y)% z.
+
+```python
+>>> pow(3,2)  # 3**2
+9
+>>> pow(3,2,2)  # 3**2 % 2
+1
+```
+
+**print**
+
+Displays values ​​to the data stream or `sys.stdout` by default. `sys.stdout` or the system standard output means the function `print` will print the value to the screen. It can be changed to `stdin` or `stderr`.
+
+```python
+>>> type(print)
+<class 'builtin_function_or_method'>
+>>> print(1,2,3,4, sep = ' ,')
+1 ,2 ,3 ,4
+>>> print(1,2,3,4, sep = '\n')
+1
+2
+3
+4
+>>> print(1,2,3,4)  # by default sep = " "
+1 2 3 4
+>>> print(1,2,3,4, sep = '\n', end = '<---\n') # by default end = "\n"
+1
+2
+3
+4<---
+```
+
+**property**
+
+Creates a property from an object attribute.
+
+```python
+>>> class A:
+...     __a = 1
+...     def set_a(self, val):
+...         self.__a = val
+...     def get_a(self):
+...         return self.__a
+...     a = property(get_a, set_a)
+... 
+>>> a = A
+>>> a.a
+1
+>>> a.a = 10
+>>> a.a
+10
+```
+
+You can use `@property` decorator instead of calling the property object.
+
+```python
+>>> class A:
+...     __a = 1
+...     @property
+...     def set_a(self, val):
+...         self.__a = val
+...     @property
+...     def get_a(self):
+...         return self.__a
+... 
+```
+
+**quit**
+
+Allows you to exit the REPL.
+
+```python
+>>> quit
+Use quit() or Ctrl-D (i.e. EOF) to exit
+```
+**range**
+
+Returns a range objectg indicating the start and the end. By default step = 1 and start 0.
+
+```python
+>>> range
+<class 'range'>
+>>> range(3)
+range(0, 3)
+>>> list(range(3))
+[0, 1, 2]
+>>> list(range(1,9,2))
+[1, 3, 5, 7]
+>>> list(range(9,2,-1))
+[9, 8, 7, 6, 5, 4, 3]
+>>> list(range())
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: range expected 1 arguments, got 0
+>>> for i in range(5):
+...     print(i, end = ', ')
+... 
+0, 1, 2, 3, 4,
+```
+
+**repr**
+
+Returns a functional representation as a string of a object.
+
+```python
+>>> list_ = [1,2,3]
+>>> list_
+[1, 2, 3]
+>>> repr(list_)
+'[1, 2, 3]'
+>>> list_.__repr__()
+'[1, 2, 3]'
+>>> eval(repr(list_))
+[1, 2, 3]
+>>> eval(repr(list_)) == list_
+True
+>>> eval(repr(list_)) == eval(list_.__repr__())
+True
+```
+
+**reversed**[chapter_01]
+
+**round**
+
+Round off a number based on n digits precision.
+
+```python
+>>> pi = 3.141592
+>>> round(pi,3)
+3.142
+>>> round(pi,0)
+3.0
+>>> round(pi)
+3
+>>> n = 31234.1232
+>>> round(n, -1)
+31230.0
+>>> round(n, -2)
+31200.0
+```
+
+**set**
+
+Returns an unordered collection of items. Parameter must be a sequence object.
+
+```python
+>>> set((1,2,3))
+{1, 2, 3}
+>>> set([1,2,3])
+{1, 2, 3}
+>>> set([1,2,3]).pop()
+1
+```
+
+**setattr**
+
+Allows you to change the value of an attribute for a given object. Equivalent to
+object.attr = val.
+
+```python
+>>> class A:
+...     a
+... 
+>>> a = A
+>>> a.a = 10
+>>> a.a
+10
+>>> setattr(a, 'a', 20)
+>>> a.a
+20
+```
+
+**slice**
+
+Creates a slice object. It is used for extended slicing (e.g. a[0:5:2]: a[0], a[2], a[4])
+
+```python
+>>> list_ = [1,2,3,4,5,6]
+>>> list_[1:3:1]
+[2, 3]
+>>> list_[1:1:1]
+[]
+>>> list_[2:0:2]
+[]
+>>> list_[-4::2]
+[3, 5]
+>>> list_[-4:-8:-2]
+[3, 1]
+```
+
+**sorted**
+
+Returns a list of sorted items based on the items of the iterable object.
+
+```python
+>>> sorted(['c', 'a', 'b', 'd', 'h'])
+['a', 'b', 'c', 'd', 'h']
+>>> sorted(['c', 'a', 'b', 'd', 'h'])
+['a', 'b', 'c', 'd', 'h']
+>>> sorted(['c', 'a', 'b', 'd', 'h'], reverse = True)
+['h', 'd', 'c', 'b', 'a']
+>>> def key(e):
+...     r = -ord(e)
+...     print(f"key({e}) = {r}")
+...     return r
+... 
+>>> sorted(['c', 'a', 'b', 'd', 'h'], key=key)
+key(c) = -99
+key(a) = -97
+key(b) = -98
+key(d) = -100
+key(h) = -104
+['h', 'd', 'c', 'b', 'a']
+>>> def key(e):
+...     res = ord(e)
+...     print(f"key({e}) = {res}")
+...     return res
+... 
+>>> sorted(['c', 'a', 'b', 'd', 'h'], key=key)
+key(c) = 99
+key(a) = 97
+key(b) = 98
+key(d) = 100
+key(h) = 104
+['a', 'b', 'c', 'd', 'h']
+```
+
+**staticmethod**
+
+Transforms a function into a static method. A static method is a method that is independent of the class instance.
+
+```python
+>>> class A:
+...     def add(a,b):
+...         return a + b
+...     add = staticmethod(add)
+... 
+>>> A.add(1,3)
+4
+>>> a = A()
+>>> a.add(3,5)
+8
+```
+
+The last statement of the class be replaced by a decorator.
+
+```python
+>>> class A:
+...     @staticmethod
+...     def add(a,b):
+...         return a + b
+... 
+>>> A.add(1,3)
+4
+>>> a = A()
+>>> a.add(3,5)
+8
+```
+
+**str**
+
+Returns a visual representation of the object as a string object. If the object
+is a string object, then str(object) is equal to object.
+
+```python
+>>> str(())
+'()'
+>>> str()
+''
+>>> str([])
+'[]'
+>>> str(5)
+'5'
+>>> str('5')
+'5'
+>>> str("5")
+'5'
+```
+
+**sum**
+
+Returns the sum of all elements of a sequence.
+
+```python
+>>> sum([1,3,4,5],3)
+16
+>>> sum([1,3,4,5])
+13
+>>> sum([],123)
+123
+```
+
+**super**
+
+
+It is frequently used when a method is overloaded in descendant classes.
+
+```python
+>>> class A:
+...     def __init__(self):
+...         print("A.__init__()")
+... 
+>>> class B(A):
+...     def __init__(self):
+...         print("B.__init__()")
+...         super().__init__()
+... 
+>>> class C(B):
+...     def __init__(self):
+...         print("C.__init__()")
+...         super().__init__()
+... 
+>>> c = C()
+C.__init__()
+B.__init__()
+A.__init__()
+
+```
+
+**type**
+
+Returns the type of an object. The test of an object's type is equivalent to `isinstance(type, object)`.
+
+```python
+>>> help(type)
+
+class type(object)
+ |  type(object_or_name, bases, dict)
+ |  type(object) -> the object's type
+ |  type(name, bases, dict) -> a new type
+
+>>> type("asd")
+<class 'str'>
+>>> type("asd") == str
+True
+>>> isinstance("asd", str)
+True
+
+type(name, bases, dict) -> a new type
+This notation is used to avoid an explicit definition of the new type.
+>>> new = type('New', (str, ), dict(a ='1'))
+>>> new
+<class '__main__.New'>
+>>> class New(str):
+...     a = '1'
+```
+
+**vars**
+
+If the object is not provided, vars() is equivalent to locals(). Otherwise, vars(object) is equivalent to object.__ dict__.
+
+```python
+>>> vars()
+{'__name__': '__main__', '__doc__': None, '__package__': None, '__loader__': <class '_frozen_importlib.BuiltinImporter'>, '__spec__': None, '__annotations__': {}, '__builtins__': <module 'builtins' (built-in)>, 'bytes_': <code object <module> at 0x7f65de2731e0, file "/dev/null", line 1>, 'A': <class '__main__.A'>, 'B': <class '__main__.B'>, 'C': <class '__main__.C'>, 'c': <__main__.C object at 0x7f65de15c390>, 'MyType': <class '__main__.MyType'>, 'new': <class '__main__.New'>, 'New': <class '__main__.New'>}
+>>> locals()
+{'__name__': '__main__', '__doc__': None, '__package__': None, '__loader__': <class '_frozen_importlib.BuiltinImporter'>, '__spec__': None, '__annotations__': {}, '__builtins__': <module 'builtins' (built-in)>, 'bytes_': <code object <module> at 0x7f65de2731e0, file "/dev/null", line 1>, 'A': <class '__main__.A'>, 'B': <class '__main__.B'>, 'C': <class '__main__.C'>, 'c': <__main__.C object at 0x7f65de15c390>, 'MyType': <class '__main__.MyType'>, 'new': <class '__main__.New'>, 'New': <class '__main__.New'>}
+>>> vars(new)
+mappingproxy({'a': '1', '__module__': '__main__', '__dict__': <attribute '__dict__' of 'New' objects>, '__weakref__': <attribute '__weakref__' of 'New' objects>, '__doc__': None})
+>>> new.__dict__
+mappingproxy({'a': '1', '__module__': '__main__', '__dict__': <attribute '__dict__' of 'New' objects>, '__weakref__': <attribute '__weakref__' of 'New' objects>, '__doc__': None})
+```
+
+**zip**
+
+Concatenates sequences.
+
+```python
+>>> list(zip([1,2,3],[4,5,6]))
+[(1, 4), (2, 5), (3, 6)]
+>>> list(map(lambda x, y : (x,y), [1,2,3],[4,5,6]))
+[(1, 4), (2, 5), (3, 6)]
+>>> for i, j in zip([1,2,3],[4,5,6]): 
+...     print(i, j)
+... 
+1 4
+2 5
+3 6
+```
+
+## 2. File I/O. <a name="2"></a>
+
+### 2.1 Opening a file. <a name="2.1"></a>
+
+Before reading from and writing to a file, you need to open it. Using the built-in open() function, you can create an object of type file, which you can work on.
+
+**syntax**
+```python
+f = open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)
+```
+
+| mode | Description |
+| --- | --- |
+| `r` | Opens the file as **read-only** with a pointer placed at the beginning of a given file. |
+| `rb` | Opens a file for **reading** in **binary** format. |
+| `r+` | Opens a file for **reading** and **writing**. |
+| `rb+` | Opens a file for **reading** and **writing** in binary format. |
+| `w` | Opens a file for **writing** only. Creates a file if it does not exist. |
+| `wb` | Opens a file for **writing** in **binary** format. Creates a file if it doesn't exist. |
+| `w+` | Opens a file for **reading** and **writing**. Creates a file if it does not exist. |
+| `wb+` | Opens a file for **reading** and **writing** in **binary** format. Creates a file if it does not exist. |
+| `a` | Opens for writing, **appending** to the end of the file if it exists. The pointer is at the end of the file. |
+| `ab` | Opens for writing, **appending** in **binary** to the end of the file if it exists. |
+| `a+` | Opens a file for **appending** and **reading**. The pointer is at the end of the file. |
+| `ab+` | Opens a file for **appending** and **reading** in **binary** format. The pointer is at the end of the file. |
+
+```python
+>>> f = open("file.txt", "w")
+>>> f.
+f.buffer          f.fileno(         f.newlines        f.seek(           f.write_through
+f.close(          f.flush(          f.read(           f.seekable(       f.writelines(
+f.closed          f.isatty(         f.readable(       f.tell(           
+f.detach(         f.line_buffering  f.readline(       f.truncate(       
+f.encoding        f.mode            f.readlines(      f.writable(       
+f.errors          f.name            f.reconfigure(    f.write(          
+>>> f.mode
+'w'
+>>> f.name
+'file.txt'
+>>> f.closed
+f.closed
+>>> f.closed
+False
+>>> f.encoding
+'UTF-8'
+```
+
+### 2.2 Reading from a file. <a name="2.2"></a>
+
+The `file.read(size)` and `file.readline(size)` method reads a line from an opened file.
+
+```python
+>>> help(f.read)
+
+read(size=-1, /) method of _io.TextIOWrapper instance
+    Read at most n characters from stream.
+
+>>> f = open("file.txt", "r")
+>>> f
+<_io.TextIOWrapper name='file.txt' mode='r' encoding='UTF-8'>
+>>> f.read(10)
+'line 1 <--'
+>>> f.read(-1) # by default, size = -1; f.read()
+'-\nline 2 <---\nline 3 <---\nline 4 <---\nline 5 <---\nline 6 <---\nline 7 <---\nline 8 <---\nline 9 <---\nline 10 <---'
+
+>>> help(f.readline)
+
+readline(size=-1, /) method of _io.TextIOWrapper instance
+    Read until newline or EOF.
+
+>>> f.readline()
+'line 1 <---\n'
+>>> f.readline() # Reads the first line.
+'line 2 <---\n'
+>>> f.readline(3) # Reads the third line.
+'lin'
+>>> f.readline(5)
+'e 1 <'
+>>> f.tell() # Tells the position of the pointer. 
+5
+>>> help(f.readlines)
+
+readlines(hint=-1, /) method of _io.TextIOWrapper instance
+    Return a list of lines from the stream.
+
+>>> f.readlines()
+['---\n', 'line 2 <---\n', 'line 3 <---\n', 'line 4 <---\n', 'line 5 <---\n', 'line 6 <---\n', 'line 7 <---\n', 'line 8 <---\n', 'line 9 <---\n', 'line 10 <---']
+
+To move the pointer to a given position, use the seek() function.
+
+>>> f.seek(0)
+0
+>>> f.tell()
+0
+```
+
+### 2.3 Writing to a file. <a name="2.3"></a>
+

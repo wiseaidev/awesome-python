@@ -65,7 +65,7 @@ Don't give up. Difficult roads **often** lead to beautiful destinations.
 	3.11 [Generators](#3.11)   
 	&nbsp;&nbsp;&nbsp;&nbsp;3.11.1 [Generator Function](#3.11.1)    
 	&nbsp;&nbsp;&nbsp;&nbsp;3.11.2 [Generator Expression](#3.11.2)   
-	&nbsp;&nbsp;&nbsp;&nbsp;3.11.3[Generator Exercices.](#3.11.3)   
+	&nbsp;&nbsp;&nbsp;&nbsp;3.11.3 [Generator Exercises.](#3.11.3)   
 	3.12 [Input](#3.12)   
 	3.13 [Exceptions](#3.13)   
   
@@ -2051,7 +2051,7 @@ StopIteration
 128
 ```
 
-### 3.11.3 Generator Exercices. <a name="3.11.3"></a><h5>[Go To TOC](#TOC).</h5>
+### 3.11.3 Generator Exercises. <a name="3.11.3"></a><h5>[Go To TOC](#TOC).</h5>
 
 ```python
 >>> def factorial():
@@ -2126,8 +2126,18 @@ StopIteration
 Using the built-in `input()` method, you can get information from the user. It has an optional parameter `prompt` which prints a string on the screen.
 
 ```python
->>> n = eval(input("please give me a number and press <return> : ")) # eval converts the input to int.
+>>> n = eval(input("please give me a number and press <return> : ")) # evaluate the input string as code..
 please give me a number and press <return> : 10
+>>> import os
+>>> n = eval(input()) 
+os.system('ls')    # <----- you can insert a command as a string. So using eval is a security hole.
+'Chapter_01: The Language Basics.md'              Exercises   LICENSE   README.md
+'Chapter_02: Functions, File IO, Generators.md'   Images      Projets
+```
+
+**Fun Exercises**
+
+```python
 >>> for i in range(n):
 ...     print(' ' * ( n - i - 1 ) + '*' * ( 2 * i + 1 ))
 ... 

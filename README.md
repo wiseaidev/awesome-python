@@ -1,4 +1,4 @@
-# Python-3-Notes
+# Python-3-Resources
 
 This repository is used to be documentation during my journey in mastering the python programming language while reading plenty of books and tons of online resources.
 

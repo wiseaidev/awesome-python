@@ -2050,6 +2050,76 @@ StopIteration
 128
 ```
 
+### 3.11.3 Generator Exercices. <a name="3.11.3"></a><h5>[Go To TOC](#TOC).</h5>
+
+```python
+>>> def factorial():
+...     prod = n = 1
+...     while True:
+...           yield prod
+...           prod *= n
+...           n += 1
+... 
+>>> fact_gen = factorial()
+>>> fact_gen
+<generator object factorial at 0x7fc7eac497d0>
+>>> hasattr(fact_gen, "__next__")
+True
+>>> next(fact_gen)
+1
+>>> next(fact_gen)
+1
+>>> next(fact_gen)
+2
+>>> next(fact_gen)
+6
+>>> next(fact_gen)
+24
+>>> next(fact_gen)
+120
+>>> next(fact_gen)
+720
+>>> next(fact_gen)
+5040
+>>> def odds_v0():
+...     result = []
+...     for n in range(1,10,2):
+...         result.append(n)     
+...     return result
+... 
+>>> def odds_v1():
+...     result = []
+...     for n in range(1,10,2):
+...         yield n
+... 
+>>> odds_v0()
+[1, 3, 5, 7, 9]
+>>> odds_v1()
+<generator object odds_v1 at 0x7fc7eab74cd0>
+>>> list(odds_v1())
+[1, 3, 5, 7, 9]
+>>> odds = odds_v1()
+>>> next(odds)
+1
+>>> next(odds)
+3
+>>> next(odds)
+5
+>>> next(odds)
+7
+>>> next(odds)
+9
+>>> next(odds)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+StopIteration
+>>> timeit.timeit('for n in odds_v0(): pass', 'from __main__ import odds_v0', number=1000000)
+1.2579899600004865
+>>> timeit.timeit('for n in odds_v1(): pass', 'from __main__ import odds_v1', number=1000000) # iterating over a generator is slightly faster 
+1.1573705800001335
+```
+
+
 ### 3.12 Input. <a name="3.12"></a><h5>[Go To TOC](#TOC).</h5>
 
 Using the built-in `input()` method, you can get information from the user. It has an optional parameter `prompt` which prints a string on the screen.

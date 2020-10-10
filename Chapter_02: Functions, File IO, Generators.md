@@ -1855,3 +1855,38 @@ To move the pointer to a given position, use the seek() function.
 
 ### 2.3 Writing to a file. <a name="2.3"></a>
 
+The `write()` function is used to write to a file opened in write mode. If the file does not exist, then a new one will be created.
+
+```python
+>>> f = open('file1.txt', 'w')
+>>> help(f.write)
+
+write(text, /) method of _io.TextIOWrapper instance
+    Write string to stream.
+    Returns the number of characters written (which is always equal to
+    the length of the string).
+
+>>> f.write('Hi \n There!')
+11
+>>> len('Hi \n There!')
+11
+```
+
+### 2.4 Closing a file. <a name="2.4"></a>
+
+The `close()` method automatically closes the file, and any unsaved information is lost.
+
+```python
+>>> f = open('file1.txt', 'r')
+>>> f.readline()
+'Hi \n'
+>>> f.readline()
+' There!'
+>>> f.closed
+False
+>>> f.close()
+>>> f.closed
+True
+```
+
+

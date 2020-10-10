@@ -2,6 +2,8 @@
 
 This repository is used to be documentation during my journey in mastering the python programming language while reading plenty of books and tons of online resources.
 
+[![Build Status](https://travis-ci.org/Harmouch101/Python-3-Resources.svg?branch=master)](https://travis-ci.org/Harmouch101/Python-3-Resources)
+
 ## :books: Python Books.
 
 ## Beginner's Level.

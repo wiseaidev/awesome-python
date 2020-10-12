@@ -1,4 +1,4 @@
-# Chapter_02: Functions, File I/O and Generators.
+# Chapter_02: Built-in functions & Standard Modules.
 
 Document's Author: Mahmoud Harmouch
 
@@ -1910,7 +1910,7 @@ shutil — High-level file operations
 | Topic | Modules |
 | --- | --- |
 | Internet Data Handling | base64, binhex, binascii, email, json, mailbox, mailcap, mimetypes, quopri, uu. |
-| Development Tools | unittest, typing , pydoc, doctest, test, 2to3
+| Development Tools | unittest, typing , pydoc, doctest, test, 2to3. |
 | Debugging and Profiling | cProfile, faulthandler , pdb, profile, trace, tracemalloc. | 
 | Graphical | IDLE, PyGObject, PyGTK, PyQt, PySide2, wxPython, Tkinter. |
 | Internet Protocols | cgi, cgitb, imaplib, ipaddress, nntplib, poplib, smtplib, socket, syncore, telnetlib, urllib, urllib2. |
@@ -1926,7 +1926,7 @@ shutil — High-level file operations
 | File and Directory Access | filecmp, fileinput, fnmatch, glob, linecache, os.path, pathlib, stat, shutil, tempfile. |
 | Functional Programming | functools, itertools , operator. |
 | Numeric and Mathematics | cmath, decimal, fractions, math, numbers, random, statistics. |
-| Data Types | array, bisect, calendar, collections, collections.abc, copy, datetime, enum, graphlib, heapq, pprint, reprlib, types, weakref, zoneinfo, 
+| Data Types | array, bisect, calendar, collections, collections.abc, copy, datetime, enum, graphlib, heapq, pprint, reprlib, types, weakref, zoneinfo. |
 | Runtime Services | array, atexit, calendar, cmath, copy, datetime, gettext, itertools, locale, math, random, sets, struct, sys, traceback. |
 | Text Processing Services | string, re, difflib, textwrap, unicodedata, stringprep, readline, rlcompleter. |
 | Binary Data Services | struct, codecs. |

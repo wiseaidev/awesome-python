@@ -28,7 +28,7 @@ Document's Author: Mahmoud Harmouch
 	&nbsp;&nbsp;&nbsp;&nbsp;1.2.5 [Zip](#1.2.5)   
 	1.3 [Other Builtin Functions](#1.3)   
 2. [File I/O](#2)
-3. [Generators](#3)
+3. [Standard Modules](#3)
 
 ## 1. Functions. <a name="1"></a>
 
@@ -457,6 +457,8 @@ It Concatenates sequences into tuples.
 For more information about functionnal progamming, please refer to [python docs](https://docs.python.org/3.8/howto/functional.html).
 
 ## 1.3 Other Builtin Functions. <a name="1.3"></a>
+
+[Python Docs.](https://docs.python.org/3/library/functions.html)
 
 These functions are grouped together in the `__builtins__` module.
 
@@ -1889,4 +1891,229 @@ False
 True
 ```
 
+## 3. [Standard Modules.](https://docs.python.org/3/library/index.html) <a name="3"></a>
+
+Standard modules can be divided into groups by topic.
+
+pathlib — Object-oriented filesystem paths
+os.path — Common pathname manipulations
+fileinput — Iterate over lines from multiple input streams
+stat — Interpreting stat() results
+filecmp — File and Directory Comparisons
+tempfile — Generate temporary files and directories
+glob — Unix style pathname pattern expansion
+fnmatch — Unix filename pattern matching
+linecache — Random access to text lines
+shutil — High-level file operations
+
+
+| Topic | Modules |
+| --- | --- |
+| Internet Data Handling | base64, binhex, binascii, email, json, mailbox, mailcap, mimetypes, quopri, uu. |
+| Development Tools | unittest, typing , pydoc, doctest, test, 2to3
+| Debugging and Profiling | cProfile, faulthandler , pdb, profile, trace, tracemalloc. | 
+| Graphical | IDLE, PyGObject, PyGTK, PyQt, PySide2, wxPython, Tkinter. |
+| Internet Protocols | cgi, cgitb, imaplib, ipaddress, nntplib, poplib, smtplib, socket, syncore, telnetlib, urllib, urllib2. |
+| Platform | UNIX: pwd , grp , fcntl , resource , termios. |
+| Language Services | ast, compileall, dis, keyword, parser, pickletools, pyclbr, py_compile, symbol, symtable, tabnanny, token, tokenize.  |
+| Networking | asyncio, asynchat, asyncore, mmap, select, selectors, signal, socket, ssl. |
+| Concurrent Execution | concurrent.futures, multiprocessing, multiprocessing.shared_memory, queue, sched, subprocess,  threading, _thread. |
+| OS Services | argparse, ctypes, curses, curses.ascii, curses.panel, curses.textpad, errno, io, logging, logging.config, logging.handlers , getopt, getpass, platform, time, os. |
+| Cryptographic Services | hashlib, hmac, secrets. |
+| File Formats | configparser, csv, netrc, plistlib, xdrlib. |
+| Data Compression | bz2, gzip, lzma, tarfile, zlib, zipfile. |
+| Data Persistence | copyreg, dbm, marshal, pickle, shelve, sqlite3. |
+| File and Directory Access | filecmp, fileinput, fnmatch, glob, linecache, os.path, pathlib, stat, shutil, tempfile. |
+| Functional Programming | functools, itertools , operator. |
+| Numeric and Mathematics | cmath, decimal, fractions, math, numbers, random, statistics. |
+| Data Types | array, bisect, calendar, collections, collections.abc, copy, datetime, enum, graphlib, heapq, pprint, reprlib, types, weakref, zoneinfo, 
+| Runtime Services | array, atexit, calendar, cmath, copy, datetime, gettext, itertools, locale, math, random, sets, struct, sys, traceback. |
+| Text Processing Services | string, re, difflib, textwrap, unicodedata, stringprep, readline, rlcompleter. |
+| Binary Data Services | struct, codecs. |
+
+
+### [base64](https://docs.python.org/3.9/library/base64.html)
+
+This module provides binary data encoding and decoding functions in the formats defined by RFC3548 for base16, base32, and base64. It is used in the HTTP protocol for binary data transmission. 
+
+```python
+>>> dir(base64)
+['MAXBINSIZE', 'MAXLINESIZE', '_85encode', '_A85END', '_A85START', '__all__', '__builtins__', '__cached__', 
+'__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_a85chars', '_a85chars2', 
+'_b32alphabet', '_b32rev', '_b32tab2', '_b85alphabet', '_b85chars', '_b85chars2', '_b85dec', 
+'_bytes_from_decode_data', '_input_type_check', '_urlsafe_decode_translation', '_urlsafe_encode_translation', 
+'a85decode', 'a85encode', 'b16decode', 'b16encode', 'b32decode', 'b32encode', 'b64decode', 'b64encode', 'b85decode', 
+'b85encode', 'binascii', 'bytes_types', 'decode', 'decodebytes', 'decodestring', 'encode', 'encodebytes', 'encodestring', 
+'main', 're', 'standard_b64decode', 'standard_b64encode', 'struct', 'test', 'urlsafe_b64decode', 'urlsafe_b64encode']
+```
+
+#### Base64 encoding and decoding
+
+**b64encode syntax**
+
+`b64encode(s, altchars=None)`
+
+Encodes a bytes-like object `s`. If `altchars` is specified( not None), it is a byte string object of length 2, which defines special characters for the `+` and `/` characters.
+
+```python
+>>> import base64
+>>> string = "Hi There!"
+>>> bytes_ = string.encode("UTF-8")
+>>> b64 = base64.b64encode(bytes_) # takes a bytes object not string !!!
+>>> b64
+b'SGkgVGhlcmUh'
+>>> type(b64)
+<class 'bytes'>
+>>> type(bytes_)
+<class 'bytes'>	
+>>> b64_decode = b64.decode("UTF-8") # converts bytes object to string object. !!!
+>>> b64_decode
+'SGkgVGhlcmUh'
+>>> type(b64_decode)
+<class 'str'>
+```
+
+**b64decode syntax**
+
+`b64decode(s, altchars=None, validate=False)`
+
+Decode the Base64 encoded bytes-like object or ASCII string s. It returns as a bytes object.
+
+```python
+>>> b64_decode = base64.b64decode(b64)
+>>> b64_decode
+b'Hi There!'
+>>> b64_decode.decode('utf-8')
+'Hi There!'
+```
+
+**base64 encode decode a file**
+
+```python
+>>> import base64
+>>> for line in open("file.txt"):
+...     line_bytes = line.encode('ascii')
+...     line_b64_enc = base64.b64encode(line_bytes)
+...     print(line_b64_enc)
+...     line_decode = base64.b64decode(line_b64_enc)
+...     line_dec = line_decode.decode('ascii')
+...     print(line_dec)
+...     with open("file1.b64", "ab+") as f:  # append each line in binairy.
+...         f.write(line_b64_enc)
+... 
+b'bGluZV8wMQkJPC0tLS0tLQo='
+line_01         <------
+
+24
+b'bGluZV8wMiAJPC0tLS0tLQo='
+line_02         <------
+
+24
+b'bGluZV8wMwkJPC0tLS0tLQo='
+line_03         <------
+
+24
+b'bGluZV8wNCAJPC0tLS0tLQo='
+line_04         <------
+
+24
+b'bGluZV8wNSAJPC0tLS0tLQo='
+line_05         <------
+
+24
+b'bGluZV8wNiAJPC0tLS0tLQo='
+line_06         <------
+
+24
+b'bGluZV8wNyAJPC0tLS0tLQ=='
+line_07         <------
+24
+
+# content of file1.b64
+bGluZV8wNyAJPC0tLS0tLQ==bGluZV8wMQkJPC0tLS0tLQo=bGluZV8wMiAJPC0tLS0tLQo=bGluZV8wMwkJPC0tLS0tLQo=bGluZV8wNCAJPC0tLS0tLQo=bGluZV8wNSAJPC0tLS0tLQo=bGluZV8wNiAJPC0tLS0tLQo=bGluZV8wNyAJPC0tLS0tLQ==
+```
+
+#### Base32 encoding and decoding
+
+```python
+>>> import base64 
+>>> string = "Hi There!"
+>>> bytes_ = string.encode("ascii")
+>>> b32 = base64.b32encode(bytes_)
+>>> b32
+b'JBUSAVDIMVZGKII='
+>>> b32_decode = base64.b32decode(b32)
+>>> b32_decode
+b'Hi There!'
+>>> b32_decode.decode('ascii')
+'Hi There!'
+
+```
+
+#### hexadecimal(Base16) encoding and decoding
+
+```python
+>>> import base64 
+>>> string = "Hi There!"
+>>> bytes_ = string.encode("ascii")
+>>> b16 = base64.b16encode(bytes_)
+>>> b16
+b'486920546865726521'
+>>> b16_decode = base64.b16decode(b16)
+>>> b16_decode
+b'Hi There!'
+>>> b16_decode.decode('ascii')
+'Hi There!'
+```
+
+### [binhex](https://docs.python.org/3.9/library/binhex.html)
+
+This module provides binary data encoding and decoding functions in binhex4 format.
+
+**binhex.binhex syntax**
+
+`binhex(infilename, outfilename)`
+
+```python
+>>> import binhex
+>>> binhex.binhex('file.txt', 'file1.hqx')
+>>> for line in open('file1.hqx', 'r'):
+...     print(line)
+... 
+(This file must be converted with BinHex 4.0)
+
+
+
+:#'CTE'8ZG(Kd!&4&@&3rN!3!N!9f!*!%ET*XD@jPAc!a#3Nm,C!'#QaTEQ9I-$)
+
+J#6`YN!B+E'PZC9m`-`N*2#f3"JTXD@jPAc!d)!Nm,C!'#QaTEQ9I-$8J#6`YN!B
+
++E'PZC9m`0L!*2#f3"JTXD@jPAc!h)!Nm,C!'2Jd!!!:
+```
+
+**binhex.hexbin syntax**
+
+`hexbin(infilename, outfilename)`
+
+```python
+>>> binhex.hexbin('file1.hqx', 'file1.txt')
+>>> for line in open('file1.txt', 'r'):
+...     print(line)
+... 
+line_01         <------
+
+line_02         <------
+
+line_03         <------
+
+line_04         <------
+
+line_05         <------
+
+line_06         <------
+
+line_07         <------
+```
+
+### [binascii](https://docs.python.org/3.9/library/binascii.html?highlight=binascii)
 

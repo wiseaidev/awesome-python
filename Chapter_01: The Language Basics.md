@@ -2118,6 +2118,22 @@ StopIteration
 1.2579899600004865
 >>> timeit.timeit('for n in odds_v1(): pass', 'from __main__ import odds_v1', number=1000000) # iterating over a generator is slightly faster 
 1.1573705800001335
+>>> {n * n for n in range (5)} # set generator using literals
+{0, 1, 4, 9, 16}
+>>> set(n * n for n in range (5)) # set generator using set built-in func
+{0, 1, 4, 9, 16}
+>>> {n : n * n for n in range (5)} # dictionary generator using literals
+{0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
+>>> dict({n : n * n for n in range (5)}) # dictionary generator using dict built-in func
+{0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
+>>> list(n * n for n in range (5) if n% 2 == 0)
+[0, 4, 16]
+>>> {x + y for x in [1, 2, 3] for y in [1, 1, 1]}
+{2, 3, 4}
+>>> {x: y for x in [1, 2, 3] for y in [1, 2, 3]} #the value of each key is the last item of [1, 2, 3], '3'.
+{1: 3, 2: 3, 3: 3}
+>>> list(list(x * y for x in range (3)) for y in range (3))
+[[0, 0, 0], [0, 1, 2], [0, 2, 4]]
 ```
 
 

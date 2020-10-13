@@ -13,8 +13,10 @@ This repository is used to be documentation during my journey in mastering the p
 by Paul Barry, 2nd Edition.\[[Amazon\]](https://www.amazon.com/_/dp/1491919531?tag=oreilly20-20) \[[Publisher\]](https://www.oreilly.com/library/view/head-first-python/9781491919521/)
 
 <img src="https://learning.oreilly.com/library/cover/9781491919521/250w/" width="140px"/>
-
+<details>
+  <summary>details</summary>
 Want to learn the Python language without slogging your way through how-to manuals? With Head First Python, you’ll quickly grasp Python’s fundamentals, working with the built-in data structures and functions. Then you’ll move on to building your very own webapp, exploring database management, exception handling, and data wrangling. If you’re intrigued by what you can do with context managers, decorators, comprehensions, and generators, it’s all here. This second edition is a complete learning experience that will help you become a bonafide Python programmer in no time.
+</details>
 
 ---
 ### Python for Everybody: Exploring Data in Python 3

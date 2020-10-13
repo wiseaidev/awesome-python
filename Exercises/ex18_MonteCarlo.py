@@ -7,7 +7,7 @@ def pi_montecarlo(a, b, n):
     return 4 * (b -a ) * sum(math.sqrt(1 - random.uniform(a, b)**2) 
         for i in range(n)) / n
 if __name__ == "__main__":
-    n = int(input("Enter the number of iteration: "))
+    n = int(input("Enter the number of iterations: "))
     print('|' + '-'*98 + '|')
     print(f"|{'n':<24}|{'approximation':^24}|{'absolute error':^24}|{'relative error':^23}|")
     print('|' + '-'*98+ '|')

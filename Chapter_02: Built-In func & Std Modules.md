@@ -2117,4 +2117,187 @@ line_07         <------
 
 ### [binascii](https://docs.python.org/3.9/library/binascii.html?highlight=binascii)
 
+Convert between binary and various ASCII-encoded binary representations.
+
+**binascii.a2b_hex, binascii.unhexlify**
+
+Coverts binary data to hexadecimal and returns a bytes object.
+
+```python
+>>> binascii.b2a_hex('Hi there!'.encode('utf-8')) # input should be a byte object.
+b'486920746865726521' # length = 2 * len(input) = 2 * 9 = 18
+>>> binascii.hexlify('Hi there!'.encode('utf-8'))
+b'486920746865726521'
+```
+
+**binascii.a2b_hex, binascii.unhexlify**
+
+Coverts hexadecimal to binary data and returns a bytes object.
+The input should have an even number of hex digits.
+
+```python
+>>> binascii.unhexlify(b'486920746865726521')
+b'Hi there!'
+>>> binascii.unhexlify(b'486920746865726521').decode('utf-8')
+'Hi there!'
+>>> binascii.a2b_hex(b'486920746865726521').decode('utf-8')
+'Hi there!'
+```
+
+### [sys](https://docs.python.org/3.9/library/sys.html?highlight=sys#module-sys)
+
+The sys module contains most of the information relating to the current execution, as well as a series of basic functions and objects of the low level.
+
+**argv**
+
+Contains the list of parameters of a given script. The first element of the list is the name of the script(.py) followed by the list of parameters.
+
+**executable**
+
+Returns the path of the Python interpreter.
+
+```python
+>>> sys.executable
+'/home/.../bin/python3'
+```
+
+**exc_info**
+
+Returns a tuple contains the type of exception, the instance of the exception, and the traceback object(sys.last_type, sys.last_value, sys.last_traceback).
+
+```python
+>>> import sys
+>>> sys.exc_info()
+(None, None, None)
+>>> try:
+...     a = input()
+...     a = a/3
+... except:
+...     print(sys.exc_info())
+... 
+qwe
+(<class 'TypeError'>, TypeError("unsupported operand type(s) for /: 'str' and 'int'"), <traceback object at 0x7f13b8ccb690>)
+
+>>> sys.last_type
+<class 'TypeError'>
+>>> sys.last_value
+TypeError("unsupported operand type(s) for /: 'str' and 'int'")
+>>> sys.last_traceback
+<traceback object at 0x7f13b8ccb690>
+```
+
+**platform**
+
+Returns the type of the current running platform.
+
+```python
+>>> sys.platform
+'linux'
+```
+
+**builtin_module_names** 
+
+Returns a tuple of strings containing the names of all available modules.
+
+```python
+>>> sys.builtin_module_names
+('_abc', '_ast', '_codecs', '_collections', '_functools', '_imp', '_io', '_locale', '_operator', '_signal', '_sre', 
+'_stat', '_string', '_symtable', '_thread', '_tracemalloc', '_warnings', '_weakref', 'atexit', 'builtins', 
+'errno', 'faulthandler', 'gc', 'itertools', 'marshal', 'posix', 'pwd', 'sys', 'time', 'xxsubtype', 'zipimport')
+```
+
+**byteorder**
+
+Returns 'big' if the bits are in most significant order(big-Endian), and 'little' if it is in least significant order(little-Endian).
+
+```python
+>>> sys.byteorder
+'little'
+```
+
+**maxsize**
+
+Returns an integer that represents the maximum value a variable can have. In a 32-bit platform, the value is usually 2 ** 33 - 1 (2147483647), and in a 64-bit platform it is 2 ** 63 - 1 (9223372036854775807).
+
+```python
+>>> sys.maxsize
+9223372036854775807
+```
+
+**version**
+
+Returns the version of the Python interpreter.
+
+```python
+>>> sys.version
+'3.7.6 (default, Jan  8 2020, 19:59:22) \n[GCC 7.3.0]'
+```
+
+**version_info**
+
+Returns a tuple containing five version number components.
+
+```python
+>>> sys.version_info
+sys.version_info(major=3, minor=7, micro=6, releaselevel='final', serial=0)
+```
+
+**api_version**
+
+Returns the C API version.
+
+```python
+>>> sys.api_version
+1013
+```
+
+
+**stdin, stdout, stderr**
+
+standard input, standard output and standard error stream.
+
+```python
+>>> sys.stdin
+<_io.TextIOWrapper name='<stdin>' mode='r' encoding='UTF-8'>
+>>> sys.stdout
+<_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+>>> sys.stdout.write("Hi there!\n") # print out the message and returns the len of the string.
+Hi there!
+10	
+>>> a = sys.stderr.write("Error\n")
+Error
+```
+
+**ps1, ps2**
+
+Returns the primary and the secondary prompt for the interpreter.
+
+```python
+>>> sys.ps1
+'>>> '
+>>> sys.ps2
+'... '
+
+```
+
+**implementation**
+
+Returns an object containing information about the running python interpreter.
+
+```python
+>>> sys.implementation
+namespace(_multiarch='x86_64-linux-gnu', cache_tag='cpython-37', hexversion=50792176, 
+	name='cpython', version=sys.version_info(major=3, minor=7, micro=6, releaselevel='final', serial=0))
+```
+
+### [sys](https://docs.python.org/3/library/os.html)
+
+The os module groups together 333 functions or objects.
+
+```python
+>>> len(dir(os))
+333
+>>> len([n for n in dir(os) if not n.startswith("_")])
+313
+```
 

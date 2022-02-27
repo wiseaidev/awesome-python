@@ -26,12 +26,12 @@ All rights reserved.
 <br>
 <br>
 
-> ⚠️ This repo is currently under construction. Consider giving a ⭐ for future updates!
+> ⚠️ This repo is currently under construction. Consider giving a ⭐ for future updates!    
+> If you are looking for a way to contribute to the project, please refer to the [`Guidline`][00].   
+> A collection of notes, speaker's deck/files related to pycon talks, and a list of python books.   
+> This repository can be used as a reference/documentation for mastering the python programming language and the Django framework.   
 
-> A collection of notes, speaker's deck/files related to pycon talks, and a list of python books.
-> This repository can be used as a reference/documentation for mastering the python programming language and the Django framework.
-
-> Currently maintained by [`Mahmoud Harmouch`](https://github.com/harmouch101).  
+> Currently maintained by [`Mahmoud Harmouch`][01].  
 
 
 ## 👉 Table Of Content (TOC). <a name="TOC"></a>
@@ -373,6 +373,8 @@ With simple step-by-step instructions and sample code, this book gets you up to 
 </p>
 
 <!-- Links -->
+[00]: ./CONTRIBUTING.md
+[01]: https://github.com/harmouch101
 [000]: https://www.youtube.com/watch?v=Uyj2UFTL_vg
 [001]: https://www.youtube.com/watch?v=6inqFd1bUkE
 [002]: https://www.youtube.com/watch?v=oQca6eDcjA8
@@ -380,7 +382,7 @@ With simple step-by-step instructions and sample code, this book gets you up to 
 [0000]: https://www.dropbox.com/s/az1gnn92u8y6eh3/PyCon%202015%20-%20Python%20Epiphanies.pdf?dl=0
 [0001]: https://www.dropbox.com/s/dgks2bgnzpycruz/PyCon-2016-Python-Epiphanies.zip?dl=0
 [0002]: https://www.dropbox.com/s/xkyk3sgbq5fwdzh/PyCon-2018-Python-Epiphanies.zip?dl=0
-[00000]: https://github.com/Harmouch101/awesome-pycon-notes/blob/master/speakers/Stuart%20Williams/PyCon%202015%20-%20Python%20Epiphanies.pdf
-[00001]: https://github.com/Harmouch101/awesome-pycon-notes/tree/master/speakers/Stuart%20Williams/PyCon-2016-Python-Epiphanies
-[00002]: https://github.com/Harmouch101/awesome-pycon-notes/tree/master/speakers/Stuart%20Williams/PyCon-2018-Python-Epiphanies
-[000000]: https://github.com/Harmouch101/awesome-pycon-notes/blob/master/notes/chapter_01:%20The%20Language%20Basics.md
+[00000]: ./speakers/Stuart%20Williams/PyCon%202015%20-%20Python%20Epiphanies.pdf
+[00001]: ./speakers/Stuart%20Williams/PyCon-2016-Python-Epiphanies
+[00002]: ./speakers/Stuart%20Williams/PyCon-2018-Python-Epiphanies
+[000000]: ./notes/chapter_01:%20The%20Language%20Basics.md

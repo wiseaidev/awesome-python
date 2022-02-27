@@ -36,6 +36,8 @@ All rights reserved.
 
 ## 👉 Table Of Content (TOC). <a name="TOC"></a>
 
+[![Join the chat at https://gitter.im/awesome-pycon-notes/community](https://badges.gitter.im/awesome-pycon-notes/community.svg)](https://gitter.im/awesome-pycon-notes/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 1. [Python Talks](#Talks)   
     1.1 [Beginner Level](#Beginner)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.1.1 [Stuart Williams-Python Epiphanies-PyCon](#1.1.1)   

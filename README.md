@@ -385,4 +385,4 @@ With simple step-by-step instructions and sample code, this book gets you up to 
 [00000]: ./speakers/Stuart%20Williams/PyCon%202015%20-%20Python%20Epiphanies.pdf
 [00001]: ./speakers/Stuart%20Williams/PyCon-2016-Python-Epiphanies
 [00002]: ./speakers/Stuart%20Williams/PyCon-2018-Python-Epiphanies
-[000000]: ./notes/chapter_01:%20The%20Language%20Basics.md
+[000000]: ./notes/chapter-01:%20The-Language-Basics.md

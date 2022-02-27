@@ -27,11 +27,11 @@ All rights reserved.
 <br>
 
 > ⚠️ This repo is currently under construction. Consider giving a ⭐ for future updates!    
-> If you are looking for a way to contribute to the project, please refer to the [`Guidline`][00].   
+> If you are looking for a way to contribute to the project, please refer to the ![`Guidline`][00].   
 > A collection of notes, speaker's deck/files related to pycon talks, and a list of python books.   
 > This repository can be used as a reference/documentation for mastering the python programming language and the Django framework.   
 
-> Currently maintained by [`Mahmoud Harmouch`][01].  
+> Currently maintained by ![`Mahmoud Harmouch`][01].  
 
 
 ## 👉 Table Of Content (TOC). <a name="TOC"></a>
@@ -69,17 +69,21 @@ All rights reserved.
     &nbsp;&nbsp;&nbsp;&nbsp;2.3.3 [Python Testing with pytest](#books2.3.3)   
 
 
-## :tv: Python Talks <a name="Talks"></a>
+## 📺 Python Talks <a name="Talks"></a>
 
-### Beginner Level <a name="Beginner"></a>  <h4>[Go To TOC](#TOC).</h4> 
+### Beginner Level <a name="Beginner"></a>  
+
+<h4>[Go To TOC](#TOC).</h4> 
 
 |  Speaker  | Videos        | Original Link for Speaker Deck/files    | Downloaded files | Notes Taken    |
 | :---: | :------------:      | :------------:     | :------------:  |:------------:  |
-| Stuart Williams <a name="1.1.1"></a>  | [`2014`][000] [`2016`][001] [`2017`][002] [`2018`][003] | [`2015`][0000] [`2016`][0001] [`2018`][0002] | [`2015`][00000] [`2016`][00001] [`2018`][00002] | [`The Language Basics.md`][000000] |
+| Stuart Williams <a name="1.1.1"></a>  | [`2014`][000] [`2016`][001] [`2017`][002] [`2018`][003] | [`2015`][0000] [`2016`][0001] [`2018`][0002] | [`2015`][00000] [`2016`][00001] [`2018`][00002] | ![`The Language Basics.md`][000000] |
 
-## :books: Python Books. <a name="Books">
+## 📚 Python Books. <a name="Books">
 
-### Beginner's Level. <a name="books2.1"> <h4>[Go To TOC](#TOC).</h4> 
+### Beginner's Level. <a name="books2.1"> 
+
+<h4>[Go To TOC](#TOC).</h4> 
 
 ### Head-First Python: A Brain-Friendly Guide <a name="books2.1.1"></a>
 
@@ -223,7 +227,9 @@ Think Python is an introduction to Python programming for beginners. It starts w
 </details>
 
 ---
-## Intermediate Level <a name="books2.2"></a>  <h4>[Go To TOC](#TOC).</h4> 
+## Intermediate Level <a name="books2.2"></a>  
+
+<h4>[Go To TOC](#TOC).</h4> 
 
 ### Murach's Python Programming <a name=books2.2.1"></a>   
 
@@ -331,7 +337,9 @@ Practices of the Python Pro teaches you to design and write professional-quality
 </details>
 
 ---
-## Advanced Level <a name="books2.3"></a>  <h4>[Go To TOC](#TOC).</h4>   
+## Advanced Level <a name="books2.3"></a>  
+
+<h4>[Go To TOC](#TOC).</h4>   
 
 ### Fluent Python <a name="books2.3.1"></a>  
 

@@ -93,7 +93,7 @@ Python is a high-level, general-purpose, programming language that has the follo
 
 ## 1.2 Why Python ? <a name="1.2"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 Python is a good programming language to start with for a beginner who doesn't know programming at first. Python is very powerful and it is used in a lot of domains. The following list describes the different areas in which Python is mostly used:
 
@@ -104,7 +104,7 @@ Python is a good programming language to start with for a beginner who doesn't k
 
 ## 1.3 Interpreted Language.<a name="1.3"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 Python commands and instructions are executed by the interpreter, which is written in C language and has different implementations like :
 - CPython: C implementation, which is the default implementation of Python;
@@ -117,7 +117,7 @@ Python commands and instructions are executed by the interpreter, which is writt
 
 ## 2.. Running Python. <a name="2"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 You can run the interpreter by simply entering the 'Python3' command in your terminal :
 
@@ -193,13 +193,13 @@ you can also use the `exit()` method to exit the interactive prompt, aka the Rea
 
 ## 3. Language Syntax. <a name="3"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 A complete documentation on Lexical analysis can be found on [Python Docs](https://docs.python.org/3/reference/lexical_analysis.html#lexical-analysis).
 
 ## 3.1 Print Instruction. <a name="3.1"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 ```python
 >>> print("Hi There!")
@@ -242,7 +242,7 @@ sys.version_info(major=3, minor=7, micro=6, releaselevel='final', serial=0)
 
 ## 3.2 Comments. <a name="3.2"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 In Python, you can use the hash sign (#) to place comments on a single line.
 
@@ -265,7 +265,7 @@ SyntaxError: EOL while scanning string literal
 
 ## 3.3 Variables. <a name="3.3"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 Python's Variables are object-based. Each object has :
 
@@ -417,7 +417,7 @@ In python, objects are destroyed automatically(not explicitly) from memory by th
 
 ## 3.3.1 Names. <a name="3.3.1"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 Names are attached, as we saw previously, to objects. The following method shows the names that are stored in the namespace:
 
@@ -468,7 +468,7 @@ So it is all about storing and deleting names from the namespace. As it is said 
 
 ## 3.4 Literals. <a name="3.4"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 A complete documentation on Literals can be found on [Python Docs](https://docs.python.org/3/reference/lexical_analysis.html#literals).
 
@@ -500,7 +500,7 @@ To see the difference between the built-in functions and the literals, you can c
 ```
 ### 3.4.1 String Literals. <a name="3.4.1"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 Strings are alphanumeric(text constant) values ​​surrounded by quotes. Single or double quotes, or even three single or double-quotes.
 
@@ -624,7 +624,7 @@ the general form of `f` strings is the following:
 
 #### 3.4.1.1 String Formatting. <a name="3.4.1.1"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 There are three methods in python that can be used to format strings:
 
@@ -662,7 +662,7 @@ for more information about string formatting, you can read [python documentation
 
 #### 3.4.1.2 Special characters. <a name="3.4.1.2"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 Python allows you to insert special characters in a string literal. the following table contains a list of spetial characters:
 
@@ -683,7 +683,7 @@ Please refer to [this link](http://www.asciitable.com/) if you want to search fo
 
 #### 3.4.1.3 More Strings Examples. <a name="3.4.1.3"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 ```python
 >>> a = 'Python is cool'  # String type.
@@ -746,7 +746,7 @@ True
 ``` 
 #### 3.4.1.4 Useful Strings Functions. <a name="3.4.1.4"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 For a complete list of string methods, you can refer to[python docs](https://docs.python.org/3/library/stdtypes.html#string-methods).
 
@@ -769,7 +769,7 @@ For a complete list of string methods, you can refer to[python docs](https://doc
 
 #### 3.4.1.5 More Strings Methods Examples. <a name="3.4.1.5"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 ```python
 >>> s = 'string'
@@ -814,7 +814,7 @@ ValueError: substring not found
 
 ### 3.4.2  Numeric literals. <a name="3.4.2"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 There are four types of numeric literals to represent values:
 - **Integers** : reserved for a variable whose value is a stored relative integer in exact value. The possible values ​​for such a variable are only limited by the capabilities of the computer;
@@ -1029,7 +1029,7 @@ It should be noted that this data type(bool) is a subtype of int as the current 
 
 ## 3.5  Sequences. <a name="3.5"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 A sequence is a container of elements, indexed by numbers positive. These numbers vary from 0 to n-1 for a sequence containing n elements. The notation to refer to the ith element of the sequence is:
 
@@ -1089,7 +1089,7 @@ The following table contains the common operations and methods for all sequences
 
 ### 3.5.1  Immutable Sequences. <a name="3.5.1"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 Immutable sequences are objects whose values can no longer be changed after creation.
 
@@ -1101,7 +1101,7 @@ Those are :
 
 #### 3.5.1.1  Strings. <a name="3.5.1.1"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 Strings are sequences of characters. A character is a value encoded on **8 bits**;, to represent a value between **0** and **255**. This corresponds to a sign of **ASCII** table **(0 and 127)** or extended table **(128 to 255)** for values higher.
 
@@ -1116,7 +1116,7 @@ Unlike other languages, there is no type specific Python for a character, and a 
 
 #### 3.5.1.2  Tuples. <a name="3.5.1.2"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 A tuple is basically an immutable list with a smaller size in memory.
 
@@ -1161,7 +1161,7 @@ TypeError: unhashable type: 'list'
 
 #### 3.5.1.3 Bytes. <a name="3.5.1.3"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 Python allows you to handle integers from 0 to 127 corresponding to the ASCII table. It can be initialized by values ​​in a sequence prefixed with b, or by a string of type str.
 
@@ -1181,13 +1181,13 @@ Python allows you to handle integers from 0 to 127 corresponding to the ASCII ta
 
 #### 3.5.1.4 Frozenset. <a name="3.5.1.4"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 The frozenset type is an immutable version of the set type. It is presented with the type set in the next section.
 
 ### 3.5.2 Mutable Sequences. <a name="3.5.2"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 Mutable sequences implement a number of methods that allow you to add, remove or modify each of the elements that compose them.    
 Python offers several types of Mutable sequences:
@@ -1200,7 +1200,7 @@ Python offers several types of Mutable sequences:
 
 #### 3.5.2.1 List. <a name="3.5.2.1"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 In a list, each item is separated by a comma, and the whole is surrounded by brackets.therefore, an empty list is written []. Lists are indexed by integers. Lists can be nested: list inside another list. Each item in the list can be of any data type.
 
@@ -1290,7 +1290,7 @@ The table below groups together useful methods associated to lists :
 
 #### 3.5.2.2 Bytearray. <a name="3.5.2.2"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 The bytearray type is equivalent to the bytes type but it is mutuble instead. It implements some methods of the type str, such as startswith,endswith or find. It also allows to manipulate the data like a sequence, and implements some list methods, like append or pop.
 
@@ -1316,7 +1316,9 @@ bytearray(b'G_.{')
 bytearray(b'\xfa_.')
 ```
 
-#### 3.5.2.3 Set. <a name="3.5.2.3"></a><h5>[Go To TOC](#TOC).</h5>
+#### 3.5.2.3 Set. <a name="3.5.2.3"></a>
+
+#### [Go To TOC](#TOC). 
 
 A set in python is a "container" containing **non-repeating** **hashable** elements in **random order**. Hashable elements are all objects of constant value. The *hash* method is used to return an error if the object does not have a constant value.
 
@@ -1411,14 +1413,14 @@ For more information about sets and frozensets, you can refer to [python docs](h
 
 #### 3.5.2.4 Array. <a name="3.5.2.4"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 An **array** is a 1-dimensional array with a limitation on the **data type** and **size** of each element. Arrays are more memory efficient.
 For more information about array, you can read [python docs](https://docs.python.org/3/library/array.html).
 
 #### 3.5.2.5 Dictionary. <a name="3.5.2.5"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 Dictionary in python is unordered mutable collection of arbitrary key-value objects. it is sometimes also called associative array or hash table.
 
@@ -1473,7 +1475,7 @@ The following table contains dictionary's methods :
 
 #### 3.5.3 Sequences Exercices. <a name="3.5.3"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 ```python
 >>> list_ = [1,2,3,4,5]   # create a list from literal 
@@ -1643,11 +1645,13 @@ False
 ```
 ## 3.6 Conditional Statement. <a name="3.6"></a>
 
-<h5>[Go To TOC](#TOC).</h5> 
+#### [Go To TOC](#TOC). 
 
 These statements exists to allow you forcing the program to execute certain sections of code only under certain conditions. So if the condition is met, the code will be executed.
 
-### 3.6.1 If Statement. <a name="3.6.1"></a><h5>[Go To TOC](#TOC).</h5>
+### 3.6.1 If Statement. <a name="3.6.1"></a>
+
+#### [Go To TOC](#TOC). 
 
 In this case, if the condition is met, then we go into the body of the indented block and execute the code in it. Otherwise, we skip this block and the program continue the excution normaly.
 
@@ -1671,7 +1675,9 @@ if a % 2 == 0:
 # continue
 ```
 
-### 3.6.2 If-Else Statements. <a name="3.6.2"></a><h5>[Go To TOC](#TOC).</h5>
+### 3.6.2 If-Else Statements. <a name="3.6.2"></a>
+
+#### [Go To TOC](#TOC). 
 
 Figuratively, we can divide this statement into two parts. The first part is an if statement with a condition and a body, and the second is an else statement with a body only.
 
@@ -1685,7 +1691,9 @@ else:
 	print("a is odd")
 ```
 
-### 3.6.3 If-Elif Statements. <a name="3.6.3"></a><h5>[Go To TOC](#TOC).</h5>
+### 3.6.3 If-Elif Statements. <a name="3.6.3"></a>
+
+#### [Go To TOC](#TOC). 
 
 In this case, we only get into the body of the statement that the interpreter meets first, and as you may know, the interpreter scans the code from top to bottom(like switch-case in C# or C or ...).
 
@@ -1704,7 +1712,9 @@ else:
 # continue
 ```
 
-### 3.6.4 Nested If-Else Statements. <a name="3.6.4"></a><h5>[Go To TOC](#TOC).</h5>
+### 3.6.4 Nested If-Else Statements. <a name="3.6.4"></a>
+
+#### [Go To TOC](#TOC). 
 
 Here we check another condition if certain condition is met.
 
@@ -1737,7 +1747,9 @@ else:
 	print("odd") 
 ```
 
-### 3.6.5 Exercices. <a name="3.6.5"></a><h5>[Go To TOC](#TOC).</h5>
+### 3.6.5 Exercices. <a name="3.6.5"></a>
+
+#### [Go To TOC](#TOC). 
 
 ```python
 >>> if []:
@@ -1805,7 +1817,9 @@ False
 True
 ```
 
-### 3.7 Loops. <a name="3.7"></a><h5>[Go To TOC](#TOC).</h5>
+### 3.7 Loops. <a name="3.7"></a>
+
+#### [Go To TOC](#TOC). 
 
 As said earlier, statements are executed sequentially from top to bottom. However, if you want to execute a block of code multiple times, you can use a loop.
 
@@ -1815,7 +1829,9 @@ But before diving in into loops, you need to have knowledge of some vocabulary:
 - **Iteration**: It is one excecution of the loop.
 - **Index**: A variable used to keep track of the current iteration.
 
-#### 3.7.1 While Loop. <a name="3.7.1"></a><h5>[Go To TOC](#TOC).</h5>
+#### 3.7.1 While Loop. <a name="3.7.1"></a>
+
+#### [Go To TOC](#TOC). 
 
 While loop means execute the body of this loop as long as the loop condition is true.
 
@@ -1864,7 +1880,9 @@ In python, you can also write an infinite loop. Using the break keyword, you can
 5
 ```
 
-#### 3.7.2 For Loop. <a name="3.7.2"></a><h5>[Go To TOC](#TOC).</h5>
+#### 3.7.2 For Loop. <a name="3.7.2"></a>
+
+#### [Go To TOC](#TOC). 
 
 This loop iterates over any iterable object and executes the body of the loop during each iteration. For loops are much faster than while loops.
 ```python
@@ -1892,7 +1910,9 @@ for variable_name in iterable:
 4.98198106000018
 ```
 
-#### 3.7.3 Loop Else. <a name="3.7.3"></a><h5>[Go To TOC](#TOC).</h5>
+#### 3.7.3 Loop Else. <a name="3.7.3"></a>
+
+#### [Go To TOC](#TOC). 
 
 The `else` keyword is used, in a for or while loop, to check if the loop was exited nicely or something else interrupts its execution. if it exited nicely, the body of else statement will be executed.
 
@@ -1918,7 +1938,9 @@ Nothing interrupts the for loop!
 else will not be executed!
 ```
 
-## 3.8 Operations. <a name="3.8"></a><h5>[Go To TOC](#TOC).</h5>
+## 3.8 Operations. <a name="3.8"></a>
+
+#### [Go To TOC](#TOC). 
 
 In Python, operations have different priorities. The following table lists arithmetic and logical operations from highest to lowest priority:
 
@@ -1938,7 +1960,9 @@ In Python, operations have different priorities. The following table lists arith
 | `^` | Bitwise XOR. | `>>> bin(0b1101 & 0b0111 ^ 0b001)`<br>'0b100' |
 | `\|` | Bitwise OR. | `>>> bin(0b1101 & 0b0111 ^ 0b001 \| 0b001)`<br>'0b101' |
 
-## 3.9 Iterables. <a name="3.9"></a><h5>[Go To TOC](#TOC).</h5>
+## 3.9 Iterables. <a name="3.9"></a>
+
+#### [Go To TOC](#TOC). 
 
 
 Each time an object is used in a for loop, the interpreter generates an iterator with which it works. An iterator is an object that contains a **next()** method which is called at each iteration to returns the sequence, element by element. When there are no more elements, the iterator raises an exception of type **StopIteration**. There are a lot of objects that are iterable(e.g. elements of a list, characters of a string, keys of dict...).
@@ -2029,7 +2053,9 @@ False
 
 ```
 
-## 3.10 List Comprehensions. <a name="3.10"></a><h5>[Go To TOC](#TOC).</h5>
+## 3.10 List Comprehensions. <a name="3.10"></a>
+
+#### [Go To TOC](#TOC). 
 
 List comprehensions are expressions used to generate lists in a very compact way, without having to use loops.
 
@@ -2049,13 +2075,17 @@ The general form of list comprehension is :
 [0, 3, 5, 6, 9, 10, 12, 15, 18, 20, 21, 24, 25, 27, 30, 33, 35, 36, 39, 40, 42, 45, 48, 50, 51, 54, 55, 57, 60, 63, 65, 66, 69, 70, 72, 75, 78, 80, 81, 84, 85, 87, 90, 93, 95, 96, 99]
 ```
 
-## 3.11 Generators. <a name="3.11"></a><h5>[Go To TOC](#TOC).</h5>
+## 3.11 Generators. <a name="3.11"></a>
+
+#### [Go To TOC](#TOC). 
 
 [Python Docs](https://docs.python.org/3/glossary.html#term-generator).
 
 Generators are functions that can be paused(with `yield`) and resumed(with `next()`) while they are running. Their return value is an iterable object. Unlike lists, they are **lazy** and therefore only work on the current item when requested. Thus, they are much more memory efficient when dealing with large datasets(this is not true with small dataset).
 
-### 3.11.1 Generator Function. <a name="3.11.1"></a><h5>[Go To TOC](#TOC).</h5>
+### 3.11.1 Generator Function. <a name="3.11.1"></a>
+
+#### [Go To TOC](#TOC). 
 
 ```python
 >>> def iterable(n):
@@ -2088,7 +2118,9 @@ return
 
 `yield` saves the state of the local variables and where the function statement was left. The next call to the function will resume at this point. The for loop `for element in iterable(5):` will call next on the generator each iteration.
 
-### 3.11.2 Generator Expression. <a name="3.11.2"></a><h5>[Go To TOC](#TOC).</h5>
+### 3.11.2 Generator Expression. <a name="3.11.2"></a>
+
+#### [Go To TOC](#TOC). 
 
 A generator expression is a way to create a generator, which is iterable. These expressions are in a form equivalent to list comprehensions: (expression for element in iterable condition) and return a generator object(instead of calling it tuple comprehension, it is called genexp). 
 
@@ -2116,7 +2148,9 @@ StopIteration
 128
 ```
 
-### 3.11.3 Generator Exercises. <a name="3.11.3"></a><h5>[Go To TOC](#TOC).</h5>
+### 3.11.3 Generator Exercises. <a name="3.11.3"></a>
+
+#### [Go To TOC](#TOC). 
 
 ```python
 >>> def factorial():
@@ -2202,7 +2236,9 @@ StopIteration
 ```
 
 
-### 3.12 Input. <a name="3.12"></a><h5>[Go To TOC](#TOC).</h5>
+### 3.12 Input. <a name="3.12"></a>
+
+#### [Go To TOC](#TOC). 
 
 Using the built-in `input()` method, you can get information from the user. It has an optional parameter `prompt` which prints a string on the screen.
 
@@ -2309,7 +2345,9 @@ os.system('ls')    # <----- you can insert a command as a string. So using eval 
 
 ```
 
-### 3.13 Exceptions. <a name="3.13"></a><h5>[Go To TOC](#TOC).</h5>
+### 3.13 Exceptions. <a name="3.13"></a>
+
+#### [Go To TOC](#TOC). 
 From [python docs](https://docs.python.org/3/library/exceptions.html#exception-hierarchy), The class hierarchy for built-in exceptions is:
 >
     BaseException # The root of all exceptions.

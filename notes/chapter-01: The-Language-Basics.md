@@ -1,4 +1,4 @@
-<!-- BSD 2-Clause License
+<!-- MIT License
 
 Copyright (c) 2022, Harmouch101
 All rights reserved.

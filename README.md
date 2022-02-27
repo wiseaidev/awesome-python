@@ -6,26 +6,35 @@ All rights reserved.
 
 <div align="left">
     <span>
-        <a href="https://github.com/Harmouch101/Awesome-Pycon-Notes">
+        <a href="https://github.com/Harmouch101/awesome-pycon-notes">
             <img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" class="attachment-full size-full jetpack-lazy-image" alt="Fork me on GitHub" data-recalc-dims="1" data-lazy-src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149&is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" align="right" float="right">
         </a>
     </span>
     <span display="inline-block">
-        <h1>Awesome Pycon Notes!</h1>
+        <h1>😎 Awesome Pycon Notes!</h1>
     </span>
 </div>
 
 <div align="left">
-    <a class="github-fork-ribbon" href="https://github.com/Harmouch101/Awesome-Pycon-Notes" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">
-        <img src="https://awesome.re/badge-flat.svg" alt="Awesome" style="display:block; margin-left:auto; margin-right:auto; width:45%;">
+    <a class="github-fork-ribbon" href="https://github.com/Harmouch101/awesome-pycon-notes" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">
+        <img src="./assets/Banner.PNG" alt="Awesome" width="80%">
     </a>
+    <br>
 </div>
 
-> A Collection of notes, speaker's deck/files related to pycon talks.  
-> Maintained by [`Mahmoud Harmouch`](https://github.com/harmouch101).  
-> This repository can be used as a reference/documentation for mastering the python programming language and the Django framework. 
+<br>
+<br>
+<br>
 
-## Table Of Content (TOC). <a name="TOC"></a>
+> ⚠️ This repo is currently under construction. Consider giving a ⭐ for future updates!
+
+> A collection of notes, speaker's deck/files related to pycon talks, and a list of python books.
+> This repository can be used as a reference/documentation for mastering the python programming language and the Django framework.
+
+> Currently maintained by [`Mahmoud Harmouch`](https://github.com/harmouch101).  
+
+
+## 👉 Table Of Content (TOC). <a name="TOC"></a>
 
 1. [Python Talks](#Talks)   
     1.1 [Beginner Level](#Beginner)   
@@ -64,9 +73,9 @@ All rights reserved.
 
 ### Beginner Level <a name="Beginner"></a>  <h4>[Go To TOC](#TOC).</h4> 
 
-|   #  | Videos        | Original Link for Speaker Deck/files    | Downloaded files | Notes Taken    |
+|  Speaker  | Videos        | Original Link for Speaker Deck/files    | Downloaded files | Notes Taken    |
 | :---: | :------------:      | :------------:     | :------------:  |:------------:  |
-| 1 <a name="1.1.1"></a>  | [`2014`][000] [`2016`][001] [`2017`][002] [`2018`][003] | [`2015`][0000] [`2016`][0001] [`2018`][0002] | [`2015`][00000] [`2016`][00001] [`2018`][00002] | [`The Language Basics.md`][000000] |
+| Stuart Williams <a name="1.1.1"></a>  | [`2014`][000] [`2016`][001] [`2017`][002] [`2018`][003] | [`2015`][0000] [`2016`][0001] [`2018`][0002] | [`2015`][00000] [`2016`][00001] [`2018`][00002] | [`The Language Basics.md`][000000] |
 
 ## :books: Python Books. <a name="Books">
 

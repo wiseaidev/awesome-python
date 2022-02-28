@@ -76,9 +76,9 @@ All rights reserved.
 
 #### [Go To TOC](#TOC). 
 
-|  Speaker  | Videos        | Original Link for Speaker Deck/files    | Downloaded files | Notes Taken    |
+|  Speaker | Videos        | Speaker Deck/files    | Backup files | Notes Taken    |
 | :---: | :------------:      | :------------:     | :------------:  |:------------:  |
-| Stuart Williams <a name="1.1.1"></a>  | [`2014`][000] [`2016`][001] [`2017`][002] [`2018`][003] | [`2015`][0000] [`2016`][0001] [`2018`][0002] | [`2015`][00000] [`2016`][00001] [`2018`][00002] | [`The Language Basics.md`][000000] |
+| Stuart Williams <a name="1.1.1"></a>  | [`2014`][000] [`2016`][001] [`2017`][002] [`2018`][003] | [`2015`][0000] [`2016`][0001] [`2018`][0002] | [`Mega`][00000] | [`The Language Basics.md`][000000] |
 
 ## 📚 Python Books. <a name="Books">
 
@@ -391,7 +391,5 @@ With simple step-by-step instructions and sample code, this book gets you up to 
 [0000]: https://www.dropbox.com/s/az1gnn92u8y6eh3/PyCon%202015%20-%20Python%20Epiphanies.pdf?dl=0
 [0001]: https://www.dropbox.com/s/dgks2bgnzpycruz/PyCon-2016-Python-Epiphanies.zip?dl=0
 [0002]: https://www.dropbox.com/s/xkyk3sgbq5fwdzh/PyCon-2018-Python-Epiphanies.zip?dl=0
-[00000]: ./speakers/Stuart%20Williams/PyCon%202015%20-%20Python%20Epiphanies.pdf
-[00001]: ./speakers/Stuart%20Williams/PyCon-2016-Python-Epiphanies
-[00002]: ./speakers/Stuart%20Williams/PyCon-2018-Python-Epiphanies
+[00000]: https://mega.nz/folder/XP4XCIiB#KEex7dWMu6FLAcIOH09H_g
 [000000]: ./notes/chapter-01:%20The-Language-Basics.md

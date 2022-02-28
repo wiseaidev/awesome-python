@@ -378,7 +378,7 @@ With simple step-by-step instructions and sample code, this book gets you up to 
 </p>
 
 <!-- Links -->
-[00]: ./CONTRIBUTING.md
+[00]: CONTRIBUTING.md
 [01]: https://github.com/harmouch101
 [000]: https://www.youtube.com/watch?v=Uyj2UFTL_vg
 [001]: https://www.youtube.com/watch?v=6inqFd1bUkE
@@ -388,4 +388,4 @@ With simple step-by-step instructions and sample code, this book gets you up to 
 [0001]: https://www.dropbox.com/s/dgks2bgnzpycruz/PyCon-2016-Python-Epiphanies.zip?dl=0
 [0002]: https://www.dropbox.com/s/xkyk3sgbq5fwdzh/PyCon-2018-Python-Epiphanies.zip?dl=0
 [00000]: https://mega.nz/folder/XP4XCIiB#KEex7dWMu6FLAcIOH09H_g
-[000000]: ./notes/chapter-01:%20The-Language-Basics.md
+[000000]: notes/chapter-01:%20The-Language-Basics.md

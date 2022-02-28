@@ -4,27 +4,23 @@ Copyright (c) 2022, Harmouch101
 All rights reserved.
  -->
 
-<div align="left">
-    <span>
+<div align="center">
+<!--     <span>
         <a href="https://github.com/Harmouch101/awesome-pycon-notes">
             <img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" class="attachment-full size-full jetpack-lazy-image" alt="Fork me on GitHub" data-recalc-dims="1" data-lazy-src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149&is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" align="right" float="right">
         </a>
-    </span>
+    </span> --> 
     <span display="inline-block">
         <h1>😎 Awesome Pycon Notes!</h1>
     </span>
 </div>
 
-<div align="left">
+<div align="center">
     <a class="github-fork-ribbon" href="https://github.com/Harmouch101/awesome-pycon-notes" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">
-        <img src="./assets/Banner.PNG" alt="Awesome" width="80%">
+        <img src="./assets/Banner.PNG" alt="Awesome">
     </a>
     <br>
 </div>
-
-<br>
-<br>
-<br>
 
 > ⚠️ This repo is currently under construction. Consider giving a ⭐ for future updates!    
 > If you are looking for a way to contribute to the project, please refer to the [`Guidline`][00].   

@@ -74,7 +74,7 @@ All rights reserved.
 
 |  Speaker | Videos        | Speaker Deck/files    | Backup files | Notes Taken    |
 | :---: | :------------:      | :------------:     | :------------:  |:------------:  |
-| Stuart Williams <a name="1.1.1"></a>  | [`2014`][000] [`2016`][001] [`2017`][002] [`2018`][003] | [`2015`][0000] [`2016`][0001] [`2018`][0002] | [`Mega`][00000] | [`The Language Basics.md`][000000] |
+| `Stuart Williams` <a name="1.1.1"></a>  | [`2014`][000] [`2016`][001] [`2017`][002] [`2018`][003] | [`2015`][0000] [`2016`][0001] [`2018`][0002] | [`Mega`][00000] | [`The Language Basics.md`][000000] |
 
 ## 📚 Python Books. <a name="Books">
 

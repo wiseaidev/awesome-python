@@ -102,9 +102,9 @@ This repository serves three primary roles:
 
 ## 📝 My Notes/Book <a name="Notes"></a>
 
-#### [`Chapter-01: The Language Basics`][000000]. <a name="chapter1"></a>
+### [Chapter-01: The Language Basics][000000]. <a name="chapter1"></a>
 
-#### [`Chapter-02: Built-In functions and the Std-Modules`][000001]. <a name="chapter2"></a>
+### [Chapter-02: Built-In functions and the Std-Modules][000001]. <a name="chapter2"></a>
 
 ## 📚 Python Books. <a name="Books">
 

@@ -408,7 +408,7 @@ With simple step-by-step instructions and sample code, this book gets you up to 
 </p>
 
 <!-- Links -->
-[00]: CONTRIBUTING.md
+[00]: https://harmouch101.github.io/awesome-pycon-notes/CONTRIBUTING.html
 [01]: https://github.com/harmouch101
 [000]: https://www.youtube.com/watch?v=Uyj2UFTL_vg
 [001]: https://www.youtube.com/watch?v=6inqFd1bUkE

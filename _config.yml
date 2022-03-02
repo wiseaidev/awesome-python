@@ -4,3 +4,11 @@ plugins:
 relative_links:
   enabled: true
   collections: true
+include:
+  - notes/chapter-01:%20The-Language-Basics.md
+  - notes/chapter-02:%20Built-In-func-&-Std-Modules.md
+  - CONTRIBUTING.md
+  - README.md
+  - assets
+  - CODE_OF_CONDUCT.md
+  - LICENSE

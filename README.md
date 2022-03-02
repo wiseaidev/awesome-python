@@ -57,34 +57,38 @@ This repository serves three primary roles:
 1. [Python Talks](#Talks)   
     1.1 [Beginner Level](#Beginner)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.1.1 [Stuart Williams-Python Epiphanies-PyCon](#1.1.1)   
-2. [Python Books](#Books)   
-    2.1 [Beginner Level](#books2.1)    
-    &nbsp;&nbsp;&nbsp;&nbsp;2.1.1 [Head-First Python: A Brain-Friendly Guide
-](#books2.1.1)   
-    &nbsp;&nbsp;&nbsp;&nbsp;2.1.2 [Python for Everybody: Exploring Data in Python 3](#books2.1.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;2.1.3 [Learn Python 3 the Hard Way](#books2.1.3)   
-    &nbsp;&nbsp;&nbsp;&nbsp;2.1.4 [Python Programming for the Absolute Beginner](#books2.1.4)   
-    &nbsp;&nbsp;&nbsp;&nbsp;2.1.5 [Introduction to Computation and Programming Using Python](#books2.1.5)   
-    &nbsp;&nbsp;&nbsp;&nbsp;2.1.6 [Python Programming: An Introduction to Computer Science](#books2.1.6)   
-    &nbsp;&nbsp;&nbsp;&nbsp;2.1.7 [Python Crash Course](#books2.1.7)   
-    &nbsp;&nbsp;&nbsp;&nbsp;2.1.8 [Python for Kids](#books2.1.8)   
-    &nbsp;&nbsp;&nbsp;&nbsp;2.1.9 [Core Python Programming](#books2.1.9)   
-    &nbsp;&nbsp;&nbsp;&nbsp;2.1.10 [Programming Python](#books2.1.10)   
-    &nbsp;&nbsp;&nbsp;&nbsp;2.1.11 [Learning Python](#books2.1.11)    
-    &nbsp;&nbsp;&nbsp;&nbsp;2.1.12 [Think Python](#books2.1.12)   
-    2.2 [Intermediate Level](#books2.2)    
-    &nbsp;&nbsp;&nbsp;&nbsp;2.2.1 [Murach's Python Programming](#books2.2.1)    
-    &nbsp;&nbsp;&nbsp;&nbsp;2.2.2 [Python Cookbook](#books2.2.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;2.2.3 [Effective Python: 59 Specific Ways to Write Better Python](#books2.2.3)   
-    &nbsp;&nbsp;&nbsp;&nbsp;2.2.4 [Python Tricks: A Buffet of Awesome Python Features](#books2.2.4)   
-    &nbsp;&nbsp;&nbsp;&nbsp;2.2.5 [Intermediate Python](#books2.2.5)   
-    &nbsp;&nbsp;&nbsp;&nbsp;2.2.6 [Python 3 Object Oriented Programming](#books2.2.6)   
-    &nbsp;&nbsp;&nbsp;&nbsp;2.2.7 [Problem Solving with Algorithms and Data Structures Using Python](#books2.2.7)   
-    &nbsp;&nbsp;&nbsp;&nbsp;2.2.8 [Practices of the Python Pro](#books2.2.8)   
-    2.3 [Advanced Level](#books2.3)    
-    &nbsp;&nbsp;&nbsp;&nbsp;2.3.1 [Fluent Python](#books2.3.1)   
-    &nbsp;&nbsp;&nbsp;&nbsp;2.3.2 [Mastering Python High Performance](#books2.3.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;2.3.3 [Python Testing with pytest](#books2.3.3)   
+2. [My Notes/Book](#Notes)   
+    2.1 [Chapter-01: The Language Basics](#chapter1)   
+    2.2 [Chapter-02: Built-In functions and the Std-Modules](#chapter2)  
+
+3. [Python Books](#Books)   
+    3.1 [Beginner Level](#books3.1)    
+    &nbsp;&nbsp;&nbsp;&nbsp;3.1.1 [Head-First Python: A Brain-Friendly Guide
+](#books3.1.1)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.1.2 [Python for Everybody: Exploring Data in Python 3](#books3.1.2)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.1.3 [Learn Python 3 the Hard Way](#books3.1.3)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.1.4 [Python Programming for the Absolute Beginner](#books3.1.4)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.1.5 [Introduction to Computation and Programming Using Python](#books3.1.5)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.1.6 [Python Programming: An Introduction to Computer Science](#books3.1.6)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.1.7 [Python Crash Course](#books3.1.7)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.1.8 [Python for Kids](#books3.1.8)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.1.9 [Core Python Programming](#books3.1.9)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.1.10 [Programming Python](#books3.1.10)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.1.11 [Learning Python](#books3.1.11)    
+    &nbsp;&nbsp;&nbsp;&nbsp;3.1.12 [Think Python](#books3.1.12)   
+    3.2 [Intermediate Level](#books3.2)    
+    &nbsp;&nbsp;&nbsp;&nbsp;3.3.1 [Murach's Python Programming](#books3.3.1)    
+    &nbsp;&nbsp;&nbsp;&nbsp;3.2.2 [Python Cookbook](#books3.2.2)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.3.3 [Effective Python: 59 Specific Ways to Write Better Python](#books3.3.3)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.2.4 [Python Tricks: A Buffet of Awesome Python Features](#books3.2.4)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.2.5 [Intermediate Python](#books3.2.5)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.2.6 [Python 3 Object Oriented Programming](#books3.2.6)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.2.7 [Problem Solving with Algorithms and Data Structures Using Python](#books3.2.7)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.2.8 [Practices of the Python Pro](#books3.2.8)   
+    3.3 [Advanced Level](#books3.3)    
+    &nbsp;&nbsp;&nbsp;&nbsp;3.3.1 [Fluent Python](#books3.3.1)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.3.2 [Mastering Python High Performance](#books3.3.2)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.3.3 [Python Testing with pytest](#books3.3.3)   
 
 ## 📺 Python Talks <a name="Talks"></a>
 
@@ -92,17 +96,23 @@ This repository serves three primary roles:
 
 #### [Go To TOC](#TOC). 
 
-|  Speaker | Videos        | Speaker Deck/files    | Backup files | Notes Taken    |
-| :---: | :------------:      | :------------:     | :------------:  |:------------:  |
-| `Stuart Williams` <a name="1.1.1"></a>  | [`2014`][000] [`2016`][001] [`2017`][002] [`2018`][003] | [`2015`][0000] [`2016`][0001] [`2018`][0002] | [`Mega`][00000] | [`The Language Basics.md`][000000] |
+|  Speaker | YT Videos        | Speaker Slides Deck  | Backup files |
+| :---: | :------------:      | :------------:     | :------------:  |
+| `Stuart Williams` <a name="1.1.1"></a>  | [`2014`][000] [`2016`][001] [`2017`][002] [`2018`][003] | [`2015`][0000] [`2016`][0001] [`2018`][0002] | [`Mega`][00000] |
+
+## 📝 My Notes/Book <a name="Notes"></a>
+
+#### [`Chapter-01: The Language Basics`][000000]. <a name="chapter1"></a>
+
+#### [`Chapter-02: Built-In functions and the Std-Modules`][000001]. <a name="chapter2"></a>
 
 ## 📚 Python Books. <a name="Books">
 
-### Beginner's Level. <a name="books2.1"> 
+### Beginner's Level. <a name="books3.1"> 
 
 #### [Go To TOC](#TOC). 
 
-### Head-First Python: A Brain-Friendly Guide <a name="books2.1.1"></a>
+### Head-First Python: A Brain-Friendly Guide <a name="books3.1.1"></a>
 
 by Paul Barry, 2nd Edition.\[[Amazon\]](https://www.amazon.com/_/dp/1491919531?tag=oreilly20-20) \[[Publisher\]](https://www.oreilly.com/library/view/head-first-python/9781491919521/)
 
@@ -113,7 +123,7 @@ Want to learn the Python language without slogging your way through how-to manua
 </details>
 
 ---
-### Python for Everybody: Exploring Data in Python 3 <a name="books2.1.2"> </a>  
+### Python for Everybody: Exploring Data in Python 3 <a name="books3.1.2"> </a>  
 
 by Dr. Charles Russell Severance.\[[Amazon\]](https://www.amazon.com/Python-Everybody-Exploring-Data/dp/1530051126) \[[Site\]](https://www.py4e.com/book)
 
@@ -124,7 +134,7 @@ Python for Everybody is designed to introduce students to programming and softwa
 </details>
 
 ---
-### Learn Python 3 the Hard Way <a name="books2.1.3"></a>   </a>
+### Learn Python 3 the Hard Way <a name="books3.1.3"></a>   </a>
 
 by Zed A. Shaw, 1st Edition.\[[Amazon\]](https://www.amazon.com/dp/0134692888/?tag=devdetailpage02-20) \[[Publisher\]](https://learnpythonthehardway.org/python3/)
 
@@ -135,7 +145,7 @@ In Learn Python 3 the Hard Way, you’ll learn Python by working through 52 bril
 </details>
 
 ---
-### Python Programming for the Absolute Beginner <a name="books2.1.4"></a>   
+### Python Programming for the Absolute Beginner <a name="books3.1.4"></a>   
 
 by Michael Dawson, 3rd Edition.\[[Amazon\]](https://www.amazon.com/Python-Programming-Absolute-Beginner-3rd/dp/1435455002)
 
@@ -146,7 +156,7 @@ If you are new to programming with Python and are looking for a solid introducti
 </details>
 
 ---
-### Introduction to Computation and Programming Using Python <a name="books2.1.5"></a>   
+### Introduction to Computation and Programming Using Python <a name="books3.1.5"></a>   
 
 by John V. Guttag, 2nd Edition.\[[Amazon\]](https://www.amazon.com/Introduction-Computation-Programming-Using-Python/dp/0262529629) \[[Publisher\]](https://mitpress.mit.edu/books/introduction-computation-and-programming-using-python-second-edition)
 
@@ -157,7 +167,7 @@ This book introduces students with little or no prior programming experience to 
 </details>
 
 ---
-### Python Programming: An Introduction to Computer Science <a name="books2.1.6"></a>   
+### Python Programming: An Introduction to Computer Science <a name="books3.1.6"></a>   
 
 by John M. Zelle, 3rd Edition.\[[Amazon\]](https://www.amazon.com/Python-Programming-Introduction-Computer-Science/dp/1887902996)
 
@@ -168,7 +178,7 @@ This book is designed to be used as the primary textbook in a college-level firs
 </details>
 
 ---
-### Python Crash Course <a name="books2.1.7"></a>   
+### Python Crash Course <a name="books3.1.7"></a>   
 
 by Eric Matthes, 2nd Edition.\[[Amazon\]](https://www.amazon.com/Python-Crash-Course-Hands-Project-Based/dp/1593276036) \[[Publisher\]](https://www.oreilly.com/library/view/python-crash-course/9781457197185/)
 
@@ -181,7 +191,7 @@ In the first half of the book, you'll learn about basic programming concepts, su
 </details>
 
 ---
-### Python for Kids <a name="books2.1.8"></a>   
+### Python for Kids <a name="books3.1.8"></a>   
 
 by Jason R. Briggs, 1st Edition.\[[Amazon\]](https://www.amazon.com/dp/1593274076/?tag=devdetailpage02-20) \[[Publisher\]](https://nostarch.com/pythonforkids)
 
@@ -194,7 +204,7 @@ Chapters end with programming puzzles designed to stretch your brain and strengt
 </details>
 
 ---
-### Core Python Programming <a name="books2.1.9"></a>   
+### Core Python Programming <a name="books3.1.9"></a>   
 
 by Wesley J. Chun, 2nd Edition.\[[Amazon\]](https://www.amazon.com/Core-Python-Programming-Wesley-Chun/dp/0132269937) \[[Publisher\]](https://www.oreilly.com/library/view/core-python-programming/0132269937/)
 
@@ -207,7 +217,7 @@ Using practical code examples, Chun introduces all the fundamentals of Python pr
 </details>
 
 ---
-### Programming Python <a name="books2.1.10"></a>   
+### Programming Python <a name="books3.1.10"></a>   
 
 by Mark Lutz, 4th Edition.\[[Amazon\]](https://www.amazon.com/_/dp/0596158106?tag=oreilly20-20) \[[Publisher\]](https://www.oreilly.com/library/view/programming-python-4th/9781449398712/)
 
@@ -220,7 +230,7 @@ You'll learn language syntax and programming techniques in a clear and concise m
 </details>
 
 ---
-### Learning Python <a name="books2.1.11"></a>   
+### Learning Python <a name="books3.1.11"></a>   
 
 by Mark Lutz, 5th Edition.\[[Amazon\]](https://www.amazon.com/Learning-Python-5th-Mark-Lutz/dp/1449355730) \[[Publisher\]](https://www.oreilly.com/library/view/learning-python-5th/9781449355722/)
 
@@ -233,7 +243,7 @@ Complete with quizzes, exercises, and helpful illustrations, this easy-to-follow
 </details>
 
 ---
-### Think Python <a name="books2.1.12"></a>   
+### Think Python <a name="books3.1.12"></a>   
 
 by Allen B. Downey, 2nd Edition.\[[Amazon\]](https://www.amazon.com/Think-Python-Like-Computer-Scientist/dp/1491939362) \[[Publisher\]](https://greenteapress.com/wp/think-python-2e/)
 
@@ -244,11 +254,11 @@ Think Python is an introduction to Python programming for beginners. It starts w
 </details>
 
 ---
-## Intermediate Level <a name="books2.2"></a>  
+## Intermediate Level <a name="books3.2"></a>  
 
 #### [Go To TOC](#TOC). 
 
-### Murach's Python Programming <a name=books2.2.1"></a>   
+### Murach's Python Programming <a name=books3.3.1"></a>   
 
 by Michael Urban.\[[Amazon\]](https://www.amazon.com/Murachs-Python-Programming-Michael-Urban/dp/1890774979) \[[Publisher\]](https://www.murach.com/shop/murach-s-python-programming-detail)
 
@@ -259,7 +269,7 @@ Python is one of today’s fastest-growing languages. Its simple syntax makes it
 </details>
 
 ---
-### Python Cookbook <a name="books2.2.2"></a>   
+### Python Cookbook <a name="books3.2.2"></a>   
 
 by David Beazley, 3rd Edition.\[[Amazon\]](https://www.amazon.com/_/dp/1449340377?tag=oreilly20-20) \[[Publisher\]](https://www.oreilly.com/library/view/python-cookbook-3rd/9781449357337/)
 
@@ -272,7 +282,7 @@ Inside, you’ll find complete recipes for more than a dozen topics, covering th
 </details>
 
 ---
-### Effective Python: 59 Specific Ways to Write Better Python <a name="books2.2.3"></a>   
+### Effective Python: 59 Specific Ways to Write Better Python <a name="books3.3.3"></a>   
 
 by Brett Slatkin, 1st Edition.\[[Amazon\]](https://www.amazon.com/Effective-Python-Specific-Software-Development/dp/0134034287) \[[Publisher\]](https://www.oreilly.com/library/view/effective-python-59/9780134034416/)
 
@@ -287,7 +297,7 @@ Drawing on years of experience building Python infrastructure at Google, Slatkin
 </details>
 
 ---
-### Python Tricks: A Buffet of Awesome Python Features <a name="books2.2.4"></a>   
+### Python Tricks: A Buffet of Awesome Python Features <a name="books3.2.4"></a>   
 
 by Dan Bader, 1st Edition.\[[Amazon\]](amazon.com/Effective-Python-Specific-Software-Development/dp/0134034287) \[[Publisher\]](https://realpython.com/products/real-python-course/)
 
@@ -304,7 +314,7 @@ If you're wondering whether or not this book is right for you, here's who can be
 </details>
 
 ---
-### Intermediate Python <a name="books2.2.5></a>   
+### Intermediate Python <a name="books3.2.5></a>   
 
 by Obi Ike-Nwosu, 1st Edition.\[[Publisher\]](https://leanpub.com/intermediatepython)
 
@@ -319,7 +329,7 @@ If you are looking for a book to take you beyond the beginner level in python, t
 </details>
 
 ---
-### Python 3 Object Oriented Programming <a name="books2.2.6"></a>   
+### Python 3 Object Oriented Programming <a name="books3.2.6"></a>   
 
 by Dusty Phillips, 1st Edition.\[[Amazon\]](https://www.amazon.com/Python-3-Object-Oriented-Programming/dp/1849511268) \[[Publisher\]](https://www.packtpub.com/product/python-3-object-oriented-programming-third-edition/9781789615852)
 
@@ -332,7 +342,7 @@ Starting with a detailed analysis of object-oriented programming, you will use t
 </details>
 
 ---
-### Problem Solving with Algorithms and Data Structures Using Python <a name="books2.2.7"></a>   
+### Problem Solving with Algorithms and Data Structures Using Python <a name="books3.2.7"></a>   
 
 by Bradley N. Miller.\[[Amazon\]](https://www.amazon.com/Problem-Solving-Algorithms-Structures-Python/dp/1590282574)
 
@@ -343,7 +353,7 @@ THIS TEXTBOOK is about computer science. It is also about Python. However, there
 </details>
 
 ---
-### Practices of the Python Pro <a name="books2.2.8"></a>   
+### Practices of the Python Pro <a name="books3.2.8"></a>   
 
 by Dane Hillard, 1st Edition.\[[Amazon\]](https://www.amazon.com/Practices-Python-Pro-Dane-Hillard/dp/1617296082) \[[Publisher\]](https://www.oreilly.com/library/view/practices-of-the/9781617296086/)
 
@@ -354,11 +364,11 @@ Practices of the Python Pro teaches you to design and write professional-quality
 </details>
 
 ---
-## Advanced Level <a name="books2.3"></a>  
+## Advanced Level <a name="books3.3"></a>  
 
 #### [Go To TOC](#TOC).   
 
-### Fluent Python <a name="books2.3.1"></a>  
+### Fluent Python <a name="books3.3.1"></a>  
 
 by Luciano Ramalho, 1st Edition.\[[Amazon\]](https://www.amazon.com/_/dp/1491946008?tag=oreilly20-20) \[[Publisher\]](https://www.oreilly.com/library/view/fluent-python/9781491946237/)
 
@@ -371,7 +381,7 @@ Many experienced programmers try to bend Python to fit patterns they learned fro
 </details>
 
 ---
-### Mastering Python High Performance <a name="books2.3.2"></a> </a>
+### Mastering Python High Performance <a name="books3.3.2"></a> </a>
 
 by Fernando Doglio, 1st Edition.\[[Amazon\]](https://www.amazon.com/Mastering-Python-Performance-Fernando-Doglio/dp/1783989300) \[[Publisher\]](https://www.packtpub.com/product/mastering-python-high-performance/9781783989300)
 
@@ -382,7 +392,7 @@ This book starts from the basics and progressively moves on to more advanced top
 </details>
 
 ---
-### Python Testing with pytest <a name="books2.3.3"></a> 
+### Python Testing with pytest <a name="books3.3.3"></a> 
 
 by Brian Okken, 1st Edition. \[[Amazon\]](https://www.amazon.com/Python-Testing-pytest-Effective-Scalable/dp/1680502409) \[[Publisher\]](https://pragprog.com/titles/bopytest/python-testing-with-pytest/)
 
@@ -408,4 +418,5 @@ With simple step-by-step instructions and sample code, this book gets you up to 
 [0001]: https://www.dropbox.com/s/dgks2bgnzpycruz/PyCon-2016-Python-Epiphanies.zip?dl=0
 [0002]: https://www.dropbox.com/s/xkyk3sgbq5fwdzh/PyCon-2018-Python-Epiphanies.zip?dl=0
 [00000]: https://mega.nz/folder/XP4XCIiB#KEex7dWMu6FLAcIOH09H_g
-[000000]: notes/chapter-01:%20The-Language-Basics.md
+[000000]: https://harmouch101.github.io/awesome-pycon-notes/notes/chapter-01:%20The-Language-Basics.html
+[000001]: https://harmouch101.github.io/awesome-pycon-notes/notes/chapter-02:%20Built-In-func-&-Std-Modules.html

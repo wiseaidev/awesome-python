@@ -22,13 +22,33 @@ All rights reserved.
     <br>
 </div>
 
+## Simple Summary
+
+A collection of notes, speaker's slides deck, files related to pycon talks, and a list of handful python books I read and/or am currently reading. This repository can be used as a reference/documentation for mastering the python programming language and the Django framework.
+
 > ⚠️ This repo is currently under construction. Consider giving a ⭐ for future updates!    
-> If you are looking for a way to contribute to the project, please refer to the [`Guidline`][00].   
-> A collection of notes, speaker's deck/files related to pycon talks, and a list of python books.   
-> This repository can be used as a reference/documentation for mastering the python programming language and the Django framework.   
+
+> If you are looking for a way to contribute to the project, please refer to the [`Guideline`][00].  
 
 > Currently maintained by [`Mahmoud Harmouch`][01].  
 
+## 💪 Motivation
+
+In the last couple of years, many of us have gone through challenging moments in many different ways, both physically and mentally. And in time of need, `Pycon` was already there playing the role of a spiritual leader, helping us make the time pass by faster, easier with joy. Consequently, we need to come together to form a small community within a hobby that would add value for our and subsequent generations and make it easier to learn python related content by sharing notes.
+
+In my honest opinion, information must be free of charge and easily accessible for all kinds of people around the globe. Given the fact that the `Pycon` content is already out there for free, I realized that it is a bit harder to locate the slides associated with a given video. Hence, we should have a centralized place where you can easily access the slide decks without a hustle, going after many google searches. 
+
+This repository serves three primary roles:
+
+1. Sharing my own notes of what I learned while watching the conference on YT.
+
+2. Creating backup storage for each speaker's files and slide decks.
+
+3. Sharing a handful list of books that can play a significant role in honing your python skills. 
+
+## 📜 Requirements:
+
+<b>Python 3.6 +.</b>
 
 ## 👉 Table Of Content (TOC). <a name="TOC"></a>
 

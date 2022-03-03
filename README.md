@@ -13,7 +13,7 @@ All rights reserved.
         </a>
     </span> --> 
     <span display="inline-block">
-        <h1>😎 Awesome Pycon Notes!</h1>
+        <h1>😎 Awesome Pycon!</h1>
     </span>
 </div>
 

@@ -85,7 +85,7 @@ Please ensure your pull request adheres to the following guidelines:
 - Use the following format: 
 
 ```html
-| `Video Title` <a name="list_order_number"></a>  | [`videos_timestamps_year`][010] [`2016`][011] [`2017`][012] [`2018`][013] | [`2015`][0010] [`2016`][0011] [`2018`][0012] | [`Cloud_Provider_link`][00010] |
+| Video Title <a name="list_order_number"></a>  | [`videos_timestamps_year`][010] | `Video Duration` |  [`Speaker Slides Deck`][0002] | [`Cloud_Provider_link_backup`][00000] |
 ```
 
 - Link each of the corresponding links at the bottom of the page:
@@ -137,5 +137,5 @@ Thank you for helping us improve!!!
 
 <!-- links -->
 
-[01]: https://gitter.im/awesome-pycon-notes/community
-[02]: https://github.com/Harmouch101/awesome-pycon-notes/issues
+[01]: https://gitter.im/awesome-pycon/community
+[02]: https://github.com/Harmouch101/awesome-pycon/issues

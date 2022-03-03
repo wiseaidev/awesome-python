@@ -1,4 +1,4 @@
-# :memo: Contribution Guidline
+# 📝 Contribution Guidline
 
 Contributions are welcome, and they are greatly appreciated! Every little bit helps, and a credit will always be given.
 
@@ -85,7 +85,7 @@ Please ensure your pull request adheres to the following guidelines:
 - Use the following format: 
 
 ```html
-| `Speaker_Name` <a name="list_order_number"></a>  | [`videos_timestamps_year`][010] [`2016`][011] [`2017`][012] [`2018`][013] | [`2015`][0010] [`2016`][0011] [`2018`][0012] | [`Cloud_Provider_link`][00010] | [`Your_Notes_File_Name`][000010] |
+| `Video Title` <a name="list_order_number"></a>  | [`videos_timestamps_year`][010] [`2016`][011] [`2017`][012] [`2018`][013] | [`2015`][0010] [`2016`][0011] [`2018`][0012] | [`Cloud_Provider_link`][00010] |
 ```
 
 - Link each of the corresponding links at the bottom of the page:

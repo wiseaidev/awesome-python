@@ -106,22 +106,22 @@ This repository serves three primary roles:
 
 #### [Go To TOC](#TOC). 
 
-|  Video Title | YT Videos        | Speaker Slides Deck  | Backup files |
-| :---: | :------------:      | :------------:     | :------------: |
-| Python Epiphanies <a name="1.1.1"></a>  | [`2014`][000] [`2016`][001] [`2017`][002] [`2018`][003] | [`2015`][0000] [`2016`][0001] [`2018`][0002] | [`Mega`][00000] |
-| Hands-On Intro to Python <a name="1.1.2"></a>  | [`2017`][010] | [`2017`][0100]| --- |
+|  Video Title | YT Videos   |  Duration     | Speaker Slides Deck  | Backup files |
+| :---: | :------------:      | :------------:     |  :------------:     | :------------: |
+| Python Epiphanies <a name="1.1.1"></a>  | [`2014`][000] [`2016`][001] [`2017`][002] [`2018`][003] |  `3:17:08` |  [`2015`][0000] [`2016`][0001] [`2018`][0002] | [`Mega`][00000] |
+| Hands-On Intro to Python <a name="1.1.2"></a>  | [`2017`][010] |  `3:26:03` |  [`2017`][0100]| --- |
 
 
 ### 1.2 Intermediate Level <a name="Intermediate"></a>   
 
-|  Video Title | YT Videos        | Speaker Slides Deck  | Backup files |
-| :---: | :------------:      | :------------:     | :------------: |
-| Pythonic Objects <a name="1.2.1"></a>  | [`2019`][110] | [`2014`][1100] [`Github`][1101] | [`Mega`][11000] |
-| Pythonic APIs <a name="1.2.2"></a>  | [`2016`][120] | [`2016`][1200] [`Github`][1201] | [`Mega`][12000] |
-| Decorators & Descriptors <a name="1.2.3"></a>  | [`2017`][130] | [`2017`][1300] | [`Mega`][13000] |
-| Lazy Looping in Python <a name="1.2.4"></a>  | [`2019`][140] | [`2017`][1400] | --- |
-| List Comprehensions & Generators <a name="1.2.5"></a>  | [`2018`][150] | [`2017`][1500] | --- |
-| Readable Regular Expressions <a name="1.2.6"></a>  | [`2016`][160] [`2017`][161] [`2021`][162] | [`2016`][1600] [`2017`][1601] [`2021`][1602] | --- |
+|  Video Title | YT Videos   |  Duration   | Speaker Slides Deck  | Backup files |
+| :---: | :------------:      | :------------:     | :------------:     | :------------: |
+| Pythonic Objects <a name="1.2.1"></a>  | [`2019`][110] | `3:22:14` | [`2014`][1100] [`Github`][1101] | [`Mega`][11000] |
+| Pythonic APIs <a name="1.2.2"></a>  | [`2016`][120] | `3:01:52` | [`2016`][1200] [`Github`][1201] | [`Mega`][12000] |
+| Decorators & Descriptors <a name="1.2.3"></a>  | [`2017`][130] |  `2:55:02` | [`2017`][1300] | [`Mega`][13000] |
+| Lazy Looping in Python <a name="1.2.4"></a>  | [`2019`][140] |   `3:22:14` | [`2017`][1400] | --- |
+| List Comprehensions & Generators <a name="1.2.5"></a>  | [`2018`][150] |  `3:21:43` |  [`2017`][1500] | --- |
+| Readable Regular Expressions <a name="1.2.6"></a>  | [`2016`][160] [`2017`][161] [`2021`][162] |  `3:19:43` |  [`2016`][1600] [`2017`][1601] [`2021`][1602] | --- |
 
 
 ## 📝 My Notes/Book <a name="Notes"></a>

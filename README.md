@@ -4,9 +4,11 @@ Copyright (c) 2022, Harmouch101
 All rights reserved.
  -->
 
+[![Join the chat at https://gitter.im/awesome-pycon/community](https://badges.gitter.im/awesome-pycon/community.svg)](https://gitter.im/awesome-pycon/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 <div align="center">
 <!--     <span>
-        <a href="https://github.com/Harmouch101/awesome-pycon-notes">
+        <a href="https://github.com/Harmouch101/awesome-pycon">
             <img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" class="attachment-full size-full jetpack-lazy-image" alt="Fork me on GitHub" data-recalc-dims="1" data-lazy-src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149&is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" align="right" float="right">
         </a>
     </span> --> 
@@ -16,7 +18,7 @@ All rights reserved.
 </div>
 
 <div align="center">
-    <a class="github-fork-ribbon" href="https://github.com/Harmouch101/awesome-pycon-notes" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">
+    <a class="github-fork-ribbon" href="https://github.com/Harmouch101/awesome-pycon" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">
         <img src="./assets/Banner.PNG" alt="Awesome">
     </a>
     <br>
@@ -52,11 +54,15 @@ This repository serves three primary roles:
 
 ## 👉 Table Of Content (TOC). <a name="TOC"></a>
 
-[![Join the chat at https://gitter.im/awesome-pycon-notes/community](https://badges.gitter.im/awesome-pycon-notes/community.svg)](https://gitter.im/awesome-pycon-notes/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 1. [Python Talks](#Talks)   
     1.1 [Beginner Level](#Beginner)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.1.1 [Stuart Williams-Python Epiphanies-PyCon](#1.1.1)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.1.1 [Stuart Williams-Python Epiphanies](#1.1.1)   
+    1.2 [Intermediate Level](#Beginner)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.2.2 [Luciano Ramalho-Pythonic Objects](#1.2.1)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.2.2 [Luciano Ramalho-Pythonic APIs](#1.2.2)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.2.3 [Luciano Ramalho-Decorators & Descriptors](#1.2.3)   
+
+
 2. [My Notes/Book](#Notes)   
     2.1 [Chapter-01: The Language Basics](#chapter1)   
     2.2 [Chapter-02: Built-In functions and the Std-Modules](#chapter2)  
@@ -77,34 +83,44 @@ This repository serves three primary roles:
     &nbsp;&nbsp;&nbsp;&nbsp;3.1.11 [Learning Python](#books3.1.11)    
     &nbsp;&nbsp;&nbsp;&nbsp;3.1.12 [Think Python](#books3.1.12)   
     3.2 [Intermediate Level](#books3.2)    
-    &nbsp;&nbsp;&nbsp;&nbsp;3.3.1 [Murach's Python Programming](#books3.3.1)    
+    &nbsp;&nbsp;&nbsp;&nbsp;3.2.1 [Murach's Python Programming](#books3.2.1)    
     &nbsp;&nbsp;&nbsp;&nbsp;3.2.2 [Python Cookbook](#books3.2.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.3.3 [Effective Python: 59 Specific Ways to Write Better Python](#books3.3.3)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.2.3 [Effective Python: 59 Specific Ways to Write Better Python](#books3.2.3)   
     &nbsp;&nbsp;&nbsp;&nbsp;3.2.4 [Python Tricks: A Buffet of Awesome Python Features](#books3.2.4)   
     &nbsp;&nbsp;&nbsp;&nbsp;3.2.5 [Intermediate Python](#books3.2.5)   
     &nbsp;&nbsp;&nbsp;&nbsp;3.2.6 [Python 3 Object Oriented Programming](#books3.2.6)   
     &nbsp;&nbsp;&nbsp;&nbsp;3.2.7 [Problem Solving with Algorithms and Data Structures Using Python](#books3.2.7)   
     &nbsp;&nbsp;&nbsp;&nbsp;3.2.8 [Practices of the Python Pro](#books3.2.8)   
-    3.3 [Advanced Level](#books3.3)    
+    3.3 [Reference](#books3.3)   
     &nbsp;&nbsp;&nbsp;&nbsp;3.3.1 [Fluent Python](#books3.3.1)   
     &nbsp;&nbsp;&nbsp;&nbsp;3.3.2 [Mastering Python High Performance](#books3.3.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.3.3 [Python Testing with pytest](#books3.3.3)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.3.3 [Python Testing with pytest](#books3.2.3)   
 
 ## 📺 Python Talks <a name="Talks"></a>
 
-### Beginner Level <a name="Beginner"></a>  
+### 1.1 Beginner Level <a name="Beginner"></a>  
 
 #### [Go To TOC](#TOC). 
 
-|  Speaker | YT Videos        | Speaker Slides Deck  | Backup files |
-| :---: | :------------:      | :------------:     | :------------:  |
-| `Stuart Williams` <a name="1.1.1"></a>  | [`2014`][000] [`2016`][001] [`2017`][002] [`2018`][003] | [`2015`][0000] [`2016`][0001] [`2018`][0002] | [`Mega`][00000] |
+|  Video Title | YT Videos        | Speaker Slides Deck  | Backup files |
+| :---: | :------------:      | :------------:     | :------------: |
+| Python Epiphanies <a name="1.1.1"></a>  | [`2014`][000] [`2016`][001] [`2017`][002] [`2018`][003] | [`2015`][0000] [`2016`][0001] [`2018`][0002] | [`Mega`][00000] |
+
+### 1.2 Intermediate Level <a name="Intermediate"></a>   
+
+
+|  Video Title | YT Videos        | Speaker Slides Deck  | Backup files |
+| :---: | :------------:      | :------------:     | :------------: |
+| Pythonic Objects <a name="1.2.1"></a>  | [`2019`][010] | [`2014`][0100] [`Github`][0101] | [`Mega`][01000] |
+| Pythonic APIs <a name="1.2.2"></a>  | [`2016`][020] | [`2016`][0200] [`Github`][0201] | [`Mega`][02000] |
+| Decorators & Descriptors <a name="1.2.3"></a>  | [`2017`][030] | [`2017`][0300] | [`Mega`][03000] |
+
 
 ## 📝 My Notes/Book <a name="Notes"></a>
 
-### [Chapter-01: The Language Basics][000000]. <a name="chapter1"></a>
+### [Chapter-01: The Language Basics][0]. <a name="chapter1"></a>
 
-### [Chapter-02: Built-In functions and the Std-Modules][000001]. <a name="chapter2"></a>
+### [Chapter-02: Built-In functions and the Std-Modules][1]. <a name="chapter2"></a>
 
 ## 📚 Python Books. <a name="Books">
 
@@ -364,7 +380,7 @@ Practices of the Python Pro teaches you to design and write professional-quality
 </details>
 
 ---
-## Advanced Level <a name="books3.3"></a>  
+## Reference <a name="books3.3"></a>  
 
 #### [Go To TOC](#TOC).   
 
@@ -408,8 +424,13 @@ With simple step-by-step instructions and sample code, this book gets you up to 
 </p>
 
 <!-- Links -->
-[00]: https://harmouch101.github.io/awesome-pycon-notes/CONTRIBUTING.html
+
+[0]: https://harmouch101.github.io/awesome-pycon/notes/chapter-01:%20The-Language-Basics.html
+[1]: https://harmouch101.github.io/awesome-pycon/notes/chapter-02:%20Built-In-func-&-Std-Modules.html
+
+[00]: https://harmouch101.github.io/awesome-pycon/CONTRIBUTING.html
 [01]: https://github.com/harmouch101
+
 [000]: https://www.youtube.com/watch?v=Uyj2UFTL_vg
 [001]: https://www.youtube.com/watch?v=6inqFd1bUkE
 [002]: https://www.youtube.com/watch?v=oQca6eDcjA8
@@ -418,5 +439,17 @@ With simple step-by-step instructions and sample code, this book gets you up to 
 [0001]: https://www.dropbox.com/s/dgks2bgnzpycruz/PyCon-2016-Python-Epiphanies.zip?dl=0
 [0002]: https://www.dropbox.com/s/xkyk3sgbq5fwdzh/PyCon-2018-Python-Epiphanies.zip?dl=0
 [00000]: https://mega.nz/folder/XP4XCIiB#KEex7dWMu6FLAcIOH09H_g
-[000000]: https://harmouch101.github.io/awesome-pycon-notes/notes/chapter-01:%20The-Language-Basics.html
-[000001]: https://harmouch101.github.io/awesome-pycon-notes/notes/chapter-02:%20Built-In-func-&-Std-Modules.html
+
+[010]: https://www.youtube.com/watch?v=mUu_4k6a5-I
+[0100]: https://speakerdeck.com/ramalho/idiomatic-apis-with-the-python-data-model
+[0101]: https://github.com/ramalho/pyob
+[01000]: https://mega.nz/file/2XwGiaqB#jL8M3xrlnAYwwFgRvwXZJThi_B_pn-2n3-r-0hmvyWk
+
+[020]: https://www.youtube.com/watch?v=k55d3ZUF3ZQ
+[0200]: https://speakerdeck.com/ramalho/pythonic-apis-1
+[0201]: https://github.com/fluentpython/example-code
+[02000]: https://mega.nz/file/LG5gBC6I#LSU06PQHH_893orecD_PZfeTmX9jaT8uyhSBZ-3daoU
+
+[030]: https://www.youtube.com/watch?v=81S01c9zytE
+[0300]: https://speakerdeck.com/ramalho/decorators-decoded 
+[03000]: https://mega.nz/file/DfgATCrS#xM4ss0XtUbw86iJTY4yrujC8mrLhyZUE5wtpcl74VQE

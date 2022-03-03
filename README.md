@@ -56,11 +56,15 @@ This repository serves three primary roles:
 
 1. [Python Talks](#Talks)   
     1.1 [Beginner Level](#Beginner)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.1.1 [Stuart Williams-Python Epiphanies](#1.1.1)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.1.1 [Stuart Williams - Python Epiphanies](#1.1.1)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.1.2 [Trey Hunner - Hands-On Intro to Python](#1.1.2)   
     1.2 [Intermediate Level](#Beginner)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.2.2 [Luciano Ramalho-Pythonic Objects](#1.2.1)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.2.2 [Luciano Ramalho-Pythonic APIs](#1.2.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.2.3 [Luciano Ramalho-Decorators & Descriptors](#1.2.3)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.2.2 [Luciano Ramalho - Pythonic Objects](#1.2.1)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.2.2 [Luciano Ramalho - Pythonic APIs](#1.2.2)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.2.3 [Luciano Ramalho - Decorators & Descriptors](#1.2.3)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.2.4 [Trey Hunner - Lazy Looping in Python](#1.2.4)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.2.5 [Trey Hunner - List Comprehensions & Generator](#1.2.5)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.2.6 [Trey Hunner - Readable Regular Expressions](#1.2.6)  
 
 
 2. [My Notes/Book](#Notes)   
@@ -105,15 +109,19 @@ This repository serves three primary roles:
 |  Video Title | YT Videos        | Speaker Slides Deck  | Backup files |
 | :---: | :------------:      | :------------:     | :------------: |
 | Python Epiphanies <a name="1.1.1"></a>  | [`2014`][000] [`2016`][001] [`2017`][002] [`2018`][003] | [`2015`][0000] [`2016`][0001] [`2018`][0002] | [`Mega`][00000] |
+| Hands-On Intro to Python <a name="1.1.2"></a>  | [`2017`][010] | [`2017`][0100]| --- |
+
 
 ### 1.2 Intermediate Level <a name="Intermediate"></a>   
 
-
 |  Video Title | YT Videos        | Speaker Slides Deck  | Backup files |
 | :---: | :------------:      | :------------:     | :------------: |
-| Pythonic Objects <a name="1.2.1"></a>  | [`2019`][010] | [`2014`][0100] [`Github`][0101] | [`Mega`][01000] |
-| Pythonic APIs <a name="1.2.2"></a>  | [`2016`][020] | [`2016`][0200] [`Github`][0201] | [`Mega`][02000] |
-| Decorators & Descriptors <a name="1.2.3"></a>  | [`2017`][030] | [`2017`][0300] | [`Mega`][03000] |
+| Pythonic Objects <a name="1.2.1"></a>  | [`2019`][110] | [`2014`][1100] [`Github`][1101] | [`Mega`][11000] |
+| Pythonic APIs <a name="1.2.2"></a>  | [`2016`][120] | [`2016`][1200] [`Github`][1201] | [`Mega`][12000] |
+| Decorators & Descriptors <a name="1.2.3"></a>  | [`2017`][130] | [`2017`][1300] | [`Mega`][13000] |
+| Lazy Looping in Python <a name="1.2.4"></a>  | [`2019`][140] | [`2017`][1400] | --- |
+| List Comprehensions & Generators <a name="1.2.5"></a>  | [`2018`][150] | [`2017`][1500] | --- |
+| Readable Regular Expressions <a name="1.2.6"></a>  | [`2016`][160] [`2017`][161] [`2021`][162] | [`2016`][1600] [`2017`][1601] [`2021`][1602] | --- |
 
 
 ## 📝 My Notes/Book <a name="Notes"></a>
@@ -431,6 +439,9 @@ With simple step-by-step instructions and sample code, this book gets you up to 
 [00]: https://harmouch101.github.io/awesome-pycon/CONTRIBUTING.html
 [01]: https://github.com/harmouch101
 
+[010]: https://www.youtube.com/watch?v=6zu8lrYn6t8
+[0100]: https://intro2017.trey.io/
+
 [000]: https://www.youtube.com/watch?v=Uyj2UFTL_vg
 [001]: https://www.youtube.com/watch?v=6inqFd1bUkE
 [002]: https://www.youtube.com/watch?v=oQca6eDcjA8
@@ -440,16 +451,31 @@ With simple step-by-step instructions and sample code, this book gets you up to 
 [0002]: https://www.dropbox.com/s/xkyk3sgbq5fwdzh/PyCon-2018-Python-Epiphanies.zip?dl=0
 [00000]: https://mega.nz/folder/XP4XCIiB#KEex7dWMu6FLAcIOH09H_g
 
-[010]: https://www.youtube.com/watch?v=mUu_4k6a5-I
-[0100]: https://speakerdeck.com/ramalho/idiomatic-apis-with-the-python-data-model
-[0101]: https://github.com/ramalho/pyob
-[01000]: https://mega.nz/file/2XwGiaqB#jL8M3xrlnAYwwFgRvwXZJThi_B_pn-2n3-r-0hmvyWk
+[110]: https://www.youtube.com/watch?v=mUu_4k6a5-I
+[1100]: https://speakerdeck.com/ramalho/idiomatic-apis-with-the-python-data-model
+[1101]: https://github.com/ramalho/pyob
+[11000]: https://mega.nz/file/2XwGiaqB#jL8M3xrlnAYwwFgRvwXZJThi_B_pn-2n3-r-0hmvyWk
 
-[020]: https://www.youtube.com/watch?v=k55d3ZUF3ZQ
-[0200]: https://speakerdeck.com/ramalho/pythonic-apis-1
-[0201]: https://github.com/fluentpython/example-code
-[02000]: https://mega.nz/file/LG5gBC6I#LSU06PQHH_893orecD_PZfeTmX9jaT8uyhSBZ-3daoU
+[120]: https://www.youtube.com/watch?v=k55d3ZUF3ZQ
+[1200]: https://speakerdeck.com/ramalho/pythonic-apis-1
+[1201]: https://github.com/fluentpython/example-code
+[12000]: https://mega.nz/file/LG5gBC6I#LSU06PQHH_893orecD_PZfeTmX9jaT8uyhSBZ-3daoU
 
-[030]: https://www.youtube.com/watch?v=81S01c9zytE
-[0300]: https://speakerdeck.com/ramalho/decorators-decoded 
-[03000]: https://mega.nz/file/DfgATCrS#xM4ss0XtUbw86iJTY4yrujC8mrLhyZUE5wtpcl74VQE
+[130]: https://www.youtube.com/watch?v=81S01c9zytE
+[1300]: https://speakerdeck.com/ramalho/decorators-decoded 
+[13000]: https://mega.nz/file/DfgATCrS#xM4ss0XtUbw86iJTY4yrujC8mrLhyZUE5wtpcl74VQE
+
+[140]: https://www.youtube.com/watch?v=mUu_4k6a5-I
+[1400]: https://pycon2019.trey.io/
+
+[150]: https://www.youtube.com/watch?v=_6U1XoxyyBY
+[1500]: https://pycon2018.trey.io/
+
+[160]: https://www.youtube.com/watch?v=W4ReH9IPH-Q
+[1600]: https://pycon2016.regex.training/
+
+[161]: https://www.youtube.com/watch?v=0sOfhhduqks
+[1601]: https://pycon2017.regex.training/
+
+[162]: https://www.youtube.com/watch?v=aTZalKdYB44
+[1602]: https://pycon2021.regex.training/

@@ -56,11 +56,12 @@ This repository serves three primary roles:
 
 1. [Python Talks](#Talks)   
 
-    1.1 [Novice Level](#Novice)   
+    1.1 [Novice Level - Core](#Novice)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.1.1 [Stuart Williams - Python Epiphanies](#1.1.1)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.1.2 [Trey Hunner - Hands-On Intro to Python](#1.1.2)  
+    &nbsp;&nbsp;&nbsp;&nbsp;1.1.2 [Trey Hunner - Hands-On Intro to Python](#1.1.2)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.1.3 [Jessica McKellar - Hands-on intro to Python](#1.1.3)   
 
-    1.2 [Intermediate Level](#Intermediate)   
+    1.2 [Intermediate Level - Core](#Intermediate)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.2.2 [Luciano Ramalho - Pythonic Objects](#1.2.1)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.2.2 [Luciano Ramalho - Pythonic APIs](#1.2.2)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.2.3 [Luciano Ramalho - Decorators & Descriptors](#1.2.3)   
@@ -73,6 +74,18 @@ This repository serves three primary roles:
     &nbsp;&nbsp;&nbsp;&nbsp;1.3.2 [David Beazley - The Fun of Reinvention](#1.3.2)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.3.3 [David Beazley - Fear and Awaiting in Async](#1.3.3)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.3.4 [David Beazley - Built in Super Heroes](#1.3.4)   
+
+    1.4 [Python 2 and Python 3](#2to3)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.4.1 [Brett Cannon - Python 3.3 is Better than  Python 2.7](#1.4.1)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.4.2 [Brett Cannon - How to make your code Python 2/3 compatible](#1.4.2)  
+
+    1.5 [DSA, Algorithms](#Algorithms)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.5.1 [Brandon Rhodes - Data Structures in the Std Lib](#1.5.1)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.5.2 [Justin Abrahms - Computer Science Fundamentals](#1.5.2)   
+
+    1.6 [DevOps](#DevOps)   
+
+    1.6 [Full-Stack](#Full)   
 
 2. [My Notes/Book](#Notes)   
 
@@ -121,7 +134,7 @@ This repository serves three primary roles:
 | :---: | :------------:      | :------------:     |  :------------:     | :------------: |
 | Python Epiphanies <a name="1.1.1"></a>  | [`2014`][000] [`2016`][001] [`2017`][002] [`2018`][003] |  `3:17:08` |  [`2015`][0000] [`2016`][0001] [`2018`][0002] | [`Mega`][00000] |
 | Hands-On Intro to Python <a name="1.1.2"></a>  | [`2017`][010] |  `3:26:03` |  [`2017`][0100]| --- |
-
+| Hands-on Intro to Python For Beginning Programmers<a name="1.1.3"></a>  | [`2014`][020] |  `3:21:49` |  --- | --- |
 
 ### 1.2 Intermediate Level <a name="Intermediate"></a>   
 
@@ -144,12 +157,27 @@ This repository serves three primary roles:
 | Fear and Awaiting in Async <a name="1.3.3"></a>  | [`2016 - Screencast`][230] [`2016`][231] | `00:56:42` |  [`2016`][2300] | [`Mega`][23000] |
 | Built in Super Heroes <a name="1.3.4"></a>  | [`2016 - Screencast`][240] [`2016`][241] |  `00:44:31` | [`2016`][2400] | [`Mega`][24000] |
 
+### 1.4 Python 2 and Python 3 <a name="2to3"></a>   
+
+|  Video Title | YT Links   |  Duration   | Speaker Deck  | Backup files |
+| :---: | :------------:      | :------------:     | :------------:     | :------------: |
+| Python 3.3 is better Than Python 2.7 <a name="1.4.1"></a>  | [`2012`][310] [`2013`][311]   |  `00:53:24` |  [`2013`][3100] | --- |
+| How to make your code Python 2/3 compatible <a name="1.4.2"></a>  | [`2015`][320]   |  `00:28:37` |  [`2015`][3200] | --- |
+
+### 1.5 DSA and Algorithms <a name="Algorithms"></a>   
+
+|  Video Title | YT Links   |  Duration   | Speaker Deck  | Backup files |
+| :---: | :------------:      | :------------:     | :------------:     | :------------: |
+| Data Structures in the Std Lib and Beyond  <a name="1.5.1"></a>  | [`2014`][410] |  `00:37:40` |  [`2014`][4100] | --- |
+| Computer science fundamentals  <a name="1.5.2"></a>  | [`2014`][420] |  `00:30:22` |  [`2014`][4200] | --- |
 
 ## 📝 My Notes/Book <a name="Notes"></a>
 
 ### [Chapter-01: The Language Basics][0]. <a name="chapter1"></a>
 
 ### [Chapter-02: Built-In functions and the Std-Modules][1]. <a name="chapter2"></a>
+
+---
 
 ## 📚 Python Books. <a name="Books">
 
@@ -519,3 +547,18 @@ With simple step-by-step instructions and sample code, this book gets you up to 
 [241]: https://www.youtube.com/watch?v=lyDLAutA88s
 [2400]: https://speakerdeck.com/dabeaz/builtin-superheroes
 [24000]: https://mega.nz/file/uf5mWYQK#6k0-a2VKMyfBvA5viWggASC-6Apgehvoh13aDYb3vLM
+
+[020]: https://www.youtube.com/watch?v=MirG-vJOg04
+
+[310]: https://www.youtube.com/watch?v=Ebyz66jPyJg
+[311]: https://www.youtube.com/watch?v=f_6vDi7ywuA
+[3100]: https://speakerdeck.com/pyconslides/python-3-dot-3-trust-me-its-better-than-python-2-dot-7-by-dr-brett-cannon
+
+[320]: https://www.youtube.com/watch?v=KPzDX5TX5HE
+[3200]: https://speakerdeck.com/pycon2015/3-compatible
+
+[410]: https://youtu.be/fYlnfvKVDoM?t=330
+[4100]: https://rhodesmill.org/brandon/slides/2014-04-pycon/data-structures/
+
+[420]: https://www.youtube.com/watch?v=nEquiifH33w
+[4200]: https://speakerdeck.com/pycon2014/computer-science-fundamentals-for-self-taught-programmers-by-justin-abrahms

@@ -55,10 +55,12 @@ This repository serves three primary roles:
 ## 👉 Table Of Content (TOC). <a name="TOC"></a>
 
 1. [Python Talks](#Talks)   
-    1.1 [Beginner Level](#Beginner)   
+
+    1.1 [Novice Level](#Novice)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.1.1 [Stuart Williams - Python Epiphanies](#1.1.1)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.1.2 [Trey Hunner - Hands-On Intro to Python](#1.1.2)   
-    1.2 [Intermediate Level](#Beginner)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.1.2 [Trey Hunner - Hands-On Intro to Python](#1.1.2)  
+
+    1.2 [Intermediate Level](#Intermediate)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.2.2 [Luciano Ramalho - Pythonic Objects](#1.2.1)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.2.2 [Luciano Ramalho - Pythonic APIs](#1.2.2)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.2.3 [Luciano Ramalho - Decorators & Descriptors](#1.2.3)   
@@ -66,13 +68,20 @@ This repository serves three primary roles:
     &nbsp;&nbsp;&nbsp;&nbsp;1.2.5 [Trey Hunner - List Comprehensions & Generator](#1.2.5)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.2.6 [Trey Hunner - Readable Regular Expressions](#1.2.6)  
 
+    1.3 [Fun To Watch](#Fun)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.3.1 [David Beazley - Discovering Python](#1.3.1)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.3.2 [David Beazley - The Fun of Reinvention](#1.3.2)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.3.3 [David Beazley - Fear and Awaiting in Async](#1.3.3)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.3.4 [David Beazley - Built in Super Heroes](#1.3.4)   
 
 2. [My Notes/Book](#Notes)   
+
     2.1 [Chapter-01: The Language Basics](#chapter1)   
     2.2 [Chapter-02: Built-In functions and the Std-Modules](#chapter2)  
 
 3. [Python Books](#Books)   
-    3.1 [Beginner Level](#books3.1)    
+
+    3.1 [Novice Level](#books3.1)    
     &nbsp;&nbsp;&nbsp;&nbsp;3.1.1 [Head-First Python: A Brain-Friendly Guide
 ](#books3.1.1)   
     &nbsp;&nbsp;&nbsp;&nbsp;3.1.2 [Python for Everybody: Exploring Data in Python 3](#books3.1.2)   
@@ -86,6 +95,7 @@ This repository serves three primary roles:
     &nbsp;&nbsp;&nbsp;&nbsp;3.1.10 [Programming Python](#books3.1.10)   
     &nbsp;&nbsp;&nbsp;&nbsp;3.1.11 [Learning Python](#books3.1.11)    
     &nbsp;&nbsp;&nbsp;&nbsp;3.1.12 [Think Python](#books3.1.12)   
+
     3.2 [Intermediate Level](#books3.2)    
     &nbsp;&nbsp;&nbsp;&nbsp;3.2.1 [Murach's Python Programming](#books3.2.1)    
     &nbsp;&nbsp;&nbsp;&nbsp;3.2.2 [Python Cookbook](#books3.2.2)   
@@ -95,6 +105,7 @@ This repository serves three primary roles:
     &nbsp;&nbsp;&nbsp;&nbsp;3.2.6 [Python 3 Object Oriented Programming](#books3.2.6)   
     &nbsp;&nbsp;&nbsp;&nbsp;3.2.7 [Problem Solving with Algorithms and Data Structures Using Python](#books3.2.7)   
     &nbsp;&nbsp;&nbsp;&nbsp;3.2.8 [Practices of the Python Pro](#books3.2.8)   
+
     3.3 [Reference](#books3.3)   
     &nbsp;&nbsp;&nbsp;&nbsp;3.3.1 [Fluent Python](#books3.3.1)   
     &nbsp;&nbsp;&nbsp;&nbsp;3.3.2 [Mastering Python High Performance](#books3.3.2)   
@@ -102,11 +113,11 @@ This repository serves three primary roles:
 
 ## 📺 Python Talks <a name="Talks"></a>
 
-### 1.1 Beginner Level <a name="Beginner"></a>  
+#### 🔝 [Go To TOC](#TOC). 
 
-#### [Go To TOC](#TOC). 
+### 1.1 Novice Level <a name="Novice"></a>  
 
-|  Video Title | YT Videos   |  Duration     | Speaker Slides Deck  | Backup files |
+|  Video Title | YT Links   |  Duration     | Speaker Deck  | Backup files |
 | :---: | :------------:      | :------------:     |  :------------:     | :------------: |
 | Python Epiphanies <a name="1.1.1"></a>  | [`2014`][000] [`2016`][001] [`2017`][002] [`2018`][003] |  `3:17:08` |  [`2015`][0000] [`2016`][0001] [`2018`][0002] | [`Mega`][00000] |
 | Hands-On Intro to Python <a name="1.1.2"></a>  | [`2017`][010] |  `3:26:03` |  [`2017`][0100]| --- |
@@ -114,7 +125,7 @@ This repository serves three primary roles:
 
 ### 1.2 Intermediate Level <a name="Intermediate"></a>   
 
-|  Video Title | YT Videos   |  Duration   | Speaker Slides Deck  | Backup files |
+|  Video Title | YT Links   |  Duration   | Speaker Deck  | Backup files |
 | :---: | :------------:      | :------------:     | :------------:     | :------------: |
 | Pythonic Objects <a name="1.2.1"></a>  | [`2019`][110] | `3:22:14` | [`2014`][1100] [`Github`][1101] | [`Mega`][11000] |
 | Pythonic APIs <a name="1.2.2"></a>  | [`2016`][120] | `3:01:52` | [`2016`][1200] [`Github`][1201] | [`Mega`][12000] |
@@ -122,6 +133,16 @@ This repository serves three primary roles:
 | Lazy Looping in Python <a name="1.2.4"></a>  | [`2019`][140] |   `3:22:14` | [`2017`][1400] | --- |
 | List Comprehensions & Generators <a name="1.2.5"></a>  | [`2018`][150] |  `3:21:43` |  [`2017`][1500] | --- |
 | Readable Regular Expressions <a name="1.2.6"></a>  | [`2016`][160] [`2017`][161] [`2021`][162] |  `3:19:43` |  [`2016`][1600] [`2017`][1601] [`2021`][1602] | --- |
+
+
+### 1.3 Fun To Watch <a name="Fun"></a>   
+
+|  Video Title | YT Links   |  Duration   | Speaker Deck  | Backup files |
+| :---: | :------------:      | :------------:     | :------------:     | :------------: |
+| Discovering Python <a name="1.3.1"></a>  | [`2014`][210] |  `00:47:49` |  [`2014`][2100] |[`Mega`][21000] |
+| The Fun of Reinvention <a name="1.3.2"></a>  | [`2017 - Screencast`][220] [`2017`][221] |  `00:55:21` |  [`2017`][2200] |[`Mega`][22000] |
+| Fear and Awaiting in Async <a name="1.3.3"></a>  | [`2016 - Screencast`][230] [`2016`][231] | `00:56:42` |  [`2016`][2300] | [`Mega`][23000] |
+| Built in Super Heroes <a name="1.3.4"></a>  | [`2016 - Screencast`][240] [`2016`][241] |  `00:44:31` | [`2016`][2400] | [`Mega`][24000] |
 
 
 ## 📝 My Notes/Book <a name="Notes"></a>
@@ -132,9 +153,9 @@ This repository serves three primary roles:
 
 ## 📚 Python Books. <a name="Books">
 
-### Beginner's Level. <a name="books3.1"> 
+### Novice's Level. <a name="books3.1"> 
 
-#### [Go To TOC](#TOC). 
+#### 🔝 [Go To TOC](#TOC). 
 
 ### Head-First Python: A Brain-Friendly Guide <a name="books3.1.1"></a>
 
@@ -280,7 +301,7 @@ Think Python is an introduction to Python programming for beginners. It starts w
 ---
 ## Intermediate Level <a name="books3.2"></a>  
 
-#### [Go To TOC](#TOC). 
+#### 🔝 [Go To TOC](#TOC). 
 
 ### Murach's Python Programming <a name=books3.3.1"></a>   
 
@@ -390,7 +411,7 @@ Practices of the Python Pro teaches you to design and write professional-quality
 ---
 ## Reference <a name="books3.3"></a>  
 
-#### [Go To TOC](#TOC).   
+#### 🔝 [Go To TOC](#TOC).   
 
 ### Fluent Python <a name="books3.3.1"></a>  
 
@@ -479,3 +500,22 @@ With simple step-by-step instructions and sample code, this book gets you up to 
 
 [162]: https://www.youtube.com/watch?v=aTZalKdYB44
 [1602]: https://pycon2021.regex.training/
+
+[210]: https://www.youtube.com/watch?v=RZ4Sn-Y7AP8
+[2100]: https://speakerdeck.com/pycon2014/discovering-python-by-david-beazley
+[21000]: https://mega.nz/file/PWxQiCBZ#bEm7uY_JkPz4kxVYgoSlVdaoMKFOtzgpEDRK3L7HHvk
+
+[220]: https://www.youtube.com/watch?v=js_0wjzuMfc
+[221]: https://www.youtube.com/watch?v=5nXmq1PsoJ0
+[2200]: https://speakerdeck.com/dabeaz/the-fun-of-reinvention
+[22000]: https://mega.nz/file/nLwkGaKT#o0e1aVV98PbOJx1h2BP7gEC77M7p-1coKua4LB3pTW8
+
+[230]: https://www.youtube.com/watch?v=Bm96RqNGbGo
+[231]: https://www.youtube.com/watch?v=E-1Y4kSsAFc
+[2300]: https://speakerdeck.com/dabeaz/fear-and-awaiting-in-async-a-savage-journey-to-the-heart-of-the-coroutine-dream
+[23000]: https://mega.nz/file/yTgSzIoY#R3VR6lLAj8RJ7jugMy6PDPoq-3N1L4j-4RUG9d6vBmo
+
+[240]: https://www.youtube.com/watch?v=j6VSAsKAj98
+[241]: https://www.youtube.com/watch?v=lyDLAutA88s
+[2400]: https://speakerdeck.com/dabeaz/builtin-superheroes
+[24000]: https://mega.nz/file/uf5mWYQK#6k0-a2VKMyfBvA5viWggASC-6Apgehvoh13aDYb3vLM

@@ -171,6 +171,8 @@ This repository serves three primary roles:
 | Data Structures in the Std Lib and Beyond  <a name="1.5.1"></a>  | [`2014`][410] |  `00:37:40` |  [`2014`][4100] | --- |
 | Computer science fundamentals  <a name="1.5.2"></a>  | [`2014`][420] |  `00:30:22` |  [`2014`][4200] | --- |
 
+---
+
 ## 📝 My Notes/Book <a name="Notes"></a>
 
 ### [Chapter-01: The Language Basics][0]. <a name="chapter1"></a>
@@ -181,150 +183,24 @@ This repository serves three primary roles:
 
 ## 📚 Python Books. <a name="Books">
 
-### Novice's Level. <a name="books3.1"> 
-
 #### 🔝 [Go To TOC](#TOC). 
 
-### Head-First Python: A Brain-Friendly Guide <a name="books3.1.1"></a>
+### 3.1 Novice Level. <a name="books3.1"> 
 
-by Paul Barry, 2nd Edition.\[[Amazon\]](https://www.amazon.com/_/dp/1491919531?tag=oreilly20-20) \[[Publisher\]](https://www.oreilly.com/library/view/head-first-python/9781491919521/)
-
-<img src="https://learning.oreilly.com/library/cover/9781491919521/250w/" width="140px"/>
-<details>
-  <summary>details</summary>
-Want to learn the Python language without slogging your way through how-to manuals? With Head First Python, you’ll quickly grasp Python’s fundamentals, working with the built-in data structures and functions. Then you’ll move on to building your very own webapp, exploring database management, exception handling, and data wrangling. If you’re intrigued by what you can do with context managers, decorators, comprehensions, and generators, it’s all here. This second edition is a complete learning experience that will help you become a bonafide Python programmer in no time.
-</details>
-
----
-### Python for Everybody: Exploring Data in Python 3 <a name="books3.1.2"> </a>  
-
-by Dr. Charles Russell Severance.\[[Amazon\]](https://www.amazon.com/Python-Everybody-Exploring-Data/dp/1530051126) \[[Site\]](https://www.py4e.com/book)
-
-<img src="https://images-na.ssl-images-amazon.com/images/I/51e7gE9IqCL._SX348_BO1,204,203,200_.jpg" width="140px"/>
-<details>
-  <summary>details</summary>
-Python for Everybody is designed to introduce students to programming and software development through the lens of exploring data. You can think of the Python programming language as your tool to solve data problems that are beyond the capability of a spreadsheet.Python is an easy to use and easy to learn programming language that is freely available on Macintosh, Windows, or Linux computers. So once you learn Python you can use it for the rest of your career without needing to purchase any software.This book uses the Python 3 language. The earlier Python 2 version of this book is titled "Python for Informatics: Exploring Information".There are free downloadable electronic copies of this book in various formats and supporting materials for the book at www.py4e.com. The course materials are available to you under a Creative Commons License so you can adapt them to teach your own Python course.
-</details>
-
----
-### Learn Python 3 the Hard Way <a name="books3.1.3"></a>   </a>
-
-by Zed A. Shaw, 1st Edition.\[[Amazon\]](https://www.amazon.com/dp/0134692888/?tag=devdetailpage02-20) \[[Publisher\]](https://learnpythonthehardway.org/python3/)
-
-<img src="https://images-na.ssl-images-amazon.com/images/I/41sXSVzqW-L._SX380_BO1,204,203,200_.jpg" width="140px"/>
-<details>
-  <summary>details</summary>
-In Learn Python 3 the Hard Way, you’ll learn Python by working through 52 brilliantly crafted exercises. Read them. Type their code precisely. (No copying and pasting!) Fix your mistakes. Watch the programs run. As you do, you’ll learn how a computer works; what good programs look like; and how to read, write, and think about code. Zed then teaches you even more in 5+ hours of video where he shows you how to break, fix, and debug your code—live, as he’s doing the exercises.
-</details>
-
----
-### Python Programming for the Absolute Beginner <a name="books3.1.4"></a>   
-
-by Michael Dawson, 3rd Edition.\[[Amazon\]](https://www.amazon.com/Python-Programming-Absolute-Beginner-3rd/dp/1435455002)
-
-<img src="https://images-na.ssl-images-amazon.com/images/I/51jg6IMYSCL._SX402_BO1,204,203,200_.jpg" width="140px"/>
-<details>
-  <summary>details</summary>
-If you are new to programming with Python and are looking for a solid introduction, this is the book for you. Developed by computer science instructors, books in the "for the absolute beginner" series teach the principles of programming through simple game creation. You will acquire the skills that you need for practical Python programming applications and will learn how these skills can be put to use in real-world scenarios. Throughout the chapters, you will find code samples that illustrate concepts presented. At the end of each chapter, you will find a complete game that demonstrates the key ideas in the chapter, a summary of the chapter, and a set of challenges that tests your newfound knowledge. By the time you finish this book, you'll be well versed in Python and be able to apply the basic programming principles you've learned to the next programming language you tackle.
-</details>
-
----
-### Introduction to Computation and Programming Using Python <a name="books3.1.5"></a>   
-
-by John V. Guttag, 2nd Edition.\[[Amazon\]](https://www.amazon.com/Introduction-Computation-Programming-Using-Python/dp/0262529629) \[[Publisher\]](https://mitpress.mit.edu/books/introduction-computation-and-programming-using-python-second-edition)
-
-<img src="https://mitpress.mit.edu/sites/default/files/styles/large_book_cover/http/mitp-content-server.mit.edu%3A18180/books/covers/cover/%3Fcollid%3Dbooks_covers_0%26isbn%3D9780262529624%26type%3D.jpg?itok=QS7XuVRd" width="140px"/>
-<details>
-  <summary>details</summary>
-This book introduces students with little or no prior programming experience to the art of computational problem solving using Python and various Python libraries, including PyLab. It provides students with skills that will enable them to make productive use of computational techniques, including some of the tools and techniques of data science for using computation to model and interpret data. The book is based on an MIT course (which became the most popular course offered through MIT's OpenCourseWare) and was developed for use not only in a conventional classroom but in in a massive open online course (MOOC). This new edition has been updated for Python 3, reorganized to make it easier to use for courses that cover only a subset of the material, and offers additional material including five new chapters.
-</details>
-
----
-### Python Programming: An Introduction to Computer Science <a name="books3.1.6"></a>   
-
-by John M. Zelle, 3rd Edition.\[[Amazon\]](https://www.amazon.com/Python-Programming-Introduction-Computer-Science/dp/1887902996)
-
-<img src="https://images-na.ssl-images-amazon.com/images/I/41Jbi2BlgEL._SX403_BO1,204,203,200_.jpg" width="140px"/>
-<details>
-  <summary>details</summary>
-This book is designed to be used as the primary textbook in a college-level first course in computing. It takes a fairly traditional approach, emphasizing problem solving, design, and programming as the core skills of computer science. However, these ideas are illustrated using a non-traditional language, namely Python. Although Python is the language, teaching Python is not the main point of this book. Rather, Python is used to illustrate fundamental principles of design and programming that apply in any language or computing environment. In some places, certain Python features and idioms that are not generally found in other languages are avoided. There are already many good books about Python on the market; this book is intended as an introduction to computing.
-</details>
-
----
-### Python Crash Course <a name="books3.1.7"></a>   
-
-by Eric Matthes, 2nd Edition.\[[Amazon\]](https://www.amazon.com/Python-Crash-Course-Hands-Project-Based/dp/1593276036) \[[Publisher\]](https://www.oreilly.com/library/view/python-crash-course/9781457197185/)
-
-<img src="https://learning.oreilly.com/library/cover/9781457197185/250w/" width="140px"/>
-<details>
-  <summary>details</summary>
-Python Crash Course is a fast-paced, thorough introduction to programming with Python that will have you writing programs, solving problems, and making things that work in no time.
-
-In the first half of the book, you'll learn about basic programming concepts, such as lists, dictionaries, classes, and loops, and practice writing clean and readable code with exercises for each topic. You'll also learn how to make your programs interactive and how to test your code safely before adding it to a project. In the second half of the book, you'll put your new knowledge into practice with three substantial projects: a Space Invaders-inspired arcade game, data visualizations with Python's super-handy libraries, and a simple web app you can deploy online.
-</details>
-
----
-### Python for Kids <a name="books3.1.8"></a>   
-
-by Jason R. Briggs, 1st Edition.\[[Amazon\]](https://www.amazon.com/dp/1593274076/?tag=devdetailpage02-20) \[[Publisher\]](https://nostarch.com/pythonforkids)
-
-<img src="https://nostarch.com/sites/default/files/styles/uc_product_full/public/PFK_frontcover.jpg" width="140px"/>
-<details>
-  <summary>details</summary>
-Python for Kids brings Python to life and brings you (and your parents) into the world of programming. The ever-patient Jason R. Briggs will guide you through the basics as you experiment with unique (and often hilarious) example programs that feature ravenous monsters, secret agents, thieving ravens, and more. New terms are defined; code is colored, dissected, and explained; and quirky, full-color illustrations keep things on the lighter side.
-
-Chapters end with programming puzzles designed to stretch your brain and strengthen your understanding. By the end of the book you’ll have programmed two complete games: a clone of the famous Pong and “Mr. Stick Man Races for the Exit”—a platform game with jumps, animation, and much more.
-</details>
-
----
-### Core Python Programming <a name="books3.1.9"></a>   
-
-by Wesley J. Chun, 2nd Edition.\[[Amazon\]](https://www.amazon.com/Core-Python-Programming-Wesley-Chun/dp/0132269937) \[[Publisher\]](https://www.oreilly.com/library/view/core-python-programming/0132269937/)
-
-<img src="https://learning.oreilly.com/library/cover/0132269937/250w/" width="140px"/>
-<details>
-  <summary>details</summary>
-Python is an agile, robust, expressive, fully object-oriented, extensible, and scalable programming language. It combines the power of compiled languages with the simplicity and rapid development of scripting languages. In Core Python Programming, Second Edition, leading Python developer and trainer Wesley Chun helps you learn Python quickly and comprehensively so that you can immediately succeed with any Python project.
-
-Using practical code examples, Chun introduces all the fundamentals of Python programming: syntax, objects and memory management, data types, operators, files and I/O, functions, generators, error handling and exceptions, loops, iterators, functional programming, object-oriented programming and more. After you learn the core fundamentals of Python, he shows you what you can do with your new skills, delving into advanced topics, such as regular expressions, networking programming with sockets, multithreading, GUI development, Web/CGI programming and extending Python in C.
-</details>
-
----
-### Programming Python <a name="books3.1.10"></a>   
-
-by Mark Lutz, 4th Edition.\[[Amazon\]](https://www.amazon.com/_/dp/0596158106?tag=oreilly20-20) \[[Publisher\]](https://www.oreilly.com/library/view/programming-python-4th/9781449398712/)
-
-<img src="https://learning.oreilly.com/library/cover/9781449398712/250w/" width="140px"/>
-<details>
-  <summary>details</summary>
-If you've mastered Python's fundamentals, you're ready to start using it to get real work done. Programming Python will show you how, with in-depth tutorials on the language's primary application domains: system administration, GUIs, and the Web. You'll also explore how Python is used in databases, networking, front-end scripting layers, text processing, and more. This book focuses on commonly used tools and libraries to give you a comprehensive understanding of Python’s many roles in practical, real-world programming.
-
-You'll learn language syntax and programming techniques in a clear and concise manner, with lots of examples that illustrate both correct usage and common idioms. Completely updated for version 3.x, Programming Python also delves into the language as a software development tool, with many code examples scaled specifically for that purpose.
-</details>
-
----
-### Learning Python <a name="books3.1.11"></a>   
-
-by Mark Lutz, 5th Edition.\[[Amazon\]](https://www.amazon.com/Learning-Python-5th-Mark-Lutz/dp/1449355730) \[[Publisher\]](https://www.oreilly.com/library/view/learning-python-5th/9781449355722/)
-
-<img src="https://learning.oreilly.com/library/cover/9781449355722/250w/" width="140px"/>
-<details>
-  <summary>details</summary>
-Get a comprehensive, in-depth introduction to the core Python language with this hands-on book. Based on author Mark Lutz’s popular training course, this updated fifth edition will help you quickly write efficient, high-quality code with Python. It’s an ideal way to begin, whether you’re new to programming or a professional developer versed in other languages.
-
-Complete with quizzes, exercises, and helpful illustrations, this easy-to-follow, self-paced tutorial gets you started with both Python 2.7 and 3.3— the latest releases in the 3.X and 2.X lines—plus all other releases in common use today. You’ll also learn some advanced language features that recently have become more common in Python code.
-</details>
-
----
-### Think Python <a name="books3.1.12"></a>   
-
-by Allen B. Downey, 2nd Edition.\[[Amazon\]](https://www.amazon.com/Think-Python-Like-Computer-Scientist/dp/1491939362) \[[Publisher\]](https://greenteapress.com/wp/think-python-2e/)
-
-<img src="https://images-na.ssl-images-amazon.com/images/I/51CxdWNJ+OL._SX379_BO1,204,203,200_.jpg" width="140px"/>
-<details>
-  <summary>details</summary>
-Think Python is an introduction to Python programming for beginners. It starts with basic concepts of programming, and is carefully designed to define all terms when they are first used and to develop each new concept in a logical progression. Larger pieces, like recursion and object-oriented programming are divided into a sequence of smaller steps and introduced over the course of several chapters.
-</details>
+| Cover |  Title | Authors   |  Publication(Year)  | Publisher | Store |
+| :----: |  :----: | :----:      | :----:     | :----:     | :----: |
+| <img src="https://learning.oreilly.com/library/cover/9781491919521/250w/" width="60px"/> | Head-First Python, 2nd Edition.  <a name="books3.1.1"></a>  | Paul Barry | `2016` | [`O'Reilly Media, Inc`][3.1.1] |  [`Amazon`][3.1.1.1] |
+| <img src="https://images-na.ssl-images-amazon.com/images/I/51e7gE9IqCL._SX348_BO1,204,203,200_.jpg" width="60px"/> | Python for Everybody.  <a name="books3.1.2"></a>  | Dr. Charles Russell Severance. | `2017` | [`O'Reilly`][3.1.2] |  [`Amazon`][3.1.2.1] |
+| <img src="https://images-na.ssl-images-amazon.com/images/I/41sXSVzqW-L._SX380_BO1,204,203,200_.jpg" width="60px"/> | Learn Python 3 the Hard Way, 1st Edition.  <a name="books3.1.3"></a>  | Zed A. Shaw | `2017` | [`Addison-Wesley`][3.1.3] |  [`Amazon`][3.1.3.1] |
+| <img src="https://images-na.ssl-images-amazon.com/images/I/51jg6IMYSCL._SX402_BO1,204,203,200_.jpg" width="60px"/> | Python Programming for the Absolute Beginner, 3rd Edition.  <a name="books3.1.4"></a>  | Michael Dawson | `2010` |  Course Technology |  [`Amazon`][3.1.4.1] |
+| <img src="https://mitpress.mit.edu/sites/default/files/styles/large_book_cover/http/mitp-content-server.mit.edu%3A18180/books/covers/cover/%3Fcollid%3Dbooks_covers_0%26isbn%3D9780262529624%26type%3D.jpg?itok=QS7XuVRd" width="60px"/> | Introduction to Computation and Programming Using Python, 2nd Edition.  <a name="books3.1.5"></a>  | John V. Guttag, Julie Sussman | `2016` |  [`The MIT Press`][3.1.5] |  [`Amazon`][3.1.5.1] |
+| <img src="https://images-na.ssl-images-amazon.com/images/I/41Jbi2BlgEL._SX403_BO1,204,203,200_.jpg" width="60px"/> | Python Programming: An Introduction to Computer Science, 3rd Edition.  <a name="books3.1.6"></a>  | John M. Zelle | `2016` |  Franklin, Beedle & Associates, Inc |  [`Amazon`][3.1.6.1] |
+| <img src="https://learning.oreilly.com/library/cover/9781457197185/250w/" width="60px"/> | Python Crash Course, 2nd Edition.  <a name="books3.1.7"></a>  | Eric Matthes | `2015` |  [`No Starch Press`][3.1.7] |  [`Amazon`][3.1.7.1] |
+| <img src="https://nostarch.com/sites/default/files/styles/uc_product_full/public/PFK_frontcover.jpg" width="60px"/> | Python for Kids, 2nd Edition.  <a name="books3.1.8"></a>  | Jason R. Briggs | `2012` |  [`No Starch Press`][3.1.8] |  [`Amazon`][3.1.8.1] |
+| <img src="https://learning.oreilly.com/library/cover/0132269937/250w/" width="60px"/> | Core Python Programming, 2nd Edition  <a name="books3.1.9"></a>  | Wesley J. Chun | `2006` |  [`Pearson P T R`][3.1.9] |  [`Amazon`][3.1.9.1] |
+| <img src="https://learning.oreilly.com/library/cover/9781449398712/250w/" width="60px"/> | Programming Python, 4th Edition  <a name="books3.1.10"></a>  | Mark Lutz | `2010` |  [`O'Reilly Media, Inc.`][3.1.10] |  [`Amazon`][3.1.10.1] |
+| <img src="https://learning.oreilly.com/library/cover/9781449355722/250w/" width="60px"/> | Learning Python, 5th Edition.  <a name="books3.1.11"></a>  | Mark Lutz | `2010` |  [`O'Reilly Media, Inc.`][3.1.11] |  [`Amazon`][3.1.11.1] |
+| <img src="https://images-na.ssl-images-amazon.com/images/I/51CxdWNJ+OL._SX379_BO1,204,203,200_.jpg" width="60px"/> | Think Python, 2nd Edition.  <a name="books3.1.12"></a>  | Allen B. Downey | `2016` |  [`O'Reilly Media, Inc.`][3.1.12] |  [`Amazon`][3.1.12.1] |
 
 ---
 ## Intermediate Level <a name="books3.2"></a>  
@@ -562,3 +438,40 @@ With simple step-by-step instructions and sample code, this book gets you up to 
 
 [420]: https://www.youtube.com/watch?v=nEquiifH33w
 [4200]: https://speakerdeck.com/pycon2014/computer-science-fundamentals-for-self-taught-programmers-by-justin-abrahms
+
+
+<!-- Books -->
+
+[3.1.1]: https://www.oreilly.com/library/view/head-first-python/9781491919521/
+[3.1.1.1]: https://www.amazon.com/_/dp/1491919531?tag=oreilly20-20
+
+[3.1.2]: https://www.py4e.com/book
+[3.1.2.1]: https://www.amazon.com/Python-Everybody-Exploring-Data/dp/1530051126
+
+[3.1.3]: https://learnpythonthehardway.org/python3/
+[3.1.3.1]: https://www.amazon.com/dp/0134692888/?tag=devdetailpage02-20
+
+[3.1.4.1]: https://www.amazon.com/Python-Programming-Absolute-Beginner-3rd/dp/1435455002
+
+[3.1.5]: https://mitpress.mit.edu/books/introduction-computation-and-programming-using-python-second-edition
+[3.1.5.1]: https://www.amazon.com/Introduction-Computation-Programming-Using-Python/dp/0262529629
+
+[3.1.6.1]: https://www.amazon.com/Python-Programming-Introduction-Computer-Science-dp-1590282752/dp/1590282752
+
+[3.1.7]: https://www.oreilly.com/library/view/python-crash-course/9781457197185/
+[3.1.7.1]: https://www.amazon.com/Python-Crash-Course-Hands-Project-Based/dp/1593276036
+
+[3.1.8]: https://nostarch.com/pythonforkids
+[3.1.8.1]: https://www.amazon.com/dp/1593274076/?tag=devdetailpage02-20
+
+[3.1.9]: https://www.oreilly.com/library/view/core-python-programming/0132269937/
+[3.1.9.1]: https://www.amazon.com/Core-Python-Programming-Wesley-Chun/dp/0132269937
+
+[3.1.10]: https://www.oreilly.com/library/view/programming-python-4th/9781449398712/
+[3.1.10.1]: https://www.amazon.com/_/dp/0596158106?tag=oreilly20-20
+
+[3.1.11]: https://www.oreilly.com/library/view/programming-python-4th/9781449398712/
+[3.1.11.1]: https://www.amazon.com/_/dp/0596158106?tag=oreilly20-20
+
+[3.1.12]: https://greenteapress.com/wp/think-python-2e/
+[3.1.12.1]: https://www.amazon.com/Think-Python-Like-Computer-Scientist/dp/1491939362

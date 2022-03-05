@@ -24,6 +24,8 @@ All rights reserved.
     <br>
 </div>
 
+---
+
 ## Simple Summary
 
 A collection of notes, speaker's slides deck, files related to pycon talks, and a list of handful python books I read and/or am currently reading. This repository can be used as a reference/documentation for mastering the python programming language and the Django framework.
@@ -34,23 +36,29 @@ A collection of notes, speaker's slides deck, files related to pycon talks, and 
 
 > Currently maintained by [`Mahmoud Harmouch`][01].  
 
+---
+
 ## 💪 Motivation
 
-In the last couple of years, many of us have gone through challenging moments in many different ways, both physically and mentally. And in time of need, `Pycon` was already there playing the role of a spiritual leader, helping us make the time pass by faster, easier with joy. Consequently, we need to come together to form a small community within a hobby that would add value for our and subsequent generations and make it easier to learn python related content by sharing notes.
+In the last couple of years, many of us have gone through challenging moments in many different ways, both physically and mentally. And in time of need, `Pycon` was already there playing the role of a spiritual leader, helping us make the time pass by faster, easier with joy. Consequently, we need to come together to form a small community within a hobby that would add value for our and subsequent generations and make it easier to learn python related content by sharing notes among other useful resources.
 
-In my honest opinion, information must be free of charge and easily accessible for all kinds of people around the globe. Given the fact that the `Pycon` content is already out there for free, I realized that it is a bit harder to locate the slides associated with a given video. Hence, we should have a centralized place where you can easily access the slide decks without a hustle, going after many google searches. 
+In my honest opinion, information must be free of charge and easily accessible for all kinds of people around the globe. Given the fact that the `Pycon` content is already out there for free, I realized that it is a bit harder to find the slides associated with a given video. Hence, we should have a centralized place where you can easily access the slide decks without a hustle, going after many google searches. 
 
 This repository serves three primary roles:
 
-1. Sharing my own notes of what I learned while watching the conference on YT.
+1. Sharing my own notes of what I learned while watching Pycon on YT, reading books, and other resources.
 
 2. Creating backup storage for each speaker's files and slide decks.
 
 3. Sharing a handful list of books that can play a significant role in honing your python skills. 
 
+---
+
 ## 📜 Requirements:
 
 <b>Python 3.6 +.</b>
+
+---
 
 ## 👉 Table Of Content (TOC). <a name="TOC"></a>
 
@@ -124,7 +132,9 @@ This repository serves three primary roles:
     &nbsp;&nbsp;&nbsp;&nbsp;3.3.2 [Mastering Python High Performance](#books3.3.2)   
     &nbsp;&nbsp;&nbsp;&nbsp;3.3.3 [Python Testing with pytest](#books3.2.3)   
 
-## 📺 Python Talks <a name="Talks"></a>
+---
+
+## 1. 📺 Python Talks <a name="Talks"></a>
 
 #### 🔝 [Go To TOC](#TOC). 
 
@@ -173,7 +183,7 @@ This repository serves three primary roles:
 
 ---
 
-## 📝 My Notes/Book <a name="Notes"></a>
+## 2. 📝 My Notes/Book <a name="Notes"></a>
 
 ### [Chapter-01: The Language Basics][0]. <a name="chapter1"></a>
 
@@ -181,7 +191,7 @@ This repository serves three primary roles:
 
 ---
 
-## 📚 Python Books. <a name="Books">
+## 3. 📚 Python Books(Core). <a name="Books">
 
 #### 🔝 [Go To TOC](#TOC). 
 
@@ -195,7 +205,7 @@ This repository serves three primary roles:
 | <img src="https://images-na.ssl-images-amazon.com/images/I/51jg6IMYSCL._SX402_BO1,204,203,200_.jpg" width="60px"/> | Python Programming for the Absolute Beginner, 3rd Edition.  <a name="books3.1.4"></a>  | Michael Dawson | `2010` |  Course Technology |  [`Amazon`][3.1.4.1] |
 | <img src="https://mitpress.mit.edu/sites/default/files/styles/large_book_cover/http/mitp-content-server.mit.edu%3A18180/books/covers/cover/%3Fcollid%3Dbooks_covers_0%26isbn%3D9780262529624%26type%3D.jpg?itok=QS7XuVRd" width="60px"/> | Introduction to Computation and Programming Using Python, 2nd Edition.  <a name="books3.1.5"></a>  | John V. Guttag, Julie Sussman | `2016` |  [`The MIT Press`][3.1.5] |  [`Amazon`][3.1.5.1] |
 | <img src="https://images-na.ssl-images-amazon.com/images/I/41Jbi2BlgEL._SX403_BO1,204,203,200_.jpg" width="60px"/> | Python Programming: An Introduction to Computer Science, 3rd Edition.  <a name="books3.1.6"></a>  | John M. Zelle | `2016` |  Franklin, Beedle & Associates, Inc |  [`Amazon`][3.1.6.1] |
-| <img src="https://learning.oreilly.com/library/cover/9781457197185/250w/" width="60px"/> | Python Crash Course, 2nd Edition.  <a name="books3.1.7"></a>  | Eric Matthes | `2015` |  [`No Starch Press`][3.1.7] |  [`Amazon`][3.1.7.1] |
+| <img src="https://learning.oreilly.com/library/cover/9781457197185/250w/" width="60px"/> | Python Crash Course, 2nd Edition.  <a name="books3.1.7"></a>  | Eric Matthes | `2019` |  [`No Starch Press`][3.1.7] |  [`Amazon`][3.1.7.1] |
 | <img src="https://nostarch.com/sites/default/files/styles/uc_product_full/public/PFK_frontcover.jpg" width="60px"/> | Python for Kids, 2nd Edition.  <a name="books3.1.8"></a>  | Jason R. Briggs | `2012` |  [`No Starch Press`][3.1.8] |  [`Amazon`][3.1.8.1] |
 | <img src="https://learning.oreilly.com/library/cover/0132269937/250w/" width="60px"/> | Core Python Programming, 2nd Edition  <a name="books3.1.9"></a>  | Wesley J. Chun | `2006` |  [`Pearson P T R`][3.1.9] |  [`Amazon`][3.1.9.1] |
 | <img src="https://learning.oreilly.com/library/cover/9781449398712/250w/" width="60px"/> | Programming Python, 4th Edition  <a name="books3.1.10"></a>  | Mark Lutz | `2010` |  [`O'Reilly Media, Inc.`][3.1.10] |  [`Amazon`][3.1.10.1] |
@@ -203,153 +213,35 @@ This repository serves three primary roles:
 | <img src="https://images-na.ssl-images-amazon.com/images/I/51CxdWNJ+OL._SX379_BO1,204,203,200_.jpg" width="60px"/> | Think Python, 2nd Edition.  <a name="books3.1.12"></a>  | Allen B. Downey | `2016` |  [`O'Reilly Media, Inc.`][3.1.12] |  [`Amazon`][3.1.12.1] |
 
 ---
-## Intermediate Level <a name="books3.2"></a>  
+## 3.2 Intermediate Level <a name="books3.2"></a>  
 
 #### 🔝 [Go To TOC](#TOC). 
 
-### Murach's Python Programming <a name=books3.3.1"></a>   
-
-by Michael Urban.\[[Amazon\]](https://www.amazon.com/Murachs-Python-Programming-Michael-Urban/dp/1890774979) \[[Publisher\]](https://www.murach.com/shop/murach-s-python-programming-detail)
-
-<img src="https://www.murach.com/images/stories/virtuemart/product/murach's-python-programming.jpg" width="140px"/>
-<details>
-  <summary>details</summary>
-Python is one of today’s fastest-growing languages. Its simple syntax makes it relatively easy to learn, and its diverse uses…from web and game programming to data analysis and data mining to scientific computing, artificial intelligence, and more!...are fueling its popularity. So we had to answer the clamor for a Murach book on Python. Now, we believe it provides the fastest, easiest, yet most professional way to learn Python that you can find, whether you’re a beginning programmer or have years of experience.
-</details>
-
----
-### Python Cookbook <a name="books3.2.2"></a>   
-
-by David Beazley, 3rd Edition.\[[Amazon\]](https://www.amazon.com/_/dp/1449340377?tag=oreilly20-20) \[[Publisher\]](https://www.oreilly.com/library/view/python-cookbook-3rd/9781449357337/)
-
-<img src="https://learning.oreilly.com/library/cover/9781449357337/250w/" width="140px"/>
-<details>
-  <summary>details</summary>
-If you need help writing programs in Python 3, or want to update older Python 2 code, this book is just the ticket. Packed with practical recipes written and tested with Python 3.3, this unique cookbook is for experienced Python programmers who want to focus on modern tools and idioms.
-
-Inside, you’ll find complete recipes for more than a dozen topics, covering the core Python language as well as tasks common to a wide variety of application domains. Each recipe contains code samples you can use in your projects right away, along with a discussion about how and why the solution works.
-</details>
+| Cover |  Title | Authors   |  Publication(Year)  | Publisher | Store |
+| :----: |  :----: | :----:      | :----:     | :----:     | :----: |
+| <img src="https://m.media-amazon.com/images/P/1943872740.01._SCLZZZZZZZ_SX500_.jpg" width="60px"/> |  Murach's Python Programming, 2nd Edition.  <a name="books3.2.1"></a>  | Michael Urban | `2021` | [`Mike Murach & Associates`][3.2.1] |  [`Amazon`][3.2.1.1] |
+| <img src="https://m.media-amazon.com/images/P/B094CMKN2J.01._SCLZZZZZZZ_SX500_.jpg" width="60px"/> |  Python Distilled (Developer's Library) 1st Edition.  <a name="books3.2.2"></a>  | David Beazley | `2021` | [`Addison-Wesley Professional`][3.2.2] |  [`Amazon`][3.2.1.2] |
+| <img src="https://m.media-amazon.com/images/P/B07ZG18BH3.01._SCLZZZZZZZ_SX500_.jpg" width="60px"/> |  Effective Python, 2nd Edition.  <a name="books3.2.3"></a>  | Brett Slatkin | `2019` | [`Addison-Wesley Professional`][3.2.3] |  [`Amazon`][3.2.1.3] |
+| <img src="https://images-na.ssl-images-amazon.com/images/I/418fhXtvPML._SX331_BO1,204,203,200_.jpg" width="60px"/> |  Python Tricks, 1st edition.  <a name="books3.2.4"></a>  | Dan Bader | `2017` | [`Dan Bader`][3.2.4] |  [`Amazon`][3.2.1.4] |
+| <img src="https://d2sofvawe08yqg.cloudfront.net/intermediatepython/hero?1549457569" width="60px"/> |  Intermediate Python, 1st edition.  <a name="books3.2.5"></a>  | Obi Ike-Nwosu | `2016` | [`leanpub`][3.2.5] |  --- |
+| <img src="https://m.media-amazon.com/images/P/1801077266.01._SCLZZZZZZZ_SX500_.jpg" width="60px"/> | Python Object-Oriented Programming, 4th Edition.  <a name="books3.2.6"></a>  | Steven F. Lott, Dusty Phillips | `2021` | [`Packt Publishing`][3.2.6] |  [`Amazon`][3.2.1.6] |
+| <img src="https://images-na.ssl-images-amazon.com/images/I/51YORtBDG4L._SX405_BO1,204,203,200_.jpg" width="60px"/> | Problem Solving with Algorithms and Data Structures Using Python, Kindle Edition.  <a name="books3.2.7"></a>  | Bradley N. Miller, David L. Ranum | `2021` | [`Franklin, Beedle & Associates`][3.2.7] |  [`Amazon`][3.2.1.7] |
+| <img src="https://learning.oreilly.com/library/cover/9781617296086/250w/" width="60px"/> | Practices of the Python Pro 1st Edition. <a name="books3.2.7"></a>  | Dane Hillard | `2020` | [`Manning`][3.2.8] |  [`Amazon`][3.2.1.8] |
 
 ---
-### Effective Python: 59 Specific Ways to Write Better Python <a name="books3.3.3"></a>   
 
-by Brett Slatkin, 1st Edition.\[[Amazon\]](https://www.amazon.com/Effective-Python-Specific-Software-Development/dp/0134034287) \[[Publisher\]](https://www.oreilly.com/library/view/effective-python-59/9780134034416/)
+## 3.3 Reference <a name="books3.3"></a>  
 
-<img src="https://learning.oreilly.com/library/cover/9780134034416/250w/" width="140px"/>
-<details>
-  <summary>details</summary>
-It’s easy to start coding with Python, which is why the language is so popular. However, Python’s unique strengths, charms, and expressiveness can be hard to grasp, and there are hidden pitfalls that can easily trip you up.
 
-Effective Python will help you master a truly “Pythonic” approach to programming, harnessing Python’s full power to write exceptionally robust and well-performing code. Using a concise, scenario-driven style, Brett Slatkin brings together 59 Python best practices, tips, and shortcuts, and explains them with realistic code examples.
+#### 🔝 [Go To TOC](#TOC). 
 
-Drawing on years of experience building Python infrastructure at Google, Slatkin uncovers little-known quirks and idioms that powerfully impact code behavior and performance. You’ll learn the best way to accomplish key tasks, so you can write code that’s easier to understand, maintain, and improve.
-</details>
+| Cover |  Title | Authors   |  Publication(Year)  | Publisher | Store |
+| :----: |  :----: | :----:      | :----:     | :----:     | :----: |
+| <img src="https://images-na.ssl-images-amazon.com/images/I/412Er-QBlAL._SX218_BO1,204,203,200_QL40_FMwebp_.jpg" width="60px"/> |  Fluent Python, 2nd Edition.  <a name="books3.3.1"></a>  | Luciano Ramalho | `2022` | [`O'Reilly Media`][3.3.1] |  [`Amazon`][3.3.1.1] |
+| <img src="https://images-na.ssl-images-amazon.com/images/I/51s01jZ8IQL._SX404_BO1,204,203,200_.jpg" width="60px"/> |  Mastering Python High Performance.  <a name="books3.3.2"></a>  | Fernando Doglio | `2015` | [`Packt Publishing`][3.3.2] |  [`Amazon`][3.3.2.1] |
+| <img src="https://images-na.ssl-images-amazon.com/images/I/41ydjWD5exL._SX415_BO1,204,203,200_.jpg" width="60px"/> |  Python Testing with pytest, 2nd Edition  <a name="books3.3.3"></a>  |  Brian Okken | `2022` | [`Pragmatic Bookshelf`][3.3.3] |  [`Amazon`][3.3.3.1] |
 
 ---
-### Python Tricks: A Buffet of Awesome Python Features <a name="books3.2.4"></a>   
-
-by Dan Bader, 1st Edition.\[[Amazon\]](amazon.com/Effective-Python-Specific-Software-Development/dp/0134034287) \[[Publisher\]](https://realpython.com/products/real-python-course/)
-
-<img src="https://files.realpython.com/media/pytricks-book-mockup.e2bdf7273464.png" width="140px"/>
-<details>
-  <summary>details</summary>
-With Python Tricks: The Book you'll discover Python's best practices with simple, yet practical examples.
-
-You'll get one step closer to mastering Python, so you can write beautiful and idiomatic code that comes to you naturally.
-
-Learning Python is difficult—and with this book you'll be able to focus on the practical skills that really matter.
-
-If you're wondering whether or not this book is right for you, here's who can benefit the most from this material:
-</details>
-
----
-### Intermediate Python <a name="books3.2.5></a>   
-
-by Obi Ike-Nwosu, 1st Edition.\[[Publisher\]](https://leanpub.com/intermediatepython)
-
-<img src="https://d2sofvawe08yqg.cloudfront.net/intermediatepython/hero?1549457569" width="140px"/>
-<details>
-  <summary>details</summary>
-The python ecosystem is awash with books for beginners but few books target readers that are past the beginning stages but are not yet advanced users. The book aims to bridge that gap.
-
-The content of this book looks primarily at the various means for code organization in Python and provides user with a rigorous grounding in these. it dives into topics such as python object system, functions, decorators, metaprogramming and generators providing the reader with an in-depth knowledge of these topics that is essential for writing idiomatic and robust python code. It aims to  provide a reader with not only a how-to but also a why for Python concepts. Concepts are well explained with abundance of code snippets.
-
-If you are looking for a book to take you beyond the beginner level in python, this is definitely the right book for you.
-</details>
-
----
-### Python 3 Object Oriented Programming <a name="books3.2.6"></a>   
-
-by Dusty Phillips, 1st Edition.\[[Amazon\]](https://www.amazon.com/Python-3-Object-Oriented-Programming/dp/1849511268) \[[Publisher\]](https://www.packtpub.com/product/python-3-object-oriented-programming-third-edition/9781789615852)
-
-<img src="https://static.packt-cdn.com/products/9781789615852/cover/smaller" width="140px"/>
-<details>
-  <summary>details</summary>
-Object-oriented programming (OOP) is a popular design paradigm in which data and behaviors are encapsulated in such a way that they can be manipulated together. This third edition of Python 3 Object-Oriented Programming fully explains classes, data encapsulation, and exceptions with an emphasis on when you can use each principle to develop well-designed software.
-
-Starting with a detailed analysis of object-oriented programming, you will use the Python programming language to clearly grasp key concepts from the object-oriented paradigm. You will learn how to create maintainable applications by studying higher level design patterns. The book will show you the complexities of string and file manipulation, and how Python distinguishes between binary and textual data. Not one, but two very powerful automated testing systems, unittest and pytest, will be introduced in this book. You'll get a comprehensive introduction to Python's concurrent programming ecosystem.
-</details>
-
----
-### Problem Solving with Algorithms and Data Structures Using Python <a name="books3.2.7"></a>   
-
-by Bradley N. Miller.\[[Amazon\]](https://www.amazon.com/Problem-Solving-Algorithms-Structures-Python/dp/1590282574)
-
-<img src="https://images-na.ssl-images-amazon.com/images/I/51YORtBDG4L._SX405_BO1,204,203,200_.jpg" width="140px"/>
-<details>
-  <summary>details</summary>
-THIS TEXTBOOK is about computer science. It is also about Python. However, there is much more. The study of algorithms and data structures is central to understanding what computer science is all about. Learning computer science is not unlike learning any other type of difficult subject matter. The only way to be successful is through deliberate and incremental exposure to the fundamental ideas. A beginning computer scientist needs practice so that there is a thorough understanding before continuing on to the more complex parts of the curriculum. In addition, a beginner needs to be given the opportunity to be successful and gain confidence. This textbook is designed to serve as a text for a first course on data structures and algorithms, typically taught as the second course in the computer science curriculum. Even though the second course is considered more advanced than the first course, this book assumes you are beginners at this level. You may still be struggling with some of the basic ideas and skills from a first computer science course and yet be ready to further explore the discipline and continue to practice problem solving. We cover abstract data types and data structures, writing algorithms, and solving problems. We look at a number of data structures and solve classic problems that arise. The tools and techniques that you learn here will be applied over and over as you continue your study of computer science.
-</details>
-
----
-### Practices of the Python Pro <a name="books3.2.8"></a>   
-
-by Dane Hillard, 1st Edition.\[[Amazon\]](https://www.amazon.com/Practices-Python-Pro-Dane-Hillard/dp/1617296082) \[[Publisher\]](https://www.oreilly.com/library/view/practices-of-the/9781617296086/)
-
-<img src="https://learning.oreilly.com/library/cover/9781617296086/250w/" width="140px"/>
-<details>
-  <summary>details</summary>
-Practices of the Python Pro teaches you to design and write professional-quality software that’s understandable, maintainable, and extensible. Dane Hillard is a Python pro who has helped many dozens of developers make this step, and he knows what it takes. With helpful examples and exercises, he teaches you when, why, and how to modularize your code, how to improve quality by reducing complexity, and much more. Embrace these core principles, and your code will become easier for you and others to read, maintain, and reuse.
-</details>
-
----
-## Reference <a name="books3.3"></a>  
-
-#### 🔝 [Go To TOC](#TOC).   
-
-### Fluent Python <a name="books3.3.1"></a>  
-
-by Luciano Ramalho, 1st Edition.\[[Amazon\]](https://www.amazon.com/_/dp/1491946008?tag=oreilly20-20) \[[Publisher\]](https://www.oreilly.com/library/view/fluent-python/9781491946237/)
-
-<img src="https://learning.oreilly.com/library/cover/9781491946237/250w/" width="140px"/>
-<details>
-  <summary>details</summary>
-Python’s simplicity lets you become productive quickly, but this often means you aren’t using everything it has to offer. With this hands-on guide, you’ll learn how to write effective, idiomatic Python code by leveraging its best—and possibly most neglected—features. Author Luciano Ramalho takes you through Python’s core language features and libraries, and shows you how to make your code shorter, faster, and more readable at the same time.
-
-Many experienced programmers try to bend Python to fit patterns they learned from other languages, and never discover Python features outside of their experience. With this book, those Python programmers will thoroughly learn how to become proficient in Python 3.
-</details>
-
----
-### Mastering Python High Performance <a name="books3.3.2"></a> </a>
-
-by Fernando Doglio, 1st Edition.\[[Amazon\]](https://www.amazon.com/Mastering-Python-Performance-Fernando-Doglio/dp/1783989300) \[[Publisher\]](https://www.packtpub.com/product/mastering-python-high-performance/9781783989300)
-
-<img src="https://static.packt-cdn.com/products/9781783989300/cover/smaller" width="140px"/>
-<details>
-  <summary>details</summary>
-This book starts from the basics and progressively moves on to more advanced topics. You’ll learn everything from profiling all the way up to writing a real-life application and applying a full set of tools designed to improve it in different ways. In the middle, you’ll stop to learn about the major profilers used in Python and about some graphic tools to help you make sense of their output. You’ll then move from generic optimization techniques onto Python-specific ones, going over the main constructs of the language that will help you improve your speed without much of a change. Finally, the book covers some number-crunching-specific libraries and how to use them properly to get the best speed out of them.
-</details>
-
----
-### Python Testing with pytest <a name="books3.3.3"></a> 
-
-by Brian Okken, 1st Edition. \[[Amazon\]](https://www.amazon.com/Python-Testing-pytest-Effective-Scalable/dp/1680502409) \[[Publisher\]](https://pragprog.com/titles/bopytest/python-testing-with-pytest/)
-
-<img src="https://pragprog.com/titles/bopytest/python-testing-with-pytest/bopytest.jpg" width="140px"/>
-<details>
-  <summary>details</summary>
-With simple step-by-step instructions and sample code, this book gets you up to speed quickly on this easy-to-learn and robust tool. Write short, maintainable tests that elegantly express what you’re testing. Add powerful testing features and still speed up test times by distributing tests across multiple processors and running tests in parallel. Use the built-in assert statements to reduce false test failures by separating setup and test failures. Test error conditions and corner cases with expected exception testing, and use one test to run many test cases with parameterized testing. Extend pytest with plugins, connect it to continuous integration systems, and use it in tandem with tox, mock, coverage, unittest, and doctest.
-</details>
 
 <p align="center">
     © 2022 Mahmoud Harmouch, all rights reserved. Made with ❤️<br/>
@@ -458,8 +350,8 @@ With simple step-by-step instructions and sample code, this book gets you up to 
 
 [3.1.6.1]: https://www.amazon.com/Python-Programming-Introduction-Computer-Science-dp-1590282752/dp/1590282752
 
-[3.1.7]: https://www.oreilly.com/library/view/python-crash-course/9781457197185/
-[3.1.7.1]: https://www.amazon.com/Python-Crash-Course-Hands-Project-Based/dp/1593276036
+[3.1.7]: https://www.oreilly.com/library/view/python-crash-course/9781492071266/
+[3.1.7.1]: https://www.amazon.com/Python-Crash-Course-2nd-Edition-dp-1593279280/dp/1593279280
 
 [3.1.8]: https://nostarch.com/pythonforkids
 [3.1.8.1]: https://www.amazon.com/dp/1593274076/?tag=devdetailpage02-20
@@ -475,3 +367,35 @@ With simple step-by-step instructions and sample code, this book gets you up to 
 
 [3.1.12]: https://greenteapress.com/wp/think-python-2e/
 [3.1.12.1]: https://www.amazon.com/Think-Python-Like-Computer-Scientist/dp/1491939362
+
+[3.2.1]: https://www.murach.com/shop/murach-s-python-programming-2nd-edition-detail
+[3.2.1.1]: https://www.amazon.com/Murachs-Python-Programming-Joel-Murach-dp-1943872740/dp/1943872740
+
+[3.2.2]: https://www.oreilly.com/library/view/python-distilled/9780134173399/
+[3.2.1.2]: https://www.amazon.com/Python-Essential-Reference-Developers-Library-dp-0134173279/dp/0134173279
+
+[3.2.3]: https://www.oreilly.com/library/view/python-distilled/9780134173399/
+[3.2.1.3]: https://www.amazon.com/Effective-Python-Specific-Software-Development-dp-0134853989/dp/0134853989
+
+[3.2.4]: https://realpython.com/products/real-python-course/
+[3.2.1.4]: https://www.amazon.com/Python-Tricks-Buffet-Awesome-Features/dp/1775093301
+
+[3.2.5]: https://leanpub.com/intermediatepython
+
+[3.2.6]: https://www.packtpub.com/product/python-3-object-oriented-programming-third-edition/9781789615852
+[3.2.1.6]: https://www.amazon.com/Python-Object-Oriented-Programming-maintainable-object-oriented-dp-1801077266/dp/1801077266
+
+[3.2.7]: https://fbeedle.com/our-books/10-problem-solving-with-algorithms-and-data-structures-using-python-2nd-ed-9781590282571.html
+[3.2.1.7]: https://www.amazon.com/Problem-Solving-Algorithms-Structures-Python-ebook/dp/B09NF2TXSZ
+
+[3.2.8]: https://www.oreilly.com/library/view/practices-of-the/9781617296086/
+[3.2.1.8]: https://www.amazon.com/Practices-Python-Pro-Dane-Hillard/dp/1617296082
+
+[3.3.1]: https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/
+[3.3.1.1]: https://www.amazon.com/Fluent-Python-Concise-Effective-Programming-dp-1492056359/dp/1492056359
+
+[3.3.2]: https://www.packtpub.com/product/mastering-python-high-performance/9781783989300
+[3.3.2.1]: https://www.amazon.com/Mastering-Python-Performance-Fernando-Doglio/dp/1783989300
+
+[3.3.3]: https://pragprog.com/titles/bopytest2/python-testing-with-pytest-second-edition/
+[3.3.3.1]: https://www.amazon.com/Python-Testing-pytest-Effective-Scalable-dp-1680508601/dp/1680508601

@@ -4,7 +4,30 @@ Copyright (c) 2022, Harmouch101
 All rights reserved.
  -->
 
-[![Join the chat at https://gitter.im/awesome-pycon/community](https://badges.gitter.im/awesome-pycon/community.svg)](https://gitter.im/awesome-pycon/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+<div align="center">
+    <a href="https://gitter.im/awesome-pycon/community">
+       <img src="https://img.shields.io/badge/GITTER-join%20chat-green.svg?style=for-the-badge&logoColor=blue&color=black" alt="Join the chat at https://gitter.im/awesome-pycon/community"/>
+    </a>
+    <a href="https://github.com/Harmouch101/awesome-pycon">
+       <img src="https://img.shields.io/badge/open_source-%F0%9F%A4%8D-3DA639.svg?style=for-the-badge&logoColor=blue&color=black" alt="Open Source Love"/>
+    </a>
+    <a href="https://github.com/Harmouch101/awesome-pycon/blob/master/LICENSE">
+       <img src="https://img.shields.io/github/license/Harmouch101/awesome-pycon?style=for-the-badge&logoColor=blue&color=black" alt="License"/>
+    </a>
+    <a href="https://github.com/Harmouch101/awesome-pycon/blob/master/CODE_OF_CONDUCT.md">
+       <img src="https://img.shields.io/badge/code_of_conduct-🌐-ff69b4.svg?style=for-the-badge&logoColor=blue&color=black" alt="Code of Conduct"/>
+    </a>
+    <a href="https://github.com/Harmouch101/awesome-pycon/">
+       <img src="https://img.shields.io/github/repo-size/Harmouch101/awesome-pycon?style=for-the-badge&logoColor=blue&color=black" alt="Repo Size"/>
+    </a>
+</div>
+
+<!-- 
+[![Latest Version](https://img.shields.io/github/v/tag/Harmouch101/awesome-pycon?sort=semver&label=version)](https://github.com/Harmouch101/awesome-pycon/) -->
+
+<!-- 
+[![Last Commit](https://img.shields.io/github/last-commit/harmouch101/awesome-pycon?color=brown&logo=github&logoColor=green&style=for-the-badge)](https://github.com/harmouch101/awesome-pycon/commits/master)
+ -->
 
 <div align="center">
 <!--     <span>
@@ -28,11 +51,13 @@ All rights reserved.
 
 ## Simple Summary
 
-A collection of notes, speaker's slides deck, files related to pycon talks, and a list of handful python books I read and/or am currently reading. This repository can be used as a reference/documentation for mastering the python programming language and the Django framework.
-
-> ⚠️ This repo is currently under construction. Consider giving a ⭐ for future updates!    
+A collection of notes, speaker's slides deck, videos, files related to pycon talks, and a list of handful python books I read and/or am currently reading. This repository can be used as a reference/documentation for mastering the python programming language and other related content(e.g. frameworks,...).
 
 > If you are looking for a way to contribute to the project, please refer to the [`Guideline`][00].  
+
+> If you find this repository helpful in one way or another, I would be forever grateful to share it on social media platforms so it can reach more people around the globe. Thank you in advance!
+
+> Don't forget to click the ⭐ button an odd number of times ;-) 
 
 > Currently maintained by [`Mahmoud Harmouch`][01].  
 

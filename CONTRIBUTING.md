@@ -85,17 +85,14 @@ Please ensure your pull request adheres to the following guidelines:
 - Use the following format: 
 
 ```html
-| Video Title <a name="list_order_number"></a>  | [`videos_timestamps_year`][010] | `Video Duration` |  [`Speaker Slides Deck`][0002] | [`Cloud_Provider_link_backup`][00000] |
+| Video Title <a name="list_order_number"></a>  | [`videos_timestamps_year`][unique_numbre] | `Video Duration` |  [`Speaker Slides Deck`][unique_numbre] | [`Cloud_Provider_link_backup`][unique_numbre] |
 ```
 
 - Link each of the corresponding links at the bottom of the page:
 
 ```html
 <!-- Links -->
-[00]: CONTRIBUTING.md
-[01]: https://github.com/harmouch101
-[000]: https://www.youtube.com/watch?v=Uyj2UFTL_vg
-[001]: https://www.youtube.com/watch?v=6inqFd1bUkE
+[unique_numbre]: URL
 ```
 
 - Check your spelling and grammar.
@@ -108,15 +105,14 @@ Please ensure your pull request adheres to the following guidelines:
 - Use the following format: 
 
 ```html
-### Book Name <a name="books_<a_number_goes_here>"></a>  
+| <img src="img_url" width="60px"/> | Book title, Edition.  <a name="books_number_list"></a>  | Author | `year of publication` | [`Publisher`][unique_numbre] |  [`Store`][unique_numbre] |
+```
 
-by <author_name>, <Edition>.\[[Amazon\]](Link to amazon) \[[Publisher\]](Link to publisher website/)
+- Link each of the corresponding links at the bottom of the page:
 
-<img src="Link_To_" width="140px"/>
-<details>
-  <summary>details</summary>
-Copy and paste the description of the book here.
-</details>
+```html
+<!-- Links -->
+[unique_numbre]: URL
 ```
 
 ### Commit and push your changes!

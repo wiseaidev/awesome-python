@@ -5,77 +5,70 @@ All rights reserved.
  -->
 
 <div align="center">
-    <a href="https://gitter.im/awesome-pycon/community">
-       <img src="https://img.shields.io/badge/GITTER-join%20chat-green.svg?style=for-the-badge&logoColor=blue&color=black" alt="Join the chat at https://gitter.im/awesome-pycon/community"/>
+    <a href="https://gitter.im/awesome-python/community">
+       <img src="https://img.shields.io/badge/GITTER-join%20chat-green.svg?style=for-the-badge&logoColor=blue&color=black" alt="Join the chat at https://gitter.im/awesome-python/community"/>
     </a>
-    <a href="https://github.com/Harmouch101/awesome-pycon">
+    <a href="https://github.com/Harmouch101/awesome-python">
        <img src="https://img.shields.io/badge/open_source-%F0%9F%A4%8D-3DA639.svg?style=for-the-badge&logoColor=blue&color=black" alt="Open Source Love"/>
     </a>
-    <a href="https://github.com/Harmouch101/awesome-pycon/blob/master/LICENSE">
-       <img src="https://img.shields.io/github/license/Harmouch101/awesome-pycon?style=for-the-badge&logoColor=blue&color=black" alt="License"/>
+    <a href="https://github.com/Harmouch101/awesome-python/blob/master/LICENSE">
+       <img src="https://img.shields.io/github/license/Harmouch101/awesome-python?style=for-the-badge&logoColor=blue&color=black" alt="License"/>
     </a>
-    <a href="https://github.com/Harmouch101/awesome-pycon/blob/master/CODE_OF_CONDUCT.md">
+    <a href="https://github.com/Harmouch101/awesome-python/blob/master/CODE_OF_CONDUCT.md">
        <img src="https://img.shields.io/badge/code_of_conduct-🌐-ff69b4.svg?style=for-the-badge&logoColor=blue&color=black" alt="Code of Conduct"/>
     </a>
-    <a href="https://github.com/Harmouch101/awesome-pycon/">
-       <img src="https://img.shields.io/github/repo-size/Harmouch101/awesome-pycon?style=for-the-badge&logoColor=blue&color=black" alt="Repo Size"/>
+    <a href="https://github.com/Harmouch101/awesome-python/">
+       <img src="https://img.shields.io/github/repo-size/Harmouch101/awesome-python?style=for-the-badge&logoColor=blue&color=black" alt="Repo Size"/>
     </a>
 </div>
 
 <!-- 
-[![Latest Version](https://img.shields.io/github/v/tag/Harmouch101/awesome-pycon?sort=semver&label=version)](https://github.com/Harmouch101/awesome-pycon/) -->
+[![Latest Version](https://img.shields.io/github/v/tag/Harmouch101/awesome-python?sort=semver&label=version)](https://github.com/Harmouch101/awesome-python/) -->
 
 <!-- 
-[![Last Commit](https://img.shields.io/github/last-commit/harmouch101/awesome-pycon?color=brown&logo=github&logoColor=green&style=for-the-badge)](https://github.com/harmouch101/awesome-pycon/commits/master)
+[![Last Commit](https://img.shields.io/github/last-commit/Harmouch101/awesome-python?color=brown&logo=github&logoColor=green&style=for-the-badge)](https://github.com/Harmouch101/awesome-python/commits/master)
  -->
 
 <div align="center">
 <!--     <span>
-        <a href="https://github.com/Harmouch101/awesome-pycon">
+        <a href="https://github.com/Harmouch101/awesome-python">
             <img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" class="attachment-full size-full jetpack-lazy-image" alt="Fork me on GitHub" data-recalc-dims="1" data-lazy-src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149&is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" align="right" float="right">
         </a>
     </span> --> 
     <span display="inline-block">
-        <h1>😎 Awesome Pycon!</h1>
+        <h1>😎 Awesome Python!</h1>
     </span>
 </div>
 
 <div align="center">
-    <a class="github-fork-ribbon" href="https://github.com/Harmouch101/awesome-pycon" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">
-        <img src="./assets/Banner.PNG" alt="Awesome">
+    <a href="https://github.com/Harmouch101/awesome-python">
+        <img src="./assets/Banner1.jpg" alt="Awesome Python">
     </a>
     <br>
 </div>
 
 ---
 
-## Simple Summary
+## 📜 Summary
 
-A collection of notes, speaker's slides deck, videos, files related to pycon talks, and a list of handful python books I read and/or am currently reading. This repository can be used as a reference/documentation for mastering the python programming language and other related content(e.g. frameworks,...).
+A curated list of python tutorials, notes, slides deck, files related to pycon talks, and a handful list of books I read and/or am currently reading. This repository can be used as a reference documentation for mastering the python programming language and other related content like frameworks and such.
+
+This repository serves three primary roles:
+
+1. Sharing an opinionated list of python videos. 
+
+2. Sharing my own notes of what I learned while watching Pycon on YT, reading books, and other resources.
+
+3. Sharing a handful list of books that can play a significant role in honing your python skills. 
+
 
 > If you are looking for a way to contribute to the project, please refer to the [`Guideline`][00].  
 
 > If you find this repository helpful in one way or another, I would be forever grateful to share it on social media platforms so it can reach more people around the globe. Thank you in advance!
 
-> Don't forget to click the ⭐ button an odd number of times ;-) 
+> Don't forget to slap that ⭐ button an odd number of times ;-) 
 
 > Currently maintained by [`Mahmoud Harmouch`][01].  
-
----
-
-## 💪 Motivation
-
-In the last couple of years, many of us have gone through challenging moments in many different ways, both physically and mentally. And in time of need, `Pycon` was already there playing the role of a spiritual leader, helping us make the time pass by faster, easier with joy. Consequently, we need to come together to form a small community within a hobby that would add value for our and subsequent generations and make it easier to learn python related content by sharing notes among other useful resources.
-
-In my honest opinion, information must be free of charge and easily accessible for all kinds of people around the globe. Given the fact that the `Pycon` content is already out there for free, I realized that it is a bit harder to find the slides associated with a given video. Hence, we should have a centralized place where you can easily access the slide decks without a hustle, going after many google searches. 
-
-This repository serves three primary roles:
-
-1. Sharing my own notes of what I learned while watching Pycon on YT, reading books, and other resources.
-
-2. Creating backup storage for each speaker's files and slide decks.
-
-3. Sharing a handful list of books that can play a significant role in honing your python skills. 
 
 ---
 
@@ -87,46 +80,48 @@ This repository serves three primary roles:
 
 ## 👉 Table Of Content (TOC). <a name="TOC"></a>
 
-1. [Python Talks](#Talks)   
-
+1. [Awesome Python Talks](#Talks)   
     1.1 [Novice Level - Core](#Novice)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.1.1 [Stuart Williams - Python Epiphanies](#1.1.1)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.1.2 [Trey Hunner - Hands-On Intro to Python](#1.1.2)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.1.3 [Jessica McKellar - Hands-on intro to Python](#1.1.3)   
-
     1.2 [Intermediate Level - Core](#Intermediate)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.2.2 [Luciano Ramalho - Pythonic Objects](#1.2.1)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.2.2 [Luciano Ramalho - Pythonic APIs](#1.2.2)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.2.3 [Luciano Ramalho - Decorators & Descriptors](#1.2.3)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.2.4 [Trey Hunner - Lazy Looping in Python](#1.2.4)    
     &nbsp;&nbsp;&nbsp;&nbsp;1.2.5 [Trey Hunner - List Comprehensions & Generator](#1.2.5)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.2.6 [Trey Hunner - Readable Regular Expressions](#1.2.6)  
-
+    &nbsp;&nbsp;&nbsp;&nbsp;1.2.6 [Trey Hunner - Readable Regular Expressions](#1.2.6)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.2.7 [Raymond Hettinger - Dataclasses](#1.2.7)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.2.8 [Raymond Hettinger - OOP from scratch](#1.2.8)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.2.9 [Ariel Ortiz - Design Patterns in Python for the Untrained Eye](#1.2.9)   
     1.3 [Fun To Watch](#Fun)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.3.1 [David Beazley - Discovering Python](#1.3.1)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.3.2 [David Beazley - The Fun of Reinvention](#1.3.2)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.3.3 [David Beazley - Fear and Awaiting in Async](#1.3.3)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.3.4 [David Beazley - Built in Super Heroes](#1.3.4)   
-
     1.4 [Python 2 and Python 3](#2to3)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.4.1 [Brett Cannon - Python 3.3 is Better than  Python 2.7](#1.4.1)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.4.2 [Brett Cannon - How to make your code Python 2/3 compatible](#1.4.2)  
-
-    1.5 [DSA, Algorithms](#Algorithms)   
+    1.5 [DSA](#DSA)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.5.1 [Brandon Rhodes - Data Structures in the Std Lib](#1.5.1)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.5.2 [Justin Abrahms - Computer Science Fundamentals](#1.5.2)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.5.3 [Raymond Hettinger - Modern solvers(BFS, DFS)](#1.5.3)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.5.4 [Raymond Hettinger - Build powerful, new data structures with Python's abstract base classes](#1.5.4)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.5.5 [Claudio Freire - Efficient shared memory data structures](#1.5.5)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.5.6 [Learning Algorithms and Data Structures in Python](#1.5.6)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.5.7 [Nina Zakharenko - Elegant Solutions For Everyday Python Problems](#1.5.8)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.5.8 [Jiaqi Liu - Fuzzy Search Algorithms How and When to Use Them.](#1.5.8)   
 
-    1.6 [DevOps](#DevOps)   
-
+    1.6 [DevOps](#DevOps)  
+     
     1.6 [Full-Stack](#Full)   
 
 2. [My Notes/Book](#Notes)   
-
     2.1 [Chapter-01: The Language Basics](#chapter1)   
     2.2 [Chapter-02: Built-In functions and the Std-Modules](#chapter2)  
 
 3. [Python Books](#Books)   
-
     3.1 [Novice Level](#books3.1)    
     &nbsp;&nbsp;&nbsp;&nbsp;3.1.1 [Head-First Python: A Brain-Friendly Guide
 ](#books3.1.1)   
@@ -141,7 +136,6 @@ This repository serves three primary roles:
     &nbsp;&nbsp;&nbsp;&nbsp;3.1.10 [Programming Python](#books3.1.10)   
     &nbsp;&nbsp;&nbsp;&nbsp;3.1.11 [Learning Python](#books3.1.11)    
     &nbsp;&nbsp;&nbsp;&nbsp;3.1.12 [Think Python](#books3.1.12)   
-
     3.2 [Intermediate Level](#books3.2)    
     &nbsp;&nbsp;&nbsp;&nbsp;3.2.1 [Murach's Python Programming](#books3.2.1)    
     &nbsp;&nbsp;&nbsp;&nbsp;3.2.2 [Python Cookbook](#books3.2.2)   
@@ -151,7 +145,6 @@ This repository serves three primary roles:
     &nbsp;&nbsp;&nbsp;&nbsp;3.2.6 [Python 3 Object Oriented Programming](#books3.2.6)   
     &nbsp;&nbsp;&nbsp;&nbsp;3.2.7 [Problem Solving with Algorithms and Data Structures Using Python](#books3.2.7)   
     &nbsp;&nbsp;&nbsp;&nbsp;3.2.8 [Practices of the Python Pro](#books3.2.8)   
-
     3.3 [Reference](#books3.3)   
     &nbsp;&nbsp;&nbsp;&nbsp;3.3.1 [Fluent Python](#books3.3.1)   
     &nbsp;&nbsp;&nbsp;&nbsp;3.3.2 [Mastering Python High Performance](#books3.3.2)   
@@ -159,56 +152,89 @@ This repository serves three primary roles:
 
 ---
 
-## 1. 📺 Python Talks <a name="Talks"></a>
+## 1. 📺 Awesome Python Talks <a name="Talks"></a>
+
+<div align="center">
+    <a href="https://github.com/Harmouch101/awesome-python">
+        <img src="./assets/Banner2.PNG" alt="Awesome Pycon">
+    </a>
+    <br>
+</div>
 
 #### 🔝 [Go To TOC](#TOC). 
 
 ### 1.1 Novice Level <a name="Novice"></a>  
 
-|  Video Title | YT Links   |  Duration     | Speaker Deck  | Backup files |
-| :---: | :------------:      | :------------:     |  :------------:     | :------------: |
-| Python Epiphanies <a name="1.1.1"></a>  | [`2014`][000] [`2016`][001] [`2017`][002] [`2018`][003] |  `3:17:08` |  [`2015`][0000] [`2016`][0001] [`2018`][0002] | [`Mega`][00000] |
-| Hands-On Intro to Python <a name="1.1.2"></a>  | [`2017`][010] |  `3:26:03` |  [`2017`][0100]| --- |
-| Hands-on Intro to Python For Beginning Programmers<a name="1.1.3"></a>  | [`2014`][020] |  `3:21:49` |  --- | --- |
+| Thumbnail |  Video Title | YT Links   |  Duration     | Speaker Deck  | Backup files |
+| :---:| :---: | :------------:      | :------------:     |  :------------:     | :------------: |
+| <img src="https://img.youtube.com/vi/-kqZtZj4Ky0/0.jpg" width="60px"/> | Python Epiphanies <a name="1.1.1"></a>  | [`2014`][000] [`2016`][001] [`2017`][002] [`2018`][003] |  `3:17:08` |  [`2015`][0000] [`2016`][0001] [`2018`][0002] | [`Mega`][00000] |
+| <img src="https://img.youtube.com/vi/6zu8lrYn6t8/0.jpg" width="60px"/> | Hands-On Intro to Python <a name="1.1.2"></a>  | [`2017`][010] |  `3:26:03` |  [`2017`][0100]| --- |
+| <img src="https://img.youtube.com/vi/MirG-vJOg04/0.jpg" width="60px"/> | Hands-on Intro to Python For Beginning Programmers<a name="1.1.3"></a>  | [`2014`][020] |  `3:21:49` |  --- | --- |
 
 ### 1.2 Intermediate Level <a name="Intermediate"></a>   
 
-|  Video Title | YT Links   |  Duration   | Speaker Deck  | Backup files |
-| :---: | :------------:      | :------------:     | :------------:     | :------------: |
-| Pythonic Objects <a name="1.2.1"></a>  | [`2019`][110] | `3:22:14` | [`2014`][1100] [`Github`][1101] | [`Mega`][11000] |
-| Pythonic APIs <a name="1.2.2"></a>  | [`2016`][120] | `3:01:52` | [`2016`][1200] [`Github`][1201] | [`Mega`][12000] |
-| Decorators & Descriptors <a name="1.2.3"></a>  | [`2017`][130] |  `2:55:02` | [`2017`][1300] | [`Mega`][13000] |
-| Lazy Looping in Python <a name="1.2.4"></a>  | [`2019`][140] |   `3:22:14` | [`2017`][1400] | --- |
-| List Comprehensions & Generators <a name="1.2.5"></a>  | [`2018`][150] |  `3:21:43` |  [`2017`][1500] | --- |
-| Readable Regular Expressions <a name="1.2.6"></a>  | [`2016`][160] [`2017`][161] [`2021`][162] |  `3:19:43` |  [`2016`][1600] [`2017`][1601] [`2021`][1602] | --- |
+#### 🔝 [Go To TOC](#TOC). 
 
+| Thumbnail |  Video Title | YT Links   |  Duration   | Speaker Deck  | Backup files |
+| :---: | :---: | :------------:      | :------------:     | :------------:     | :------------: |
+| <img src="https://img.youtube.com/vi/mUu_4k6a5-I/0.jpg" width="60px"/> | Pythonic Objects <a name="1.2.1"></a>  | [`2019`][110] | `3:22:15` | [`2014`][1100] [`Github`][1101] | [`Mega`][11000] |
+| <img src="https://img.youtube.com/vi/k55d3ZUF3ZQ/0.jpg" width="60px"/> | Pythonic APIs <a name="1.2.2"></a>  | [`2016`][120] | `3:01:52` | [`2016`][1200] [`Github`][1201] | [`Mega`][12000] |
+| <img src="https://img.youtube.com/vi/81S01c9zytE/0.jpg" width="60px"/> | Decorators & Descriptors <a name="1.2.3"></a>  | [`2017`][130] |  `2:55:02` | [`2017`][1300] | [`Mega`][13000] |
+| <img src="https://img.youtube.com/vi/ixiRkUwPI2A/0.jpg" width="60px"/> | Lazy Looping in Python <a name="1.2.4"></a>  | [`2019`][140] |   `3:22:14` | [`2017`][1400] | --- |
+| <img src="https://img.youtube.com/vi/_6U1XoxyyBY/0.jpg" width="60px"/> | List Comprehensions & Generators <a name="1.2.5"></a>  | [`2018`][150] |  `3:21:43` |  [`2017`][1500] | --- |
+| <img src="https://img.youtube.com/vi/aTZalKdYB44/0.jpg" width="60px"/> | Readable Regular Expressions <a name="1.2.6"></a>  | [`2016`][160] [`2017`][161] [`2021`][162] |  `3:19:43` |  [`2016`][1600] [`2017`][1601] [`2021`][1602] | --- |
+| <img src="https://img.youtube.com/vi/T-TwcmT6Rcw/0.jpg" width="60px"/> | Dataclasses: The code generator to end all code generators <a name="1.2.7"></a>  | [`2018`][170] |  `00:45:21` |  --- | --- |
+| <img src="https://img.youtube.com/vi/8moWQ1561FY/0.jpg" width="60px"/> | Object Oriented Programming from scratch <a name="1.2.8"></a>  | [`2020`][180] |  `1:16:18` |  [`Colab`][1800] | --- |
+| <img src="https://img.youtube.com/vi/o1FZ_Bd4DSM/0.jpg" width="60px"/> | Design Patterns in Python for the Untrained Eye  <a name="1.2.9"></a>  | [`2019`][190] |  `3:14:47` | [`2019`][1900] | --- |
 
 ### 1.3 Fun To Watch <a name="Fun"></a>   
 
-|  Video Title | YT Links   |  Duration   | Speaker Deck  | Backup files |
-| :---: | :------------:      | :------------:     | :------------:     | :------------: |
-| Discovering Python <a name="1.3.1"></a>  | [`2014`][210] |  `00:47:49` |  [`2014`][2100] |[`Mega`][21000] |
-| The Fun of Reinvention <a name="1.3.2"></a>  | [`2017 - Screencast`][220] [`2017`][221] |  `00:55:21` |  [`2017`][2200] |[`Mega`][22000] |
-| Fear and Awaiting in Async <a name="1.3.3"></a>  | [`2016 - Screencast`][230] [`2016`][231] | `00:56:42` |  [`2016`][2300] | [`Mega`][23000] |
-| Built in Super Heroes <a name="1.3.4"></a>  | [`2016 - Screencast`][240] [`2016`][241] |  `00:44:31` | [`2016`][2400] | [`Mega`][24000] |
+#### 🔝 [Go To TOC](#TOC). 
+
+| Thumbnail |  Video Title | YT Links   |  Duration   | Speaker Deck  | Backup files |
+| :---: | :---: | :------------:      | :------------:     | :------------:     | :------------: |
+| <img src="https://img.youtube.com/vi/RZ4Sn-Y7AP8/0.jpg" width="60px"/> | Discovering Python <a name="1.3.1"></a>  | [`2014`][210] |  `00:47:49` |  [`2014`][2100] |[`Mega`][21000] |
+| <img src="https://img.youtube.com/vi/js_0wjzuMfc/0.jpg" width="60px"/> | The Fun of Reinvention <a name="1.3.2"></a>  | [`2017 - Screencast`][220] [`2017`][221] |  `00:55:21` |  [`2017`][2200] |[`Mega`][22000] |
+| <img src="https://img.youtube.com/vi/Bm96RqNGbGo/0.jpg" width="60px"/> | Fear and Awaiting in Async <a name="1.3.3"></a>  | [`2016 - Screencast`][230] [`2016`][231] | `00:56:42` |  [`2016`][2300] | [`Mega`][23000] |
+| <img src="https://img.youtube.com/vi/j6VSAsKAj98/0.jpg" width="60px"/> | Built in Super Heroes <a name="1.3.4"></a>  | [`2016 - Screencast`][240] [`2016`][241] |  `00:44:31` | [`2016`][2400] | [`Mega`][24000] |
 
 ### 1.4 Python 2 and Python 3 <a name="2to3"></a>   
 
-|  Video Title | YT Links   |  Duration   | Speaker Deck  | Backup files |
-| :---: | :------------:      | :------------:     | :------------:     | :------------: |
-| Python 3.3 is better Than Python 2.7 <a name="1.4.1"></a>  | [`2012`][310] [`2013`][311]   |  `00:53:24` |  [`2013`][3100] | --- |
-| How to make your code Python 2/3 compatible <a name="1.4.2"></a>  | [`2015`][320]   |  `00:28:37` |  [`2015`][3200] | --- |
+#### 🔝 [Go To TOC](#TOC). 
 
-### 1.5 DSA and Algorithms <a name="Algorithms"></a>   
+| Thumbnail |  Video Title | YT Links   |  Duration   | Speaker Deck  | Backup files |
+| :---: | :---: | :------------:      | :------------:     | :------------:     | :------------: |
+| <img src="https://img.youtube.com/vi/f_6vDi7ywuA/0.jpg" width="60px"/> | Python 3.3 is better Than Python 2.7 <a name="1.4.1"></a>  | [`2012`][310] [`2013`][311]   |  `00:53:24` |  [`2013`][3100] | --- |
+| <img src="https://img.youtube.com/vi/KPzDX5TX5HE/0.jpg" width="60px"/> | How to make your code Python 2/3 compatible <a name="1.4.2"></a>  | [`2015`][320]   |  `00:28:37` |  [`2015`][3200] | --- |
 
-|  Video Title | YT Links   |  Duration   | Speaker Deck  | Backup files |
-| :---: | :------------:      | :------------:     | :------------:     | :------------: |
-| Data Structures in the Std Lib and Beyond  <a name="1.5.1"></a>  | [`2014`][410] |  `00:37:40` |  [`2014`][4100] | --- |
-| Computer science fundamentals  <a name="1.5.2"></a>  | [`2014`][420] |  `00:30:22` |  [`2014`][4200] | --- |
+### 1.5 Data Structures & Algorithms <a name="DSA"></a>   
+
+#### 🔝 [Go To TOC](#TOC). 
+
+| Thumbnail |  Video Title | YT Links   |  Duration   | Speaker Deck  | Backup files |
+| :---: | :---: | :------------:      | :------------:     | :------------:     | :------------: |
+| <img src="https://img.youtube.com/vi/fYlnfvKVDoM/0.jpg" width="60px"/> | Data Structures in the Std Lib and Beyond  <a name="1.5.1"></a>  | [`2014`][410] |  `00:37:40` |  [`2014`][4100] | --- |
+| <img src="https://img.youtube.com/vi/nEquiifH33w/0.jpg" width="60px"/> | Computer science fundamentals  <a name="1.5.2"></a>  | [`2014`][420] |  `00:30:22` |  [`2014`][4200] | --- |
+| <img src="https://img.youtube.com/vi/_GP9OpZPUYc/0.jpg" width="60px"/> | Modern solvers: Problems well-defined are problems solved(BFS, DFS)  <a name="1.5.3"></a>  | [`2019`][430] |  `00:47:14` |  [`2019`][4300] | --- |
+| <img src="https://img.youtube.com/vi/S_ipdVNSFlo/0.jpg" width="60px"/> | Build powerful, new data structures with Python's abstract base classes  <a name="1.5.4"></a>  | [`2019`][440] |  `1:02:01` |  --- | --- |
+| <img src="https://img.youtube.com/vi/52zM4GgmqDE/0.jpg" width="60px"/> | Efficient shared memory data structures  <a name="1.5.5"></a>  | [`2018`][450] |  `00:27:15` | [`2018`][4500] | --- |
+| <img src="https://img.youtube.com/vi/HN5-7Kn_XsI/0.jpg" width="60px"/> | Learning Algorithms and Data Structures in Python  <a name="1.5.6"></a>  | [`2012`][460] |  `00:34:43` | --- | --- |
+| <img src="https://img.youtube.com/vi/WiQqqB9MlkA/0.jpg" width="60px"/> | Elegant Solutions For Everyday Python Problems  <a name="1.5.7"></a>  | [`2018`][470] |  `00:32:57` | [`2018`][4700] | --- |
+| <img src="https://img.youtube.com/vi/kTS2b6pGElE/0.jpg" width="60px"/> | Fuzzy Search Algorithms How and When to Use Them  <a name="1.5.8"></a>  | [`2017`][480] |  `00:30:23` | [`2017`][4800] | --- |
+
+### 1.6 DevOps <a name="DevOps"></a>   
+
+#### 🔝 [Go To TOC](#TOC). 
+
+### 1.7 Full-Stack <a name="Full"></a>   
+
+#### 🔝 [Go To TOC](#TOC). 
 
 ---
 
 ## 2. 📝 My Notes/Book <a name="Notes"></a>
+
+#### 🔝 [Go To TOC](#TOC). 
 
 ### [Chapter-01: The Language Basics][0]. <a name="chapter1"></a>
 
@@ -268,6 +294,8 @@ This repository serves three primary roles:
 
 ---
 
+#### 🔝 [Go To TOC](#TOC). 
+
 <p align="center">
     © 2022 Mahmoud Harmouch, all rights reserved. Made with ❤️<br/>
     Contributions are welcome!
@@ -275,10 +303,10 @@ This repository serves three primary roles:
 
 <!-- Links -->
 
-[0]: https://harmouch101.github.io/awesome-pycon/notes/chapter-01:%20The-Language-Basics.html
-[1]: https://harmouch101.github.io/awesome-pycon/notes/chapter-02:%20Built-In-func-&-Std-Modules.html
+[0]: https://harmouch101.github.io/awesome-python/notes/chapter-01:%20The-Language-Basics.html
+[1]: https://harmouch101.github.io/awesome-python/notes/chapter-02:%20Built-In-func-&-Std-Modules.html
 
-[00]: https://harmouch101.github.io/awesome-pycon/CONTRIBUTING.html
+[00]: https://harmouch101.github.io/awesome-python/CONTRIBUTING.html
 [01]: https://github.com/harmouch101
 
 [010]: https://www.youtube.com/watch?v=6zu8lrYn6t8
@@ -307,7 +335,7 @@ This repository serves three primary roles:
 [1300]: https://speakerdeck.com/ramalho/decorators-decoded 
 [13000]: https://mega.nz/file/DfgATCrS#xM4ss0XtUbw86iJTY4yrujC8mrLhyZUE5wtpcl74VQE
 
-[140]: https://www.youtube.com/watch?v=mUu_4k6a5-I
+[140]: https://www.youtube.com/watch?v=ixiRkUwPI2A
 [1400]: https://pycon2019.trey.io/
 
 [150]: https://www.youtube.com/watch?v=_6U1XoxyyBY
@@ -321,6 +349,14 @@ This repository serves three primary roles:
 
 [162]: https://www.youtube.com/watch?v=aTZalKdYB44
 [1602]: https://pycon2021.regex.training/
+
+[170]: https://www.youtube.com/watch?v=T-TwcmT6Rcw
+
+[180]: https://www.youtube.com/watch?v=8moWQ1561FY
+[1800]: https://colab.research.google.com/drive/1DoRrfo839lT_nqmLU6cVLdZJV9wCR2BW?usp=sharing#scrollTo=bYulP3G2XFwJ
+
+[190]: https://www.youtube.com/watch?v=o1FZ_Bd4DSM
+[1900]: https://arielortiz.info/s201911/pycon2019/docs/design_patterns.html
 
 [210]: https://www.youtube.com/watch?v=RZ4Sn-Y7AP8
 [2100]: https://speakerdeck.com/pycon2014/discovering-python-by-david-beazley
@@ -356,6 +392,21 @@ This repository serves three primary roles:
 [420]: https://www.youtube.com/watch?v=nEquiifH33w
 [4200]: https://speakerdeck.com/pycon2014/computer-science-fundamentals-for-self-taught-programmers-by-justin-abrahms
 
+[430]: https://www.youtube.com/watch?v=_GP9OpZPUYc
+[4300]: https://rhettinger.github.io/
+
+[440]: https://www.youtube.com/watch?v=S_ipdVNSFlo
+
+[450]: https://www.youtube.com/watch?v=52zM4GgmqDE
+[4500]: https://speakerdeck.com/pycon2018/claudio-freire-efficient-shared-memory-data-structures
+
+[460]: https://www.youtube.com/watch?v=HN5-7Kn_XsI
+
+[470]: https://www.youtube.com/watch?v=WiQqqB9MlkA
+[4700]: https://www.slideshare.net/nnja/elegant-solutions-for-everyday-python-problems-pycon-2018
+
+[480]: https://www.youtube.com/watch?v=kTS2b6pGElE
+[4800]: https://github.com/itsJiaqi/fuzzy-search-talk
 
 <!-- Books -->
 
@@ -424,3 +475,4 @@ This repository serves three primary roles:
 
 [3.3.3]: https://pragprog.com/titles/bopytest2/python-testing-with-pytest-second-edition/
 [3.3.3.1]: https://www.amazon.com/Python-Testing-pytest-Effective-Scalable-dp-1680508601/dp/1680508601
+

@@ -26,7 +26,7 @@ You can contribute in many ways:
 
 #### Report Bugs
 
-Report bugs at [awesome-pycon-notes/issues][02].
+Report bugs at [awesome-python/issues][02].
 
 If you are reporting a bug, please include:
 
@@ -46,8 +46,8 @@ and "help wanted" is open to whoever wants to implement it.
 
 #### Share your Notes
 
-This project could always use more notes, whether as part of the
-official awesome-pycon-notes, in blog posts, articles, and such.
+This project could always use more notes, whether as part of the official 
+awesome-python, in blog posts, articles, and such.
 
 
 #### Submit Feedback
@@ -63,11 +63,11 @@ If you are willing to share notes:
 
 Ready to contribute? Here's how to share your notes and fixes.
 
-1. Fork the `awesome-pycon-notes` repo on GitHub.
+1. Fork the `awesome-python` repo on GitHub.
 2. Clone your fork locally:
 
 ```bash
-$ git clone git@github.com:your_username_here/awesome-pycon-notes.git
+$ git clone git@github.com:your_username_here/awesome-python.git
 ```
 
 3. Create a branch for adding your notes:
@@ -133,5 +133,5 @@ Thank you for helping us improve!!!
 
 <!-- links -->
 
-[01]: https://gitter.im/awesome-pycon/community
-[02]: https://github.com/Harmouch101/awesome-pycon/issues
+[01]: https://gitter.im/awesome-python/community
+[02]: https://github.com/Harmouch101/awesome-python/issues

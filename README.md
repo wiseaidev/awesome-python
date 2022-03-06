@@ -5,8 +5,8 @@ All rights reserved.
  -->
 
 <div align="center">
-    <a href="https://gitter.im/awesome-python/community">
-       <img src="https://img.shields.io/badge/GITTER-join%20chat-green.svg?style=for-the-badge&logoColor=blue&color=black" alt="Join the chat at https://gitter.im/awesome-python/community"/>
+    <a href="https://gitter.im/py-awesome/community">
+       <img src="https://img.shields.io/badge/GITTER-join%20chat-green.svg?style=for-the-badge&logoColor=blue&color=black" alt="Join the chat at https://gitter.im/py-awesome/community"/>
     </a>
     <a href="https://github.com/Harmouch101/awesome-python">
        <img src="https://img.shields.io/badge/open_source-%F0%9F%A4%8D-3DA639.svg?style=for-the-badge&logoColor=blue&color=black" alt="Open Source Love"/>
@@ -63,8 +63,6 @@ This repository serves three primary roles:
 
 
 > If you are looking for a way to contribute to the project, please refer to the [`Guideline`][00].  
-
-> If you find this repository helpful in one way or another, I would be forever grateful to share it on social media platforms so it can reach more people around the globe. Thank you in advance!
 
 > Don't forget to slap that ⭐ button an odd number of times ;-) 
 

@@ -133,5 +133,5 @@ Thank you for helping us improve!!!
 
 <!-- links -->
 
-[01]: https://gitter.im/awesome-python/community
+[01]: https://gitter.im/py-awesome/community
 [02]: https://github.com/Harmouch101/awesome-python/issues

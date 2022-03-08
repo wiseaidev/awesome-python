@@ -70,12 +70,6 @@ This repository serves three primary roles:
 
 ---
 
-## 📜 Requirements:
-
-<b>Python 3.6 +.</b>
-
----
-
 ## 👉 Table Of Content (TOC). <a name="TOC"></a>
 
 1. [Awesome Python Talks](#Talks)   
@@ -99,8 +93,7 @@ This repository serves three primary roles:
     &nbsp;&nbsp;&nbsp;&nbsp;1.3.3 [David Beazley - Fear and Awaiting in Async](#1.3.3)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.3.4 [David Beazley - Built in Super Heroes](#1.3.4)   
     1.4 [Python 2 and Python 3](#2to3)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.4.1 [Brett Cannon - Python 3.3 is Better than  Python 2.7](#1.4.1)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.4.2 [Brett Cannon - How to make your code Python 2/3 compatible](#1.4.2)  
+    &nbsp;&nbsp;&nbsp;&nbsp;1.4.1 [Brett Cannon - Python 3.3 is Better than  Python 2.7](#1.4.1)    
     1.5 [DSA](#DSA)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.5.1 [Brandon Rhodes - Data Structures in the Std Lib](#1.5.1)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.5.2 [Justin Abrahms - Computer Science Fundamentals](#1.5.2)   
@@ -108,12 +101,14 @@ This repository serves three primary roles:
     &nbsp;&nbsp;&nbsp;&nbsp;1.5.4 [Raymond Hettinger - Build powerful, new data structures with Python's abstract base classes](#1.5.4)    
     &nbsp;&nbsp;&nbsp;&nbsp;1.5.5 [Claudio Freire - Efficient shared memory data structures](#1.5.5)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.5.6 [Learning Algorithms and Data Structures in Python](#1.5.6)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.5.7 [Nina Zakharenko - Elegant Solutions For Everyday Python Problems](#1.5.8)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.5.8 [Jiaqi Liu - Fuzzy Search Algorithms How and When to Use Them.](#1.5.8)   
-
-    1.6 [DevOps](#DevOps)  
-     
-    1.6 [Full-Stack](#Full)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.5.7 [Nina Zakharenko - Elegant Solutions For Everyday Python Problems](#1.5.7)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.5.8 [Jiaqi Liu - Fuzzy Search Algorithms How and When to Use Them.](#1.5.8)    
+    1.6 [DevOps](#DevOps)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.6.1 [Hynek Schlawack - Beyond grep: Practical Logging and Metrics](#1.6.1)    
+    1.7 [Full-Stack](#Full)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.1 [Kate Heddleston - So you want to be a full-stack developer](#1.7.1)     
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.2 [Luke Lee - Building full-stack scientific applications in Python](#1.7.2)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.3 [Christine Spang - To ORM or not to ORM](#1.7.3)     
 
 2. [My Notes/Book](#Notes)   
     2.1 [Chapter-01: The Language Basics](#chapter1)   
@@ -224,9 +219,19 @@ This repository serves three primary roles:
 
 #### 🔝 [Go To TOC](#TOC). 
 
+| Thumbnail |  Video Title | YT Links   |  Duration   | Speaker Deck  | Backup files |
+| :---: | :---: | :------------:      | :------------:     | :------------:     | :------------: |
+| <img src="https://img.youtube.com/vi/LklGF1rcJII/0.jpg" width="60px"/> | Beyond grep: Practical Logging and Metrics   <a name="1.6.1"></a>  | [`2015`][510] |  `00:35:50` |  [`2015`][5100] | --- |
+
 ### 1.7 Full-Stack <a name="Full"></a>   
 
 #### 🔝 [Go To TOC](#TOC). 
+
+| Thumbnail |  Video Title | YT Links   |  Duration   | Speaker Deck  | Backup files |
+| :---: | :---: | :------------:      | :------------:     | :------------:     | :------------: |
+| <img src="https://img.youtube.com/vi/8uxQOzKi3_0/0.jpg" width="60px"/> | So you want to be a full-stack developer  <a name="1.7.1"></a>  | [`2014`][610] |  `00:26:46` |  [`2014`][6100] | --- |
+| <img src="https://img.youtube.com/vi/Znj3fovTSfk/0.jpg" width="60px"/> | Building full-stack scientific applications in Python  <a name="1.7.2"></a>  | [`2013`][620] |  `00:42:35` |  [`2013`][6200] [`gist`][6201]| --- |
+| <img src="https://img.youtube.com/vi/Sadng6tR7Q4/0.jpg" width="60px"/> | To ORM or not to ORM  <a name="1.7.3"></a>  | [`2015`][630] |  `00:26:29` |  [`2015`][6300]| --- |
 
 ---
 
@@ -405,6 +410,19 @@ This repository serves three primary roles:
 
 [480]: https://www.youtube.com/watch?v=kTS2b6pGElE
 [4800]: https://github.com/itsJiaqi/fuzzy-search-talk
+
+[510]: https://www.youtube.com/watch?v=LklGF1rcJII
+[5100]: https://speakerdeck.com/pycon2015/hynek-schlawack-beyond-grep-practical-logging-and-metrics
+
+[610]: https://www.youtube.com/watch?v=8uxQOzKi3_0
+[6100]: https://speakerdeck.com/pycon2014/so-you-want-to-be-a-full-stack-developer-how-to-build-a-full-stack-python-web-application-by-kate-heddleston
+
+[620]: https://www.youtube.com/watch?v=Znj3fovTSfk
+[6200]: https://durden.github.io/python_science_apps/#1
+[6201]: https://gist.github.com/durden/5113132
+
+[630]: https://www.youtube.com/watch?v=Sadng6tR7Q4
+[6300]: https://speakerdeck.com/pycon2015/christine-spang-to-orm-or-not-to-orm
 
 <!-- Books -->
 

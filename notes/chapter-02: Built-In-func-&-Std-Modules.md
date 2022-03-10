@@ -2297,7 +2297,7 @@ namespace(_multiarch='x86_64-linux-gnu', cache_tag='cpython-37', hexversion=5079
 	name='cpython', version=sys.version_info(major=3, minor=7, micro=6, releaselevel='final', serial=0))
 ```
 
-### [sys](https://docs.python.org/3/library/os.html)
+### [os](https://docs.python.org/3/library/os.html)
 
 The os module groups together 333 functions or objects.
 

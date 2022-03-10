@@ -85,7 +85,7 @@ Please ensure your pull request adheres to the following guidelines:
 - Use the following format: 
 
 ```html
-| Video Title <a name="list_order_number"></a>  | [`videos_timestamps_year`][unique_numbre] | `Video Duration` |  [`Speaker Slides Deck`][unique_numbre] | [`Cloud_Provider_link_backup`][unique_numbre] |
+| Thumbnail <img src="https://img.youtube.com/vi/<replace_me>/0.jpg"> | Video Title <a name="list_order_number"></a>  | [`videos_timestamps_year`][unique_numbre] | `Video Duration` |  [`Speaker Slides Deck`][unique_numbre] | [`Cloud_Provider_link_backup`][unique_numbre] |
 ```
 
 - Link each of the corresponding links at the bottom of the page:
@@ -105,7 +105,7 @@ Please ensure your pull request adheres to the following guidelines:
 - Use the following format: 
 
 ```html
-| <img src="img_url" width="60px"/> | Book title, Edition.  <a name="books_number_list"></a>  | Author | `year of publication` | [`Publisher`][unique_numbre] |  [`Store`][unique_numbre] |
+| Book Cover <img src="img_url" width="60px"/> | Book title, Edition.  <a name="books_number_list"></a>  | Author | `year of publication` | [`Publisher`][unique_numbre] |  [`Store`][unique_numbre] |
 ```
 
 - Link each of the corresponding links at the bottom of the page:

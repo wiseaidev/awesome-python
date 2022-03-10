@@ -5,8 +5,8 @@ All rights reserved.
  -->
 
 <div align="center">
-    <a href="https://gitter.im/py-awesome/community">
-       <img src="https://img.shields.io/badge/GITTER-join%20chat-green.svg?style=for-the-badge&logoColor=blue&color=black" alt="Join the chat at https://gitter.im/py-awesome/community"/>
+    <a href="https://gitter.im/awesome-pycon/community">
+       <img src="https://img.shields.io/badge/GITTER-join%20chat-green.svg?style=for-the-badge&logoColor=blue&color=black" alt="Join the chat at https://gitter.im/awesome-pycon/community"/>
     </a>
     <a href="https://github.com/Harmouch101/awesome-python">
        <img src="https://img.shields.io/badge/open_source-%F0%9F%A4%8D-3DA639.svg?style=for-the-badge&logoColor=blue&color=black" alt="Open Source Love"/>

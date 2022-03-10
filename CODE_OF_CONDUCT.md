@@ -128,4 +128,4 @@ https://www.contributor-covenant.org/faq. Translations are available at
 https://www.contributor-covenant.org/translations.
 
 
-[01]: https://gitter.im/py-awesome/community
+[01]: https://gitter.im/awesome-pycon/community

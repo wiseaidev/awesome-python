@@ -109,9 +109,18 @@ This repository serves three primary roles:
     &nbsp;&nbsp;&nbsp;&nbsp;1.7.1 [Kate Heddleston - So you want to be a full-stack developer](#1.7.1)     
     &nbsp;&nbsp;&nbsp;&nbsp;1.7.2 [Luke Lee - Building full-stack scientific applications in Python](#1.7.2)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.7.3 [Christine Spang - To ORM or not to ORM](#1.7.3)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.4 [Miguel Grinberg - Flask By Example](#1.7.4)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.4 [Miguel Grinberg - Flask](#1.7.4)    
     &nbsp;&nbsp;&nbsp;&nbsp;1.7.5 [Dan Langer - The Django Request-Response Cycle](#1.7.5)    
     &nbsp;&nbsp;&nbsp;&nbsp;1.7.6 [Andrew Godwin - Designing Django's Migrations](#1.7.6)     
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.7 [James Bennett - API-Driven Django](#1.7.7)     
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.8 [Shauna Gordon-McKeon - Beyond Django Basics](#1.7.8)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.9 [Harry Percival - TDD with Django](#1.7.9)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.10 [Kenneth Love - Django Admin Basics and Beyond](#1.7.10)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.11 [Kenneth Love - Getting Started with Django](#1.7.11)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.12 [Kenneth Love - Django 101](#1.7.12)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.13 [Christophe Pettus - PostgreSQL Proficiency](#1.7.13)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.14 [Jacinda Shelly - Delving into the Django Admin ](#1.7.14)    
+    1.8 [Testing](#Testing)    
 
 2. [My Notes/Book](#Notes)   
     2.1 [Chapter-01: The Language Basics](#chapter1)   
@@ -235,9 +244,17 @@ This repository serves three primary roles:
 | <img src="https://img.youtube.com/vi/8uxQOzKi3_0/0.jpg" width="60px"/> | So you want to be a full-stack developer  <a name="1.7.1"></a>  | [`2014`][610] |  `00:26:46` |  [`2014`][6100] | --- |
 | <img src="https://img.youtube.com/vi/Znj3fovTSfk/0.jpg" width="60px"/> | Building full-stack scientific applications in Python  <a name="1.7.2"></a>  | [`2013`][620] |  `00:42:35` |  [`2013`][6200] [`gist`][6201]| --- |
 | <img src="https://img.youtube.com/vi/FGrIyBDQLPg/0.jpg" width="60px"/> | To ORM or not to ORM  <a name="1.7.3"></a>  | [`2015`][630] |  `00:26:29` |  [`2015`][6300]| --- |
-| <img src="https://img.youtube.com/vi/Sadng6tR7Q4/0.jpg" width="60px"/> | Flask by Example  <a name="1.7.4"></a>  | [`2014`][640] [`2015`][641] [`2016`][642] [`2017`][642] |  `3:40:28` |  [`2014`][6400] [`2015`][6401] [`2016`][6402] [`2017`][6403] | --- |
+| <img src="https://img.youtube.com/vi/Sadng6tR7Q4/0.jpg" width="60px"/> | Flask <a name="1.7.4"></a>  | [`2014`][640] [`2015`][641] [`2016`][642] [`2017`][642] |  `3:40:28` |  [`2014`][6400] [`2015`][6401] [`2016`][6402] [`2017`][6403] | --- |
 | <img src="https://img.youtube.com/vi/q0YqAbI7rw4/0.jpg" width="60px"/> | the Django Request-Response Cycle  <a name="1.7.5"></a>  | [`2014`][650] |  `00:31:27` |  [`2014`][6500]| --- |
 | <img src="https://img.youtube.com/vi/a-_GAHfpk1Y/0.jpg" width="60px"/> | Designing Django's Migrations  <a name="1.7.6"></a>  | [`2014`][660] |  `00:26:26` |  [`2014`][6600]| --- |
+| <img src="https://img.youtube.com/vi/w0xgJ5C9Be8/0.jpg" width="60px"/> | API-Driven Django <a name="1.7.7"></a>  | [`2018`][670] |  `00:26:26` |  [`2014`][6700]| --- |
+| <img src="https://img.youtube.com/vi/Fzlg95lrILk/0.jpg" width="60px"/> | Beyond Django Basics <a name="1.7.8"></a>  | [`2018`][680] |  `3:15:59` |  [`Github`][6800]| --- |
+| <img src="https://img.youtube.com/vi/_rLPDxpXIFc/0.jpg" width="60px"/> | TDD with Django <a name="1.7.9"></a>  | [`2018`][690] [`2018`][691] [`2017`][692] |  `3:11:52` |  [`Book`][6900] [`Github`][6901] | --- |
+| <img src="https://img.youtube.com/vi/XphJRQ3AzMU/0.jpg" width="60px"/> | Django Admin Basics and Beyond <a name="1.7.10"></a>  | [`2017`][6100] |  `3:13:21` |  [`Github`][61000]| --- |
+| <img src="https://img.youtube.com/vi/KZHXjGP71kQ/0.jpg" width="60px"/> | Getting Started with Django <a name="1.7.11"></a>  | [`2014`][6110] |  `3:23:34` |  [`RTD`][61100]| --- |
+| <img src="https://img.youtube.com/vi/C0wuTkS93B0/0.jpg" width="60px"/> | Django 101 <a name="1.7.12"></a>  | [`2016`][6120] |  `2:04:32` |  [`2016`][61200] [`Github`][61201] | --- |
+| <img src="https://img.youtube.com/vi/knUitQQnpJo/0.jpg" width="60px"/> | PostgreSQL Proficiency for Python People <a name="1.7.13"></a>  | [`2016`][6130] |  `3:00:05` |  [`pdf`][61300]| --- |
+| <img src="https://img.youtube.com/vi/5ajZMpTcUZU/0.jpg" width="60px"/> | Delving into the Django Admin <a name="1.7.14"></a>  | [`2015`][6140] |  `3:05:24` |  [`Github`][61400]| --- |
 
 ---
 
@@ -444,6 +461,35 @@ This repository serves three primary roles:
 
 [660]: https://www.youtube.com/watch?v=a-_GAHfpk1Y
 [6600]: https://speakerdeck.com/pycon2014/designing-djangos-migrations-by-andrew-godwin
+
+[670]: https://www.youtube.com/watch?v=w0xgJ5C9Be8
+[6700]: https://speakerdeck.com/phildini/api-driven-django
+
+[680]: https://www.youtube.com/watch?v=Fzlg95lrILk
+[6800]: https://github.com/shaunagm/pycon2018-django-tutorial
+
+[690]: https://www.youtube.com/watch?v=_rLPDxpXIFc
+[691]: https://www.youtube.com/watch?v=tFalO9KdCDM
+[692]: https://www.youtube.com/watch?v=vQjmz9wCjLA
+[6900]: https://www.obeythetestinggoat.com/
+[6901]: https://github.com/hjwp/Test-Driven-Django-Tutorial
+
+[6100]: https://www.youtube.com/watch?v=XphJRQ3AzMU
+[61000]: https://github.com/kennethlove/pycon2017
+
+[6110]: https://www.youtube.com/watch?v=KZHXjGP71kQ
+[61100]: https://gswd-a-crash-course-pycon-2014.readthedocs.io/en/latest/
+
+[6120]: https://www.youtube.com/watch?v=C0wuTkS93B0
+[61200]: https://speakerdeck.com/kennethlove/django-101
+[61201]: https://github.com/kennethlove/pycon2016
+
+[6130]: https://www.youtube.com/watch?v=knUitQQnpJo
+[61300]: https://thebuild.com/presentations/pycon-2016-pppp.pdf
+
+[6140]: https://www.youtube.com/watch?v=5ajZMpTcUZU
+[61400]: https://github.com/jacinda/pycon_library
+
 
 <!-- Books -->
 

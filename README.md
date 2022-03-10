@@ -86,7 +86,7 @@ This repository serves three primary roles:
     &nbsp;&nbsp;&nbsp;&nbsp;1.2.6 [Trey Hunner - Readable Regular Expressions](#1.2.6)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.2.7 [Raymond Hettinger - Dataclasses](#1.2.7)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.2.8 [Raymond Hettinger - OOP from scratch](#1.2.8)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.2.9 [Ariel Ortiz - Design Patterns in Python for the Untrained Eye](#1.2.9)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.2.9 [Ariel Ortiz - Design Patterns in Python](#1.2.9)   
     1.3 [Fun To Watch](#Fun)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.3.1 [David Beazley - Discovering Python](#1.3.1)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.3.2 [David Beazley - The Fun of Reinvention](#1.3.2)   
@@ -98,17 +98,20 @@ This repository serves three primary roles:
     &nbsp;&nbsp;&nbsp;&nbsp;1.5.1 [Brandon Rhodes - Data Structures in the Std Lib](#1.5.1)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.5.2 [Justin Abrahms - Computer Science Fundamentals](#1.5.2)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.5.3 [Raymond Hettinger - Modern solvers(BFS, DFS)](#1.5.3)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.5.4 [Raymond Hettinger - Build powerful, new data structures with Python's abstract base classes](#1.5.4)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.5.4 [Raymond Hettinger - Python's abstract base classes](#1.5.4)    
     &nbsp;&nbsp;&nbsp;&nbsp;1.5.5 [Claudio Freire - Efficient shared memory data structures](#1.5.5)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.5.6 [Learning Algorithms and Data Structures in Python](#1.5.6)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.5.7 [Nina Zakharenko - Elegant Solutions For Everyday Python Problems](#1.5.7)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.5.8 [Jiaqi Liu - Fuzzy Search Algorithms How and When to Use Them.](#1.5.8)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.5.8 [Jiaqi Liu - Fuzzy Search Algorithms .](#1.5.8)    
     1.6 [DevOps](#DevOps)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.6.1 [Hynek Schlawack - Beyond grep: Practical Logging and Metrics](#1.6.1)    
     1.7 [Full-Stack](#Full)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.7.1 [Kate Heddleston - So you want to be a full-stack developer](#1.7.1)     
     &nbsp;&nbsp;&nbsp;&nbsp;1.7.2 [Luke Lee - Building full-stack scientific applications in Python](#1.7.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.3 [Christine Spang - To ORM or not to ORM](#1.7.3)     
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.3 [Christine Spang - To ORM or not to ORM](#1.7.3)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.4 [Miguel Grinberg - Flask By Example](#1.7.4)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.5 [Dan Langer - The Django Request-Response Cycle](#1.7.5)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.6 [Andrew Godwin - Designing Django's Migrations](#1.7.6)     
 
 2. [My Notes/Book](#Notes)   
     2.1 [Chapter-01: The Language Basics](#chapter1)   
@@ -231,7 +234,10 @@ This repository serves three primary roles:
 | :---: | :---: | :------------:      | :------------:     | :------------:     | :------------: |
 | <img src="https://img.youtube.com/vi/8uxQOzKi3_0/0.jpg" width="60px"/> | So you want to be a full-stack developer  <a name="1.7.1"></a>  | [`2014`][610] |  `00:26:46` |  [`2014`][6100] | --- |
 | <img src="https://img.youtube.com/vi/Znj3fovTSfk/0.jpg" width="60px"/> | Building full-stack scientific applications in Python  <a name="1.7.2"></a>  | [`2013`][620] |  `00:42:35` |  [`2013`][6200] [`gist`][6201]| --- |
-| <img src="https://img.youtube.com/vi/Sadng6tR7Q4/0.jpg" width="60px"/> | To ORM or not to ORM  <a name="1.7.3"></a>  | [`2015`][630] |  `00:26:29` |  [`2015`][6300]| --- |
+| <img src="https://img.youtube.com/vi/FGrIyBDQLPg/0.jpg" width="60px"/> | To ORM or not to ORM  <a name="1.7.3"></a>  | [`2015`][630] |  `00:26:29` |  [`2015`][6300]| --- |
+| <img src="https://img.youtube.com/vi/Sadng6tR7Q4/0.jpg" width="60px"/> | Flask by Example  <a name="1.7.4"></a>  | [`2014`][640] [`2015`][641] [`2016`][642] [`2017`][642] |  `3:40:28` |  [`2014`][6400] [`2015`][6401] [`2016`][6402] [`2017`][6403] | --- |
+| <img src="https://img.youtube.com/vi/q0YqAbI7rw4/0.jpg" width="60px"/> | the Django Request-Response Cycle  <a name="1.7.5"></a>  | [`2014`][650] |  `00:31:27` |  [`2014`][6500]| --- |
+| <img src="https://img.youtube.com/vi/-_GAHfpk1Y/0.jpg" width="60px"/> | Designing Django's Migrations  <a name="1.7.6"></a>  | [`2014`][660] |  `00:26:26` |  [`2014`][6600]| --- |
 
 ---
 
@@ -423,6 +429,21 @@ This repository serves three primary roles:
 
 [630]: https://www.youtube.com/watch?v=Sadng6tR7Q4
 [6300]: https://speakerdeck.com/pycon2015/christine-spang-to-orm-or-not-to-orm
+
+[640]: https://www.youtube.com/watch?v=FGrIyBDQLPg
+[641]: https://www.youtube.com/watch?v=DIcpEg77gdE
+[642]: https://www.youtube.com/watch?v=tdIIJuPh3SI
+[643]: https://www.youtube.com/watch?v=nrzLdMWTRMM
+[6400]: https://speakerdeck.com/miguelgrinberg/flask-by-example-pycon-2014
+[6401]: https://speakerdeck.com/miguelgrinberg/flask-workshop-pycon-2015
+[6402]: https://speakerdeck.com/miguelgrinberg/flask-at-scale
+[6403]: https://speakerdeck.com/miguelgrinberg/microservices-with-python-and-flask
+
+[650]: https://www.youtube.com/watch?v=q0YqAbI7rw4
+[6500]: https://speakerdeck.com/pycon2014/a-scenic-drive-through-the-django-request-response-cycle-by-dan-langer
+
+[660]: https://www.youtube.com/watch?v=a-_GAHfpk1Y
+[6600]: https://speakerdeck.com/pycon2014/designing-djangos-migrations-by-andrew-godwin
 
 <!-- Books -->
 

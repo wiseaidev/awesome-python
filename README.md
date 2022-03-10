@@ -237,7 +237,7 @@ This repository serves three primary roles:
 | <img src="https://img.youtube.com/vi/FGrIyBDQLPg/0.jpg" width="60px"/> | To ORM or not to ORM  <a name="1.7.3"></a>  | [`2015`][630] |  `00:26:29` |  [`2015`][6300]| --- |
 | <img src="https://img.youtube.com/vi/Sadng6tR7Q4/0.jpg" width="60px"/> | Flask by Example  <a name="1.7.4"></a>  | [`2014`][640] [`2015`][641] [`2016`][642] [`2017`][642] |  `3:40:28` |  [`2014`][6400] [`2015`][6401] [`2016`][6402] [`2017`][6403] | --- |
 | <img src="https://img.youtube.com/vi/q0YqAbI7rw4/0.jpg" width="60px"/> | the Django Request-Response Cycle  <a name="1.7.5"></a>  | [`2014`][650] |  `00:31:27` |  [`2014`][6500]| --- |
-| <img src="https://img.youtube.com/vi/-_GAHfpk1Y/0.jpg" width="60px"/> | Designing Django's Migrations  <a name="1.7.6"></a>  | [`2014`][660] |  `00:26:26` |  [`2014`][6600]| --- |
+| <img src="https://img.youtube.com/vi/a-_GAHfpk1Y/0.jpg" width="60px"/> | Designing Django's Migrations  <a name="1.7.6"></a>  | [`2014`][660] |  `00:26:26` |  [`2014`][6600]| --- |
 
 ---
 

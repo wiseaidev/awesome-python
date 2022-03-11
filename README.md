@@ -120,7 +120,13 @@ This repository serves three primary roles:
     &nbsp;&nbsp;&nbsp;&nbsp;1.7.12 [Kenneth Love - Django 101](#1.7.12)    
     &nbsp;&nbsp;&nbsp;&nbsp;1.7.13 [Christophe Pettus - PostgreSQL Proficiency](#1.7.13)    
     &nbsp;&nbsp;&nbsp;&nbsp;1.7.14 [Jacinda Shelly - Delving into the Django Admin ](#1.7.14)    
-    1.8 [Testing](#Testing)    
+    1.8 [Self Care & Life](#SelfCare)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.8.1 [Julie Pagano - It's Dangerous to Go Alone](#1.8.1)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.8.2 [Kate Heddleston and Nicole Zuckerman: Technical Onboarding](#1.8.2)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.8.3 [Kathleen Danielson - Avoiding Burnout](#1.8.3)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.8.4 [Lynn Root, Noa Resare - Why can't we be friends](#1.8.4)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.8.5 [Sara Packman - The Journey Over the Intermediate Gap](#1.8.5)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.8.6 [Joyce Jang - Build Teams as an Engineer](#1.8.6)    
 
 2. [My Notes/Book](#Notes)   
     2.1 [Chapter-01: The Language Basics](#chapter1)   
@@ -255,6 +261,19 @@ This repository serves three primary roles:
 | <img src="https://img.youtube.com/vi/C0wuTkS93B0/0.jpg" width="60px"/> | Django 101 <a name="1.7.12"></a>  | [`2016`][6120] |  `2:04:32` |  [`2016`][61200] [`Github`][61201] | --- |
 | <img src="https://img.youtube.com/vi/knUitQQnpJo/0.jpg" width="60px"/> | PostgreSQL Proficiency for Python People <a name="1.7.13"></a>  | [`2016`][6130] |  `3:00:05` |  [`pdf`][61300]| --- |
 | <img src="https://img.youtube.com/vi/5ajZMpTcUZU/0.jpg" width="60px"/> | Delving into the Django Admin <a name="1.7.14"></a>  | [`2015`][6140] |  `3:05:24` |  [`Github`][61400]| --- |
+
+### 1.8 Self Care & Life <a name="SelfCare"></a>   
+
+#### 🔝 [Go To TOC](#TOC). 
+
+| Thumbnail |  Video Title | YT Links   |  Duration   | Speaker Deck  | Backup files |
+| :---: | :---: | :------------:      | :------------:     | :------------:     | :------------: |
+| <img src="https://img.youtube.com/vi/1i8ylq4j_EY/0.jpg" width="60px"/> | It's Dangerous to Go Alone  <a name="1.8.1"></a>  | [`2014`][710] |  `00:28:22` |  [`2014`][7100] | --- |
+| <img src="https://img.youtube.com/vi/qxE1_MgHXI4/0.jpg" width="60px"/> | Technical on-boarding, training, and mentoring  <a name="1.8.2"></a>  | [`2014`][720] |  `00:27:11` |  [`2014`][7200] | --- |
+| <img src="https://img.youtube.com/vi/RbeHBnWfXUc/0.jpg" width="60px"/> | Avoiding Burnout, and other essentials of Open Source Self-Care  <a name="1.8.3"></a>  | [`2015`][730] |  `00:28:35` |  [`2015`][7300] | --- |
+| <img src="https://img.youtube.com/vi/UV3-w0gvrrU/0.jpg" width="60px"/> | Why can't we be friends: do corporations and FOSS really mix?  <a name="1.8.4"></a>  | [`2016`][740] |  `00:31:26` |  [`2016`][7400] | --- |
+| <img src="https://img.youtube.com/vi/49CIIu1XkIE/0.jpg" width="60px"/> | The Journey Over the Intermediate Gap  <a name="1.8.5"></a>  | [`2018`][750] |  `00:27:09` |  [`2018`][7500] | --- |
+| <img src="https://img.youtube.com/vi/49CIIu1XkIE/0.jpg" width="60px"/> | Build Teams as an Engineer  <a name="1.8.6"></a>  | [`2018`][760] |  `00:31:55` |  [`2018`][7600] | --- |
 
 ---
 
@@ -490,6 +509,23 @@ This repository serves three primary roles:
 [6140]: https://www.youtube.com/watch?v=5ajZMpTcUZU
 [61400]: https://github.com/jacinda/pycon_library
 
+[710]: https://www.youtube.com/watch?v=1i8ylq4j_EY
+[7100]: https://speakerdeck.com/pycon2014/its-dangerous-to-go-alone-battling-the-invisible-monsters-in-tech-by-julie-pagano
+
+[720]: https://www.youtube.com/watch?v=qxE1_MgHXI4
+[7200]: https://speakerdeck.com/pycon2014/technical-onboarding-training-and-mentoring-by-kate-heddleston-and-nicole-zuckerman
+
+[730]: https://www.youtube.com/watch?v=RbeHBnWfXUc
+[7300]: https://speakerdeck.com/pycon2015/kathleen-danielson-avoiding-burnout-and-other-essentials-of-open-source-self-care
+
+[740]: https://www.youtube.com/watch?v=UV3-w0gvrrU
+[7400]: https://speakerdeck.com/pycon2016/lynn-root-noa-resare-why-cant-we-be-friends-do-corporations-and-foss-really-mix
+
+[750]: https://www.youtube.com/watch?v=49CIIu1XkIE
+[7500]: https://speakerdeck.com/pycon2018/sara-packman-the-journey-over-the-intermediate-gap
+
+[760]: https://www.youtube.com/watch?v=49CIIu1XkIE
+[7600]: https://speakerdeck.com/pycon2018/joyce-jang-build-teams-as-an-engineer
 
 <!-- Books -->
 

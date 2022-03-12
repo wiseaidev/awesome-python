@@ -113,20 +113,28 @@ This repository serves three primary roles:
     &nbsp;&nbsp;&nbsp;&nbsp;1.7.5 [Dan Langer - The Django Request-Response Cycle](#1.7.5)    
     &nbsp;&nbsp;&nbsp;&nbsp;1.7.6 [Andrew Godwin - Designing Django's Migrations](#1.7.6)     
     &nbsp;&nbsp;&nbsp;&nbsp;1.7.7 [James Bennett - API-Driven Django](#1.7.7)     
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.8 [Shauna Gordon-McKeon - Beyond Django Basics](#1.7.8)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.9 [Harry Percival - TDD with Django](#1.7.9)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.10 [Kenneth Love - Django Admin Basics and Beyond](#1.7.10)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.11 [Kenneth Love - Getting Started with Django](#1.7.11)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.12 [Kenneth Love - Django 101](#1.7.12)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.13 [Christophe Pettus - PostgreSQL Proficiency](#1.7.13)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.14 [Jacinda Shelly - Delving into the Django Admin ](#1.7.14)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.8 [Shauna Gordon-McKeon - Beyond Django Basics](#1.7.8)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.9 [Kenneth Love - Django Admin Basics and Beyond](#1.7.9)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.10 [Kenneth Love - Getting Started with Django](#1.7.10)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.11 [Kenneth Love - Django 101](#1.7.11)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.12 [Christophe Pettus - PostgreSQL Proficiency](#1.7.12)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.13 [Jacinda Shelly - Delving into the Django Admin ](#1.7.13)    
     1.8 [Self Care & Life](#SelfCare)    
     &nbsp;&nbsp;&nbsp;&nbsp;1.8.1 [Julie Pagano - It's Dangerous to Go Alone](#1.8.1)    
     &nbsp;&nbsp;&nbsp;&nbsp;1.8.2 [Kate Heddleston and Nicole Zuckerman: Technical Onboarding](#1.8.2)    
     &nbsp;&nbsp;&nbsp;&nbsp;1.8.3 [Kathleen Danielson - Avoiding Burnout](#1.8.3)    
     &nbsp;&nbsp;&nbsp;&nbsp;1.8.4 [Lynn Root, Noa Resare - Why can't we be friends](#1.8.4)    
     &nbsp;&nbsp;&nbsp;&nbsp;1.8.5 [Sara Packman - The Journey Over the Intermediate Gap](#1.8.5)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.8.6 [Joyce Jang - Build Teams as an Engineer](#1.8.6)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.8.6 [Joyce Jang - Build Teams as an Engineer](#1.8.6)     
+    &nbsp;&nbsp;&nbsp;&nbsp;1.8.7 [Lauren Schaefer - Does remote work really work?](#1.8.7)    
+    1.9 [Testing](#Testing)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.9.1 [Harry Percival - TDD with Django](#1.9.1)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.9.2 [Brian Okken, Paul Everitt - Visual Testing with PyCharm and pytest](#1.9.2)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.9.2 [Brian Okken, Paul Everitt - Visual Testing with PyCharm and pytest](#1.9.2)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.9.3 [Hillel Wayne - Beyond Unit Tests: Taking Your Testing to the Next Level](#1.9.3)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.9.4 [Zac Hatfield-Dodds - Escape from auto-manual testing with Hypothesis!](#1.9.4)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.9.5 [Jes Ford - Getting Started Testing in Data Science](#1.9.5)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.9.6 [Neil Chazin - Strategies for testing Async code](#1.9.6)   
 
 2. [My Notes/Book](#Notes)   
     2.1 [Chapter-01: The Language Basics](#chapter1)   
@@ -255,7 +263,6 @@ This repository serves three primary roles:
 | <img src="https://img.youtube.com/vi/a-_GAHfpk1Y/0.jpg" width="60px"/> | Designing Django's Migrations  <a name="1.7.6"></a>  | [`2014`][660] |  `00:26:26` |  [`2014`][6600]| --- |
 | <img src="https://img.youtube.com/vi/w0xgJ5C9Be8/0.jpg" width="60px"/> | API-Driven Django <a name="1.7.7"></a>  | [`2018`][670] |  `00:26:26` |  [`2014`][6700]| --- |
 | <img src="https://img.youtube.com/vi/Fzlg95lrILk/0.jpg" width="60px"/> | Beyond Django Basics <a name="1.7.8"></a>  | [`2018`][680] |  `3:15:59` |  [`Github`][6800]| --- |
-| <img src="https://img.youtube.com/vi/_rLPDxpXIFc/0.jpg" width="60px"/> | TDD with Django <a name="1.7.9"></a>  | [`2018`][690] [`2018`][691] [`2017`][692] |  `3:11:52` |  [`Book`][6900] [`Github`][6901] | --- |
 | <img src="https://img.youtube.com/vi/XphJRQ3AzMU/0.jpg" width="60px"/> | Django Admin Basics and Beyond <a name="1.7.10"></a>  | [`2017`][6100] |  `3:13:21` |  [`Github`][61000]| --- |
 | <img src="https://img.youtube.com/vi/KZHXjGP71kQ/0.jpg" width="60px"/> | Getting Started with Django <a name="1.7.11"></a>  | [`2014`][6110] |  `3:23:34` |  [`RTD`][61100]| --- |
 | <img src="https://img.youtube.com/vi/C0wuTkS93B0/0.jpg" width="60px"/> | Django 101 <a name="1.7.12"></a>  | [`2016`][6120] |  `2:04:32` |  [`2016`][61200] [`Github`][61201] | --- |
@@ -273,7 +280,21 @@ This repository serves three primary roles:
 | <img src="https://img.youtube.com/vi/RbeHBnWfXUc/0.jpg" width="60px"/> | Avoiding Burnout, and other essentials of Open Source Self-Care  <a name="1.8.3"></a>  | [`2015`][730] |  `00:28:35` |  [`2015`][7300] | --- |
 | <img src="https://img.youtube.com/vi/UV3-w0gvrrU/0.jpg" width="60px"/> | Why can't we be friends: do corporations and FOSS really mix?  <a name="1.8.4"></a>  | [`2016`][740] |  `00:31:26` |  [`2016`][7400] | --- |
 | <img src="https://img.youtube.com/vi/49CIIu1XkIE/0.jpg" width="60px"/> | The Journey Over the Intermediate Gap  <a name="1.8.5"></a>  | [`2018`][750] |  `00:27:09` |  [`2018`][7500] | --- |
-| <img src="https://img.youtube.com/vi/49CIIu1XkIE/0.jpg" width="60px"/> | Build Teams as an Engineer  <a name="1.8.6"></a>  | [`2018`][760] |  `00:31:55` |  [`2018`][7600] | --- |
+| <img src="https://img.youtube.com/vi/-9NpTeddWds/0.jpg" width="60px"/> | Build Teams as an Engineer  <a name="1.8.6"></a>  | [`2018`][760] |  `00:31:55` |  [`2018`][7600] | --- |
+| <img src="https://img.youtube.com/vi/CTWgKyLk6mo/0.jpg" width="60px"/> | Does remote work really work  <a name="1.8.7"></a>  | [`2019`][770] |  `00:39:20` |  [`2019`][7700] | --- |
+
+### 1.9 Testing <a name="Testing"></a>   
+
+#### 🔝 [Go To TOC](#TOC). 
+
+| Thumbnail |  Video Title | YT Links   |  Duration   | Speaker Deck  | Backup files |
+| :---: | :---: | :------------:      | :------------:     | :------------:     | :------------: |
+| <img src="https://img.youtube.com/vi/_rLPDxpXIFc/0.jpg" width="60px"/> | TDD with Django <a name="1.9.1"></a>  | [`2018`][810] [`2018`][811] [`2017`][812] |  `3:11:52` |  [`Book`][8100] [`Github`][8101] | --- |
+| <img src="https://img.youtube.com/vi/FjojZxDZscQ/0.jpg" width="60px"/> | Visual Testing with PyCharm and pytest <a name="1.9.2"></a>  | [`2018`][820] |  `00:29:54` |  [`2018`][8200] | --- |
+| <img src="https://img.youtube.com/vi/MYucYon2-lk/0.jpg" width="60px"/> | Beyond Unit Tests: Taking Your Testing to the Next Level <a name="1.9.3"></a>  | [`2018`][830] |  `00:29:20` |  [`2018`][8300] | --- |
+| <img src="https://img.youtube.com/vi/SmBAl34RV4M/0.jpg" width="60px"/> | Escape from auto-manual testing with Hypothesis! <a name="1.9.4"></a>  | [`2019`][840] |  `3:12:11` |  [`2019`][8400] | --- |
+| <img src="https://img.youtube.com/vi/0ysyWk-ox-8/0.jpg" width="60px"/> | Getting Started Testing in Data Science <a name="1.9.5"></a>  | [`2019`][850] |  `00:31:00` |  [`2019`][8500] | --- |
+| <img src="https://img.youtube.com/vi/aQ6rpLRJsXs/0.jpg" width="60px"/> | Strategies for testing Async code <a name="1.9.6"></a>  | [`2019`][860] |  `00:22:43` |  [`2019`][8600] | --- |
 
 ---
 
@@ -487,12 +508,6 @@ This repository serves three primary roles:
 [680]: https://www.youtube.com/watch?v=Fzlg95lrILk
 [6800]: https://github.com/shaunagm/pycon2018-django-tutorial
 
-[690]: https://www.youtube.com/watch?v=_rLPDxpXIFc
-[691]: https://www.youtube.com/watch?v=tFalO9KdCDM
-[692]: https://www.youtube.com/watch?v=vQjmz9wCjLA
-[6900]: https://www.obeythetestinggoat.com/
-[6901]: https://github.com/hjwp/Test-Driven-Django-Tutorial
-
 [6100]: https://www.youtube.com/watch?v=XphJRQ3AzMU
 [61000]: https://github.com/kennethlove/pycon2017
 
@@ -521,11 +536,35 @@ This repository serves three primary roles:
 [740]: https://www.youtube.com/watch?v=UV3-w0gvrrU
 [7400]: https://speakerdeck.com/pycon2016/lynn-root-noa-resare-why-cant-we-be-friends-do-corporations-and-foss-really-mix
 
-[750]: https://www.youtube.com/watch?v=49CIIu1XkIE
+[750]: https://www.youtube.com/watch?v=-9NpTeddWds
 [7500]: https://speakerdeck.com/pycon2018/sara-packman-the-journey-over-the-intermediate-gap
 
 [760]: https://www.youtube.com/watch?v=49CIIu1XkIE
 [7600]: https://speakerdeck.com/pycon2018/joyce-jang-build-teams-as-an-engineer
+
+[770]: https://www.youtube.com/watch?v=CTWgKyLk6mo
+[7700]: https://speakerdeck.com/pycon2019/lauren-schaefer-does-remote-work-really-work
+
+[810]: https://www.youtube.com/watch?v=_rLPDxpXIFc
+[811]: https://www.youtube.com/watch?v=tFalO9KdCDM
+[812]: https://www.youtube.com/watch?v=vQjmz9wCjLA
+[8100]: https://www.obeythetestinggoat.com/
+[8101]: https://github.com/hjwp/Test-Driven-Django-Tutorial
+
+[820]: https://www.youtube.com/watch?v=FjojZxDZscQ
+[8200]: https://speakerdeck.com/pycon2018/brian-okken-paul-everitt-visual-testing-with-pycharm-and-pytest
+
+[830]: https://www.youtube.com/watch?v=MYucYon2-lk
+[8300]: https://speakerdeck.com/pycon2018/hillel-wayne-beyond-unit-tests-taking-your-testing-to-the-next-level
+
+[840]: https://www.youtube.com/watch?v=SmBAl34RV4M
+[8400]: https://speakerdeck.com/pycon2019/zac-hatfield-dodds-escape-from-auto-manual-testing-with-hypothesis
+
+[850]: https://www.youtube.com/watch?v=0ysyWk-ox-8
+[8500]: https://speakerdeck.com/pycon2019/jes-ford-getting-started-testing-in-data-science
+
+[860]: https://www.youtube.com/watch?v=aQ6rpLRJsXs
+[8600]: https://speakerdeck.com/pycon2019/neil-chazin-strategies-for-testing-async-code
 
 <!-- Books -->
 

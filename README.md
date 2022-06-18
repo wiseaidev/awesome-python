@@ -87,7 +87,7 @@ This repository serves three primary roles:
     &nbsp;&nbsp;&nbsp;&nbsp;1.2.7 [Raymond Hettinger - Dataclasses](#1.2.7)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.2.8 [Raymond Hettinger - OOP from scratch](#1.2.8)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.2.9 [Ariel Ortiz - Design Patterns in Python](#1.2.9)   
-    1.3 [Fun To Watch](#Fun)   
+    1.3 [Generic](#generic)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.3.1 [David Beazley - Discovering Python](#1.3.1)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.3.2 [David Beazley - The Fun of Reinvention](#1.3.2)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.3.3 [David Beazley - Fear and Awaiting in Async](#1.3.3)   
@@ -135,6 +135,13 @@ This repository serves three primary roles:
     &nbsp;&nbsp;&nbsp;&nbsp;1.9.4 [Zac Hatfield-Dodds - Escape from auto-manual testing with Hypothesis!](#1.9.4)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.9.5 [Jes Ford - Getting Started Testing in Data Science](#1.9.5)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.9.6 [Neil Chazin - Strategies for testing Async code](#1.9.6)   
+    1.10 [Refactoring](#refactoring)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.10.1 [Amanda Sopkin - The Refactoring Balance Beam.](#1.10.1)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.10.2 [Brett Slatkin - Refactoring Python](#1.10.2)       
+    &nbsp;&nbsp;&nbsp;&nbsp;1.10.3 [Conor Hoekstra - Beautiful Python Refactoring](#1.10.3)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.10.4 [Tin Marković - Refactoring in Python: Design Patterns and Approaches](#1.10.4)     
+    &nbsp;&nbsp;&nbsp;&nbsp;1.10.5 [Kristian Rother - Refactoring](#1.10.5)   
+  
 
 2. [My Notes/Book](#Notes)   
     2.1 [Chapter-01: The Language Basics](#chapter1)   
@@ -206,7 +213,7 @@ This repository serves three primary roles:
 | <img src="https://img.youtube.com/vi/8moWQ1561FY/0.jpg" width="60px"/> | Object Oriented Programming from scratch <a name="1.2.8"></a>  | [`2020`][180] |  `1:16:18` |  [`Colab`][1800] | --- |
 | <img src="https://img.youtube.com/vi/o1FZ_Bd4DSM/0.jpg" width="60px"/> | Design Patterns in Python for the Untrained Eye  <a name="1.2.9"></a>  | [`2019`][190] |  `3:14:47` | [`2019`][1900] | --- |
 
-### 1.3 Fun To Watch <a name="Fun"></a>   
+### 1.3 Generic <a name="generic"></a>   
 
 #### 🔝 [Go To TOC](#TOC). 
 
@@ -295,6 +302,20 @@ This repository serves three primary roles:
 | <img src="https://img.youtube.com/vi/SmBAl34RV4M/0.jpg" width="60px"/> | Escape from auto-manual testing with Hypothesis! <a name="1.9.4"></a>  | [`2019`][840] |  `3:12:11` |  [`2019`][8400] | --- |
 | <img src="https://img.youtube.com/vi/0ysyWk-ox-8/0.jpg" width="60px"/> | Getting Started Testing in Data Science <a name="1.9.5"></a>  | [`2019`][850] |  `00:31:00` |  [`2019`][8500] | --- |
 | <img src="https://img.youtube.com/vi/aQ6rpLRJsXs/0.jpg" width="60px"/> | Strategies for testing Async code <a name="1.9.6"></a>  | [`2019`][860] |  `00:22:43` |  [`2019`][8600] | --- |
+
+---
+
+### 1.10 Refactoring <a name="refactoring"></a>   
+
+#### 🔝 [Go To TOC](#TOC). 
+
+| Thumbnail |  Video Title | YT Links   |  Duration   | Speaker Deck  | Backup files |
+| :---: | :---: | :------------:      | :------------:     | :------------:     | :------------: |
+| <img src="https://img.youtube.com/vi/sze4yunoxU0/0.jpg" width="60px"/> | The Refactoring Balance Beam: When to Make Changes and When to Leave it Alone <a name="1.10.1"></a>  | [`2019`][910] |  `00:28:23` |  [`2019`][9100] | --- |
+| <img src="https://img.youtube.com/vi/D_6ybDcU5gc/0.jpg" width="60px"/> | Refactoring Python: Why and how to restructure your code  <a name="1.10.2"></a>  | [`2016`][920] |  `00:30:24` |  [`2016`][9200] | --- |
+| <img src="https://img.youtube.com/vi/W-lZttZhsUY/0.jpg" width="60px"/> |  Beautiful Python Refactoring   <a name="1.10.3"></a>  | [`2020`][930] |  `00:30:04` | --- | --- |
+| <img src="https://img.youtube.com/vi/ZzKaFJxiDzA/0.jpg" width="60px"/> | Refactoring in Python: Design Patterns and Approaches  <a name="1.10.4"></a>  | [`2019`][940] [`2018`][941] |  `00:46:56` |  [`2018`][9400] | --- |
+| <img src="https://img.youtube.com/vi/13hVzP3Oofs/0.jpg" width="60px"/> |  Dr. Kristian Rother - Best Practices  <a name="1.10.5"></a>  | [`2022`][950] [`2017`][951] |  `01:29:49` |  [`Github`][9500] | --- |
 
 ---
 
@@ -565,6 +586,22 @@ This repository serves three primary roles:
 
 [860]: https://www.youtube.com/watch?v=aQ6rpLRJsXs
 [8600]: https://speakerdeck.com/pycon2019/neil-chazin-strategies-for-testing-async-code
+
+[910]: https://www.youtube.com/watch?v=sze4yunoxU0
+[9100]: https://speakerdeck.com/pycon2019/amanda-sopkin-the-refactoring-balance-beam-when-to-make-changes-and-when-to-leave-it-alone
+
+[920]: https://www.youtube.com/watch?v=D_6ybDcU5gc
+[9200]: https://speakerdeck.com/pycon2016/brett-slatkin-refactoring-python-why-and-how-to-restructure-your-code
+
+[930]: https://www.youtube.com/watch?v=W-lZttZhsUY
+
+[940]: https://www.youtube.com/watch?v=ZzKaFJxiDzA
+[941]: https://www.youtube.com/watch?v=VlfVwbf58U4
+[9400]: https://tinthe.dev/static/refactoring-python.pdf
+
+[950]: https://www.youtube.com/watch?v=13hVzP3Oofs
+[951]: https://www.youtube.com/watch?v=04paHt9xG9U
+[9500]: https://github.com/krother/refactoring_tutorial
 
 <!-- Books -->
 

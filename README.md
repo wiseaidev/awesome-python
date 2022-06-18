@@ -75,14 +75,14 @@ This repository serves three primary roles:
 <details open>
 <summary><b>1. <a href="#Talks">Awesome Python Talks</a></b></summary>
 
-  * <details>
+   <details>
 <summary><b>1.1. <a href="#Novice">Novice Level - Core</a></b></summary>
 
     &nbsp;&nbsp;&nbsp;&nbsp;1.1.1. [Stuart Williams - Python Epiphanies](#1.1.1)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.1.2. [Trey Hunner - Hands-On Intro to Python](#1.1.2)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.1.3. [Jessica McKellar - Hands-on intro to Python](#1.1.3)   
 </details>
-  * <details>
+   <details>
 <summary><b>1.2. <a href="#Intermediate">Intermediate Level - Core</a></b></summary>
   
     &nbsp;&nbsp;&nbsp;&nbsp;1.2.2. [Luciano Ramalho - Pythonic Objects](#1.2.1)   
@@ -95,7 +95,7 @@ This repository serves three primary roles:
     &nbsp;&nbsp;&nbsp;&nbsp;1.2.8. [Raymond Hettinger - OOP from scratch](#1.2.8)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.2.9. [Ariel Ortiz - Design Patterns in Python](#1.2.9)  
 </details> 
-  * <details>
+    <details>
 <summary><b>1.3. <a href="#generic">Generic</a></b></summary>
 
     &nbsp;&nbsp;&nbsp;&nbsp;1.3.1. [David Beazley - Discovering Python](#1.3.1)   
@@ -103,12 +103,12 @@ This repository serves three primary roles:
     &nbsp;&nbsp;&nbsp;&nbsp;1.3.3. [David Beazley - Fear and Awaiting in Async](#1.3.3)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.3.4. [David Beazley - Built in Super Heroes](#1.3.4)
 </details> 
-  * <details>
+    <details>
 <summary><b>1.4. <a href="#2to3">Python 2 and Python 3</a></b></summary>
 
     &nbsp;&nbsp;&nbsp;&nbsp;1.4.1. [Brett Cannon - Python 3.3 is Better than  Python 2.7](#1.4.1)    
 </details> 
-  * <details>
+    <details>
 <summary><b>1.5. <a href="#DSA">DSA</a></b></summary>
 
     &nbsp;&nbsp;&nbsp;&nbsp;1.5.1. [Brandon Rhodes - Data Structures in the Std Lib](#1.5.1)   
@@ -120,12 +120,12 @@ This repository serves three primary roles:
     &nbsp;&nbsp;&nbsp;&nbsp;1.5.7. [Nina Zakharenko - Elegant Solutions For Everyday Python Problems](#1.5.7)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.5.8. [Jiaqi Liu - Fuzzy Search Algorithms .](#1.5.8) 
 </details> 
-  * <details>
+    <details>
 <summary><b>1.6. <a href="#DevOps">DevOps</a></b></summary>   
   
     &nbsp;&nbsp;&nbsp;&nbsp;1.6.1. [Hynek Schlawack - Beyond grep: Practical Logging and Metrics](#1.6.1)    
 </details> 
-  * <details>
+    <details>
 <summary><b>1.7. <a href="#Full">Full-Stack</a></b></summary> 
   
     &nbsp;&nbsp;&nbsp;&nbsp;1.7.1. [Kate Heddleston - So you want to be a full-stack developer](#1.7.1)     
@@ -142,7 +142,7 @@ This repository serves three primary roles:
     &nbsp;&nbsp;&nbsp;&nbsp;1.7.12. [Christophe Pettus - PostgreSQL Proficiency](#1.7.12)    
     &nbsp;&nbsp;&nbsp;&nbsp;1.7.13. [Jacinda Shelly - Delving into the Django Admin ](#1.7.13)    
 </details> 
-  * <details>
+    <details>
 <summary><b>1.8. <a href="#SelfCare">Self Care & Life</a></b></summary> 
 
     &nbsp;&nbsp;&nbsp;&nbsp;1.8.1. [Julie Pagano - It's Dangerous to Go Alone](#1.8.1)    
@@ -153,7 +153,7 @@ This repository serves three primary roles:
     &nbsp;&nbsp;&nbsp;&nbsp;1.8.6. [Joyce Jang - Build Teams as an Engineer](#1.8.6)     
     &nbsp;&nbsp;&nbsp;&nbsp;1.8.7. [Lauren Schaefer - Does remote work really work?](#1.8.7)    
 </details> 
-  * <details>
+    <details>
 <summary><b>1.9. <a href="#Testing">Testing</a></b></summary> 
  
     &nbsp;&nbsp;&nbsp;&nbsp;1.9.1. [Harry Percival - TDD with Django](#1.9.1)   
@@ -164,7 +164,7 @@ This repository serves three primary roles:
     &nbsp;&nbsp;&nbsp;&nbsp;1.9.5. [Jes Ford - Getting Started Testing in Data Science](#1.9.5)   
     &nbsp;&nbsp;&nbsp;&nbsp;1.9.6. [Neil Chazin - Strategies for testing Async code](#1.9.6)   
 </details> 
-  * <details>
+    <details>
 <summary><b>1.10. <a href="#refactoring">Refactoring</a></b></summary>
   
     &nbsp;&nbsp;&nbsp;&nbsp;1.10.1. [Amanda Sopkin - The Refactoring Balance Beam.](#1.10.1)    
@@ -178,7 +178,7 @@ This repository serves three primary roles:
 <details open>
 <summary><b>2. <a href="#Notes">My Notes/Book</a></b></summary>
 
-  * <details>
+    <details>
 <summary><b>1.1. <a href="#Novice">Novice Level - Core</a></b></summary>
 
     &nbsp;&nbsp;&nbsp;&nbsp;2.1. [Chapter-01: The Language Basics](#chapter1)   
@@ -189,9 +189,9 @@ This repository serves three primary roles:
 <details open>
 <summary><b>3. <a href="#Books">Python Books</a></b></summary>
 
-  * <details>
+    <details>
 <summary><b>3.1. <a href="#books3.1">Novice Level</a></b></summary>
-  
+
     &nbsp;&nbsp;&nbsp;&nbsp;3.1.1. [Head-First Python: A Brain-Friendly Guide
 ](#books3.1.1)   
     &nbsp;&nbsp;&nbsp;&nbsp;3.1.2. [Python for Everybody: Exploring Data in Python 3](#books3.1.2)   
@@ -206,7 +206,7 @@ This repository serves three primary roles:
     &nbsp;&nbsp;&nbsp;&nbsp;3.1.11. [Learning Python](#books3.1.11)    
     &nbsp;&nbsp;&nbsp;&nbsp;3.1.12. [Think Python](#books3.1.12)   
 </details> 
-  * <details>
+    <details>
 <summary><b>3.2. <a href="#books3.2">Intermediate Level</a></b></summary>
 
     &nbsp;&nbsp;&nbsp;&nbsp;3.2.1. [Murach's Python Programming](#books3.2.1)    
@@ -218,7 +218,7 @@ This repository serves three primary roles:
     &nbsp;&nbsp;&nbsp;&nbsp;3.2.7. [Problem Solving with Algorithms and Data Structures Using Python](#books3.2.7)   
     &nbsp;&nbsp;&nbsp;&nbsp;3.2.8. [Practices of the Python Pro](#books3.2.8)   
 </details> 
-  * <details>
+    <details>
 <summary><b>3.3. <a href="#books3.3">Reference</a></b></summary>
 
     &nbsp;&nbsp;&nbsp;&nbsp;3.3.1 [Fluent Python](#books3.3.1)   

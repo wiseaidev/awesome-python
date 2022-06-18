@@ -72,109 +72,160 @@ This repository serves three primary roles:
 
 ## 👉 Table Of Content (TOC). <a name="TOC"></a>
 
-1. [Awesome Python Talks](#Talks)   
-    1.1 [Novice Level - Core](#Novice)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.1.1 [Stuart Williams - Python Epiphanies](#1.1.1)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.1.2 [Trey Hunner - Hands-On Intro to Python](#1.1.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.1.3 [Jessica McKellar - Hands-on intro to Python](#1.1.3)   
-    1.2 [Intermediate Level - Core](#Intermediate)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.2.2 [Luciano Ramalho - Pythonic Objects](#1.2.1)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.2.2 [Luciano Ramalho - Pythonic APIs](#1.2.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.2.3 [Luciano Ramalho - Decorators & Descriptors](#1.2.3)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.2.4 [Trey Hunner - Lazy Looping in Python](#1.2.4)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.2.5 [Trey Hunner - List Comprehensions & Generator](#1.2.5)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.2.6 [Trey Hunner - Readable Regular Expressions](#1.2.6)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.2.7 [Raymond Hettinger - Dataclasses](#1.2.7)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.2.8 [Raymond Hettinger - OOP from scratch](#1.2.8)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.2.9 [Ariel Ortiz - Design Patterns in Python](#1.2.9)   
-    1.3 [Generic](#generic)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.3.1 [David Beazley - Discovering Python](#1.3.1)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.3.2 [David Beazley - The Fun of Reinvention](#1.3.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.3.3 [David Beazley - Fear and Awaiting in Async](#1.3.3)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.3.4 [David Beazley - Built in Super Heroes](#1.3.4)   
-    1.4 [Python 2 and Python 3](#2to3)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.4.1 [Brett Cannon - Python 3.3 is Better than  Python 2.7](#1.4.1)    
-    1.5 [DSA](#DSA)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.5.1 [Brandon Rhodes - Data Structures in the Std Lib](#1.5.1)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.5.2 [Justin Abrahms - Computer Science Fundamentals](#1.5.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.5.3 [Raymond Hettinger - Modern solvers(BFS, DFS)](#1.5.3)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.5.4 [Raymond Hettinger - Python's abstract base classes](#1.5.4)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.5.5 [Claudio Freire - Efficient shared memory data structures](#1.5.5)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.5.6 [Learning Algorithms and Data Structures in Python](#1.5.6)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.5.7 [Nina Zakharenko - Elegant Solutions For Everyday Python Problems](#1.5.7)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.5.8 [Jiaqi Liu - Fuzzy Search Algorithms .](#1.5.8)    
-    1.6 [DevOps](#DevOps)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.6.1 [Hynek Schlawack - Beyond grep: Practical Logging and Metrics](#1.6.1)    
-    1.7 [Full-Stack](#Full)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.1 [Kate Heddleston - So you want to be a full-stack developer](#1.7.1)     
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.2 [Luke Lee - Building full-stack scientific applications in Python](#1.7.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.3 [Christine Spang - To ORM or not to ORM](#1.7.3)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.4 [Miguel Grinberg - Flask](#1.7.4)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.5 [Dan Langer - The Django Request-Response Cycle](#1.7.5)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.6 [Andrew Godwin - Designing Django's Migrations](#1.7.6)     
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.7 [James Bennett - API-Driven Django](#1.7.7)     
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.8 [Shauna Gordon-McKeon - Beyond Django Basics](#1.7.8)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.9 [Kenneth Love - Django Admin Basics and Beyond](#1.7.9)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.10 [Kenneth Love - Getting Started with Django](#1.7.10)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.11 [Kenneth Love - Django 101](#1.7.11)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.12 [Christophe Pettus - PostgreSQL Proficiency](#1.7.12)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.13 [Jacinda Shelly - Delving into the Django Admin ](#1.7.13)    
-    1.8 [Self Care & Life](#SelfCare)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.8.1 [Julie Pagano - It's Dangerous to Go Alone](#1.8.1)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.8.2 [Kate Heddleston and Nicole Zuckerman: Technical Onboarding](#1.8.2)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.8.3 [Kathleen Danielson - Avoiding Burnout](#1.8.3)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.8.4 [Lynn Root, Noa Resare - Why can't we be friends](#1.8.4)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.8.5 [Sara Packman - The Journey Over the Intermediate Gap](#1.8.5)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.8.6 [Joyce Jang - Build Teams as an Engineer](#1.8.6)     
-    &nbsp;&nbsp;&nbsp;&nbsp;1.8.7 [Lauren Schaefer - Does remote work really work?](#1.8.7)    
-    1.9 [Testing](#Testing)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.9.1 [Harry Percival - TDD with Django](#1.9.1)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.9.2 [Brian Okken, Paul Everitt - Visual Testing with PyCharm and pytest](#1.9.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.9.2 [Brian Okken, Paul Everitt - Visual Testing with PyCharm and pytest](#1.9.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.9.3 [Hillel Wayne - Beyond Unit Tests: Taking Your Testing to the Next Level](#1.9.3)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.9.4 [Zac Hatfield-Dodds - Escape from auto-manual testing with Hypothesis!](#1.9.4)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.9.5 [Jes Ford - Getting Started Testing in Data Science](#1.9.5)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.9.6 [Neil Chazin - Strategies for testing Async code](#1.9.6)   
-    1.10 [Refactoring](#refactoring)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.10.1 [Amanda Sopkin - The Refactoring Balance Beam.](#1.10.1)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.10.2 [Brett Slatkin - Refactoring Python](#1.10.2)       
-    &nbsp;&nbsp;&nbsp;&nbsp;1.10.3 [Conor Hoekstra - Beautiful Python Refactoring](#1.10.3)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.10.4 [Tin Marković - Refactoring in Python: Design Patterns and Approaches](#1.10.4)     
-    &nbsp;&nbsp;&nbsp;&nbsp;1.10.5 [Kristian Rother - Refactoring](#1.10.5)   
+<details open>
+<summary><b>1. <a href="#Talks">Awesome Python Talks</a></b></summary>
+
+  * <details>
+<summary><b>1.1. <a href="#Novice">Novice Level - Core</a></b></summary>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;1.1.1. [Stuart Williams - Python Epiphanies](#1.1.1)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.1.2. [Trey Hunner - Hands-On Intro to Python](#1.1.2)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.1.3. [Jessica McKellar - Hands-on intro to Python](#1.1.3)   
+</details>
+  * <details>
+<summary><b>1.2. <a href="#Intermediate">Intermediate Level - Core</a></b></summary>
   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.2.2. [Luciano Ramalho - Pythonic Objects](#1.2.1)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.2.2. [Luciano Ramalho - Pythonic APIs](#1.2.2)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.2.3. [Luciano Ramalho - Decorators & Descriptors](#1.2.3)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.2.4. [Trey Hunner - Lazy Looping in Python](#1.2.4)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.2.5. [Trey Hunner - List Comprehensions & Generator](#1.2.5)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.2.6. [Trey Hunner - Readable Regular Expressions](#1.2.6)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.2.7. [Raymond Hettinger - Dataclasses](#1.2.7)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.2.8. [Raymond Hettinger - OOP from scratch](#1.2.8)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.2.9. [Ariel Ortiz - Design Patterns in Python](#1.2.9)  
+</details> 
+  * <details>
+<summary><b>1.3. <a href="#generic">Generic</a></b></summary>
 
-2. [My Notes/Book](#Notes)   
-    2.1 [Chapter-01: The Language Basics](#chapter1)   
-    2.2 [Chapter-02: Built-In functions and the Std-Modules](#chapter2)  
+    &nbsp;&nbsp;&nbsp;&nbsp;1.3.1. [David Beazley - Discovering Python](#1.3.1)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.3.2. [David Beazley - The Fun of Reinvention](#1.3.2)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.3.3. [David Beazley - Fear and Awaiting in Async](#1.3.3)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.3.4. [David Beazley - Built in Super Heroes](#1.3.4)
+</details> 
+  * <details>
+<summary><b>1.4. <a href="#2to3">Python 2 and Python 3</a></b></summary>
 
-3. [Python Books](#Books)   
-    3.1 [Novice Level](#books3.1)    
-    &nbsp;&nbsp;&nbsp;&nbsp;3.1.1 [Head-First Python: A Brain-Friendly Guide
+    &nbsp;&nbsp;&nbsp;&nbsp;1.4.1. [Brett Cannon - Python 3.3 is Better than  Python 2.7](#1.4.1)    
+</details> 
+  * <details>
+<summary><b>1.5. <a href="#DSA">DSA</a></b></summary>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;1.5.1. [Brandon Rhodes - Data Structures in the Std Lib](#1.5.1)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.5.2. [Justin Abrahms - Computer Science Fundamentals](#1.5.2)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.5.3. [Raymond Hettinger - Modern solvers(BFS, DFS)](#1.5.3)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.5.4. [Raymond Hettinger - Python's abstract base classes](#1.5.4)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.5.5. [Claudio Freire - Efficient shared memory data structures](#1.5.5)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.5.6. [Learning Algorithms and Data Structures in Python](#1.5.6)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.5.7. [Nina Zakharenko - Elegant Solutions For Everyday Python Problems](#1.5.7)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.5.8. [Jiaqi Liu - Fuzzy Search Algorithms .](#1.5.8) 
+</details> 
+  * <details>
+<summary><b>1.6. <a href="#DevOps">DevOps</a></b></summary>   
+  
+    &nbsp;&nbsp;&nbsp;&nbsp;1.6.1. [Hynek Schlawack - Beyond grep: Practical Logging and Metrics](#1.6.1)    
+</details> 
+  * <details>
+<summary><b>1.7. <a href="#Full">Full-Stack</a></b></summary> 
+  
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.1. [Kate Heddleston - So you want to be a full-stack developer](#1.7.1)     
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.2. [Luke Lee - Building full-stack scientific applications in Python](#1.7.2)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.3. [Christine Spang - To ORM or not to ORM](#1.7.3)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.4. [Miguel Grinberg - Flask](#1.7.4)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.5. [Dan Langer - The Django Request-Response Cycle](#1.7.5)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.6. [Andrew Godwin - Designing Django's Migrations](#1.7.6)     
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.7. [James Bennett - API-Driven Django](#1.7.7)     
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.8. [Shauna Gordon-McKeon - Beyond Django Basics](#1.7.8)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.9. [Kenneth Love - Django Admin Basics and Beyond](#1.7.9)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.10. [Kenneth Love - Getting Started with Django](#1.7.10)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.11. [Kenneth Love - Django 101](#1.7.11)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.12. [Christophe Pettus - PostgreSQL Proficiency](#1.7.12)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.7.13. [Jacinda Shelly - Delving into the Django Admin ](#1.7.13)    
+</details> 
+  * <details>
+<summary><b>1.8. <a href="#SelfCare">Self Care & Life</a></b></summary> 
+
+    &nbsp;&nbsp;&nbsp;&nbsp;1.8.1. [Julie Pagano - It's Dangerous to Go Alone](#1.8.1)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.8.2. [Kate Heddleston and Nicole Zuckerman: Technical Onboarding](#1.8.2)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.8.3. [Kathleen Danielson - Avoiding Burnout](#1.8.3)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.8.4. [Lynn Root, Noa Resare - Why can't we be friends](#1.8.4)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.8.5. [Sara Packman - The Journey Over the Intermediate Gap](#1.8.5)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.8.6. [Joyce Jang - Build Teams as an Engineer](#1.8.6)     
+    &nbsp;&nbsp;&nbsp;&nbsp;1.8.7. [Lauren Schaefer - Does remote work really work?](#1.8.7)    
+</details> 
+  * <details>
+<summary><b>1.9. <a href="#Testing">Testing</a></b></summary> 
+ 
+    &nbsp;&nbsp;&nbsp;&nbsp;1.9.1. [Harry Percival - TDD with Django](#1.9.1)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.9.2. [Brian Okken, Paul Everitt - Visual Testing with PyCharm and pytest](#1.9.2)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.9.2. [Brian Okken, Paul Everitt - Visual Testing with PyCharm and pytest](#1.9.2)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.9.3. [Hillel Wayne - Beyond Unit Tests: Taking Your Testing to the Next Level](#1.9.3)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.9.4. [Zac Hatfield-Dodds - Escape from auto-manual testing with Hypothesis!](#1.9.4)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.9.5. [Jes Ford - Getting Started Testing in Data Science](#1.9.5)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.9.6. [Neil Chazin - Strategies for testing Async code](#1.9.6)   
+</details> 
+  * <details>
+<summary><b>1.10. <a href="#refactoring">Refactoring</a></b></summary>
+  
+    &nbsp;&nbsp;&nbsp;&nbsp;1.10.1. [Amanda Sopkin - The Refactoring Balance Beam.](#1.10.1)    
+    &nbsp;&nbsp;&nbsp;&nbsp;1.10.2. [Brett Slatkin - Refactoring Python](#1.10.2)       
+    &nbsp;&nbsp;&nbsp;&nbsp;1.10.3. [Conor Hoekstra - Beautiful Python Refactoring](#1.10.3)   
+    &nbsp;&nbsp;&nbsp;&nbsp;1.10.4. [Tin Marković - Refactoring in Python: Design Patterns and Approaches](#1.10.4)     
+    &nbsp;&nbsp;&nbsp;&nbsp;1.10.5. [Kristian Rother - Refactoring](#1.10.5)  
+</details>
+</details>
+
+<details open>
+<summary><b>2. <a href="#Notes">My Notes/Book</a></b></summary>
+
+  * <details>
+<summary><b>1.1. <a href="#Novice">Novice Level - Core</a></b></summary>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;2.1. [Chapter-01: The Language Basics](#chapter1)   
+    &nbsp;&nbsp;&nbsp;&nbsp;2.2. [Chapter-02: Built-In functions and the Std-Modules](#chapter2)  
+</details>
+</details>
+
+<details open>
+<summary><b>3. <a href="#Books">Python Books</a></b></summary>
+
+  * <details>
+<summary><b>3.1. <a href="#books3.1">Novice Level</a></b></summary>
+  
+    &nbsp;&nbsp;&nbsp;&nbsp;3.1.1. [Head-First Python: A Brain-Friendly Guide
 ](#books3.1.1)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.1.2 [Python for Everybody: Exploring Data in Python 3](#books3.1.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.1.3 [Learn Python 3 the Hard Way](#books3.1.3)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.1.4 [Python Programming for the Absolute Beginner](#books3.1.4)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.1.5 [Introduction to Computation and Programming Using Python](#books3.1.5)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.1.6 [Python Programming: An Introduction to Computer Science](#books3.1.6)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.1.7 [Python Crash Course](#books3.1.7)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.1.8 [Python for Kids](#books3.1.8)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.1.9 [Core Python Programming](#books3.1.9)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.1.10 [Programming Python](#books3.1.10)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.1.11 [Learning Python](#books3.1.11)    
-    &nbsp;&nbsp;&nbsp;&nbsp;3.1.12 [Think Python](#books3.1.12)   
-    3.2 [Intermediate Level](#books3.2)    
-    &nbsp;&nbsp;&nbsp;&nbsp;3.2.1 [Murach's Python Programming](#books3.2.1)    
-    &nbsp;&nbsp;&nbsp;&nbsp;3.2.2 [Python Cookbook](#books3.2.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.2.3 [Effective Python: 59 Specific Ways to Write Better Python](#books3.2.3)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.2.4 [Python Tricks: A Buffet of Awesome Python Features](#books3.2.4)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.2.5 [Intermediate Python](#books3.2.5)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.2.6 [Python 3 Object Oriented Programming](#books3.2.6)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.2.7 [Problem Solving with Algorithms and Data Structures Using Python](#books3.2.7)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.2.8 [Practices of the Python Pro](#books3.2.8)   
-    3.3 [Reference](#books3.3)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.1.2. [Python for Everybody: Exploring Data in Python 3](#books3.1.2)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.1.3. [Learn Python 3 the Hard Way](#books3.1.3)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.1.4. [Python Programming for the Absolute Beginner](#books3.1.4)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.1.5. [Introduction to Computation and Programming Using Python](#books3.1.5)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.1.6. [Python Programming: An Introduction to Computer Science](#books3.1.6)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.1.7. [Python Crash Course](#books3.1.7)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.1.8. [Python for Kids](#books3.1.8)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.1.9. [Core Python Programming](#books3.1.9)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.1.10. [Programming Python](#books3.1.10)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.1.11. [Learning Python](#books3.1.11)    
+    &nbsp;&nbsp;&nbsp;&nbsp;3.1.12. [Think Python](#books3.1.12)   
+</details> 
+  * <details>
+<summary><b>3.2. <a href="#books3.2">Intermediate Level</a></b></summary>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;3.2.1. [Murach's Python Programming](#books3.2.1)    
+    &nbsp;&nbsp;&nbsp;&nbsp;3.2.2. [Python Cookbook](#books3.2.2)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.2.3. [Effective Python: 59 Specific Ways to Write Better Python](#books3.2.3)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.2.4. [Python Tricks: A Buffet of Awesome Python Features](#books3.2.4)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.2.5. [Intermediate Python](#books3.2.5)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.2.6. [Python 3 Object Oriented Programming](#books3.2.6)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.2.7. [Problem Solving with Algorithms and Data Structures Using Python](#books3.2.7)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.2.8. [Practices of the Python Pro](#books3.2.8)   
+</details> 
+  * <details>
+<summary><b>3.3. <a href="#books3.3">Reference</a></b></summary>
+
     &nbsp;&nbsp;&nbsp;&nbsp;3.3.1 [Fluent Python](#books3.3.1)   
     &nbsp;&nbsp;&nbsp;&nbsp;3.3.2 [Mastering Python High Performance](#books3.3.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.3.3 [Python Testing with pytest](#books3.2.3)   
+    &nbsp;&nbsp;&nbsp;&nbsp;3.3.3 [Python Testing with pytest](#books3.2.3) 
+</details>
+</details>
 
 ---
 

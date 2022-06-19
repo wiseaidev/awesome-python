@@ -72,120 +72,30 @@ This repository serves three primary roles:
 
 ## 👉 Table Of Content (TOC). <a name="TOC"></a>
 
-1. [Awesome Python Talks](#Talks)   
-    1.1 [Novice Level - Core](#Novice)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.1.1 [Stuart Williams - Python Epiphanies](#1.1.1)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.1.2 [Trey Hunner - Hands-On Intro to Python](#1.1.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.1.3 [Jessica McKellar - Hands-on intro to Python](#1.1.3)   
-    1.2 [Intermediate Level - Core](#Intermediate)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.2.2 [Luciano Ramalho - Pythonic Objects](#1.2.1)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.2.2 [Luciano Ramalho - Pythonic APIs](#1.2.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.2.3 [Luciano Ramalho - Decorators & Descriptors](#1.2.3)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.2.4 [Trey Hunner - Lazy Looping in Python](#1.2.4)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.2.5 [Trey Hunner - List Comprehensions & Generator](#1.2.5)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.2.6 [Trey Hunner - Readable Regular Expressions](#1.2.6)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.2.7 [Raymond Hettinger - Dataclasses](#1.2.7)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.2.8 [Raymond Hettinger - OOP from scratch](#1.2.8)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.2.9 [Ariel Ortiz - Design Patterns in Python](#1.2.9)   
-    1.3 [Generic](#generic)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.3.1 [David Beazley - Discovering Python](#1.3.1)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.3.2 [David Beazley - The Fun of Reinvention](#1.3.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.3.3 [David Beazley - Fear and Awaiting in Async](#1.3.3)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.3.4 [David Beazley - Built in Super Heroes](#1.3.4)   
-    1.4 [Python 2 and Python 3](#2to3)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.4.1 [Brett Cannon - Python 3.3 is Better than  Python 2.7](#1.4.1)    
-    1.5 [DSA](#DSA)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.5.1 [Brandon Rhodes - Data Structures in the Std Lib](#1.5.1)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.5.2 [Justin Abrahms - Computer Science Fundamentals](#1.5.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.5.3 [Raymond Hettinger - Modern solvers(BFS, DFS)](#1.5.3)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.5.4 [Raymond Hettinger - Python's abstract base classes](#1.5.4)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.5.5 [Claudio Freire - Efficient shared memory data structures](#1.5.5)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.5.6 [Learning Algorithms and Data Structures in Python](#1.5.6)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.5.7 [Nina Zakharenko - Elegant Solutions For Everyday Python Problems](#1.5.7)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.5.8 [Jiaqi Liu - Fuzzy Search Algorithms .](#1.5.8)    
-    1.6 [DevOps](#DevOps)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.6.1 [Hynek Schlawack - Beyond grep: Practical Logging and Metrics](#1.6.1)    
-    1.7 [Full-Stack](#Full)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.1 [Kate Heddleston - So you want to be a full-stack developer](#1.7.1)     
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.2 [Luke Lee - Building full-stack scientific applications in Python](#1.7.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.3 [Christine Spang - To ORM or not to ORM](#1.7.3)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.4 [Miguel Grinberg - Flask](#1.7.4)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.5 [Dan Langer - The Django Request-Response Cycle](#1.7.5)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.6 [Andrew Godwin - Designing Django's Migrations](#1.7.6)     
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.7 [James Bennett - API-Driven Django](#1.7.7)     
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.8 [Shauna Gordon-McKeon - Beyond Django Basics](#1.7.8)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.9 [Kenneth Love - Django Admin Basics and Beyond](#1.7.9)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.10 [Kenneth Love - Getting Started with Django](#1.7.10)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.11 [Kenneth Love - Django 101](#1.7.11)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.12 [Christophe Pettus - PostgreSQL Proficiency](#1.7.12)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.7.13 [Jacinda Shelly - Delving into the Django Admin ](#1.7.13)    
-    1.8 [Self Care & Life](#SelfCare)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.8.1 [Julie Pagano - It's Dangerous to Go Alone](#1.8.1)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.8.2 [Kate Heddleston and Nicole Zuckerman: Technical Onboarding](#1.8.2)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.8.3 [Kathleen Danielson - Avoiding Burnout](#1.8.3)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.8.4 [Lynn Root, Noa Resare - Why can't we be friends](#1.8.4)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.8.5 [Sara Packman - The Journey Over the Intermediate Gap](#1.8.5)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.8.6 [Joyce Jang - Build Teams as an Engineer](#1.8.6)     
-    &nbsp;&nbsp;&nbsp;&nbsp;1.8.7 [Lauren Schaefer - Does remote work really work?](#1.8.7)    
-    1.9 [Testing](#Testing)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.9.1 [Harry Percival - TDD with Django](#1.9.1)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.9.2 [Brian Okken, Paul Everitt - Visual Testing with PyCharm and pytest](#1.9.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.9.2 [Brian Okken, Paul Everitt - Visual Testing with PyCharm and pytest](#1.9.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.9.3 [Hillel Wayne - Beyond Unit Tests: Taking Your Testing to the Next Level](#1.9.3)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.9.4 [Zac Hatfield-Dodds - Escape from auto-manual testing with Hypothesis!](#1.9.4)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.9.5 [Jes Ford - Getting Started Testing in Data Science](#1.9.5)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.9.6 [Neil Chazin - Strategies for testing Async code](#1.9.6)   
-    1.10 [Refactoring](#refactoring)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.10.1 [Amanda Sopkin - The Refactoring Balance Beam.](#1.10.1)    
-    &nbsp;&nbsp;&nbsp;&nbsp;1.10.2 [Brett Slatkin - Refactoring Python](#1.10.2)       
-    &nbsp;&nbsp;&nbsp;&nbsp;1.10.3 [Conor Hoekstra - Beautiful Python Refactoring](#1.10.3)   
-    &nbsp;&nbsp;&nbsp;&nbsp;1.10.4 [Tin Marković - Refactoring in Python: Design Patterns and Approaches](#1.10.4)     
-    &nbsp;&nbsp;&nbsp;&nbsp;1.10.5 [Kristian Rother - Refactoring](#1.10.5)   
-  
+1. [Python Talks](#Talks)   
+    1.1. [Novice Level - Core](#Novice)   
+    1.2. [Intermediate Level - Core](#Intermediate)   
+    1.3. [Generic](#generic)   
+    1.4. [Python 2 and Python 3](#2to3)    
+    1.5. [DSA](#DSA)   
+    1.6. [DevOps](#DevOps)    
+    1.7. [Full-Stack](#Full)   
+    1.8. [Self Care & Life](#SelfCare)    
+    1.9. [Testing](#Testing)    
+    1.10. [Refactoring](#refactoring)    
+    1.11. [ML & Statistics](#ml-statistics)    
 
 2. [My Notes/Book](#Notes)   
-    2.1 [Chapter-01: The Language Basics](#chapter1)   
-    2.2 [Chapter-02: Built-In functions and the Std-Modules](#chapter2)  
+    2.1. [Chapter-01: The Language Basics](#chapter1)   
+    2.2. [Chapter-02: Built-In functions and the Std-Modules](#chapter2)  
 
 3. [Python Books](#Books)   
-    3.1 [Novice Level](#books3.1)    
-    &nbsp;&nbsp;&nbsp;&nbsp;3.1.1 [Head-First Python: A Brain-Friendly Guide
-](#books3.1.1)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.1.2 [Python for Everybody: Exploring Data in Python 3](#books3.1.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.1.3 [Learn Python 3 the Hard Way](#books3.1.3)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.1.4 [Python Programming for the Absolute Beginner](#books3.1.4)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.1.5 [Introduction to Computation and Programming Using Python](#books3.1.5)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.1.6 [Python Programming: An Introduction to Computer Science](#books3.1.6)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.1.7 [Python Crash Course](#books3.1.7)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.1.8 [Python for Kids](#books3.1.8)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.1.9 [Core Python Programming](#books3.1.9)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.1.10 [Programming Python](#books3.1.10)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.1.11 [Learning Python](#books3.1.11)    
-    &nbsp;&nbsp;&nbsp;&nbsp;3.1.12 [Think Python](#books3.1.12)   
-    3.2 [Intermediate Level](#books3.2)    
-    &nbsp;&nbsp;&nbsp;&nbsp;3.2.1 [Murach's Python Programming](#books3.2.1)    
-    &nbsp;&nbsp;&nbsp;&nbsp;3.2.2 [Python Cookbook](#books3.2.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.2.3 [Effective Python: 59 Specific Ways to Write Better Python](#books3.2.3)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.2.4 [Python Tricks: A Buffet of Awesome Python Features](#books3.2.4)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.2.5 [Intermediate Python](#books3.2.5)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.2.6 [Python 3 Object Oriented Programming](#books3.2.6)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.2.7 [Problem Solving with Algorithms and Data Structures Using Python](#books3.2.7)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.2.8 [Practices of the Python Pro](#books3.2.8)   
-    3.3 [Reference](#books3.3)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.3.1 [Fluent Python](#books3.3.1)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.3.2 [Mastering Python High Performance](#books3.3.2)   
-    &nbsp;&nbsp;&nbsp;&nbsp;3.3.3 [Python Testing with pytest](#books3.2.3)   
-
+    3.1. [Novice Level](#books3.1)    
+    3.2. [Intermediate Level](#books3.2)    
+    3.3. [Reference](#books3.3)   
 ---
 
-## 1. 📺 Awesome Python Talks <a name="Talks"></a>
-
-<div align="center">
-    <a href="https://github.com/Harmouch101/awesome-python">
-        <img src="./assets/Banner2.PNG" alt="Awesome Pycon">
-    </a>
-    <br>
-</div>
+## 1. 📺 Python Talks <a name="Talks"></a>
 
 #### 🔝 [Go To TOC](#TOC). 
 
@@ -196,6 +106,8 @@ This repository serves three primary roles:
 | <img src="https://img.youtube.com/vi/-kqZtZj4Ky0/0.jpg" width="60px"/> | Python Epiphanies <a name="1.1.1"></a>  | [`2014`][000] [`2016`][001] [`2017`][002] [`2018`][003] |  `3:17:08` |  [`2015`][0000] [`2016`][0001] [`2018`][0002] | [`Mega`][00000] |
 | <img src="https://img.youtube.com/vi/6zu8lrYn6t8/0.jpg" width="60px"/> | Hands-On Intro to Python <a name="1.1.2"></a>  | [`2017`][010] |  `3:26:03` |  [`2017`][0100]| --- |
 | <img src="https://img.youtube.com/vi/MirG-vJOg04/0.jpg" width="60px"/> | Hands-on Intro to Python For Beginning Programmers<a name="1.1.3"></a>  | [`2014`][020] |  `3:21:49` |  --- | --- |
+
+---
 
 ### 1.2 Intermediate Level <a name="Intermediate"></a>   
 
@@ -213,6 +125,8 @@ This repository serves three primary roles:
 | <img src="https://img.youtube.com/vi/8moWQ1561FY/0.jpg" width="60px"/> | Object Oriented Programming from scratch <a name="1.2.8"></a>  | [`2020`][180] |  `1:16:18` |  [`Colab`][1800] | --- |
 | <img src="https://img.youtube.com/vi/o1FZ_Bd4DSM/0.jpg" width="60px"/> | Design Patterns in Python for the Untrained Eye  <a name="1.2.9"></a>  | [`2019`][190] |  `3:14:47` | [`2019`][1900] | --- |
 
+---
+
 ### 1.3 Generic <a name="generic"></a>   
 
 #### 🔝 [Go To TOC](#TOC). 
@@ -224,6 +138,8 @@ This repository serves three primary roles:
 | <img src="https://img.youtube.com/vi/Bm96RqNGbGo/0.jpg" width="60px"/> | Fear and Awaiting in Async <a name="1.3.3"></a>  | [`2016 - Screencast`][230] [`2016`][231] | `00:56:42` |  [`2016`][2300] | [`Mega`][23000] |
 | <img src="https://img.youtube.com/vi/j6VSAsKAj98/0.jpg" width="60px"/> | Built in Super Heroes <a name="1.3.4"></a>  | [`2016 - Screencast`][240] [`2016`][241] |  `00:44:31` | [`2016`][2400] | [`Mega`][24000] |
 
+---
+
 ### 1.4 Python 2 and Python 3 <a name="2to3"></a>   
 
 #### 🔝 [Go To TOC](#TOC). 
@@ -232,6 +148,8 @@ This repository serves three primary roles:
 | :---: | :---: | :------------:      | :------------:     | :------------:     | :------------: |
 | <img src="https://img.youtube.com/vi/f_6vDi7ywuA/0.jpg" width="60px"/> | Python 3.3 is better Than Python 2.7 <a name="1.4.1"></a>  | [`2012`][310] [`2013`][311]   |  `00:53:24` |  [`2013`][3100] | --- |
 | <img src="https://img.youtube.com/vi/KPzDX5TX5HE/0.jpg" width="60px"/> | How to make your code Python 2/3 compatible <a name="1.4.2"></a>  | [`2015`][320]   |  `00:28:37` |  [`2015`][3200] | --- |
+
+---
 
 ### 1.5 Data Structures & Algorithms <a name="DSA"></a>   
 
@@ -248,6 +166,8 @@ This repository serves three primary roles:
 | <img src="https://img.youtube.com/vi/WiQqqB9MlkA/0.jpg" width="60px"/> | Elegant Solutions For Everyday Python Problems  <a name="1.5.7"></a>  | [`2018`][470] |  `00:32:57` | [`2018`][4700] | --- |
 | <img src="https://img.youtube.com/vi/kTS2b6pGElE/0.jpg" width="60px"/> | Fuzzy Search Algorithms How and When to Use Them  <a name="1.5.8"></a>  | [`2017`][480] |  `00:30:23` | [`2017`][4800] | --- |
 
+---
+
 ### 1.6 DevOps <a name="DevOps"></a>   
 
 #### 🔝 [Go To TOC](#TOC). 
@@ -255,6 +175,8 @@ This repository serves three primary roles:
 | Thumbnail |  Video Title | YT Links   |  Duration   | Speaker Deck  | Backup files |
 | :---: | :---: | :------------:      | :------------:     | :------------:     | :------------: |
 | <img src="https://img.youtube.com/vi/LklGF1rcJII/0.jpg" width="60px"/> | Beyond grep: Practical Logging and Metrics   <a name="1.6.1"></a>  | [`2015`][510] |  `00:35:50` |  [`2015`][5100] | --- |
+
+---
 
 ### 1.7 Full-Stack <a name="Full"></a>   
 
@@ -275,6 +197,9 @@ This repository serves three primary roles:
 | <img src="https://img.youtube.com/vi/C0wuTkS93B0/0.jpg" width="60px"/> | Django 101 <a name="1.7.12"></a>  | [`2016`][6120] |  `2:04:32` |  [`2016`][61200] [`Github`][61201] | --- |
 | <img src="https://img.youtube.com/vi/knUitQQnpJo/0.jpg" width="60px"/> | PostgreSQL Proficiency for Python People <a name="1.7.13"></a>  | [`2016`][6130] |  `3:00:05` |  [`pdf`][61300]| --- |
 | <img src="https://img.youtube.com/vi/5ajZMpTcUZU/0.jpg" width="60px"/> | Delving into the Django Admin <a name="1.7.14"></a>  | [`2015`][6140] |  `3:05:24` |  [`Github`][61400]| --- |
+| <img src="https://img.youtube.com/vi/1Va493SMTcY/0.jpg" width="60px"/> | SQLAlchemy 2.0 - The One-Point-Four-Ening 2021 <a name="1.7.15"></a>  | [`2021`][6150] [`2013`][6151] [`2013`][6152]|  `2:44:38` |  [`Github`][61500] [`2013`][61501] [`2013`][61502]| --- |
+
+---
 
 ### 1.8 Self Care & Life <a name="SelfCare"></a>   
 
@@ -289,6 +214,8 @@ This repository serves three primary roles:
 | <img src="https://img.youtube.com/vi/49CIIu1XkIE/0.jpg" width="60px"/> | The Journey Over the Intermediate Gap  <a name="1.8.5"></a>  | [`2018`][750] |  `00:27:09` |  [`2018`][7500] | --- |
 | <img src="https://img.youtube.com/vi/-9NpTeddWds/0.jpg" width="60px"/> | Build Teams as an Engineer  <a name="1.8.6"></a>  | [`2018`][760] |  `00:31:55` |  [`2018`][7600] | --- |
 | <img src="https://img.youtube.com/vi/CTWgKyLk6mo/0.jpg" width="60px"/> | Does remote work really work  <a name="1.8.7"></a>  | [`2019`][770] |  `00:39:20` |  [`2019`][7700] | --- |
+
+---
 
 ### 1.9 Testing <a name="Testing"></a>   
 
@@ -316,6 +243,16 @@ This repository serves three primary roles:
 | <img src="https://img.youtube.com/vi/W-lZttZhsUY/0.jpg" width="60px"/> |  Beautiful Python Refactoring   <a name="1.10.3"></a>  | [`2020`][930] |  `00:30:04` | --- | --- |
 | <img src="https://img.youtube.com/vi/ZzKaFJxiDzA/0.jpg" width="60px"/> | Refactoring in Python: Design Patterns and Approaches  <a name="1.10.4"></a>  | [`2019`][940] [`2018`][941] |  `00:46:56` |  [`2018`][9400] | --- |
 | <img src="https://img.youtube.com/vi/13hVzP3Oofs/0.jpg" width="60px"/> |  Dr. Kristian Rother - Best Practices  <a name="1.10.5"></a>  | [`2022`][950] [`2017`][951] |  `01:29:49` |  [`Github`][9500] | --- |
+
+---
+
+### 1.11 ML & Statistics <a name="ml-statistics"></a>   
+
+#### 🔝 [Go To TOC](#TOC). 
+
+| Thumbnail |  Video Title | YT Links   |  Duration   | Speaker Deck  | Backup files |
+| :---: | :---: | :------------:      | :------------:     | :------------:     | :------------: |
+| <img src="https://img.youtube.com/vi/-X0BiV9n_fQ/0.jpg" width="60px"/> | Bayesian Statistics Made Simple. <a name="1.11.1"></a>  | [`2019`][1010] [`2016`][1011] [`2015`][1012] [`2014`][1013] [`2013`][1014]|  `02:19:12` |  [`G-Docs`][10100] [`Github Pages`][10101] [`Github Repo`][10102] [`Notebook`][10103] [`SpeakerDeck`][10104]| --- |
 
 ---
 
@@ -545,6 +482,13 @@ This repository serves three primary roles:
 [6140]: https://www.youtube.com/watch?v=5ajZMpTcUZU
 [61400]: https://github.com/jacinda/pycon_library
 
+[6150]: https://www.youtube.com/watch?v=1Va493SMTcY
+[6151]: https://www.youtube.com/watch?v=uAtaKr5HOdA
+[6152]: https://www.youtube.com/watch?v=P141KRbxVKc
+[61500]: https://github.com/zzzeek/sqla_tutorial
+[61501]: https://speakerdeck.com/pyconslides/sqlalchemy-session-in-depth-by-mike-bayer
+[61502]: https://speakerdeck.com/zzzeek/introduction-to-sqlalchemy-pycon-2013
+
 [710]: https://www.youtube.com/watch?v=1i8ylq4j_EY
 [7100]: https://speakerdeck.com/pycon2014/its-dangerous-to-go-alone-battling-the-invisible-monsters-in-tech-by-julie-pagano
 
@@ -602,6 +546,24 @@ This repository serves three primary roles:
 [950]: https://www.youtube.com/watch?v=13hVzP3Oofs
 [951]: https://www.youtube.com/watch?v=04paHt9xG9U
 [9500]: https://github.com/krother/refactoring_tutorial
+
+[1010]: https://www.youtube.com/watch?v=-X0BiV9n_fQ
+[1011]: https://www.youtube.com/watch?v=TpgiFIGXcT4
+[1012]: https://www.youtube.com/watch?v=5W715nfJNJw
+[1013]: https://youtu.be/z_sIDLVisvA?t=334
+[1014]: https://www.youtube.com/watch?v=fH_as3eZ5YU
+[10100]: https://docs.google.com/presentation/d/e/
+
+[1010]: https://www.youtube.com/watch?v=-X0BiV9n_fQ
+[1011]: https://www.youtube.com/watch?v=TpgiFIGXcT4
+[1012]: https://www.youtube.com/watch?v=5W715nfJNJw
+[1013]: https://youtu.be/z_sIDLVisvA?t=334
+[1014]: https://www.youtube.com/watch?v=fH_as3eZ5YU
+[10100]: https://docs.google.com/presentation/d/e/2PACX-1vTUIf7LJJpUd4NzInBGRyHnHqoZ4E736sqd6Iwq_ne3_aDXdJlNgO8O57_USzQzFfDx0gA44fniKe5R/pub?slide=id.p
+[10101]: https://allendowney.github.io/BayesMadeSimple/
+[10102]: https://github.com/AllenDowney/BayesMadeSimple
+[10103]: https://mybinder.org/v2/gh/AllenDowney/BayesMadeSimple/master
+[10104]: https://speakerdeck.com/pyconslides/bayesian-statistics-made-simple-by-allen-downey
 
 <!-- Books -->
 

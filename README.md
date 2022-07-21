@@ -198,6 +198,9 @@ This repository serves three primary roles:
 | <img src="https://img.youtube.com/vi/knUitQQnpJo/0.jpg" width="60px"/> | PostgreSQL Proficiency for Python People <a name="1.7.13"></a>  | [`2016`][6130] |  `3:00:05` |  [`pdf`][61300]| --- |
 | <img src="https://img.youtube.com/vi/5ajZMpTcUZU/0.jpg" width="60px"/> | Delving into the Django Admin <a name="1.7.14"></a>  | [`2015`][6140] |  `3:05:24` |  [`Github`][61400]| --- |
 | <img src="https://img.youtube.com/vi/1Va493SMTcY/0.jpg" width="60px"/> | SQLAlchemy 2.0 - The One-Point-Four-Ening 2021 <a name="1.7.15"></a>  | [`2021`][6150] [`2013`][6151] [`2013`][6152]|  `2:44:38` |  [`Github`][61500] [`2013`][61501] [`2013`][61502]| --- |
+| <img src="https://img.youtube.com/vi/3DLwPcrE5mA/0.jpg" width="60px"/> |  FastAPI from the ground up  <a name="1.7.16"></a>  | [`2019`][6160] | `00:26:33` |  [`Github`][61600] | --- |
+| <img src="https://img.youtube.com/vi/rN5t1d3MZDk/0.jpg" width="60px"/> | FastAPI - The most modern Python3 web framework  <a name="1.7.17"></a>  | [`2021`][6170] | `00:26:33` | --- | --- |
+| <img src="https://img.youtube.com/vi/kVS8uCxhZws/0.jpg" width="60px"/> | FastAPI Seems Good, so Why Don't We Build Something Similar For Flask? <a name="1.7.18"></a>  | [`2021`][6180] | `00:04:44` | [`slides`][61800] | --- |
 
 ---
 
@@ -288,6 +291,7 @@ This repository serves three primary roles:
 | <img src="https://images-na.ssl-images-amazon.com/images/I/51CxdWNJ+OL._SX379_BO1,204,203,200_.jpg" width="60px"/> | Think Python, 2nd Edition.  <a name="books3.1.12"></a>  | Allen B. Downey | `2016` |  [`O'Reilly Media, Inc.`][3.1.12] |  [`Amazon`][3.1.12.1] |
 
 ---
+
 ## 3.2 Intermediate Level <a name="books3.2"></a>  
 
 #### 🔝 [Go To TOC](#TOC). 
@@ -488,6 +492,11 @@ This repository serves three primary roles:
 [61500]: https://github.com/zzzeek/sqla_tutorial
 [61501]: https://speakerdeck.com/pyconslides/sqlalchemy-session-in-depth-by-mike-bayer
 [61502]: https://speakerdeck.com/zzzeek/introduction-to-sqlalchemy-pycon-2013
+[6160]: https://www.youtube.com/watch?v=3DLwPcrE5mA
+[61600]: https://github.com/cjw296/pycon-uk-2019-fastapi
+[6170]: https://youtu.be/rN5t1d3MZDk?t=57
+[6180]: https://www.youtube.com/watch?v=kVS8uCxhZws
+[61800]: https://greyli.com/slides/pycon2021
 
 [710]: https://www.youtube.com/watch?v=1i8ylq4j_EY
 [7100]: https://speakerdeck.com/pycon2014/its-dangerous-to-go-alone-battling-the-invisible-monsters-in-tech-by-julie-pagano

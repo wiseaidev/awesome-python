@@ -30,9 +30,9 @@ Report bugs at [awesome-python/issues][02].
 
 If you are reporting a bug, please include:
 
-* Your operating system name and version.
-* Any details about your local setup that might be helpful in troubleshooting.
-* Detailed steps to reproduce the bug.
+- Your operating system name and version.
+- Any details about your local setup that might be helpful in troubleshooting.
+- Detailed steps to reproduce the bug.
 
 #### Fix Bugs
 
@@ -46,9 +46,8 @@ and "help wanted" is open to whoever wants to implement it.
 
 #### Share your Notes
 
-This project could always use more notes, whether as part of the official 
+This project could always use more notes, whether as part of the official
 awesome-python, in blog posts, articles, and such.
-
 
 #### Submit Feedback
 
@@ -56,8 +55,8 @@ The best way to send feedback is to ask a question at [our Gitter channel][01].
 
 If you are willing to share notes:
 
-* Add your notes under the notes folder.
-* Remember that this is a volunteer-driven project and that contributions are welcome :)
+- Add your notes under the notes folder.
+- Remember that this is a volunteer-driven project and that contributions are welcome :)
 
 ### Get Started!
 
@@ -77,15 +76,19 @@ $ git checkout -b name-it-whatever-you-want
 ```
 
 #### Submitting Notes:
+
 Please ensure your pull request adheres to the following guidelines:
 
 - Search previous suggestions before making a new one, as yours may be a duplicate.
 - Make an individual pull request for each suggestion.
 - Place your note file under the notes folder.
-- Use the following format: 
+- Use the following format:
 
 ```html
-| Thumbnail <img src="https://img.youtube.com/vi/<replace_me>/0.jpg"> | Video Title <a name="list_order_number"></a>  | [`videos_timestamps_year`][unique_numbre] | `Video Duration` |  [`Speaker Slides Deck`][unique_numbre] | [`Cloud_Provider_link_backup`][unique_numbre] |
+| Thumbnail <img src="https://img.youtube.com/vi/<replace_me>/0.jpg" /> | Video
+Title <a name="list_order_number"></a> |
+[`videos_timestamps_year`][unique_numbre] | `Video Duration` | [`Speaker Slides
+Deck`][unique_numbre] | [`Cloud_Provider_link_backup`][unique_numbre] |
 ```
 
 - Link each of the corresponding links at the bottom of the page:
@@ -102,10 +105,12 @@ Please ensure your pull request adheres to the following guidelines:
 - Search previous suggestions before making a new one, as yours may be a duplicate.
 - Make an individual pull request for each suggestion.
 - Place your note file under the notes folder.
-- Use the following format: 
+- Use the following format:
 
 ```html
-| Book Cover <img src="img_url" width="60px"/> | Book title, Edition.  <a name="books_number_list"></a>  | Author | `year of publication` | [`Publisher`][unique_numbre] |  [`Store`][unique_numbre] |
+| Book Cover <img src="img_url" width="60px" /> | Book title, Edition.
+<a name="books_number_list"></a> | Author | `year of publication` |
+[`Publisher`][unique_numbre] | [`Store`][unique_numbre] |
 ```
 
 - Link each of the corresponding links at the bottom of the page:

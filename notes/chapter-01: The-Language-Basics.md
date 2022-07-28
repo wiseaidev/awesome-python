@@ -4,7 +4,6 @@ Copyright (c) 2022, Harmouch101
 All rights reserved.
  -->
 
-
 # Chapter_01: Introduction.
 
 Copyright (c) 2022 Mahmoud Harmouch
@@ -19,63 +18,63 @@ Copyright (c) 2022 Mahmoud Harmouch
 
 > Practice/coding is the key to success as a programmer.
 
-> Don't give up. Difficult roads **often** lead to beautiful destinations. 
+> Don't give up. Difficult roads **often** lead to beautiful destinations.
 
 ---
 
 ## Table Of Content (TOC). <a name="TOC"></a>
 
-1. [A Tutorial Introduction](#1)   
-	1.1	[What is Python ?](#1.1)    
-	1.2	[Why Python ?](#1.2)    
-	1.3 [Interpreted Language](#1.3)
+1. [A Tutorial Introduction](#1)  
+   1.1 [What is Python ?](#1.1)  
+   1.2 [Why Python ?](#1.2)  
+   1.3 [Interpreted Language](#1.3)
 2. [Running Python](#2)
-3. [Python Syntax](#3)   
-	3.1	[Print Instruction](#3.1)   
-	3.2	[Comments](#3.2)   
-	3.3	[Variables](#3.3)   
-	&nbsp;&nbsp;&nbsp;&nbsp;3.3.1 [Names](#3.3.1)   
-	3.4	[literals](#3.4)    
-	&nbsp;&nbsp;&nbsp;&nbsp;3.4.1 [String Literals](#3.4.1)    
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.1 [String Formatting](#3.4.1.1)   
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.2 [Special characters](#3.4.1.2)   
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.3 [More Strings Examples](#3.4.1.3)   
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.4 [Useful Strings Functions](#3.4.1.4)    
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.5 [More Strings Methods Examples](#3.4.1.5)   
-	&nbsp;&nbsp;&nbsp;&nbsp;3.4.2 [Numeric literals](#3.4.2)   
-	3.5 [Sequences](#3.5)     
-	&nbsp;&nbsp;&nbsp;&nbsp;3.5.1 [Immutable Sequences](#3.5.1)    
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.1.1 [Strings](#3.5.1.1)    
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.1.2 [Tuples](#3.5.1.2)    
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.1.3 [Bytes](#3.5.1.3)    
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.1.4 [Frozenset](#3.5.1.4)    
-	&nbsp;&nbsp;&nbsp;&nbsp;3.5.2 [Mutable Sequences](#3.5.2)    
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.1 [Lists](#3.5.2.1)    
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.2 [Bytearray](#3.5.2.2)    
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.3 [Set](#3.5.2.3)    
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.4 [Array](#3.5.2.4)    
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.5 [Dictionary](#3.5.2.5)      
-	&nbsp;&nbsp;&nbsp;&nbsp;3.5.3 [Sequences Exercices](#3.5.3)    
-	3.6 [Conditional Statements](#3.6)     
-	&nbsp;&nbsp;&nbsp;&nbsp;3.6.1 [If Statement](#3.6.1)    
-	&nbsp;&nbsp;&nbsp;&nbsp;3.6.2 [If-Else Statements](#3.6.2)    
-	&nbsp;&nbsp;&nbsp;&nbsp;3.6.3 [If-Elif Statements](#3.6.3)    
-	&nbsp;&nbsp;&nbsp;&nbsp;3.6.4 [Nested If-Else Statements](#3.6.4)    
-	&nbsp;&nbsp;&nbsp;&nbsp;3.6.5 [Exercices](#3.6.5)     
-	3.7 [Loops](#3.7)     
-	&nbsp;&nbsp;&nbsp;&nbsp;3.7.1 [While loop](#3.7.1)    
-	&nbsp;&nbsp;&nbsp;&nbsp;3.7.2 [For loop](#3.7.2)    
-	&nbsp;&nbsp;&nbsp;&nbsp;3.7.3 [Loop Else](#3.7.3)    
-	3.8 [Operations.](#3.8)    
-	3.9 [Iterables.](#3.9)    
-	3.10 [List Comprehensions](#3.10)   
-	3.11 [Generators](#3.11)   
-	&nbsp;&nbsp;&nbsp;&nbsp;3.11.1 [Generator Function](#3.11.1)    
-	&nbsp;&nbsp;&nbsp;&nbsp;3.11.2 [Generator Expression](#3.11.2)   
-	&nbsp;&nbsp;&nbsp;&nbsp;3.11.3 [Generator Exercises.](#3.11.3)   
-	3.12 [Input](#3.12)   
-	3.13 [Exceptions](#3.13)   
-  
+3. [Python Syntax](#3)  
+   3.1 [Print Instruction](#3.1)  
+   3.2 [Comments](#3.2)  
+   3.3 [Variables](#3.3)  
+   &nbsp;&nbsp;&nbsp;&nbsp;3.3.1 [Names](#3.3.1)  
+   3.4 [literals](#3.4)  
+   &nbsp;&nbsp;&nbsp;&nbsp;3.4.1 [String Literals](#3.4.1)  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.1 [String Formatting](#3.4.1.1)  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.2 [Special characters](#3.4.1.2)  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.3 [More Strings Examples](#3.4.1.3)  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.4 [Useful Strings Functions](#3.4.1.4)  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1.5 [More Strings Methods Examples](#3.4.1.5)  
+   &nbsp;&nbsp;&nbsp;&nbsp;3.4.2 [Numeric literals](#3.4.2)  
+   3.5 [Sequences](#3.5)  
+   &nbsp;&nbsp;&nbsp;&nbsp;3.5.1 [Immutable Sequences](#3.5.1)  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.1.1 [Strings](#3.5.1.1)  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.1.2 [Tuples](#3.5.1.2)  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.1.3 [Bytes](#3.5.1.3)  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.1.4 [Frozenset](#3.5.1.4)  
+   &nbsp;&nbsp;&nbsp;&nbsp;3.5.2 [Mutable Sequences](#3.5.2)  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.1 [Lists](#3.5.2.1)  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.2 [Bytearray](#3.5.2.2)  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.3 [Set](#3.5.2.3)  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.4 [Array](#3.5.2.4)  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5.2.5 [Dictionary](#3.5.2.5)  
+   &nbsp;&nbsp;&nbsp;&nbsp;3.5.3 [Sequences Exercices](#3.5.3)  
+   3.6 [Conditional Statements](#3.6)  
+   &nbsp;&nbsp;&nbsp;&nbsp;3.6.1 [If Statement](#3.6.1)  
+   &nbsp;&nbsp;&nbsp;&nbsp;3.6.2 [If-Else Statements](#3.6.2)  
+   &nbsp;&nbsp;&nbsp;&nbsp;3.6.3 [If-Elif Statements](#3.6.3)  
+   &nbsp;&nbsp;&nbsp;&nbsp;3.6.4 [Nested If-Else Statements](#3.6.4)  
+   &nbsp;&nbsp;&nbsp;&nbsp;3.6.5 [Exercices](#3.6.5)  
+   3.7 [Loops](#3.7)  
+   &nbsp;&nbsp;&nbsp;&nbsp;3.7.1 [While loop](#3.7.1)  
+   &nbsp;&nbsp;&nbsp;&nbsp;3.7.2 [For loop](#3.7.2)  
+   &nbsp;&nbsp;&nbsp;&nbsp;3.7.3 [Loop Else](#3.7.3)  
+   3.8 [Operations.](#3.8)  
+   3.9 [Iterables.](#3.9)  
+   3.10 [List Comprehensions](#3.10)  
+   3.11 [Generators](#3.11)  
+   &nbsp;&nbsp;&nbsp;&nbsp;3.11.1 [Generator Function](#3.11.1)  
+   &nbsp;&nbsp;&nbsp;&nbsp;3.11.2 [Generator Expression](#3.11.2)  
+   &nbsp;&nbsp;&nbsp;&nbsp;3.11.3 [Generator Exercises.](#3.11.3)  
+   3.12 [Input](#3.12)  
+   3.13 [Exceptions](#3.13)
+
 ## 1. A Tutorial Introduction <a name="1"></a>
 
 The goal of this chapter is to get you familiar with python 3 and its essential features.
@@ -83,8 +82,9 @@ The goal of this chapter is to get you familiar with python 3 and its essential 
 ## 1.1 What is Python ? <a name="1.1"></a>
 
 Python is a high-level, general-purpose, programming language that has the following features:
+
 - It is designed to produce high quality, human-readable and maintainable code;
-- Portable: Python is a cross-platform programming language, it can be used on Linux, Windows, macOS...;  
+- Portable: Python is a cross-platform programming language, it can be used on Linux, Windows, macOS...;
 - Easy to integrate code;
 - Object-Oriented programming language;
 - Completely Free;
@@ -93,7 +93,7 @@ Python is a high-level, general-purpose, programming language that has the follo
 
 ## 1.2 Why Python ? <a name="1.2"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 Python is a good programming language to start with for a beginner who doesn't know programming at first. Python is very powerful and it is used in a lot of domains. The following list describes the different areas in which Python is mostly used:
 
@@ -104,11 +104,12 @@ Python is a good programming language to start with for a beginner who doesn't k
 
 ## 1.3 Interpreted Language.<a name="1.3"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 Python commands and instructions are executed by the interpreter, which is written in C language and has different implementations like :
+
 - CPython: C implementation, which is the default implementation of Python;
-- Jython: Java implementation, which allows you to run Python source code in a Java environment, and use Java modules in Python code transparently; 
+- Jython: Java implementation, which allows you to run Python source code in a Java environment, and use Java modules in Python code transparently;
 - PyPy: Python implementation of the Python language;
 - IronPython: implementation for .NET and Mono;
 - Stackless Python: a variant of CPython, slightly faster.
@@ -117,19 +118,19 @@ Python commands and instructions are executed by the interpreter, which is writt
 
 ## 2.. Running Python. <a name="2"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 You can run the interpreter by simply entering the 'Python3' command in your terminal :
 
 ```sh
-~$ python3 
+~$ python3
 ```
 
 ```python
-Python 3.7.6 (default, Jan  8 2020, 19:59:22) 
+Python 3.7.6 (default, Jan  8 2020, 19:59:22)
 [GCC 7.3.0] :: Anaconda, Inc. on linux
 Type "help", "copyright", "credits" or "license" for more information.
->>> 
+>>>
 ```
 
 As you can see, the interpreter displays its python version, the compiler version and the copyright message and it is listening for statements from the user.
@@ -139,12 +140,12 @@ One of the most useful features in python is the interaction mode(shell), which 
 ```python
 >>> 699120 + 20958 - 1932
 718146
->>> _ 
+>>> _
 
 718146
 ```
 
-The **_** variable in python holds the result of the previous operation.
+The **\_** variable in python holds the result of the previous operation.
 you could run your own program(script) in a file and name it with the extension **'.py'** and execute it on the shell without the usage of interactive mode.
 
 ```python
@@ -160,7 +161,7 @@ Hi There!
 In a Linux distro, you can add at the first line of your program the following line to make the file executable on the shell :
 
 ```python
-#!/usr/bin/env python3 # must be at the first line or you'll get a syntax error 
+#!/usr/bin/env python3 # must be at the first line or you'll get a syntax error
 # hi.py
 print('Hi There!')
 ```
@@ -168,7 +169,7 @@ print('Hi There!')
 To make it executable, just give the user the execution privileges using the following
 
 ```bash
-~$ chmod u+x hi,py 
+~$ chmod u+x hi,py
 ```
 
 Now you can run the executable file like the following:
@@ -181,25 +182,24 @@ Hi There!
 Back to the interpreter, you can exit it by pressing `Ctrl + D` which signal the interpreter an end of the file command, or by raizing a system exit exception as follows:
 
 ```python
->>> raise SystemExit() 
+>>> raise SystemExit()
 ```
 
 ```sh
-~$ 
+~$
 ```
 
 you can also use the `exit()` method to exit the interactive prompt, aka the Read Eval Print Loop (REPL).
 
-
 ## 3. Language Syntax. <a name="3"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 A complete documentation on Lexical analysis can be found on [Python Docs](https://docs.python.org/3/reference/lexical_analysis.html#lexical-analysis).
 
 ## 3.1 Print Instruction. <a name="3.1"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 ```python
 >>> print("Hi There!")
@@ -233,25 +233,26 @@ SyntaxError: invalid syntax
 3:4:6:a:b
 >>> import sys
 >>> print(sys.version)
-3.7.6 (default, Jan  8 2020, 19:59:22) 
+3.7.6 (default, Jan  8 2020, 19:59:22)
 [GCC 7.3.0]
 >>> print(sys.version_info)
 sys.version_info(major=3, minor=7, micro=6, releaselevel='final', serial=0)
->>> 
+>>>
 ```
 
 ## 3.2 Comments. <a name="3.2"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 In Python, you can use the hash sign (#) to place comments on a single line.
 
 ```python
 # first comment
-print ("Hi There!") # second comment on the same line of the statement. 
+print ("Hi There!") # second comment on the same line of the statement.
 # third comment
 # fourth one is the best
 ```
+
 These comments are ignored by the interpreter which considers, in this case, the `)` symbol as the end of the print statement, except when it is linked to the next line by the backslash character `\` as the following example shows:
 
 ```python
@@ -265,7 +266,7 @@ SyntaxError: EOL while scanning string literal
 
 ## 3.3 Variables. <a name="3.3"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 Python's Variables are object-based. Each object has :
 
@@ -322,6 +323,7 @@ The object name `a` has the following **attributes** :
 >>> a.__str__()
 '32'
 ```
+
 Notice that the private (`__`) **attribute** 'str' hold the value of a as string.
 
 Let's take the following example :
@@ -334,7 +336,7 @@ Let's take the following example :
 (32, 94140309858016, '<class 'int'>')
 ```
 
-the interpreter takes the expression at the right side of the assignment symbol **=** and evaluates it. As a result, an object of type integer whose value is 96 is created and stored in memory and the reference of that object is assigned to b. Note that, the value of this particular object is already stored in memory. 
+the interpreter takes the expression at the right side of the assignment symbol **=** and evaluates it. As a result, an object of type integer whose value is 96 is created and stored in memory and the reference of that object is assigned to b. Note that, the value of this particular object is already stored in memory.
 
 ```python
 >>> 96,id(96),type(96)
@@ -343,9 +345,9 @@ the interpreter takes the expression at the right side of the assignment symbol 
 
 I think, in this particular example, the Python interpreter didn't create a new object of value `96` in memory(because it is already stored at that id for optimization porpuses), it changes the reference of b only. This is only true because 32 is between -5 and 256.
 
-From [python C-API documentation](https://docs.python.org/3/c-api/long.html), I found the following explanation: 
+From [python C-API documentation](https://docs.python.org/3/c-api/long.html), I found the following explanation:
 
->The current implementation keeps an array of integer objects for all integers between -5 and 256, when you create an int in that range you actually just get back a reference to the existing object. So it should be possible to change the value of 1. I suspect the behavior of Python, in this case, is undefined. :-)
+> The current implementation keeps an array of integer objects for all integers between -5 and 256, when you create an int in that range you actually just get back a reference to the existing object. So it should be possible to change the value of 1. I suspect the behavior of Python, in this case, is undefined. :-)
 
 let's try it for a number larger than 256 :
 
@@ -397,9 +399,9 @@ In python, objects are destroyed automatically(not explicitly) from memory by th
 - passing arguments
 - inserting a new object into the list (the number of links for the object increases)
 - a constructor like foo = bar (foo starts referring to the same object as bar)
- If this referencing(link) is destroyed, then the reference counter will decrease by one. If the reference counter reaches 0, then the interpreter starts the mechanism of destroying the object.
+  If this referencing(link) is destroyed, then the reference counter will decrease by one. If the reference counter reaches 0, then the interpreter starts the mechanism of destroying the object.
 
- The reference counter of global variables never drops to zero.
+The reference counter of global variables never drops to zero.
 
 ```python
 >>> a = 8
@@ -417,7 +419,7 @@ In python, objects are destroyed automatically(not explicitly) from memory by th
 
 ## 3.3.1 Names. <a name="3.3.1"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 Names are attached, as we saw previously, to objects. The following method shows the names that are stored in the namespace:
 
@@ -444,7 +446,7 @@ You can write a function that returns an object's name and value pair stored in 
 ...             if not name[:2] == '__':
 ...                     obj.append((name,value))
 ...     return dict(obj)
-... 
+...
 
 ```
 
@@ -468,7 +470,7 @@ So it is all about storing and deleting names from the namespace. As it is said 
 
 ## 3.4 Literals. <a name="3.4"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 A complete documentation on Literals can be found on [Python Docs](https://docs.python.org/3/reference/lexical_analysis.html#literals).
 
@@ -498,9 +500,10 @@ To see the difference between the built-in functions and the literals, you can c
 >>> a = list([1,2,3]) 	# creating a list using a built-in function
 >>> a = [1,2,3]		# creating a list using a list literal
 ```
+
 ### 3.4.1 String Literals. <a name="3.4.1"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 Strings are alphanumeric(text constant) values ​​surrounded by quotes. Single or double quotes, or even three single or double-quotes.
 
@@ -520,7 +523,8 @@ here we have multiple lines
 ```
 
 It is also possible to prefix strings with a character:
--  **r** or **R** : "raw string" :used with regular expressions and with strings that contain backslashs :
+
+- **r** or **R** : "raw string" :used with regular expressions and with strings that contain backslashs :
 
 ```python
 >>> print('D:\files\file1')
@@ -563,6 +567,7 @@ b'this is string'
 >>> decoded_string
 'this is a string'
 ```
+
 - **f** or **F**: this prefix has been added since python 3.6 which allows you to define a string as formatted. So using this prefix, you can add a placeholder for a certain variable with the help of curly braces `{}` to indicate the appearance of this variable(e.g. precision of a number to display).
 
 ```python
@@ -571,7 +576,7 @@ b'this is string'
 Value of PI with 4 digit precision: +3.1416
 >>> for i in range(1,20):
 ...     x = cos(pi/i)
-...     print(f'|i = {i:<2}| cos(pi/{i:<2}) = {round(x,2):<+5.2}|') 
+...     print(f'|i = {i:<2}| cos(pi/{i:<2}) = {round(x,2):<+5.2}|')
 ... 	# < indicates left alignement; ^ for center alignment; > for right alignment;
 ...		#  the number after the synbol < indicate the width of the column to display
 ... |  |       |  |  |     |
@@ -600,22 +605,23 @@ Value of PI with 4 digit precision: +3.1416
 
 So as you can see, the `f` prefix is so much handy and useful. Alignment is done using one of the following characters:
 
-| align | Description | Example | 
-| --- | --- | --- | 
-| `<` | align the object to the left. | `>>> print(f"[{'left':<16}]")`<br>[left&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br>`>>> print(f"[{'left':<<16}]")`<br>[left<<<<<<<<<<<<] | 
-| `>` | align the object to the right. | `>>> print(f"[{'right':>16}]")`<br>[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;right]<br>`>>> print(f"[{'right':>>16}]")`<br>[>>>>>>>>>>>right] |
-| `^` | align the object to the center. | `>>> print(f"[{'center':^16}]")`<br>[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;center&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br>`print(f"|{'center':^^16}]")`<br>[^^^^^center^^^^^] |
-| `=` | forces the padding to be placed after the sign (`+` or `-`) but before the digits. | `>>> print(f"[{+32:0=+5}]")`<br>[+0032]<br>`>>> print(f"[{+32:^=+10}]")`<br>[+^^^^^^^32] |
+| align | Description                                                                        | Example                                                                                                                                                                   |
+| ----- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| `<`   | align the object to the left.                                                      | `>>> print(f"[{'left':<16}]")`<br>[left&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br>`>>> print(f"[{'left':<<16}]")`<br>[left<<<<<<<<<<<<] |
+| `>`   | align the object to the right.                                                     | `>>> print(f"[{'right':>16}]")`<br>[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;right]<br>`>>> print(f"[{'right':>>16}]")`<br>[>>>>>>>>>>>right]    |
+| `^`   | align the object to the center.                                                    | `>>> print(f"[{'center':^16}]")`<br>[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;center&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br>`print(f"                                                     | {'center':^^16}]")`<br>[^^^^^center^^^^^] |
+| `=`   | forces the padding to be placed after the sign (`+` or `-`) but before the digits. | `>>> print(f"[{+32:0=+5}]")`<br>[+0032]<br>`>>> print(f"[{+32:^=+10}]")`<br>[+^^^^^^^32]                                                                                  |
 
 The sign option is used only for numbers with the following values:
 
-| sign | Description | Example |  
-| --- | --- | --- | 
-| `+` | `-` for negative numbers and `+` for positive numbers. | `>>> print(f"[{+32:^+5}]")`<br>[&nbsp;+32&nbsp;]<br>`>>> print(f"[{-32:^+5}]")`<br>[&nbsp;-32&nbsp;] |
-| `-` | `-` for negative numbers and nothing for positive numbers. | `>>> print(f"[{+32:^-5}]")`<br>[&nbsp;32&nbsp;&nbsp;] |
-| `Space` | `-` for negative numbers and whitespace for positive numbers. | `>>> print(f"[{+32:^ 5}]")`<br>[&nbsp;&nbsp;&nbsp;32&nbsp;&nbsp;] |
+| sign    | Description                                                   | Example                                                                                              |
+| ------- | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `+`     | `-` for negative numbers and `+` for positive numbers.        | `>>> print(f"[{+32:^+5}]")`<br>[&nbsp;+32&nbsp;]<br>`>>> print(f"[{-32:^+5}]")`<br>[&nbsp;-32&nbsp;] |
+| `-`     | `-` for negative numbers and nothing for positive numbers.    | `>>> print(f"[{+32:^-5}]")`<br>[&nbsp;32&nbsp;&nbsp;]                                                |
+| `Space` | `-` for negative numbers and whitespace for positive numbers. | `>>> print(f"[{+32:^ 5}]")`<br>[&nbsp;&nbsp;&nbsp;32&nbsp;&nbsp;]                                    |
 
 the general form of `f` strings is the following:
+
 ```python
 {variable : fill_padding align sign column_width .precision type}
 >>> print(f"{-32.215663:*^+15.2f}")
@@ -624,31 +630,32 @@ the general form of `f` strings is the following:
 
 #### 3.4.1.1 String Formatting. <a name="3.4.1.1"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 There are three methods in python that can be used to format strings:
 
 - Using the **`%`** modulo sign(borrowed from c language) with one of the following values:
 
-| %type | Description | Example | 
-| --- | --- | --- | 
-| `%d`,`%i`,`%u` | signed decimal, signed integer and unsigned decimal. | `>>> print("%d + %i = %u"%(10,15,10+15))`<br> 10 + 15 = 25 |
-| `%o` | unsigned octal | `>>> print(f"oct: %o"%41)` oct: 51<br> |
-| `%x` or `%X` | hexadecimal value, prefixed by 0x or 0X. | `>>> print(f"hex: %x %X"%(0x12,0X32))`<br>hex: 12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;32 |
-| `%e` or `%E` | scientific notation of a number with a presicion of 6.('e' pr 'E' as exponent) | `>>>print('%E %e pounds' %(212345,212345))`<br>2.123450E+05&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.123450e+05 pounds  |
-| `%f` or `%F` | fixed-point notation with a presicion of 6. | `>>>print('%f %F pounds' %(21.2345,21.2345))`<br>21.234500&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;21.234500 pounds |
-| `%g` or `%G` | for floating point values, equivalent to %e or %E if the exponent is greater than -4 or less than precision, otherwise equivalent to %f. | `>>> print('%g %G pounds' %(234512312,00000.21000312))`<br>2.34512e+08&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.210003 pounds |
-| `%c` | converts the integer to the corresponding unicode character.  | `>>> print('%c is a char' %(123))`<br>{ is a char | 
-| `%r` | return the value of the attribute `__repr__` | `>>> a = 10`<br>`>>>a.__repr__()`<br>'10'<br>`>>> print("the value of a.__repr__() is %r"%a)`<br>the value of a.__repr__() is 10 |
-| `%s` | return the value of the attribute `__str__` | `>>> a.__str__()`<br>'10'<br>`>>> print("the value of a.__str__() is %s"%a)`<br>the value of a.__str__() is 10 |
-| `%%` | insert the % sign. | `>>> print("score is %g %%"%95.1)`<br>score is 95.1 % |
-| `%(key)s` | insert the value of the key in the dictionnary. | `>>> print('%(key1)s %(key2)s %(key3)s'%{'key1':'value1','key2':'value2','key3':'value3'})`<br>value1 value2 value3 |
+| %type          | Description                                                                                                                              | Example                                                                                                                          |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| `%d`,`%i`,`%u` | signed decimal, signed integer and unsigned decimal.                                                                                     | `>>> print("%d + %i = %u"%(10,15,10+15))`<br> 10 + 15 = 25                                                                       |
+| `%o`           | unsigned octal                                                                                                                           | `>>> print(f"oct: %o"%41)` oct: 51<br>                                                                                           |
+| `%x` or `%X`   | hexadecimal value, prefixed by 0x or 0X.                                                                                                 | `>>> print(f"hex: %x %X"%(0x12,0X32))`<br>hex: 12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;32                                          |
+| `%e` or `%E`   | scientific notation of a number with a presicion of 6.('e' pr 'E' as exponent)                                                           | `>>>print('%E %e pounds' %(212345,212345))`<br>2.123450E+05&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.123450e+05 pounds               |
+| `%f` or `%F`   | fixed-point notation with a presicion of 6.                                                                                              | `>>>print('%f %F pounds' %(21.2345,21.2345))`<br>21.234500&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;21.234500 pounds                   |
+| `%g` or `%G`   | for floating point values, equivalent to %e or %E if the exponent is greater than -4 or less than precision, otherwise equivalent to %f. | `>>> print('%g %G pounds' %(234512312,00000.21000312))`<br>2.34512e+08&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.210003 pounds        |
+| `%c`           | converts the integer to the corresponding unicode character.                                                                             | `>>> print('%c is a char' %(123))`<br>{ is a char                                                                                |
+| `%r`           | return the value of the attribute `__repr__`                                                                                             | `>>> a = 10`<br>`>>>a.__repr__()`<br>'10'<br>`>>> print("the value of a.__repr__() is %r"%a)`<br>the value of a.**repr**() is 10 |
+| `%s`           | return the value of the attribute `__str__`                                                                                              | `>>> a.__str__()`<br>'10'<br>`>>> print("the value of a.__str__() is %s"%a)`<br>the value of a.**str**() is 10                   |
+| `%%`           | insert the % sign.                                                                                                                       | `>>> print("score is %g %%"%95.1)`<br>score is 95.1 %                                                                            |
+| `%(key)s`      | insert the value of the key in the dictionnary.                                                                                          | `>>> print('%(key1)s %(key2)s %(key3)s'%{'key1':'value1','key2':'value2','key3':'value3'})`<br>value1 value2 value3              |
 
 - using the **format** method(borrowed from C# language) like the following examples :
+
 ```python
 >>> '{0}, {1}, {2}'.format('1', '2', '3')
 '1, 2, 3'
->>> '{}, {}, {}'.format('1', '2', '3') 
+>>> '{}, {}, {}'.format('1', '2', '3')
 '1, 2, 3'
 >>> '{2}, {1}, {0}'.format('1', '2', '3')
 '3, 2, 1'
@@ -657,33 +664,34 @@ There are three methods in python that can be used to format strings:
 >>> '{0}, {0}, {0}'.format('1', '2', '3')   # arguments' indices can be repeated
 '1, 1, 1'
 ```
+
 - using the **`f`** prefix as the previous section explains.
-for more information about string formatting, you can read [python documentation](https://docs.python.org/3/library/string.html).
+  for more information about string formatting, you can read [python documentation](https://docs.python.org/3/library/string.html).
 
 #### 3.4.1.2 Special characters. <a name="3.4.1.2"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 Python allows you to insert special characters in a string literal. the following table contains a list of spetial characters:
 
-| \Character | Description | Example |
-| --- | --- | --- |
-| `\'`, `\"` | insert a single or double quote in a string literal. | `>>> print("python\'s notes")` <br>python's notes |
-| `\n` | insert a new line | `>>> print("that's\nnice!")`<br>that's<br>nice! |
-| `\r\n`, `\r` | insert a new line in windows, \r on Mac, end of line character(EOL). | `>>> print("that's\r\nnice!")`<br>that's<br>nice! |
-| `\\` | insert a single backslash in a string literal. | `>>> print("The file is in D:\\files\\file1")`<br>The file is in D:\files\file1 |
-| `\v` | insert a vertical tabulation. | `>>> print("This is a vertical\v tabulation")`<br>This is a vertical<br>tabulation |
-| `\t` | insert a Horizontal tabulation(tab). | `>>> print("This is a horizontal\t tabulation")`<br>This is a horizontal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tabulation |
-| `\b` | erase/delete a previous character from a string literal. | `>>> print("the last letter will be erased\bd")`<br>the last letter will be erased |
-| `\Oct` | insert an octal value of a character. | `>>> print("\110i There!")`<br>Hi There!` |
-| `\xHx` | insert an hexadecimal value of a character. | `>>> print("\x48i There!")`<br>`Hi There! |
-| `\N{noun}` | insert a charater defined by a noun. | `>>> print('\N{dollar sign}')`<br>$<br>`>>> print('\N{pound sign}')`<br>£ |
+| \Character   | Description                                                          | Example                                                                                                                            |
+| ------------ | -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| `\'`, `\"`   | insert a single or double quote in a string literal.                 | `>>> print("python\'s notes")` <br>python's notes                                                                                  |
+| `\n`         | insert a new line                                                    | `>>> print("that's\nnice!")`<br>that's<br>nice!                                                                                    |
+| `\r\n`, `\r` | insert a new line in windows, \r on Mac, end of line character(EOL). | `>>> print("that's\r\nnice!")`<br>that's<br>nice!                                                                                  |
+| `\\`         | insert a single backslash in a string literal.                       | `>>> print("The file is in D:\\files\\file1")`<br>The file is in D:\files\file1                                                    |
+| `\v`         | insert a vertical tabulation.                                        | `>>> print("This is a vertical\v tabulation")`<br>This is a vertical<br>tabulation                                                 |
+| `\t`         | insert a Horizontal tabulation(tab).                                 | `>>> print("This is a horizontal\t tabulation")`<br>This is a horizontal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tabulation |
+| `\b`         | erase/delete a previous character from a string literal.             | `>>> print("the last letter will be erased\bd")`<br>the last letter will be erased                                                 |
+| `\Oct`       | insert an octal value of a character.                                | `>>> print("\110i There!")`<br>Hi There!`                                                                                          |
+| `\xHx`       | insert an hexadecimal value of a character.                          | `>>> print("\x48i There!")`<br>`Hi There!                                                                                          |
+| `\N{noun}`   | insert a charater defined by a noun.                                 | `>>> print('\N{dollar sign}')`<br>$<br>`>>> print('\N{pound sign}')`<br>£                                                          |
 
 Please refer to [this link](http://www.asciitable.com/) if you want to search for ASCII characters or simply type `man ascii` in your terminal.
 
 #### 3.4.1.3 More Strings Examples. <a name="3.4.1.3"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 ```python
 >>> a = 'Python is cool'  # String type.
@@ -692,13 +700,13 @@ Please refer to [this link](http://www.asciitable.com/) if you want to search fo
 True
 >>> a is b   # but they are not the same object.
 False
->>> id(a),id(b)    
+>>> id(a),id(b)
 (140092435297776, 140092435297904)    # each string points to a different object in memory.
 >>> a = 'Python\t is cool'
 >>> a = 'Python\tis cool'
 >>> b = r'Python\tis cool'
 >>> a,type(a),id(a)
-('Python\tis cool', <class 'str'>, 140092435297776)	
+('Python\tis cool', <class 'str'>, 140092435297776)
 >>> b,type(b),id(b)
 ('Python\\tis cool', <class 'str'>, 140092435297840)
 Both objects share the same type str but different values and references.
@@ -711,9 +719,9 @@ False
 >>> c = '\N{pound sign}'
 >>> a == b == c
 True
->>> a is b is c   
+>>> a is b is c
 True
->>> id(a),id(b),id(c)  
+>>> id(a),id(b),id(c)
 (140578043342896, 140578043342896, 140578043342896)  # a, b and c are the same object in memory .
 >>> a,b,c
 ('£', '£', '£')   # Same Value.
@@ -743,33 +751,34 @@ False
 >>> a = int(a)
 >>> a is c  # because it is between -5 and 256.
 True
-``` 
+```
+
 #### 3.4.1.4 Useful Strings Functions. <a name="3.4.1.4"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 For a complete list of string methods, you can refer to[python docs](https://docs.python.org/3/library/stdtypes.html#string-methods).
 
-| Function | Description | Example |
-| --- | --- | --- |
-| `len(s)` | return the number of element in `s`. | `>>> s = 'this is a string'`<br>`>>> len(s)`<br>16 |
-| `min(s)` | return the minimum value in `s`. | `>>> [ord(char) for char in s]`<br>[116, 104, 105, 115, 32, 105, 115, 32, 97, 32, 115, 116, 114, 105, 110, 103]<br>`>>> min(s)`<br>'&nbsp;&nbsp;&nbsp;'<br>`>>> ord(min(s))`<br>32 |
-| `max(s)` | return the maximum value in `s`. | `>>> max(s)`<br>'t'<br>`>>> ord(max(s))`<br>116 |
-| `sorted(s)` | sort values from lowest to highest. | `>>> sorted(s)`<br>[' ', ' ', ' ', 'a', 'g', 'h', 'i', 'i', 'i', 'n', 'r', 's', 's', 's', 't', 't'] |
-| `list(reversed(s))` or `list(s[::-1])` | reverse the order of the values in the string(index 0 becomes index -1...)   | `>>> list(reversed(s))`<br>['g', 'n', 'i', 'r', 't', 's', ' ', 'a', ' ', 's', 'i', ' ', 's', 'i', 'h', 't']<br>`>>>s[::-1]`<br>'gnirts a si siht'<br>`>>> list(s[::-1])`<br>['g', 'n', 'i', 'r', 't', 's', ' ', 'a', ' ', 's', 'i', ' ', 's', 'i', 'h', 't'] |
-| `s.startswith('str')` | return `True` only if `s` starts with `str`, otherwise it return `False` | `>>> s`<br>'this is a string'<br>`>>> s.startswith('h')`<br>False`>>> s.startswith('t')`<br>True<br>`>>> s.startswith('th')`<br>True<br>`>>> s.startswith('this')`<br>True |
-| `s.endswith('str')` | return `True` only if `s` ends with `str`, otherwise it return `False` | `>>> s.endswith('ng')`<br>True<br>`>>> s.endswith('gn')`<br>False |
-| `s.upper()` | converts a string to uppercase. | `>>> s.upper()`<br>'THIS IS A STRING' |
-| `s.lower()` | converts a string to lowercase. | `>>> s.lower()`<br>'this is a string' |
-| `s.strip()` | removes whitespaces from start and end of the string `s`. | `>>> s = '   Remove start and end whitespaces        '`<br>'`>>> s`'<br>'&nbsp;&nbsp;&nbsp;Remove start and end whitespaces&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'<br>`>>> s.strip()`<br>'Remove start and end whitespaces' |
-| `s.lstrip()` or `s.rstrip()` | removes whitespaces from start or from end of the string `s`, respectively. | `>>> s.lstrip()`<br>'Remove start whitespaces&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'<br>`>>> s.rstrip()`<br>'&nbsp;&nbsp;&nbsp;&nbsp;Remove end whitespaces' |
-| `s.find('str', start_index)` | return first from left occurrence index of `str` in `s` starting from index `start_index` if found, otherwise return -1 | `>>> s = 'python is so cool'`<br>`>>> s.find('o',5)`<br>11 |
-| `s.index('str', start_index)` | same as find except it will throw a `ValueError` exception if `str` is not in `s` | `>>> s.find('1',5)`<br>-1<br>`>>> s.index('1')`<br>Traceback (most recent call last):<br>File `"<stdin>"`, line 1, in `<module>`<br>ValueError : substring not found |
-| `s.count('str', start_index)` | count the occurrence of `str` in `s` starting from `start_index`. | `>>> s.count(' ',7)`<br>2 |
+| Function                               | Description                                                                                                             | Example                                                                                                                                                                                                                                                      |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `len(s)`                               | return the number of element in `s`.                                                                                    | `>>> s = 'this is a string'`<br>`>>> len(s)`<br>16                                                                                                                                                                                                           |
+| `min(s)`                               | return the minimum value in `s`.                                                                                        | `>>> [ord(char) for char in s]`<br>[116, 104, 105, 115, 32, 105, 115, 32, 97, 32, 115, 116, 114, 105, 110, 103]<br>`>>> min(s)`<br>'&nbsp;&nbsp;&nbsp;'<br>`>>> ord(min(s))`<br>32                                                                           |
+| `max(s)`                               | return the maximum value in `s`.                                                                                        | `>>> max(s)`<br>'t'<br>`>>> ord(max(s))`<br>116                                                                                                                                                                                                              |
+| `sorted(s)`                            | sort values from lowest to highest.                                                                                     | `>>> sorted(s)`<br>[' ', ' ', ' ', 'a', 'g', 'h', 'i', 'i', 'i', 'n', 'r', 's', 's', 's', 't', 't']                                                                                                                                                          |
+| `list(reversed(s))` or `list(s[::-1])` | reverse the order of the values in the string(index 0 becomes index -1...)                                              | `>>> list(reversed(s))`<br>['g', 'n', 'i', 'r', 't', 's', ' ', 'a', ' ', 's', 'i', ' ', 's', 'i', 'h', 't']<br>`>>>s[::-1]`<br>'gnirts a si siht'<br>`>>> list(s[::-1])`<br>['g', 'n', 'i', 'r', 't', 's', ' ', 'a', ' ', 's', 'i', ' ', 's', 'i', 'h', 't'] |
+| `s.startswith('str')`                  | return `True` only if `s` starts with `str`, otherwise it return `False`                                                | `>>> s`<br>'this is a string'<br>`>>> s.startswith('h')`<br>False`>>> s.startswith('t')`<br>True<br>`>>> s.startswith('th')`<br>True<br>`>>> s.startswith('this')`<br>True                                                                                   |
+| `s.endswith('str')`                    | return `True` only if `s` ends with `str`, otherwise it return `False`                                                  | `>>> s.endswith('ng')`<br>True<br>`>>> s.endswith('gn')`<br>False                                                                                                                                                                                            |
+| `s.upper()`                            | converts a string to uppercase.                                                                                         | `>>> s.upper()`<br>'THIS IS A STRING'                                                                                                                                                                                                                        |
+| `s.lower()`                            | converts a string to lowercase.                                                                                         | `>>> s.lower()`<br>'this is a string'                                                                                                                                                                                                                        |
+| `s.strip()`                            | removes whitespaces from start and end of the string `s`.                                                               | `>>> s = ' Remove start and end whitespaces '`<br>'`>>> s`'<br>'&nbsp;&nbsp;&nbsp;Remove start and end whitespaces&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'<br>`>>> s.strip()`<br>'Remove start and end whitespaces'                                 |
+| `s.lstrip()` or `s.rstrip()`           | removes whitespaces from start or from end of the string `s`, respectively.                                             | `>>> s.lstrip()`<br>'Remove start whitespaces&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'<br>`>>> s.rstrip()`<br>'&nbsp;&nbsp;&nbsp;&nbsp;Remove end whitespaces'                                                                                 |
+| `s.find('str', start_index)`           | return first from left occurrence index of `str` in `s` starting from index `start_index` if found, otherwise return -1 | `>>> s = 'python is so cool'`<br>`>>> s.find('o',5)`<br>11                                                                                                                                                                                                   |
+| `s.index('str', start_index)`          | same as find except it will throw a `ValueError` exception if `str` is not in `s`                                       | `>>> s.find('1',5)`<br>-1<br>`>>> s.index('1')`<br>Traceback (most recent call last):<br>File `"<stdin>"`, line 1, in `<module>`<br>ValueError : substring not found                                                                                         |
+| `s.count('str', start_index)`          | count the occurrence of `str` in `s` starting from `start_index`.                                                       | `>>> s.count(' ',7)`<br>2                                                                                                                                                                                                                                    |
 
 #### 3.4.1.5 More Strings Methods Examples. <a name="3.4.1.5"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 ```python
 >>> s = 'string'
@@ -812,11 +821,12 @@ ValueError: substring not found
 2
 ```
 
-### 3.4.2  Numeric literals. <a name="3.4.2"></a>
+### 3.4.2 Numeric literals. <a name="3.4.2"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 There are four types of numeric literals to represent values:
+
 - **Integers** : reserved for a variable whose value is a stored relative integer in exact value. The possible values ​​for such a variable are only limited by the capabilities of the computer;
 
 ```python
@@ -837,10 +847,10 @@ There are four types of numeric literals to represent values:
 let's examine how python stores this insane number into memory. To do so, the sys module provides us a helpful attribute:
 
 ```python
->>> for element in dir(sys): 
+>>> for element in dir(sys):
 ...     if 'int' in element.lower():
 ...             print(element)
-... 
+...
 __breakpointhook__
 __interactivehook__
 breakpointhook
@@ -859,75 +869,80 @@ So in python, there is a custom method to store integers larger than 2<sup>30</s
 ```python
 23479521057823154763809
 >>> divmod(23479521057823154763809, 2**30) #return a tuple of form (quotient,Remainder)
-(21867008002310, 219150369)  
+(21867008002310, 219150369)
 >>> divmod(21867008002310, 2**30)
 (20365, 255756550)
 #stop here because the quotient is less than 2**30 (0 <= ob_digit[i] <= MASK =2**30)
 
-```  
+```
+
 From [C-Python](https://github.com/python/cpython/blob/c5bace2bf7874cf47ef56e1d8d19f79ad892eef5/Include/longintrepr.h#L69) repo, you can find the following explanation on the representation of long integer:
 
 >
-	/* Long integer representation.
-	   The absolute value of a number is equal to
-	   	SUM(for i=0 through abs(ob_size)-1) ob_digit[i] * 2**(SHIFT*i)
-	   Negative numbers are represented with ob_size < 0;
-	   zero is represented by ob_size == 0.
-	   In a normalized number, ob_digit[abs(ob_size)-1] (the most significant
-	   digit) is never zero.  Also, in all cases, for all valid i,
-	   	0 <= ob_digit[i] <= MASK.
-	   The allocation function takes care of allocating extra memory
-	   so that ob_digit[0] ... ob_digit[abs(ob_size)-1] are actually available.
-	   CAUTION:  Generic code manipulating subtypes of PyVarObject has to
-	   aware that ints abuse  ob_size's sign bit.
-	*/
->
 
-So the number *23479521057823154763809* will be stored as:
+    /* Long integer representation.
+       The absolute value of a number is equal to
+       	SUM(for i=0 through abs(ob_size)-1) ob_digit[i] * 2**(SHIFT*i)
+       Negative numbers are represented with ob_size < 0;
+       zero is represented by ob_size == 0.
+       In a normalized number, ob_digit[abs(ob_size)-1] (the most significant
+       digit) is never zero.  Also, in all cases, for all valid i,
+       	0 <= ob_digit[i] <= MASK.
+       The allocation function takes care of allocating extra memory
+       so that ob_digit[0] ... ob_digit[abs(ob_size)-1] are actually available.
+       CAUTION:  Generic code manipulating subtypes of PyVarObject has to
+       aware that ints abuse  ob_size's sign bit.
+    */
 
 >
-	+-----------------+------------------------+------------+
-	|     index       |     0     |      1     |      2     | 
-	+-----------------+-----------+------------+------------+   
-	| ob_digit[index] | 219150369 |  255756550 |    20365   |
-	+-----------------+-----------+------------+------------+
-	|    ob_size      |           3            | 
-	+-----------------+------------------------+
+
+So the number _23479521057823154763809_ will be stored as:
+
 >
-219150369 * 2<sup>30 * 0</sup> + 255756550 * 2<sup>30 * 1</sup> + 20365 * 2<sup>30 * 2</sup> = 23479521057823154763809
+
+    +-----------------+------------------------+------------+
+    |     index       |     0     |      1     |      2     |
+    +-----------------+-----------+------------+------------+
+    | ob_digit[index] | 219150369 |  255756550 |    20365   |
+    +-----------------+-----------+------------+------------+
+    |    ob_size      |           3            |
+    +-----------------+------------------------+
+
+> 219150369 _ 2<sup>30 _ 0</sup> + 255756550 _ 2<sup>30 _ 1</sup> + 20365 _ 2<sup>30 _ 2</sup> = 23479521057823154763809
 
 - **Floating Point**: it is a variable whose value is a real number, stored as an approximate value in the form of a triplet (s, m, e) where **s** is the **sign** in {-1,1}, **m** **mantissa** and **e** **exponent**. Such a triplet represents the decimal number s*m*b^e in scientific notation where b is the base of representation, namely: 2 on the computers. By varying e, we make the decimal point "float".
-The real numbers are stored in Python according to the **double precision** format
-specified by the **IEEE 754** standard. Thus, the sign is coded on 1 bit, the exponent on 11
-bit and the 52-bit mantissa ,  11 + 1 + 52 = 64 bits; the precision being 52 bits, thus 15 significant digits.
+  The real numbers are stored in Python according to the **double precision** format
+  specified by the **IEEE 754** standard. Thus, the sign is coded on 1 bit, the exponent on 11
+  bit and the 52-bit mantissa , 11 + 1 + 52 = 64 bits; the precision being 52 bits, thus 15 significant digits.
 
 <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Number = ± mantissa</font><sup><font style="vertical-align: inherit;">exponent</font></sup><font style="vertical-align: inherit;"> base</font></font><sup><font style="vertical-align: inherit;"></font></sup></p>
 
-	|-63-|62-----------52|51------------------------0|      
-	|sign|---exponent----|---------mantissa----------|      
-	|1bit|----11bits-----|----------52bits-----------|       
+    |-63-|62-----------52|51------------------------0|
+    |sign|---exponent----|---------mantissa----------|
+    |1bit|----11bits-----|----------52bits-----------|
 
 To find information about float numbers used in python, you can use the command sys.float_info like the following:
 
 ```python
 >>> import sys
 >>> sys.float_info
-sys.float_info(max=1.7976931348623157e+308, max_exp=1024, max_10_exp=308, min=2.2250738585072014e-308, 
+sys.float_info(max=1.7976931348623157e+308, max_exp=1024, max_10_exp=308, min=2.2250738585072014e-308,
 	min_exp=-1021, min_10_exp=-307, dig=15, mant_dig=53, epsilon=2.220446049250313e-16, radix=2, rounds=1)
 ```
 
-Where :    
-   - **max**: maximum representable number;    
-   - **max_exp**: maximum degree base **2** (11 bits for the exponent ==> 2<sup>(11-1)</sup> = 1024);    
-   - **max_10_exp**: maximum number **e** such that 10<sup>e</sup> is in [min , max];    
-   - **min**: minimum representable number;    
-   - **min_exp**: minimum degree 2;    
-   - **min_10_exp**: minimum number **e** such that 10<sup>e</sup> is in [min , max];    
-   - **dig**: maximum number of digits that can accurately display a number;    
-   - **mant_dig**: maximum number of digits in the radix number system, which can accurately display a number(53 = 52 mant + 1 sign );    
-   - **epsilon**: difference between 1 and the smallest number that is greater than 1 which can be represented as a floating point number;    
-   - **radix**: base of the number system used;    
-   - **rounds**: integer constant defining the rounding mode.        
+Where :
+
+- **max**: maximum representable number;
+- **max_exp**: maximum degree base **2** (11 bits for the exponent ==> 2<sup>(11-1)</sup> = 1024);
+- **max_10_exp**: maximum number **e** such that 10<sup>e</sup> is in [min , max];
+- **min**: minimum representable number;
+- **min_exp**: minimum degree 2;
+- **min_10_exp**: minimum number **e** such that 10<sup>e</sup> is in [min , max];
+- **dig**: maximum number of digits that can accurately display a number;
+- **mant_dig**: maximum number of digits in the radix number system, which can accurately display a number(53 = 52 mant + 1 sign );
+- **epsilon**: difference between 1 and the smallest number that is greater than 1 which can be represented as a floating point number;
+- **radix**: base of the number system used;
+- **rounds**: integer constant defining the rounding mode.
 
 ```python
 >>> import math
@@ -964,6 +979,7 @@ False
 >>> 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1
 0.6
 ```
+
 > So as you can it is not recommended to accurately compare float numbers, even if they are equal for you, their representations may differ if the numbers are obtained in different ways.
 
 ```python
@@ -972,7 +988,7 @@ False
 (6004799503160661, 18014398509481984) # so x = 6004799503160661 / 18014398509481984
 >>> x == 6004799503160661/18014398509481984
 True
-``` 
+```
 
 Let's see how computer represents 0.2:
 
@@ -980,14 +996,14 @@ Let's see how computer represents 0.2:
 # the closest value to 0.2 is equal to J/2**N where 2 / 10 ~= J / (2**N) ==> J ~= 2**N / 5
 >>> 2**52 <=  2**55 // 5  < 2**53 # by trial and error N = 55
 True
->>> q, r = divmod(2**55, 5)  #  
+>>> q, r = divmod(2**55, 5)  #
 >>> r
-3 # < 2.5 ==> Since the remainder is more than half of 5, the best approximation is obtained by rounding up: 
+3 # < 2.5 ==> Since the remainder is more than half of 5, the best approximation is obtained by rounding up:
 >>> q + 1
 7205759403792794
 >>> 7205759403792794 * 10 ** 55 // 2 ** 55  # Discard the fractional part.
 2000000000000000111022302462515654042363166809082031250 # the exact number stored in the computer which is the closest
-#to 0.2 is   0.2000000000000000111022302462515654042363166809082031250     
+#to 0.2 is   0.2000000000000000111022302462515654042363166809082031250
 # Lets verify the result
 >>> f'{0.2:.55f}'
 '0.2000000000000000111022302462515654042363166809082031250'
@@ -1027,9 +1043,9 @@ True
 
 It should be noted that this data type(bool) is a subtype of int as the current example shows.
 
-## 3.5  Sequences. <a name="3.5"></a>
+## 3.5 Sequences. <a name="3.5"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 A sequence is a container of elements, indexed by numbers positive. These numbers vary from 0 to n-1 for a sequence containing n elements. The notation to refer to the ith element of the sequence is:
 
@@ -1045,63 +1061,64 @@ To index the first element :
 
 you can extract a sequence from another sequence :
 
-> sequence0 = sequence[2:-2] equivalent to sequence[2:-2: 1]   
-> sequencex = sequence[x:y:z]    
+> sequence0 = sequence[2:-2] equivalent to sequence[2:-2: 1]  
+> sequencex = sequence[x:y:z]
 
-where:   
-- x: the starting index(included);   
-- y: the ending index(excluded);   
+where:
+
+- x: the starting index(included);
+- y: the ending index(excluded);
 - z: the number of steps.
 
 <br>
 
-	+----------+---+---+---+---+
-	|    i     | 1 | 2 | 3 | 4 | n = 4;
-	+----------+---+---+---+---+
-	| sequence | 3 | 8 | 9 | 9 | length = 4;   
-	+----------+---+---+---+---+   
-	| (+)index | 0 | 1 | 2 | 3 | for i = 3; sequence[3-1] = sequence[-4+(3-1)];   
-	+----------+---+---+---+---+     
-	| (-)index |-4 |-3 |-2 |-1 | sequence[2] = sequence[-2] and this is True for 0 < i <= n;     
-	+----------+---+---+---+---+    
+    +----------+---+---+---+---+
+    |    i     | 1 | 2 | 3 | 4 | n = 4;
+    +----------+---+---+---+---+
+    | sequence | 3 | 8 | 9 | 9 | length = 4;
+    +----------+---+---+---+---+
+    | (+)index | 0 | 1 | 2 | 3 | for i = 3; sequence[3-1] = sequence[-4+(3-1)];
+    +----------+---+---+---+---+
+    | (-)index |-4 |-3 |-2 |-1 | sequence[2] = sequence[-2] and this is True for 0 < i <= n;
+    +----------+---+---+---+---+
 
 There are two types of sequences:
 
-- Immutable sequences, which can no longer be modified after creation;      
-- Mutable sequences, which can be modified after creation;  
+- Immutable sequences, which can no longer be modified after creation;
+- Mutable sequences, which can be modified after creation;
 
 The following table contains the common operations and methods for all sequences:
 
-| operation/method | Description | Example(strings(Immutable),list(Mutable)) |
-| --- | --- | --- |
-| `sequence[i]`, `sequence[-n + i]` | return the element at index `i`. | `>>> string = "i am a string"`<br>`>>> string[2]`<br>'a'<br>`>>> string[-len(string) + 2]`<br>'a' |
-| `sequence[i : j]`, `sequence[-n + i : -n + j]` | slicing: extract a sequence from another sequence strating from index `i`(included) and ending at index `j`(excluded). | `>>> string[7:10]`'str'<br>`>>> string[-len(string) + 7:-len(string) + 10]`<br>'str' |
-| `sequence[i : j : step_size]`, `sequence[-n + i : -n + j: step_size]`,  | slicing: extract a sequence from another sequence strating from index `i`(included) and ending at index `j`(excluded) while iterating over the sequence with a `step_size`. | `>>> string[7:10:2]`<br>'sr'<br>`>>> string[-len(string) + 7:-len(string) + 10:2]`<br>'sr' |
-| `sequence[i] = value`, `sequence[-n + i] = value` | assign a value to the sequence at index `i`. | `>> list0 = list('list')`<br>`>>> list0`<br>['l', 'i', 's', 't']<br>`>>> list0[1] = 'a'`<br>`>>> list0`<br>['l', 'a', 's', 't']<br>`>>> list0[-len(list0) + 1] = 'i'`<br>`>>> list0`<br>['l', 'i', 's', 't']|
-| `sequence[i : j] = [values]`, `sequence[-n + i : -n + j] = [values]` | slicing assignement: assign a slice of a sequence to `[values]` starting from index `i`(included) and ending at index `j`(excluded). | `>>> list0[1:3] = 1,2`<br>`>>> list0`<br>['l', 1, 2, 't']<br>`>>> list0[-len(list0) + 1: -len(list0) + 3] = 'i','s'`<br>`>>> list0`<br>['l', 'i', 's', 't'] |
-| `sequence[i : j : step_size] = [values]`, `sequence[-n + i : -n + j: step_size] = [values]` |  slicing assignement: assign a slice of a sequence to `[values]` starting from index `i`(included) and ending at index `j`(excluded). with a `step_size`. | `>>> list0[0:3:2] = 1,2`<br>`>>> list0`<br>[1, 'i', 2, 't']<br>`>>> list0[-len(list0) : -len(list0) + 3: 2 ] = 'l','s'`<br>`>>> list0`<br>['l', 'i', 's', 't'] |
-| `del sequence[i]`, `del sequence[i:j]`,`del sequence[i:j:step_size]`|  delete elements from sequence. | `>>> del list0[1]`<br>`>>> list0`<br>['l', 's', 't']<br>`>>> del list0[0:3]`<br>`>>> list0`<br>[] |
-| `len(sequence)`|  return the number of elements in the sequence. | `>>> set0 = set([1,2,3])`<br>`>>> tuple0 = (1,2,3)`<br>`>>> list0 = ['s', 't', 'r']`<br>`>>> string0 = 'str'`<br>`>>> len(set0), len(tuple0), len(list0), len(string0)`<br>(3, 3, 3, 3) |
-| `min(sequence)`, `max(sequence)`|  return the minimum and the maximum value in the sequence. | `>>> min(set0), max(tuple0), min(list0), max(string0)`<br>(1, 3, 'r', 't') |
-| `sum(sequence)` |  return the sum of values in the sequence. | `>>> sum(set0), sum(tuple0)`<br>(6, 6) |
-| `all(sequence)`, `any(sequence)` |  `all` return True if all elements in the sequence are True; `any` return True if at least one element in the sequence is True | `>>> list0 = [1,'2',1,[0,46,78]]`<br>`>>> any(list0)`<br>True<br>`>>> all(list0)`<br>True<br>`>>> list0 = [1,'2',0,[1,46,78]]`<br>`>>> all(list0)`<br>False<br>`>>> any(list0)`<br>True. |
+| operation/method                                                                            | Description                                                                                                                                                                 | Example(strings(Immutable),list(Mutable))                                                                                                                                                                    |
+| ------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `sequence[i]`, `sequence[-n + i]`                                                           | return the element at index `i`.                                                                                                                                            | `>>> string = "i am a string"`<br>`>>> string[2]`<br>'a'<br>`>>> string[-len(string) + 2]`<br>'a'                                                                                                            |
+| `sequence[i : j]`, `sequence[-n + i : -n + j]`                                              | slicing: extract a sequence from another sequence strating from index `i`(included) and ending at index `j`(excluded).                                                      | `>>> string[7:10]`'str'<br>`>>> string[-len(string) + 7:-len(string) + 10]`<br>'str'                                                                                                                         |
+| `sequence[i : j : step_size]`, `sequence[-n + i : -n + j: step_size]`,                      | slicing: extract a sequence from another sequence strating from index `i`(included) and ending at index `j`(excluded) while iterating over the sequence with a `step_size`. | `>>> string[7:10:2]`<br>'sr'<br>`>>> string[-len(string) + 7:-len(string) + 10:2]`<br>'sr'                                                                                                                   |
+| `sequence[i] = value`, `sequence[-n + i] = value`                                           | assign a value to the sequence at index `i`.                                                                                                                                | `>> list0 = list('list')`<br>`>>> list0`<br>['l', 'i', 's', 't']<br>`>>> list0[1] = 'a'`<br>`>>> list0`<br>['l', 'a', 's', 't']<br>`>>> list0[-len(list0) + 1] = 'i'`<br>`>>> list0`<br>['l', 'i', 's', 't'] |
+| `sequence[i : j] = [values]`, `sequence[-n + i : -n + j] = [values]`                        | slicing assignement: assign a slice of a sequence to `[values]` starting from index `i`(included) and ending at index `j`(excluded).                                        | `>>> list0[1:3] = 1,2`<br>`>>> list0`<br>['l', 1, 2, 't']<br>`>>> list0[-len(list0) + 1: -len(list0) + 3] = 'i','s'`<br>`>>> list0`<br>['l', 'i', 's', 't']                                                  |
+| `sequence[i : j : step_size] = [values]`, `sequence[-n + i : -n + j: step_size] = [values]` | slicing assignement: assign a slice of a sequence to `[values]` starting from index `i`(included) and ending at index `j`(excluded). with a `step_size`.                    | `>>> list0[0:3:2] = 1,2`<br>`>>> list0`<br>[1, 'i', 2, 't']<br>`>>> list0[-len(list0) : -len(list0) + 3: 2 ] = 'l','s'`<br>`>>> list0`<br>['l', 'i', 's', 't']                                               |
+| `del sequence[i]`, `del sequence[i:j]`,`del sequence[i:j:step_size]`                        | delete elements from sequence.                                                                                                                                              | `>>> del list0[1]`<br>`>>> list0`<br>['l', 's', 't']<br>`>>> del list0[0:3]`<br>`>>> list0`<br>[]                                                                                                            |
+| `len(sequence)`                                                                             | return the number of elements in the sequence.                                                                                                                              | `>>> set0 = set([1,2,3])`<br>`>>> tuple0 = (1,2,3)`<br>`>>> list0 = ['s', 't', 'r']`<br>`>>> string0 = 'str'`<br>`>>> len(set0), len(tuple0), len(list0), len(string0)`<br>(3, 3, 3, 3)                      |
+| `min(sequence)`, `max(sequence)`                                                            | return the minimum and the maximum value in the sequence.                                                                                                                   | `>>> min(set0), max(tuple0), min(list0), max(string0)`<br>(1, 3, 'r', 't')                                                                                                                                   |
+| `sum(sequence)`                                                                             | return the sum of values in the sequence.                                                                                                                                   | `>>> sum(set0), sum(tuple0)`<br>(6, 6)                                                                                                                                                                       |
+| `all(sequence)`, `any(sequence)`                                                            | `all` return True if all elements in the sequence are True; `any` return True if at least one element in the sequence is True                                               | `>>> list0 = [1,'2',1,[0,46,78]]`<br>`>>> any(list0)`<br>True<br>`>>> all(list0)`<br>True<br>`>>> list0 = [1,'2',0,[1,46,78]]`<br>`>>> all(list0)`<br>False<br>`>>> any(list0)`<br>True.                     |
 
+### 3.5.1 Immutable Sequences. <a name="3.5.1"></a>
 
-### 3.5.1  Immutable Sequences. <a name="3.5.1"></a>
-
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 Immutable sequences are objects whose values can no longer be changed after creation.
 
-Those are :   
-- **strings**;   
-- **tuples**;   
-- **bytes**;   
-- **frozenset**.   
+Those are :
 
-#### 3.5.1.1  Strings. <a name="3.5.1.1"></a>
+- **strings**;
+- **tuples**;
+- **bytes**;
+- **frozenset**.
 
-#### [Go To TOC](#TOC). 
+#### 3.5.1.1 Strings. <a name="3.5.1.1"></a>
+
+#### [Go To TOC](#TOC).
 
 Strings are sequences of characters. A character is a value encoded on **8 bits**;, to represent a value between **0** and **255**. This corresponds to a sign of **ASCII** table **(0 and 127)** or extended table **(128 to 255)** for values higher.
 
@@ -1114,9 +1131,9 @@ Unlike other languages, there is no type specific Python for a character, and a 
 (65, 90, 97, 122)
 ```
 
-#### 3.5.1.2  Tuples. <a name="3.5.1.2"></a>
+#### 3.5.1.2 Tuples. <a name="3.5.1.2"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 A tuple is basically an immutable list with a smaller size in memory.
 
@@ -1146,9 +1163,9 @@ TypeError: unhashable type: 'list'
 'string'
 >>> type(a)
 <class 'str'>
->>> a = ('string',) # If you want to create a tupe with one element, use the comma ',' . 
+>>> a = ('string',) # If you want to create a tupe with one element, use the comma ',' .
 >>> type(a)
-<class 'tuple'> 
+<class 'tuple'>
 >>> a
 ('string',)
 >>> a = 'string', # It's all about the comma ','!!!!
@@ -1161,7 +1178,7 @@ TypeError: unhashable type: 'list'
 
 #### 3.5.1.3 Bytes. <a name="3.5.1.3"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 Python allows you to handle integers from 0 to 127 corresponding to the ASCII table. It can be initialized by values ​​in a sequence prefixed with b, or by a string of type str.
 
@@ -1181,15 +1198,15 @@ Python allows you to handle integers from 0 to 127 corresponding to the ASCII ta
 
 #### 3.5.1.4 Frozenset. <a name="3.5.1.4"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 The frozenset type is an immutable version of the set type. It is presented with the type set in the next section.
 
 ### 3.5.2 Mutable Sequences. <a name="3.5.2"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
-Mutable sequences implement a number of methods that allow you to add, remove or modify each of the elements that compose them.    
+Mutable sequences implement a number of methods that allow you to add, remove or modify each of the elements that compose them.  
 Python offers several types of Mutable sequences:
 
 - **list**;
@@ -1200,7 +1217,7 @@ Python offers several types of Mutable sequences:
 
 #### 3.5.2.1 List. <a name="3.5.2.1"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 In a list, each item is separated by a comma, and the whole is surrounded by brackets.therefore, an empty list is written []. Lists are indexed by integers. Lists can be nested: list inside another list. Each item in the list can be of any data type.
 
@@ -1219,6 +1236,7 @@ Python allocates a space in memory to store this list, then allocates pointers t
 For more information about object structures in python, you can refer to [python doc](https://docs.python.org/3/c-api/structures.html#c.PyObject).
 
 There are multiple ways to create a list in Python. For example, you can create a list using literals or with the list built-in function :
+
 ```python
 >>> list0 = list ('list') 	 # Using the built-in function list().
 >>> list0
@@ -1248,7 +1266,7 @@ True
 >>> list2
 ['l', [], ['list'], 4, ['l', 'i', 's', 't']]
 >>> del list2[1]  # delete the second element of the list
->>> list2   
+>>> list2
 ['l', ['list'], 4, ['l', 'i', 's', 't']]
 >>> list2[3][1] = list0
 >>> list2
@@ -1261,11 +1279,11 @@ True
 >>> copy1 = list2
 >>> id (copy1) , id(list2)   # so they are the same object;
 (140274420833168, 140274420833168)
->>> list2 = list2 + [5]   # the interpreter evaluate the right expression and create a new object.  
+>>> list2 = list2 + [5]   # the interpreter evaluate the right expression and create a new object.
 >>> id(list2)
 140274420932928
 >>> list2 += ['1',2]    # the interpreter in this statement doesn't create a new object since there are no operation at the right side of the equation.
->>> id(list2)     
+>>> id(list2)
 140274420932928
 >>> list2.append(1)    # same as before, the append() method operate on the same list.
 >>> id(list2)
@@ -1274,23 +1292,23 @@ True
 
 The table below groups together useful methods associated to lists :
 
-| Method | Description | Example |
-| --- | --- | --- |
-| `list0.append(e)` | add the element `e` at the end of the list `list0` while operating on the same list. | `>>> list0 = [1,2,3]`<br>`>>> id(list0)`<br>140274420933408<br>`>>> list0.append(4)`<br>`>>> list0,id(list0)`<br>([1, 2, 3, 4], 140274420933408) |
-| `list0.extend(list1)` | adds the elements of `list1` at the end of the list `list0` while operating on the same list. | `>>> list0.extend([5,6,7])`<br>`>>> list0, id(list0)`<br>([1, 2, 3, 4, 5, 6, 7], 140274420933408) |
-| `list0.insert(p,e)` | insert an element `e` at position `p` in the `list0`. | `>>> list0.insert(2,8)`<br>`>>> id(list0)`<br>140274420933408<br>`>>> list0`<br>[1, 2, 8, 3, 4, 5, 6, 7] |
-| `list0.remove(e)` | remove the first occurrence of `e` from the list. If no elements found, a ValueError exception will be raised. | `>>> list0.remove(8)`<br>`>>> list0`<br>[1, 2, 3, 4, 5, 6, 7]<br>`>>> list0.remove(8)`<br>Traceback (most recent call last):<br>File `"<stdin>"`, line 1, in `<module>`<br>ValueError: list.remove(x): x not in list |
-| `list0.index(e,start,end)` | return the index of first occurrence of `e` in `list0` starting from `start` to `end`. If the element is not in the list ==> raise a ValueError excepetion. | `>>> list0 = [1,2,5,6,8]`<br>`>>> list0.index(5,1,4)`<br>2`>>> list0.index(5,6,4)`<br>Traceback (most recent call last):<br>File `<stdin>`, line 1, in `<module>`<br>ValueError: 5 is not in list |
-| `list0.count(e)` | count the occurrence of `e` in `list0` | `>>> list0.count(1)`<br>1 |
-| `list0.sort(function,reverse)` | sort the items in the list. `function` and `reverse` are optional. It returns a None type. | `>>> list0 = [7,4,8,1,9,2]`<br>`>>> list1 = list(list0)`<br>`>>> list1.sort()` `>>> list1`<br>[1, 2, 4, 7, 8, 9]<br>`>>> list2 = list0`<br>`>>> list2.sort(reverse=True)`<br>`>>> list2`<br>[9, 8, 7, 4, 2, 1] |
-| `list0.pop(index)` | removes and returns element at index `index` from the list. If index is not provided, the last item will be removed. | `>>> list2list0 = [7,4,8,1,9,2]`<br>`>>> list0 = [7,4,8,1,9,2]`<br>`>>> a = list0.pop()`<br>`>>> a`<br>2<br>`>>> list0`<br>[7, 4, 8, 1, 9]<br>`>>> list0.pop(2)`<br>8 | 
-| `list0.reverse()` | modify the list by reversing the order of the elements, and returns a None type. |`>>> list0`<br>[7, 4, 1, 9]<br>`>>> list0.reverse()`<br>`>>> list0`<br>[9, 1, 4, 7] |
-| `list0.copy()` | create a new list object with the elements of list0 |`>>> list0 = [1,2,3,4]`<br>`>>> list1 = list0.copy()`<br>`>>> list1`<br>[1, 2, 3, 4]<br>`>>> id(list0), id(list1)`<br>(140148949288192, 140148947950560) |
-| `list0.clear()` | remove all the element in list0. |`>>> list0.clear()`<br>`>>> list0`<br>[] |
+| Method                         | Description                                                                                                                                                 | Example                                                                                                                                                                                                              |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `list0.append(e)`              | add the element `e` at the end of the list `list0` while operating on the same list.                                                                        | `>>> list0 = [1,2,3]`<br>`>>> id(list0)`<br>140274420933408<br>`>>> list0.append(4)`<br>`>>> list0,id(list0)`<br>([1, 2, 3, 4], 140274420933408)                                                                     |
+| `list0.extend(list1)`          | adds the elements of `list1` at the end of the list `list0` while operating on the same list.                                                               | `>>> list0.extend([5,6,7])`<br>`>>> list0, id(list0)`<br>([1, 2, 3, 4, 5, 6, 7], 140274420933408)                                                                                                                    |
+| `list0.insert(p,e)`            | insert an element `e` at position `p` in the `list0`.                                                                                                       | `>>> list0.insert(2,8)`<br>`>>> id(list0)`<br>140274420933408<br>`>>> list0`<br>[1, 2, 8, 3, 4, 5, 6, 7]                                                                                                             |
+| `list0.remove(e)`              | remove the first occurrence of `e` from the list. If no elements found, a ValueError exception will be raised.                                              | `>>> list0.remove(8)`<br>`>>> list0`<br>[1, 2, 3, 4, 5, 6, 7]<br>`>>> list0.remove(8)`<br>Traceback (most recent call last):<br>File `"<stdin>"`, line 1, in `<module>`<br>ValueError: list.remove(x): x not in list |
+| `list0.index(e,start,end)`     | return the index of first occurrence of `e` in `list0` starting from `start` to `end`. If the element is not in the list ==> raise a ValueError excepetion. | `>>> list0 = [1,2,5,6,8]`<br>`>>> list0.index(5,1,4)`<br>2`>>> list0.index(5,6,4)`<br>Traceback (most recent call last):<br>File `<stdin>`, line 1, in `<module>`<br>ValueError: 5 is not in list                    |
+| `list0.count(e)`               | count the occurrence of `e` in `list0`                                                                                                                      | `>>> list0.count(1)`<br>1                                                                                                                                                                                            |
+| `list0.sort(function,reverse)` | sort the items in the list. `function` and `reverse` are optional. It returns a None type.                                                                  | `>>> list0 = [7,4,8,1,9,2]`<br>`>>> list1 = list(list0)`<br>`>>> list1.sort()` `>>> list1`<br>[1, 2, 4, 7, 8, 9]<br>`>>> list2 = list0`<br>`>>> list2.sort(reverse=True)`<br>`>>> list2`<br>[9, 8, 7, 4, 2, 1]       |
+| `list0.pop(index)`             | removes and returns element at index `index` from the list. If index is not provided, the last item will be removed.                                        | `>>> list2list0 = [7,4,8,1,9,2]`<br>`>>> list0 = [7,4,8,1,9,2]`<br>`>>> a = list0.pop()`<br>`>>> a`<br>2<br>`>>> list0`<br>[7, 4, 8, 1, 9]<br>`>>> list0.pop(2)`<br>8                                                |
+| `list0.reverse()`              | modify the list by reversing the order of the elements, and returns a None type.                                                                            | `>>> list0`<br>[7, 4, 1, 9]<br>`>>> list0.reverse()`<br>`>>> list0`<br>[9, 1, 4, 7]                                                                                                                                  |
+| `list0.copy()`                 | create a new list object with the elements of list0                                                                                                         | `>>> list0 = [1,2,3,4]`<br>`>>> list1 = list0.copy()`<br>`>>> list1`<br>[1, 2, 3, 4]<br>`>>> id(list0), id(list1)`<br>(140148949288192, 140148947950560)                                                             |
+| `list0.clear()`                | remove all the element in list0.                                                                                                                            | `>>> list0.clear()`<br>`>>> list0`<br>[]                                                                                                                                                                             |
 
 #### 3.5.2.2 Bytearray. <a name="3.5.2.2"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 The bytearray type is equivalent to the bytes type but it is mutuble instead. It implements some methods of the type str, such as startswith,endswith or find. It also allows to manipulate the data like a sequence, and implements some list methods, like append or pop.
 
@@ -1318,13 +1336,13 @@ bytearray(b'\xfa_.')
 
 #### 3.5.2.3 Set. <a name="3.5.2.3"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
-A set in python is a "container" containing **non-repeating** **hashable** elements in **random order**. Hashable elements are all objects of constant value. The *hash* method is used to return an error if the object does not have a constant value.
+A set in python is a "container" containing **non-repeating** **hashable** elements in **random order**. Hashable elements are all objects of constant value. The _hash_ method is used to return an error if the object does not have a constant value.
 
 ```python
 >>> a  =  { 'h', 'i', 't', 'h', 'e','r','e' }  # set literal.
->>> a 
+>>> a
 {'t', 'i', 'r', 'e', 'h'}
 >>> a = set('hithere')   # built-in function set().
 >>> a
@@ -1332,7 +1350,7 @@ A set in python is a "container" containing **non-repeating** **hashable** eleme
 >>> a  =  { i*i for i in range(20) if i%2 == 0}   # set generator.
 >>> a
 {0, 64, 256, 4, 36, 100, 196, 324, 16, 144}
->>> a  =  {}    # you can't create an empty set from literal. 
+>>> a  =  {}    # you can't create an empty set from literal.
 >>> type(a)
 <class 'dict'>
 >>> hash('hithere')   # unique value
@@ -1360,14 +1378,17 @@ To test if an element exists in a set, the hash of that element is computed, the
 >>> timeit.timeit("if 10000 in b: pass", "from __main__ import b") # test if 10000 exists in the set is way much faster than a list.
 0.08669805399995312
 ```
+
 >
-	+--------------+-----------+------------+------------+------------+
-	|    index     |     0     |      1     |    ...     |    1999    |  
-	+--------------+-----------+------------+------------+------------+  To chech if 10000 in the set a,
-	|    elements  |     0     |      1     |    ...     |   3996001  | the interpreter computes the hash
-	+--------------+-----------+------------+------------+------------+ of 10000 and compare to the existing 
-	|    hashes    |    h(0)   |    h(1)    |    ...     | h(3996001) | hashes, if exists than stop.
-	+--------------+-----------+------------+------------+------------+
+
+    +--------------+-----------+------------+------------+------------+
+    |    index     |     0     |      1     |    ...     |    1999    |
+    +--------------+-----------+------------+------------+------------+  To chech if 10000 in the set a,
+    |    elements  |     0     |      1     |    ...     |   3996001  | the interpreter computes the hash
+    +--------------+-----------+------------+------------+------------+ of 10000 and compare to the existing
+    |    hashes    |    h(0)   |    h(1)    |    ...     | h(3996001) | hashes, if exists than stop.
+    +--------------+-----------+------------+------------+------------+
+
 >
 
 **Frozenset** is a set which is **immutable** and allows to freeze the contents of sequence and provide powerful and **rapid** new comparison methods.
@@ -1384,43 +1405,43 @@ False
 
 Both types of sets share common methods:
 
-| Method | Description | Example |
-| --- | --- | --- |
-| `set0.isdisjoint(set1)` | Returns True if `set0` and `set1` have no elements in common. | `>>> set0 = set('abcde')`<br>`>>> set0`<br>{'d', 'b', 'e', 'c', 'a'}<br>`>>> frozenset = set('fghij')`<br>`>>> set1`<br>{'h', 'j', 'g', 'f', 'i'}<br>`>>> set0.isdisjoint(set1)`<br>True |
-| `set0.issubset(set1)`,`set0 <= set1` | Returns True if all elements of `set0` belong to `set1` | `>>> set2 = set('abc')`<br>`>>> set2`<br>{'b', 'a', 'c'}<br>`>>> set0.issubset(set2)`<br>False<br>`>>> set2.issubset(set0)`<br>True<br>`>>> set2 <= set0`<br>True |
-| `set0.issuperset(set1)`, `set0 >= set1` | Returns True if all elements of `set1` belong to `set0` | `>>> set0.issuperset(set2)`<br>True<br>`>>> set2.issuperset(set0)`<br>False<br>`>>> set0 >= set2`<br>True |
-| `set0.union(set1, ...)`, `set0 \| set1 \|...` | Returns all items in `set0` or `set1` or ... | `>>> set0.union(set1,set2)`<br>{'d', 'h', 'j', 'g', 'b', 'e', 'c', 'a', 'f', 'i'}<br>`>>> set0 \| set1 \| set2`<br>{'d', 'h', 'j', 'g', 'b', 'e', 'c', 'a', 'f', 'i'} |
-| `set0.intersection(set1, ...)`, `set0 & set1 &...` | Returns all items that are in `set0` and in `set1` and in ... | `>>> set0.intersection(set2)`<br>{'b', 'a', 'c'} |
-| `set0.difference (set1, ...)`, `set0 - set1 - ...` | Remove from `set0` all common elements with `set1`, otherwise return set1 . | `>>> set0`<br>{'d', 'b', 'e', 'c', 'a'}<br>`>>> set2`<br>{'b', 'a', 'c'}<br>`>>> set0`<br>{'d', 'b', 'e', 'c', 'a'}<br>`>>> set1`<br>{'h', 'j', 'g', 'f', 'i'}<br>`>>> set2`<br>{'b', 'a', 'c'}<br>`>>> set0 - set1`<br>{'d', 'b', 'e', 'c', 'a'}<br>`>>> set0 - set2`<br>{'d', 'e'} |
-| `set0.symmetric_difference(set1, ...)`, `set0 ^ set1` | Returns all unique elements of both sets(union - intersection). | `>>> set0`<br>{'d', 'b', 'e', 'c', 'a'}<br>`>>> set2`<br>{'b', 'a', 'c'}<br>`>>> set0 ^ set2`{'d', 'e'}<br>`>>> (set0 | set2) - (set0 & set2)`<br>{'d', 'e'} |
-| `set0.copy()` | Makes a copy of `set0` into a new set object. | `>>> set1 = set0.copy()`<br>`>>> id(set0), id(set1)`<br>(139623648877216, 139623649788704) |
+| Method                                                | Description                                                                 | Example                                                                                                                                                                                                                                                                              |
+| ----------------------------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------ |
+| `set0.isdisjoint(set1)`                               | Returns True if `set0` and `set1` have no elements in common.               | `>>> set0 = set('abcde')`<br>`>>> set0`<br>{'d', 'b', 'e', 'c', 'a'}<br>`>>> frozenset = set('fghij')`<br>`>>> set1`<br>{'h', 'j', 'g', 'f', 'i'}<br>`>>> set0.isdisjoint(set1)`<br>True                                                                                             |
+| `set0.issubset(set1)`,`set0 <= set1`                  | Returns True if all elements of `set0` belong to `set1`                     | `>>> set2 = set('abc')`<br>`>>> set2`<br>{'b', 'a', 'c'}<br>`>>> set0.issubset(set2)`<br>False<br>`>>> set2.issubset(set0)`<br>True<br>`>>> set2 <= set0`<br>True                                                                                                                    |
+| `set0.issuperset(set1)`, `set0 >= set1`               | Returns True if all elements of `set1` belong to `set0`                     | `>>> set0.issuperset(set2)`<br>True<br>`>>> set2.issuperset(set0)`<br>False<br>`>>> set0 >= set2`<br>True                                                                                                                                                                            |
+| `set0.union(set1, ...)`, `set0 \| set1 \|...`         | Returns all items in `set0` or `set1` or ...                                | `>>> set0.union(set1,set2)`<br>{'d', 'h', 'j', 'g', 'b', 'e', 'c', 'a', 'f', 'i'}<br>`>>> set0 \| set1 \| set2`<br>{'d', 'h', 'j', 'g', 'b', 'e', 'c', 'a', 'f', 'i'}                                                                                                                |
+| `set0.intersection(set1, ...)`, `set0 & set1 &...`    | Returns all items that are in `set0` and in `set1` and in ...               | `>>> set0.intersection(set2)`<br>{'b', 'a', 'c'}                                                                                                                                                                                                                                     |
+| `set0.difference (set1, ...)`, `set0 - set1 - ...`    | Remove from `set0` all common elements with `set1`, otherwise return set1 . | `>>> set0`<br>{'d', 'b', 'e', 'c', 'a'}<br>`>>> set2`<br>{'b', 'a', 'c'}<br>`>>> set0`<br>{'d', 'b', 'e', 'c', 'a'}<br>`>>> set1`<br>{'h', 'j', 'g', 'f', 'i'}<br>`>>> set2`<br>{'b', 'a', 'c'}<br>`>>> set0 - set1`<br>{'d', 'b', 'e', 'c', 'a'}<br>`>>> set0 - set2`<br>{'d', 'e'} |
+| `set0.symmetric_difference(set1, ...)`, `set0 ^ set1` | Returns all unique elements of both sets(union - intersection).             | `>>> set0`<br>{'d', 'b', 'e', 'c', 'a'}<br>`>>> set2`<br>{'b', 'a', 'c'}<br>`>>> set0 ^ set2`{'d', 'e'}<br>`>>> (set0                                                                                                                                                                | set2) - (set0 & set2)`<br>{'d', 'e'} |
+| `set0.copy()`                                         | Makes a copy of `set0` into a new set object.                               | `>>> set1 = set0.copy()`<br>`>>> id(set0), id(set1)`<br>(139623648877216, 139623649788704)                                                                                                                                                                                           |
 
 Mutable sets additionally have the methods described in the following table:
 
-| Method | Description | Example |
-| --- | --- | --- |
-| `set0.update (set1, ...)`, `set0 \| = set1 \| ...` | Updates `set0` with the union of `set0` and `set1` and ... | `>>> set0 = set('abcd')`<br>`>>> set1 = set('defg')`<br>`>>> set0`<br>{'b', 'a', 'd', 'c'}<br>`>>> set1`<br>{'d', 'e', 'g', 'f'}<br>`>>> set0 \|= set1`<br>`>>> set0`<br>{'d', 'g', 'b', 'e', 'c', 'a', 'f'} |
-| `set0.intersection_update(set1, ...)`, `set0 & = set1 & ...` | Updates `set0` with the intersection of `set0` and `set1` and ... | `>>> set0 &= set1`<br>`>>> set0`<br>{'d', 'e', 'g', 'f'} |
-| `set0.difference_update(set1, ...)`, `set0 - = set1 \| ...` | Substract from `set0` the shared elements with `set1` and ... | `>>> set0 = {'d', 'g', 'b', 'e', 'c', 'a', 'f'}`<br>`>>> set1 = {'d', 'e', 'g', 'f'}`<br>`>>> set0.difference_update(set1)`<br>`>>> set0`<br>{'b', 'c', 'a'}<br>`>>> set0 = {'d', 'g', 'b', 'e', 'c', 'a', 'f'}`<br>`>>> set0 -= set1 \| {'a'}`<br>`>>> set0`<br>{'b', 'c'} |
-| `set0.symmetric_difference_update(set1)`, `set0 ^ = set1` |  return a set of elements that appear in one set but do not appear both sets. | `>>> set0 = {'d', 'g', 'b', 'e', 'c', 'a', 'f'}`<br>`>>> set0 ^= set1`<br>`>>> set0`<br>{'b', 'c', 'a'} |
-| `set0.add(e)` | add an element to `set0` | `>>> set0.add('d')`<br>`>>> set0`<br>{'b', 'd', 'c', 'a'} |
-| `set0.remove(e)` | remove an element from `set0` if exists, otherwise throw a KeyError exception. | `>>> set0.remove('d')`<br>`>>> set0`<br>{'b', 'c', 'a'}<br>`>>> set0.remove('d')`<br>Traceback (most recent call last):<br>   File `"<stdin>"`, line 1, in `<module>`<br>KeyError: 'd' |
-| `set0.discard(e)` | Removes an element from the set. | `>>> set0`<br>{'b', 'c', 'a'}<br>`>>> set0.discard('b')`<br>`>>> set0`<br>{'c', 'a'}<br>`>>> set0.discard('b')`<br>`>>> set0`<br>{'c', 'a'} |
-| `set0.pop()` | removes an item from the set. | `>>> set0 = {'d', 'g', 'b', 'e', 'c', 'a', 'f'}`<br>`>>> set0.pop()`<br>'b'<br>`>>> set0`<br>{'d', 'e', 'g', 'f', 'c', 'a'}<br>`>>> set0.pop()`<br>'d'<br>`>>> set0`<br>{'e', 'g', 'f', 'c', 'a'}<br>`>>> set0.pop()`<br>'e'<br>`>>> set0`<br>{'g', 'f', 'c', 'a'}<br>`>>> set0.pop()`<br>'g' |
-| `set0.clear()` | remove all elements from the set. | `>>> set0 = {'d', 'g', 'b', 'e', 'c', 'a', 'f'}`<br>`>>> set0.clear()`<br>`>>> set0`<br>set() |
+| Method                                                       | Description                                                                    | Example                                                                                                                                                                                                                                                                                       |
+| ------------------------------------------------------------ | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `set0.update (set1, ...)`, `set0 \| = set1 \| ...`           | Updates `set0` with the union of `set0` and `set1` and ...                     | `>>> set0 = set('abcd')`<br>`>>> set1 = set('defg')`<br>`>>> set0`<br>{'b', 'a', 'd', 'c'}<br>`>>> set1`<br>{'d', 'e', 'g', 'f'}<br>`>>> set0 \|= set1`<br>`>>> set0`<br>{'d', 'g', 'b', 'e', 'c', 'a', 'f'}                                                                                  |
+| `set0.intersection_update(set1, ...)`, `set0 & = set1 & ...` | Updates `set0` with the intersection of `set0` and `set1` and ...              | `>>> set0 &= set1`<br>`>>> set0`<br>{'d', 'e', 'g', 'f'}                                                                                                                                                                                                                                      |
+| `set0.difference_update(set1, ...)`, `set0 - = set1 \| ...`  | Substract from `set0` the shared elements with `set1` and ...                  | `>>> set0 = {'d', 'g', 'b', 'e', 'c', 'a', 'f'}`<br>`>>> set1 = {'d', 'e', 'g', 'f'}`<br>`>>> set0.difference_update(set1)`<br>`>>> set0`<br>{'b', 'c', 'a'}<br>`>>> set0 = {'d', 'g', 'b', 'e', 'c', 'a', 'f'}`<br>`>>> set0 -= set1 \| {'a'}`<br>`>>> set0`<br>{'b', 'c'}                   |
+| `set0.symmetric_difference_update(set1)`, `set0 ^ = set1`    | return a set of elements that appear in one set but do not appear both sets.   | `>>> set0 = {'d', 'g', 'b', 'e', 'c', 'a', 'f'}`<br>`>>> set0 ^= set1`<br>`>>> set0`<br>{'b', 'c', 'a'}                                                                                                                                                                                       |
+| `set0.add(e)`                                                | add an element to `set0`                                                       | `>>> set0.add('d')`<br>`>>> set0`<br>{'b', 'd', 'c', 'a'}                                                                                                                                                                                                                                     |
+| `set0.remove(e)`                                             | remove an element from `set0` if exists, otherwise throw a KeyError exception. | `>>> set0.remove('d')`<br>`>>> set0`<br>{'b', 'c', 'a'}<br>`>>> set0.remove('d')`<br>Traceback (most recent call last):<br> File `"<stdin>"`, line 1, in `<module>`<br>KeyError: 'd'                                                                                                          |
+| `set0.discard(e)`                                            | Removes an element from the set.                                               | `>>> set0`<br>{'b', 'c', 'a'}<br>`>>> set0.discard('b')`<br>`>>> set0`<br>{'c', 'a'}<br>`>>> set0.discard('b')`<br>`>>> set0`<br>{'c', 'a'}                                                                                                                                                   |
+| `set0.pop()`                                                 | removes an item from the set.                                                  | `>>> set0 = {'d', 'g', 'b', 'e', 'c', 'a', 'f'}`<br>`>>> set0.pop()`<br>'b'<br>`>>> set0`<br>{'d', 'e', 'g', 'f', 'c', 'a'}<br>`>>> set0.pop()`<br>'d'<br>`>>> set0`<br>{'e', 'g', 'f', 'c', 'a'}<br>`>>> set0.pop()`<br>'e'<br>`>>> set0`<br>{'g', 'f', 'c', 'a'}<br>`>>> set0.pop()`<br>'g' |
+| `set0.clear()`                                               | remove all elements from the set.                                              | `>>> set0 = {'d', 'g', 'b', 'e', 'c', 'a', 'f'}`<br>`>>> set0.clear()`<br>`>>> set0`<br>set()                                                                                                                                                                                                 |
 
 For more information about sets and frozensets, you can refer to [python docs](https://docs.python.org/3.8/library/stdtypes.html#set-types-set-frozenset).
 
 #### 3.5.2.4 Array. <a name="3.5.2.4"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 An **array** is a 1-dimensional array with a limitation on the **data type** and **size** of each element. Arrays are more memory efficient.
 For more information about array, you can read [python docs](https://docs.python.org/3/library/array.html).
 
 #### 3.5.2.5 Dictionary. <a name="3.5.2.5"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 Dictionary in python is unordered mutable collection of arbitrary key-value objects. it is sometimes also called associative array or hash table.
 
@@ -1460,25 +1481,24 @@ So as you can see, dictionaries store pointers and not the values ​​themselv
 
 The following table contains dictionary's methods :
 
-| Method | Description | Example |
-| --- | --- | --- |
-| `dict0.copy()`, | create a new copy of dict0. | `>>> d1 = d.copy()`<br>`>>> id(d1),id(d)`<br>(140526876838560, 140526876807808) |
-| `dict.fromkeys(['key0','key1', ...], value)` | create a dictionary with the same value(None by default) for all keys. | `>>> dict.fromkeys(['key0','key1'])`<br>{'key0': None, 'key1': None}<br>`>>> dict.fromkeys(['key0','key1'],'value01')`<br>{'key0': 'value01', 'key1': 'value01'} |
-| `dict0.get(key0, ..., default )` | returns the value of the dictionary at the specified key,but if it does not exist, it returns default (by default None). | `>>> d.get('key0')`<br>'new_value'<br>`>>> d.get('key','no key match')`<br>'no key match' |
-| `dict0.items()` | Returns (key, value) pairs as a dict_items type. | `>>> d.items()`<br>dict_items([('key0', 'new_value'), ('key1', 'value1'), ('key2', 'value2'), ('key3', 'value3'), (0, 1)]) 
-| `dict0.key()` | Returns a list of keys. | `d.keys()`<br>dict_keys(['key0', 'key1', 'key2', 'key3', 0]) | 
-| `dict0.values()` | Returns a list of values. | `>>> d.values()`<br>dict_values(['new_value', 'value1', 'value2', 'value3', 1]) |
-| `dict0.pop(key)` | removes the existing key and returns its value. | `>>> d.pop('key0')`'<br>new_value'<br>`>>> d`{'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 0: 1}<br>`>>> d.pop('notexisted')`<br>Traceback (most recent call last):<br>  File `"<stdin>"`, line 1, in `<module>`<br>KeyError: 'notexisted' |
-| `dict0.popitem()` | Removes a (key, value) pair from the dictionary and returns it as a tuple. LIFO(last in first out) | {'key1': 'value1', 'key2': 'value2', 'key3': 'value3'}<br>`>>> d.popitem ()`<br>('key3', 'value3')<br>`>>> d.popitem ()`<br>('key2', 'value2') | 
-| `dict0.update([('key','value'),...])` | updates the dictionary by adding the (key, value) pairs . Existing keys are overwritten. | `>>> d = {'key0': 'new_value', 'key1': 'value1', 'key2': 'value2', 'key3': 'value3',  0: 1}`<br>`>>> d.update([('key0','value0')])`<br>`>>> d`<br>{'key0': 'value0', 'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 0: 1}<br>`>>> d.update([('key4','value4')])`<br>`>>> d`<br>{'key0': 'value0', 'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 0: 1, 'key4': 'value4'} |
-
+| Method                                       | Description                                                                                                              | Example                                                                                                                                                                                                                                                                                                                                                                               |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `dict0.copy()`,                              | create a new copy of dict0.                                                                                              | `>>> d1 = d.copy()`<br>`>>> id(d1),id(d)`<br>(140526876838560, 140526876807808)                                                                                                                                                                                                                                                                                                       |
+| `dict.fromkeys(['key0','key1', ...], value)` | create a dictionary with the same value(None by default) for all keys.                                                   | `>>> dict.fromkeys(['key0','key1'])`<br>{'key0': None, 'key1': None}<br>`>>> dict.fromkeys(['key0','key1'],'value01')`<br>{'key0': 'value01', 'key1': 'value01'}                                                                                                                                                                                                                      |
+| `dict0.get(key0, ..., default )`             | returns the value of the dictionary at the specified key,but if it does not exist, it returns default (by default None). | `>>> d.get('key0')`<br>'new_value'<br>`>>> d.get('key','no key match')`<br>'no key match'                                                                                                                                                                                                                                                                                             |
+| `dict0.items()`                              | Returns (key, value) pairs as a dict_items type.                                                                         | `>>> d.items()`<br>dict_items([('key0', 'new_value'), ('key1', 'value1'), ('key2', 'value2'), ('key3', 'value3'), (0, 1)])                                                                                                                                                                                                                                                            |
+| `dict0.key()`                                | Returns a list of keys.                                                                                                  | `d.keys()`<br>dict_keys(['key0', 'key1', 'key2', 'key3', 0])                                                                                                                                                                                                                                                                                                                          |
+| `dict0.values()`                             | Returns a list of values.                                                                                                | `>>> d.values()`<br>dict_values(['new_value', 'value1', 'value2', 'value3', 1])                                                                                                                                                                                                                                                                                                       |
+| `dict0.pop(key)`                             | removes the existing key and returns its value.                                                                          | `>>> d.pop('key0')`'<br>new_value'<br>`>>> d`{'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 0: 1}<br>`>>> d.pop('notexisted')`<br>Traceback (most recent call last):<br> File `"<stdin>"`, line 1, in `<module>`<br>KeyError: 'notexisted'                                                                                                                                    |
+| `dict0.popitem()`                            | Removes a (key, value) pair from the dictionary and returns it as a tuple. LIFO(last in first out)                       | {'key1': 'value1', 'key2': 'value2', 'key3': 'value3'}<br>`>>> d.popitem ()`<br>('key3', 'value3')<br>`>>> d.popitem ()`<br>('key2', 'value2')                                                                                                                                                                                                                                        |
+| `dict0.update([('key','value'),...])`        | updates the dictionary by adding the (key, value) pairs . Existing keys are overwritten.                                 | `>>> d = {'key0': 'new_value', 'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 0: 1}`<br>`>>> d.update([('key0','value0')])`<br>`>>> d`<br>{'key0': 'value0', 'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 0: 1}<br>`>>> d.update([('key4','value4')])`<br>`>>> d`<br>{'key0': 'value0', 'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 0: 1, 'key4': 'value4'} |
 
 #### 3.5.3 Sequences Exercices. <a name="3.5.3"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 ```python
->>> list_ = [1,2,3,4,5]   # create a list from literal 
+>>> list_ = [1,2,3,4,5]   # create a list from literal
 >>> list_ +=6		# can't concatenate list and int
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -1486,7 +1506,7 @@ TypeError: 'int' object is not iterable
 >>> list_ +=[6]
 >>> list_
 [1, 2, 3, 4, 5, 6]
->>> list_ +=(6,) 
+>>> list_ +=(6,)
 >>> list_
 [1, 2, 3, 4, 5, 6, 6]
 >>> list_ +=(6,7)
@@ -1586,7 +1606,7 @@ True
 >>> days[1] = [1,2]
 >>> days
 ['Monday', [1, 2], 2, 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
->>> days[1:4:2] = [1,2] 
+>>> days[1:4:2] = [1,2]
 >>> days
 ['Monday', 1, 2, 2, 'Thursday', 'Friday', 'Saturday', 'Sunday']
 >>> days[1:1:2] = [1,2] # this error makes sense
@@ -1643,15 +1663,16 @@ False
 {2, 1, 4, 5, 6, 3}
 >>>
 ```
+
 ## 3.6 Conditional Statement. <a name="3.6"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 These statements exists to allow you forcing the program to execute certain sections of code only under certain conditions. So if the condition is met, the code will be executed.
 
 ### 3.6.1 If Statement. <a name="3.6.1"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 In this case, if the condition is met, then we go into the body of the indented block and execute the code in it. Otherwise, we skip this block and the program continue the excution normaly.
 
@@ -1677,7 +1698,7 @@ if a % 2 == 0:
 
 ### 3.6.2 If-Else Statements. <a name="3.6.2"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 Figuratively, we can divide this statement into two parts. The first part is an if statement with a condition and a body, and the second is an else statement with a body only.
 
@@ -1693,7 +1714,7 @@ else:
 
 ### 3.6.3 If-Elif Statements. <a name="3.6.3"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 In this case, we only get into the body of the statement that the interpreter meets first, and as you may know, the interpreter scans the code from top to bottom(like switch-case in C# or C or ...).
 
@@ -1714,7 +1735,7 @@ else:
 
 ### 3.6.4 Nested If-Else Statements. <a name="3.6.4"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 Here we check another condition if certain condition is met.
 
@@ -1735,7 +1756,7 @@ else:
 # Continue
 ```
 
-The previous snippet of code is just a proof of concept on using the nested if-else and not a real example, I just used this example to demonstrate the mechanism of that conditional statement.  In fact, you can rewrite the previous nested if-else conditionals into if-elif conditionals.
+The previous snippet of code is just a proof of concept on using the nested if-else and not a real example, I just used this example to demonstrate the mechanism of that conditional statement. In fact, you can rewrite the previous nested if-else conditionals into if-elif conditionals.
 
 ```python
 a = 12
@@ -1744,19 +1765,19 @@ if a%2 ==0 and a>10 and a <=20:  # or if a%2 ==0 and 10 < a <=20:
 elif a%2 == 0 and a <= 10:
 	print("even less than 10")
 else:
-	print("odd") 
+	print("odd")
 ```
 
 ### 3.6.5 Exercices. <a name="3.6.5"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 ```python
 >>> if []:
 ...     print("True")
 ... else:
 ...     print("False")
-... 
+...
 False
 >>> bool([])
 False
@@ -1811,7 +1832,7 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute '__len__'
 >>> bool([None])
 True
->>> bool((None))  # this is not a typle because no comma in it ! 
+>>> bool((None))  # this is not a typle because no comma in it !
 False
 >>> bool((None,))  # tuple contains something(Nonetype object)
 True
@@ -1819,7 +1840,7 @@ True
 
 ### 3.7 Loops. <a name="3.7"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 As said earlier, statements are executed sequentially from top to bottom. However, if you want to execute a block of code multiple times, you can use a loop.
 
@@ -1831,20 +1852,20 @@ But before diving in into loops, you need to have knowledge of some vocabulary:
 
 #### 3.7.1 While Loop. <a name="3.7.1"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 While loop means execute the body of this loop as long as the loop condition is true.
 
 ```python
 while condition:
-	
+
 	body
 
 >>> x = 10
->>> while x >= 0: 
+>>> while x >= 0:
 ...     print(x)
 ...     x -= 1
-... 
+...
 10
 9
 8
@@ -1871,7 +1892,7 @@ In python, you can also write an infinite loop. Using the break keyword, you can
 ...             x -= 1
 ...     continue
 ...     print("this statement will never be executed")
-... 
+...
 10
 9
 8
@@ -1882,9 +1903,10 @@ In python, you can also write an infinite loop. Using the break keyword, you can
 
 #### 3.7.2 For Loop. <a name="3.7.2"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 This loop iterates over any iterable object and executes the body of the loop during each iteration. For loops are much faster than while loops.
+
 ```python
 for variable_name in iterable:
 
@@ -1892,7 +1914,7 @@ for variable_name in iterable:
 
 >>> for x in range(10,-1,-1):
 ...     print(x)
-... 
+...
 10
 9
 8
@@ -1912,7 +1934,7 @@ for variable_name in iterable:
 
 #### 3.7.3 Loop Else. <a name="3.7.3"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 The `else` keyword is used, in a for or while loop, to check if the loop was exited nicely or something else interrupts its execution. if it exited nicely, the body of else statement will be executed.
 
@@ -1921,7 +1943,7 @@ The `else` keyword is used, in a for or while loop, to check if the loop was exi
 ...     print(i)
 ... else:
 ...     print("Nothing interrupts the for loop!")
-... 
+...
 0
 1
 2
@@ -1934,36 +1956,34 @@ Nothing interrupts the for loop!
 ...             break
 ... else:
 ...     print("else")
-... 
+...
 else will not be executed!
 ```
 
 ## 3.8 Operations. <a name="3.8"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 In Python, operations have different priorities. The following table lists arithmetic and logical operations from highest to lowest priority:
 
-
-| Operation | Description | Example |
-| --- | --- | --- |
-| `()` | Parentheses. | `>>> (2+1)*(3-1)`<br>6 |
-| `**` | Exponentiation. |  `>>> (2+1)**(3-1)`<br>9 |
-| `~` | Inversion(bitwise NOT). ~n = -(n+1). | `>>> ~19  `<br>-20<br>`>>> ~19 + 1`<br>-21 |
-| `+ -` | Negation, identity. | `>>> -2 +1`<br>-1 |
-| `/`, `//` | Division and Truncation Division. | `>>> 2/3 ; 3//2.0`<br>0.6666666666666666<br>1.0 |
-| `%` | Remainder. | `>>> 2%3`<br>2<br>`>>> 4%2`<br>0<br>`>>> 27/3 % 5`<br>4.0 |
-| `*` | Multiplication. | `>>> 27/3 % 5 * 2`<br>8.0 | `>>> 3 ** 3 / 3 % 5 * 2`<br>8.0 |
-| `+ -` | Addition, Subtraction. | `>>> 3 ** 3 / 3 % 5 * 2 + 4 - 1`<br>11.0 |
-| `<< >>` | Shift left and shift right. | `>>> 4<<1`<br>8<br>`>>> 4>>1`<br>2 |
-| `&` | Bitwise AND. | `>>> bin(0b1101 & 0b0111)`<br>'0b101' |
-| `^` | Bitwise XOR. | `>>> bin(0b1101 & 0b0111 ^ 0b001)`<br>'0b100' |
-| `\|` | Bitwise OR. | `>>> bin(0b1101 & 0b0111 ^ 0b001 \| 0b001)`<br>'0b101' |
+| Operation | Description                          | Example                                                   |
+| --------- | ------------------------------------ | --------------------------------------------------------- | ------------------------------- |
+| `()`      | Parentheses.                         | `>>> (2+1)*(3-1)`<br>6                                    |
+| `**`      | Exponentiation.                      | `>>> (2+1)**(3-1)`<br>9                                   |
+| `~`       | Inversion(bitwise NOT). ~n = -(n+1). | `>>> ~19 `<br>-20<br>`>>> ~19 + 1`<br>-21                 |
+| `+ -`     | Negation, identity.                  | `>>> -2 +1`<br>-1                                         |
+| `/`, `//` | Division and Truncation Division.    | `>>> 2/3 ; 3//2.0`<br>0.6666666666666666<br>1.0           |
+| `%`       | Remainder.                           | `>>> 2%3`<br>2<br>`>>> 4%2`<br>0<br>`>>> 27/3 % 5`<br>4.0 |
+| `*`       | Multiplication.                      | `>>> 27/3 % 5 * 2`<br>8.0                                 | `>>> 3 ** 3 / 3 % 5 * 2`<br>8.0 |
+| `+ -`     | Addition, Subtraction.               | `>>> 3 ** 3 / 3 % 5 * 2 + 4 - 1`<br>11.0                  |
+| `<< >>`   | Shift left and shift right.          | `>>> 4<<1`<br>8<br>`>>> 4>>1`<br>2                        |
+| `&`       | Bitwise AND.                         | `>>> bin(0b1101 & 0b0111)`<br>'0b101'                     |
+| `^`       | Bitwise XOR.                         | `>>> bin(0b1101 & 0b0111 ^ 0b001)`<br>'0b100'             |
+| `\|`      | Bitwise OR.                          | `>>> bin(0b1101 & 0b0111 ^ 0b001 \| 0b001)`<br>'0b101'    |
 
 ## 3.9 Iterables. <a name="3.9"></a>
 
-#### [Go To TOC](#TOC). 
-
+#### [Go To TOC](#TOC).
 
 Each time an object is used in a for loop, the interpreter generates an iterator with which it works. An iterator is an object that contains a **next()** method which is called at each iteration to returns the sequence, element by element. When there are no more elements, the iterator raises an exception of type **StopIteration**. There are a lot of objects that are iterable(e.g. elements of a list, characters of a string, keys of dict...).
 
@@ -1976,11 +1996,11 @@ for element in range(5): # list ==> elements
 for char in "string":  # string ==> chars
 	print(char)
 ------------------------
-dict_ = {'key0': 1, 'key1': 2, 'key2': 3 } 
+dict_ = {'key0': 1, 'key1': 2, 'key2': 3 }
 for key in dict_:  # dict ==> keys
 	print(dict_[key])
 for value in dict_.values():   # a dict is not ordered, but when you iterate over it, it returns ordered values.
-for key,value in dict_.items():   
+for key,value in dict_.items():
 for key in iter(dict_):
 ------------------------
 for number in itertools.count():  # infinite iterable
@@ -2031,7 +2051,7 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 StopIteration
 >>> type(b)
-<class 'list_reverseiterator'> 
+<class 'list_reverseiterator'>
 >>> list_.__getitem__(0)
 3
 >>> list_.__getitem__(0)
@@ -2055,7 +2075,7 @@ False
 
 ## 3.10 List Comprehensions. <a name="3.10"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 List comprehensions are expressions used to generate lists in a very compact way, without having to use loops.
 
@@ -2077,7 +2097,7 @@ The general form of list comprehension is :
 
 ## 3.11 Generators. <a name="3.11"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 [Python Docs](https://docs.python.org/3/glossary.html#term-generator).
 
@@ -2085,7 +2105,7 @@ Generators are functions that can be paused(with `yield`) and resumed(with `next
 
 ### 3.11.1 Generator Function. <a name="3.11.1"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 ```python
 >>> def iterable(n):
@@ -2097,7 +2117,7 @@ Generators are functions that can be paused(with `yield`) and resumed(with `next
 ...
 >>> for element in iterable(5):
 ...     print(element)
-... 
+...
 pause
 0
 resume
@@ -2120,9 +2140,9 @@ return
 
 ### 3.11.2 Generator Expression. <a name="3.11.2"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
-A generator expression is a way to create a generator, which is iterable. These expressions are in a form equivalent to list comprehensions: (expression for element in iterable condition) and return a generator object(instead of calling it tuple comprehension, it is called genexp). 
+A generator expression is a way to create a generator, which is iterable. These expressions are in a form equivalent to list comprehensions: (expression for element in iterable condition) and return a generator object(instead of calling it tuple comprehension, it is called genexp).
 
 ```python
 >>> genexp = (i for i in range(100) if i % 3 == 0 or i % 5 == 0)
@@ -2142,15 +2162,15 @@ StopIteration
 8.194617394000034
 >>> timeit.timeit("sum([i for i in range (100)])") # list comp
 6.147775573999752
->>> print ( sys. getsizeof([i for i in range (10000)])) 
+>>> print ( sys. getsizeof([i for i in range (10000)]))
 87632
->>> print ( sys. getsizeof((i for i in range (10000)))) 
+>>> print ( sys. getsizeof((i for i in range (10000))))
 128
 ```
 
 ### 3.11.3 Generator Exercises. <a name="3.11.3"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 ```python
 >>> def factorial():
@@ -2159,7 +2179,7 @@ StopIteration
 ...           yield prod
 ...           prod *= n
 ...           n += 1
-... 
+...
 >>> fact_gen = factorial()
 >>> fact_gen
 <generator object factorial at 0x7fc7eac497d0>
@@ -2184,14 +2204,14 @@ True
 >>> def odds_v0():
 ...     result = []
 ...     for n in range(1,10,2):
-...         result.append(n)     
+...         result.append(n)
 ...     return result
-... 
+...
 >>> def odds_v1():
 ...     result = []
 ...     for n in range(1,10,2):
 ...         yield n
-... 
+...
 >>> odds_v0()
 [1, 3, 5, 7, 9]
 >>> odds_v1()
@@ -2215,7 +2235,7 @@ Traceback (most recent call last):
 StopIteration
 >>> timeit.timeit('for n in odds_v0(): pass', 'from __main__ import odds_v0', number=1000000)
 1.2579899600004865
->>> timeit.timeit('for n in odds_v1(): pass', 'from __main__ import odds_v1', number=1000000) # iterating over a generator is slightly faster 
+>>> timeit.timeit('for n in odds_v1(): pass', 'from __main__ import odds_v1', number=1000000) # iterating over a generator is slightly faster
 1.1573705800001335
 >>> {n * n for n in range (5)} # set generator using literals
 {0, 1, 4, 9, 16}
@@ -2235,10 +2255,9 @@ StopIteration
 [[0, 0, 0], [0, 1, 2], [0, 2, 4]]
 ```
 
-
 ### 3.12 Input. <a name="3.12"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
 
 Using the built-in `input()` method, you can get information from the user. It has an optional parameter `prompt` which prints a string on the screen.
 
@@ -2246,7 +2265,7 @@ Using the built-in `input()` method, you can get information from the user. It h
 >>> n = eval(input("please give me a number and press <return> : ")) # evaluate the input string as code..
 please give me a number and press <return> : 10
 >>> import os
->>> n = eval(input()) 
+>>> n = eval(input())
 os.system('ls')    # <----- you can insert a command as a string. So using eval is a security hole.
 'Chapter_01: The Language Basics.md'              Exercises   LICENSE   README.md
 'Chapter_02: Functions, File IO, Generators.md'   Images      Projets
@@ -2257,7 +2276,7 @@ os.system('ls')    # <----- you can insert a command as a string. So using eval 
 ```python
 >>> for i in range(n):
 ...     print(' ' * ( n - i - 1 ) + '*' * ( 2 * i + 1 ))
-... 
+...
          *     # i = 0 : 9 spaces and 1 asterisk ==> nb spaces =  n - i - 1 = 10 - 0 - 1 = 9
         ***	   # i = 1 : 8 spaces and 3 asterisks ==> nb asterisks =  2 * i + 1 = 2*0 +1 = 1
        *****
@@ -2270,7 +2289,7 @@ os.system('ls')    # <----- you can insert a command as a string. So using eval 
 *******************
 >>> for i in list(range(n)) + list(range(n-2,-1,-1)): # concatenate two lists
 ...     print(' ' * ( n - i - 1 ) + '*' * ( 2 * i + 1 ))
-... 
+...
          *
         ***
        *****
@@ -2292,7 +2311,7 @@ os.system('ls')    # <----- you can insert a command as a string. So using eval 
          *
 >>> for i in range(n):
 ...     print('*' * ( i + 1 ))
-... 
+...
 *
 **
 ***
@@ -2305,7 +2324,7 @@ os.system('ls')    # <----- you can insert a command as a string. So using eval 
 **********
 >>> for i in range(n):
 ...     print(' ' * ( n - i - 1 ) + '*' * ( i + 1 ))
-... 
+...
          *
         **
        ***
@@ -2318,7 +2337,7 @@ os.system('ls')    # <----- you can insert a command as a string. So using eval 
 **********
 >>> for i in range(n-1,-1,-1):
 ...     print(' ' * ( n - i - 1 ) + '*' * ( i + 1 ))
-... 
+...
 **********
  *********
   ********
@@ -2331,7 +2350,7 @@ os.system('ls')    # <----- you can insert a command as a string. So using eval 
          *
 >>> for i in range(n-1,-1,-1):
 ...     print('*' * ( i + 1 ))
-... 
+...
 **********
 *********
 ********
@@ -2347,107 +2366,111 @@ os.system('ls')    # <----- you can insert a command as a string. So using eval 
 
 ### 3.13 Exceptions. <a name="3.13"></a>
 
-#### [Go To TOC](#TOC). 
+#### [Go To TOC](#TOC).
+
 From [python docs](https://docs.python.org/3/library/exceptions.html#exception-hierarchy), The class hierarchy for built-in exceptions is:
+
 >
+
     BaseException # The root of all exceptions.
     +-- SystemExit # Exception thrown by the sys.exit function.
     +-- KeyboardInterrupt # Ctrl + C
     +-- GeneratorExit  #  Exception thrown by close method of the generator.
     +-- Exception
-	      +-- StopIteration # Thrown by the built-in next function when the iterator becomes empty.
-	      +-- StopAsyncIteration
-	      +-- ArithmeticError
-	      |    +-- FloatingPointError # Thrown when a floating point operation fails.
-	      |    +-- OverflowError  # arithmetic operation is too large to represent.
-	      |    +-- ZeroDivisionError # division by zero.
-	      +-- AssertionError  # The expression in the assert function is false.
-	      +-- AttributeError  # The object has no given attribute.
-	      +-- BufferError  # The operation with the buffer cannot be performed.
-	      +-- EOFError  # End of the file error.
-	      +-- ImportError  # Failed to import a module.
-	      |    +-- ModuleNotFoundError  
-	      +-- LookupError  # Index or key is not valid.
-	      |    +-- IndexError   # The index is not in the range of elements.
-	      |    +-- KeyError   # Non-existent key 
-	      +-- MemoryError   # Out of memory.
-	      +-- NameError   # Name was not found.
-	      |    +-- UnboundLocalError
-	      +-- OSError   # System related errors.
-	      |    +-- BlockingIOError
-	      |    +-- ChildProcessError
-	      |    +-- ConnectionError
-	      |    |    +-- BrokenPipeError
-	      |    |    +-- ConnectionAbortedError
-	      |    |    +-- ConnectionRefusedError
-	      |    |    +-- ConnectionResetError
-	      |    +-- FileExistsError
-	      |    +-- FileNotFoundError
-	      |    +-- InterruptedError
-	      |    +-- IsADirectoryError
-	      |    +-- NotADirectoryError
-	      |    +-- PermissionError
-	      |    +-- ProcessLookupError
-	      |    +-- TimeoutError
-	      +-- ReferenceError
-	      +-- RuntimeError
-	      |    +-- NotImplementedError
-	      |    +-- RecursionError
-	      +-- SyntaxError
-	      |    +-- IndentationError
-	      |         +-- TabError
-	      +-- SystemError
-	      +-- TypeError
-	      +-- ValueError
-	      |    +-- UnicodeError
-	      |         +-- UnicodeDecodeError
-	      |         +-- UnicodeEncodeError
-	      |         +-- UnicodeTranslateError
-	      +-- Warning
-	           +-- DeprecationWarning
-	           +-- PendingDeprecationWarning
-	           +-- RuntimeWarning
-	           +-- SyntaxWarning
-	           +-- UserWarning
-	           +-- FutureWarning
-	           +-- ImportWarning
-	           +-- UnicodeWarning
-	           +-- BytesWarning
-	           +-- ResourceWarning
+          +-- StopIteration # Thrown by the built-in next function when the iterator becomes empty.
+          +-- StopAsyncIteration
+          +-- ArithmeticError
+          |    +-- FloatingPointError # Thrown when a floating point operation fails.
+          |    +-- OverflowError  # arithmetic operation is too large to represent.
+          |    +-- ZeroDivisionError # division by zero.
+          +-- AssertionError  # The expression in the assert function is false.
+          +-- AttributeError  # The object has no given attribute.
+          +-- BufferError  # The operation with the buffer cannot be performed.
+          +-- EOFError  # End of the file error.
+          +-- ImportError  # Failed to import a module.
+          |    +-- ModuleNotFoundError
+          +-- LookupError  # Index or key is not valid.
+          |    +-- IndexError   # The index is not in the range of elements.
+          |    +-- KeyError   # Non-existent key
+          +-- MemoryError   # Out of memory.
+          +-- NameError   # Name was not found.
+          |    +-- UnboundLocalError
+          +-- OSError   # System related errors.
+          |    +-- BlockingIOError
+          |    +-- ChildProcessError
+          |    +-- ConnectionError
+          |    |    +-- BrokenPipeError
+          |    |    +-- ConnectionAbortedError
+          |    |    +-- ConnectionRefusedError
+          |    |    +-- ConnectionResetError
+          |    +-- FileExistsError
+          |    +-- FileNotFoundError
+          |    +-- InterruptedError
+          |    +-- IsADirectoryError
+          |    +-- NotADirectoryError
+          |    +-- PermissionError
+          |    +-- ProcessLookupError
+          |    +-- TimeoutError
+          +-- ReferenceError
+          +-- RuntimeError
+          |    +-- NotImplementedError
+          |    +-- RecursionError
+          +-- SyntaxError
+          |    +-- IndentationError
+          |         +-- TabError
+          +-- SystemError
+          +-- TypeError
+          +-- ValueError
+          |    +-- UnicodeError
+          |         +-- UnicodeDecodeError
+          |         +-- UnicodeEncodeError
+          |         +-- UnicodeTranslateError
+          +-- Warning
+               +-- DeprecationWarning
+               +-- PendingDeprecationWarning
+               +-- RuntimeWarning
+               +-- SyntaxWarning
+               +-- UserWarning
+               +-- FutureWarning
+               +-- ImportWarning
+               +-- UnicodeWarning
+               +-- BytesWarning
+               +-- ResourceWarning
+
 >
 
 The try - except construct is used to handle exceptions.
 
 ```python
->>> try: 
+>>> try:
 ...     print(16/0)
 ... except:
 ...     print("Error occurred!!")
-... 
+...
 Error occurred!!
 
->>> try: 
+>>> try:
 ...     print(16/0)
 ... except ZeroDivisionError:
 ...     print('+inf')
-... 
+...
 +inf
->>> try: 
+>>> try:
 ...     print(16/2)
 ... except ZeroDivisionError:
 ...     print('+inf')
 ... finally:
 ...     print('this statement will be executed anyway!')
-... 
+...
 8.0
 this statement will be executed anyway!
->>> try: 
+>>> try:
 ...     print(16/2)
 ... except ZeroDivisionError:
 ...     print('+inf')
 ... else:
 ...     print('No exception occurred')
-... 
+...
 8.0
 No exception occurred
 ```

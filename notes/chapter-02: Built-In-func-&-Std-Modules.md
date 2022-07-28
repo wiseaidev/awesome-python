@@ -4,7 +4,6 @@ Copyright (c) 2022, Harmouch101
 All rights reserved.
  -->
 
-
 # Chapter_02: Built-in functions & Standard Modules.
 
 Copyright (c) 2022 Mahmoud Harmouch
@@ -25,15 +24,15 @@ Copyright (c) 2022 Mahmoud Harmouch
 
 ## Table Of Content (TOC) <a name="TOC"></a>
 
-1. [Functions](#1)   
-	1.1	[Function's Arguments](#1.1)   
-	1.2	[Functional Programming](#1.2)   
-	&nbsp;&nbsp;&nbsp;&nbsp;1.2.1 [Anonymous Functions](#1.2.1)   
-	&nbsp;&nbsp;&nbsp;&nbsp;1.2.2 [Map](#1.2.2)   
-	&nbsp;&nbsp;&nbsp;&nbsp;1.2.3 [Filter](#1.2.3)   
-	&nbsp;&nbsp;&nbsp;&nbsp;1.2.4 [Reduce](#1.2.4)   
-	&nbsp;&nbsp;&nbsp;&nbsp;1.2.5 [Zip](#1.2.5)   
-	1.3 [Other Builtin Functions](#1.3)   
+1. [Functions](#1)  
+   1.1 [Function's Arguments](#1.1)  
+   1.2 [Functional Programming](#1.2)  
+   &nbsp;&nbsp;&nbsp;&nbsp;1.2.1 [Anonymous Functions](#1.2.1)  
+   &nbsp;&nbsp;&nbsp;&nbsp;1.2.2 [Map](#1.2.2)  
+   &nbsp;&nbsp;&nbsp;&nbsp;1.2.3 [Filter](#1.2.3)  
+   &nbsp;&nbsp;&nbsp;&nbsp;1.2.4 [Reduce](#1.2.4)  
+   &nbsp;&nbsp;&nbsp;&nbsp;1.2.5 [Zip](#1.2.5)  
+   1.3 [Other Builtin Functions](#1.3)
 2. [File I/O](#2)
 3. [Standard Modules](#3)
 
@@ -51,7 +50,7 @@ def function_name(parameters,...):
 ...
 ```
 
-The `return` statement returns an object which value is, in our case, the result of multiplication of a and b. 
+The `return` statement returns an object which value is, in our case, the result of multiplication of a and b.
 
 **Function call**
 
@@ -78,7 +77,7 @@ A function can be nested and return any data types (tuples, lists, sets, functio
 ...     def inner_function(y):
 ...         return y + x
 ...     return inner_function
-... 
+...
 >>> c = outer_function(100,3) # returns a function
 >>> c(33)
 333
@@ -89,7 +88,7 @@ If there isn't any return value, the returned data will be a `None` object(void 
 ```python
 >>> def do_nothing():
 ...     pass
-... 
+...
 >>> do_nothing()
 >>> print(do_nothing())
 None
@@ -102,7 +101,7 @@ A function can take any number of parameters.
 ```python
 >>> def mul(a, b, c=5): # Default parameter value.
 ...     return a * b *c
-... 
+...
 >>> mul(2,3)
 30
 >>> mul(a = 2, b = 3)
@@ -120,12 +119,12 @@ A function can also take a variable number of arguments if an asterisk `*` is pl
 ```python
 >>> def add(a,*b):
 ...     return a + sum(num for num in b)
-... 
+...
 >>> add(1,2,3,4,5,6,7)
 28
 >>> def do_nothing(*args):
 ...     return args
-... 
+...
 >>> do_nothing()
 ()
 >>> do_nothing(1)
@@ -139,7 +138,7 @@ So as you can see, `args` is a tuple object.
 ```python
 >>> def do_nothing(**kwargs):
 ...     return kwargs
-... 
+...
 >>> do_nothing()
 {}
 >>> type(do_nothing())
@@ -152,17 +151,17 @@ So `kargs` is a dictionary object.
 
 ## 1.2. Functional Programming. <a name="1.2"></a>
 
-Functional Programming is a often used to describe a piece of code that has no effects on other pieces(immutable data). A functional function is a function that does not change the value of data outside it(no shared variables). 
+Functional Programming is a often used to describe a piece of code that has no effects on other pieces(immutable data). A functional function is a function that does not change the value of data outside it(no shared variables).
 
 ```python
 # Non functional function:
 a = 1
 def add(b):
-	global a 
+	global a
 	a = a + b
-	return a 
+	return a
 
-# functional function:	
+# functional function:
 def add(a,b):
 	return a + b
 ```
@@ -192,7 +191,7 @@ The lambda function is best used as a nested function.
 ```python
 >>> def add_mul(a,b):
 ...     return lambda c: (a + b)*c
-... 
+...
 >>> add_mul(1,3)
 <function add_mul.<locals>.<lambda> at 0x7f9a36d94170>
 >>> add = add_mul(1,3)
@@ -205,7 +204,7 @@ The lambda function is best used as a nested function.
 ...     def mul(c):
 ...         return (a+b)*c
 ...     return mul
-... 
+...
 >>> add_mul(1,3)
 <function add_mul.<locals>.mul at 0x7f9a36da1200>
 >>> add = add_mul(1,3)
@@ -223,7 +222,7 @@ So as you can tell, it is preferable to use a lambda function when the anonymous
 # regular function
 >>> def sum2(n):
 ...     return sum(n for n in range(n+1))
-... 
+...
 >>> import timeit
 >>> timeit.timeit("sum1(100)", "from __main__ import sum1",number = 100000)
 0.8884602810003344
@@ -270,7 +269,7 @@ lambda a,b : a + b
 >>> list_ = ['first', 'second',123]
 >>> map(id,list_) # the function is id and the sequence is list_(id for each element).
 <map object at 0x7fc6d395b790>
->>> list(map(id,list_))  
+>>> list(map(id,list_))
 [140491930055984, 140491930056112, 94057408700992]
 ```
 
@@ -278,12 +277,12 @@ lambda a,b : a + b
 
 ```python
 >>> list_ = [2,4,5,7]
->>> list(map(lambda x: x**2,list_)) # it is more convenient to use lambda and not a normal function ! 
+>>> list(map(lambda x: x**2,list_)) # it is more convenient to use lambda and not a normal function !
 [4, 16, 25, 49]
 >>> list2 = []
 >>> for e in list_:
 ...     list2.append(e**2)
-... 
+...
 >>> list2
 [4, 16, 25, 49]
 >>> timeit.timeit("list2 = list(map(lambda x: x**2,list_))","from __main__ import list_",number=100000)
@@ -343,17 +342,17 @@ The following example will illustrate the main difference between the two.
 >>> list(map(lambda e: e**2, list0)) # squares the numbers in list0
 [1, 4, 9, 16, 25]
 >>> list(filter(lambda e: e**2, list0)) # does nothing, it returns list0 because e**2 is always True
->>> list(filter(lambda e: True, list0)) 
+>>> list(filter(lambda e: True, list0))
 [1, 2, 3, 4, 5]
 >>> list(filter(lambda e: False, list0))
 []
 ```
-  
+
 ### 1.2.4 Reduce. <a name="1.2.4"></a>
 
 Visit [Python Docs](https://docs.python.org/3/library/functools.html#functools.reduce) for more information.
 
-`Reduce()` is a built-in function that combines items(e.g. add, mul..) in a sequence of an iterable. Like the previous functions, it takes a **function** and a **sequence** as parameters. But, it returns a single value. 
+`Reduce()` is a built-in function that combines items(e.g. add, mul..) in a sequence of an iterable. Like the previous functions, it takes a **function** and a **sequence** as parameters. But, it returns a single value.
 
 **Syntax**
 
@@ -366,7 +365,7 @@ Visit [Python Docs](https://docs.python.org/3/library/functools.html#functools.r
 >>> def add(a,b):
 ...     print(f"{a} + {b}")
 ...     return a + b
-... 
+...
 >>> reduce(add,[1,2,3,4,5,6])
 1 + 2
 3 + 3
@@ -392,7 +391,7 @@ First, the function adds the first two elements of the sequence. Then the result
 ...     if 'weight' in person:
 ...         total_weight += person['weight']
 ...         count_weight += 1
-... 
+...
 >>> average_weight = total_weight / count_weight
 >>> print("the average weight is {:.2f}".format(average_weight))
 the average weight is 61.67
@@ -402,7 +401,7 @@ the average weight is 61.67
 >>> weights = map(lambda x: x['weight'], filter(lambda x: 'weight' in x, persons))
 >>> average_weight = reduce(lambda a,b: a+b , weights) # the weights variable is consumed here!
 >>> average_weight/3
-61.666666666666664 
+61.666666666666664
 >>> list(weights) # already consumed in average_weight!
 []
 ```
@@ -471,12 +470,12 @@ These functions are grouped together in the `__builtins__` module.
 
 ```python
 >>> dir(__builtins__)
-['abs', 'all', 'any', 'ascii', 'bin', 'bool', 'breakpoint', 'bytearray', 'bytes', 'callable', 
- 'chr', 'classmethod', 'compile', 'complex', 'copyright', 'credits', 'delattr', 'dict', 'dir', 
- 'divmod', 'enumerate', 'eval', 'exec', 'exit', 'filter', 'float', 'format', 'frozenset', 
- 'getattr', 'globals', 'hasattr', 'hash', 'help', 'hex', 'id', 'input', 'int', 'isinstance', 
- 'issubclass', 'iter', 'len', 'license', 'list', 'locals', 'map', 'max', 'memoryview', 'min', 
- 'next', 'object', 'oct', 'open', 'ord', 'pow', 'print', 'property', 'quit', 'range', 'repr', 
+['abs', 'all', 'any', 'ascii', 'bin', 'bool', 'breakpoint', 'bytearray', 'bytes', 'callable',
+ 'chr', 'classmethod', 'compile', 'complex', 'copyright', 'credits', 'delattr', 'dict', 'dir',
+ 'divmod', 'enumerate', 'eval', 'exec', 'exit', 'filter', 'float', 'format', 'frozenset',
+ 'getattr', 'globals', 'hasattr', 'hash', 'help', 'hex', 'id', 'input', 'int', 'isinstance',
+ 'issubclass', 'iter', 'len', 'license', 'list', 'locals', 'map', 'max', 'memoryview', 'min',
+ 'next', 'object', 'oct', 'open', 'ord', 'pow', 'print', 'property', 'quit', 'range', 'repr',
  'reversed', 'round', 'set', 'setattr', 'slice', 'sorted', 'staticmethod', 'str', 'sum', 'super',
  'tuple', 'type', 'vars', 'zip']
  73 Functions.
@@ -501,9 +500,9 @@ The **local** and **global** environment can be passed as a parameter, and froml
 
 >>> from math import pi
 
->>> globals().items()  # the name of the module is stored in the namespace.  
+>>> globals().items()  # the name of the module is stored in the namespace.
 dict_items([('__name__', '__main__'), ('__doc__', None), ('__package__', None), ...
-	('math', <module 'math' from '/home/.../math.cpython-37m-x86_64-linux-gnu.so'>), 
+	('math', <module 'math' from '/home/.../math.cpython-37m-x86_64-linux-gnu.so'>),
 	('pi', 3.141592653589793)])
 ```
 
@@ -539,7 +538,7 @@ True
 >>> help(any)
 any(iterable, /)
     Return True if bool(x) is True for any x in the iterable.
-    
+
     If the iterable is empty, return False.
 
 >>> list_ = [1,2,3]
@@ -624,10 +623,10 @@ This function was introduced in Python 3.7 which does the job of importing pdb a
 >>> help(breakpoint)
 breakpoint(...)
     breakpoint(*args, **kws)
-    
+
     Call sys.breakpointhook(*args, **kws).  sys.breakpointhook() must accept
     whatever arguments are passed.
-    
+
     By default, this drops you into the pdb debugger.
 
 -------without breakpoint----
@@ -635,7 +634,7 @@ breakpoint(...)
 import pdb
 x = 1
 y = 2
-print ( x ) 
+print ( x )
 pdb.set_trace()
 print ( y )
 z = x + y
@@ -643,7 +642,7 @@ z = x + y
 # file.py
 x = 1
 y = 2
-print ( x ) 
+print ( x )
 breakpoint()
 print ( y )
 z = x + y
@@ -701,7 +700,7 @@ bytearray() -> empty bytes array
 >>> bytearray()
 bytearray(b'')
 
->>> a = bytearray(b'123')  
+>>> a = bytearray(b'123')
 >>> a[1] = 3   # mutable
 >>> a
 bytearray(b'1\x033')
@@ -736,7 +735,7 @@ Returns True if the passed object is a function or a method.
 True
 >>> def func():
 ...     print("hi there!")
-... 
+...
 >>> callable(func)
 True
 >>> string = 'abc'
@@ -775,7 +774,7 @@ Converts a function to a class method. A class method is a method which is assoc
 ...      def print(self):
 ...          print(self.model + "'s speed is: " + str(self.speed))
 ...      run = classmethod(run)
-... 
+...
 >>> car0 = car(50,'mercedes')
 >>> car0.print()
 mercedes's speed is: 50
@@ -850,7 +849,7 @@ Removes an attribute from an object. Equivalent to del object.attribute_name.
 ```python
 >>> class car:
 ...     speed = 10
-... 
+...
 >>> car.speed
 10
 >>> delattr(car,'speed')
@@ -860,7 +859,7 @@ Traceback (most recent call last):
 AttributeError: type object 'car' has no attribute 'speed'
 >>> class car:
 ...     speed = 10
-... 
+...
 >>> del car.speed
 >>> car.speed
 Traceback (most recent call last):
@@ -887,7 +886,7 @@ Returns a list of the object's attributes.
 >>> class car:
 ...     speed = 10
 ...     model = 'mercedes'
-... 
+...
 >>> dir(car)
 ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'model', 'speed']
 >>> car. # using the <tab> key
@@ -913,8 +912,8 @@ Returns an object of type enumerate from an iterable(e.g. lists or tuples).
 >>> enumerate(range(10))
 <enumerate object at 0x7fd271b73f00>
 >>> for index, element in enumerate([1, 2, 3]):
-...     print(index, element)   
-... 
+...     print(index, element)
+...
 0 1
 1 2
 2 3
@@ -927,7 +926,7 @@ Returns an object of type enumerate from an iterable(e.g. lists or tuples).
 
 eval(source, globals=None, locals=None, /)
     Evaluate the given source in the context of globals and locals.
-    
+
     The source may be a string representing a Python expression
     or a code object as returned by compile().
 
@@ -962,7 +961,7 @@ Use exit() or Ctrl-D (i.e. EOF) to exit
 
 **float**, **format**, **frozenset**
 
-Explained in *chapter_01*.
+Explained in _chapter_01_.
 
 **getattr**
 
@@ -971,7 +970,7 @@ Returns the attribute's value of an object. Same as object.attr_name.
 ```python
 >>> class car:
 ...     speed = 50
-... 
+...
 >>> getattr(car,'speed')
 50
 >>> car.speed
@@ -990,19 +989,18 @@ Returns a dictionary containing all the global variables of the namespace.
 
 ```python
 >>> globals()
-{'__name__': '__main__', '__doc__': None, '__package__': None, '__loader__': <class 
-'_frozen_importlib.BuiltinImporter'>, '__spec__': None, '__annotations__': {}, 
+{'__name__': '__main__', '__doc__': None, '__package__': None, '__loader__': <class
+'_frozen_importlib.BuiltinImporter'>, '__spec__': None, '__annotations__': {},
 '__builtins__': <module 'builtins' (built-in)>, 'car': <class '__main__.car'>}
 >>> x = 16
 >>> globals()
-{'__name__': '__main__', '__doc__': None, '__package__': None, '__loader__': <class 
-'_frozen_importlib.BuiltinImporter'>, '__spec__': None, '__annotations__': {}, 
+{'__name__': '__main__', '__doc__': None, '__package__': None, '__loader__': <class
+'_frozen_importlib.BuiltinImporter'>, '__spec__': None, '__annotations__': {},
 '__builtins__': <module 'builtins' (built-in)>, 'car': <class '__main__.car'>, 'x': 16}
 
 ```
 
 **hasattr**
-
 
 Returns True if the object has the given attribute's name.
 
@@ -1065,7 +1063,7 @@ Help on built-in function hash in module builtins:
 
 hash(obj, /)
     Return the hash value for the given object.
-    
+
     Two objects that compare equal must also have the same hash value, but the
     reverse is not necessarily true.
 ```
@@ -1136,10 +1134,10 @@ Checks if a given class derives from another class.
 ```python
 >>> class x:
 ...     pass
-... 
+...
 >>> class y(x):
 ...     pass
-... 
+...
 >>> issubclass(y,x)
 True
 >>> issubclass(x,y)
@@ -1170,7 +1168,7 @@ StopIteration
 ...     global x
 ...     x += 1
 ...     return x
-... 
+...
 >>> it = iter(iterator,5)
 >>> it
 <callable_iterator object at 0x7f04b98f0fd0>
@@ -1227,7 +1225,7 @@ Zope Corporation was a sponsoring member of the PSF.
 
 All Python releases are Open Source (see http://www.opensource.org for
 the Open Source Definition).  Historically, most, but not all, Python
-Hit Return for more, or q (and Return) to quit: 
+Hit Return for more, or q (and Return) to quit:
 ```
 
 **list**
@@ -1253,7 +1251,7 @@ Returns a dictionary object containing the local variables of the current scope.
 >>> def add(a,b):
 ...     x = a + b
 ...     print(locals())
-... 
+...
 >>> add(1,2)
 {'a': 1, 'b': 2, 'x': 3}
 ```
@@ -1374,6 +1372,7 @@ Returns a file object.
 >>> f.readline()
 'JvmtiExport can_access_local_variables 0\n'
 ```
+
 **ord**
 
 Returns an integer Unicode code value of a character.
@@ -1431,7 +1430,7 @@ Creates a property from an object attribute.
 ...     def get_a(self):
 ...         return self.__a
 ...     a = property(get_a, set_a)
-... 
+...
 >>> a = A
 >>> a.a
 1
@@ -1451,7 +1450,7 @@ You can use `@property` decorator instead of calling the property object.
 ...     @property
 ...     def get_a(self):
 ...         return self.__a
-... 
+...
 ```
 
 **quit**
@@ -1462,6 +1461,7 @@ Allows you to exit the REPL.
 >>> quit
 Use quit() or Ctrl-D (i.e. EOF) to exit
 ```
+
 **range**
 
 Returns a range objectg indicating the start and the end. By default step = 1 and start 0.
@@ -1483,7 +1483,7 @@ Traceback (most recent call last):
 TypeError: range expected 1 arguments, got 0
 >>> for i in range(5):
 ...     print(i, end = ', ')
-... 
+...
 0, 1, 2, 3, 4,
 ```
 
@@ -1549,7 +1549,7 @@ object.attr = val.
 ```python
 >>> class A:
 ...     a
-... 
+...
 >>> a = A
 >>> a.a = 10
 >>> a.a
@@ -1592,7 +1592,7 @@ Returns a list of sorted items based on the items of the iterable object.
 ...     r = -ord(e)
 ...     print(f"key({e}) = {r}")
 ...     return r
-... 
+...
 >>> sorted(['c', 'a', 'b', 'd', 'h'], key=key)
 key(c) = -99
 key(a) = -97
@@ -1604,7 +1604,7 @@ key(h) = -104
 ...     res = ord(e)
 ...     print(f"key({e}) = {res}")
 ...     return res
-... 
+...
 >>> sorted(['c', 'a', 'b', 'd', 'h'], key=key)
 key(c) = 99
 key(a) = 97
@@ -1623,7 +1623,7 @@ Transforms a function into a static method. A static method is a method that is 
 ...     def add(a,b):
 ...         return a + b
 ...     add = staticmethod(add)
-... 
+...
 >>> A.add(1,3)
 4
 >>> a = A()
@@ -1638,7 +1638,7 @@ The last statement of the class be replaced by a decorator.
 ...     @staticmethod
 ...     def add(a,b):
 ...         return a + b
-... 
+...
 >>> A.add(1,3)
 4
 >>> a = A()
@@ -1681,24 +1681,23 @@ Returns the sum of all elements of a sequence.
 
 **super**
 
-
 It is frequently used when a method is overloaded in descendant classes.
 
 ```python
 >>> class A:
 ...     def __init__(self):
 ...         print("A.__init__()")
-... 
+...
 >>> class B(A):
 ...     def __init__(self):
 ...         print("B.__init__()")
 ...         super().__init__()
-... 
+...
 >>> class C(B):
 ...     def __init__(self):
 ...         print("C.__init__()")
 ...         super().__init__()
-... 
+...
 >>> c = C()
 C.__init__()
 B.__init__()
@@ -1736,7 +1735,7 @@ This notation is used to avoid an explicit definition of the new type.
 
 **vars**
 
-If the object is not provided, vars() is equivalent to locals(). Otherwise, vars(object) is equivalent to object.__ dict__.
+If the object is not provided, vars() is equivalent to locals(). Otherwise, vars(object) is equivalent to object.** dict**.
 
 ```python
 >>> vars()
@@ -1758,9 +1757,9 @@ Concatenates sequences.
 [(1, 4), (2, 5), (3, 6)]
 >>> list(map(lambda x, y : (x,y), [1,2,3],[4,5,6]))
 [(1, 4), (2, 5), (3, 6)]
->>> for i, j in zip([1,2,3],[4,5,6]): 
+>>> for i, j in zip([1,2,3],[4,5,6]):
 ...     print(i, j)
-... 
+...
 1 4
 2 5
 3 6
@@ -1773,34 +1772,35 @@ Concatenates sequences.
 Before reading from and writing to a file, you need to open it. Using the built-in open() function, you can create an object of type file, which you can work on.
 
 **syntax**
+
 ```python
 f = open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)
 ```
 
-| mode | Description |
-| --- | --- |
-| `r` | Opens the file as **read-only** with a pointer placed at the beginning of a given file. |
-| `rb` | Opens a file for **reading** in **binary** format. |
-| `r+` | Opens a file for **reading** and **writing**. |
-| `rb+` | Opens a file for **reading** and **writing** in binary format. |
-| `w` | Opens a file for **writing** only. Creates a file if it does not exist. |
-| `wb` | Opens a file for **writing** in **binary** format. Creates a file if it doesn't exist. |
-| `w+` | Opens a file for **reading** and **writing**. Creates a file if it does not exist. |
-| `wb+` | Opens a file for **reading** and **writing** in **binary** format. Creates a file if it does not exist. |
-| `a` | Opens for writing, **appending** to the end of the file if it exists. The pointer is at the end of the file. |
-| `ab` | Opens for writing, **appending** in **binary** to the end of the file if it exists. |
-| `a+` | Opens a file for **appending** and **reading**. The pointer is at the end of the file. |
-| `ab+` | Opens a file for **appending** and **reading** in **binary** format. The pointer is at the end of the file. |
+| mode  | Description                                                                                                  |
+| ----- | ------------------------------------------------------------------------------------------------------------ |
+| `r`   | Opens the file as **read-only** with a pointer placed at the beginning of a given file.                      |
+| `rb`  | Opens a file for **reading** in **binary** format.                                                           |
+| `r+`  | Opens a file for **reading** and **writing**.                                                                |
+| `rb+` | Opens a file for **reading** and **writing** in binary format.                                               |
+| `w`   | Opens a file for **writing** only. Creates a file if it does not exist.                                      |
+| `wb`  | Opens a file for **writing** in **binary** format. Creates a file if it doesn't exist.                       |
+| `w+`  | Opens a file for **reading** and **writing**. Creates a file if it does not exist.                           |
+| `wb+` | Opens a file for **reading** and **writing** in **binary** format. Creates a file if it does not exist.      |
+| `a`   | Opens for writing, **appending** to the end of the file if it exists. The pointer is at the end of the file. |
+| `ab`  | Opens for writing, **appending** in **binary** to the end of the file if it exists.                          |
+| `a+`  | Opens a file for **appending** and **reading**. The pointer is at the end of the file.                       |
+| `ab+` | Opens a file for **appending** and **reading** in **binary** format. The pointer is at the end of the file.  |
 
 ```python
 >>> f = open("file.txt", "w")
 >>> f.
 f.buffer          f.fileno(         f.newlines        f.seek(           f.write_through
 f.close(          f.flush(          f.read(           f.seekable(       f.writelines(
-f.closed          f.isatty(         f.readable(       f.tell(           
-f.detach(         f.line_buffering  f.readline(       f.truncate(       
-f.encoding        f.mode            f.readlines(      f.writable(       
-f.errors          f.name            f.reconfigure(    f.write(          
+f.closed          f.isatty(         f.readable(       f.tell(
+f.detach(         f.line_buffering  f.readline(       f.truncate(
+f.encoding        f.mode            f.readlines(      f.writable(
+f.errors          f.name            f.reconfigure(    f.write(
 >>> f.mode
 'w'
 >>> f.name
@@ -1844,7 +1844,7 @@ readline(size=-1, /) method of _io.TextIOWrapper instance
 'lin'
 >>> f.readline(5)
 'e 1 <'
->>> f.tell() # Tells the position of the pointer. 
+>>> f.tell() # Tells the position of the pointer.
 5
 >>> help(f.readlines)
 
@@ -1913,44 +1913,42 @@ fnmatch — Unix filename pattern matching
 linecache — Random access to text lines
 shutil — High-level file operations
 
-
-| Topic | Modules |
-| --- | --- |
-| Internet Data Handling | base64, binhex, binascii, email, json, mailbox, mailcap, mimetypes, quopri, uu. |
-| Development Tools | unittest, typing , pydoc, doctest, test, 2to3. |
-| Debugging and Profiling | cProfile, faulthandler , pdb, profile, trace, tracemalloc. | 
-| Graphical | IDLE, PyGObject, PyGTK, PyQt, PySide2, wxPython, Tkinter. |
-| Internet Protocols | cgi, cgitb, imaplib, ipaddress, nntplib, poplib, smtplib, socket, syncore, telnetlib, urllib, urllib2. |
-| Platform | UNIX: pwd , grp , fcntl , resource , termios. |
-| Language Services | ast, compileall, dis, keyword, parser, pickletools, pyclbr, py_compile, symbol, symtable, tabnanny, token, tokenize.  |
-| Networking | asyncio, asynchat, asyncore, mmap, select, selectors, signal, socket, ssl. |
-| Concurrent Execution | concurrent.futures, multiprocessing, multiprocessing.shared_memory, queue, sched, subprocess,  threading, _thread. |
-| OS Services | argparse, ctypes, curses, curses.ascii, curses.panel, curses.textpad, errno, io, logging, logging.config, logging.handlers , getopt, getpass, platform, time, os. |
-| Cryptographic Services | hashlib, hmac, secrets. |
-| File Formats | configparser, csv, netrc, plistlib, xdrlib. |
-| Data Compression | bz2, gzip, lzma, tarfile, zlib, zipfile. |
-| Data Persistence | copyreg, dbm, marshal, pickle, shelve, sqlite3. |
-| File and Directory Access | filecmp, fileinput, fnmatch, glob, linecache, os.path, pathlib, stat, shutil, tempfile. |
-| Functional Programming | functools, itertools , operator. |
-| Numeric and Mathematics | cmath, decimal, fractions, math, numbers, random, statistics. |
-| Data Types | array, bisect, calendar, collections, collections.abc, copy, datetime, enum, graphlib, heapq, pprint, reprlib, types, weakref, zoneinfo. |
-| Runtime Services | array, atexit, calendar, cmath, copy, datetime, gettext, itertools, locale, math, random, sets, struct, sys, traceback. |
-| Text Processing Services | string, re, difflib, textwrap, unicodedata, stringprep, readline, rlcompleter. |
-| Binary Data Services | struct, codecs. |
-
+| Topic                     | Modules                                                                                                                                                           |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Internet Data Handling    | base64, binhex, binascii, email, json, mailbox, mailcap, mimetypes, quopri, uu.                                                                                   |
+| Development Tools         | unittest, typing , pydoc, doctest, test, 2to3.                                                                                                                    |
+| Debugging and Profiling   | cProfile, faulthandler , pdb, profile, trace, tracemalloc.                                                                                                        |
+| Graphical                 | IDLE, PyGObject, PyGTK, PyQt, PySide2, wxPython, Tkinter.                                                                                                         |
+| Internet Protocols        | cgi, cgitb, imaplib, ipaddress, nntplib, poplib, smtplib, socket, syncore, telnetlib, urllib, urllib2.                                                            |
+| Platform                  | UNIX: pwd , grp , fcntl , resource , termios.                                                                                                                     |
+| Language Services         | ast, compileall, dis, keyword, parser, pickletools, pyclbr, py_compile, symbol, symtable, tabnanny, token, tokenize.                                              |
+| Networking                | asyncio, asynchat, asyncore, mmap, select, selectors, signal, socket, ssl.                                                                                        |
+| Concurrent Execution      | concurrent.futures, multiprocessing, multiprocessing.shared_memory, queue, sched, subprocess, threading, \_thread.                                                |
+| OS Services               | argparse, ctypes, curses, curses.ascii, curses.panel, curses.textpad, errno, io, logging, logging.config, logging.handlers , getopt, getpass, platform, time, os. |
+| Cryptographic Services    | hashlib, hmac, secrets.                                                                                                                                           |
+| File Formats              | configparser, csv, netrc, plistlib, xdrlib.                                                                                                                       |
+| Data Compression          | bz2, gzip, lzma, tarfile, zlib, zipfile.                                                                                                                          |
+| Data Persistence          | copyreg, dbm, marshal, pickle, shelve, sqlite3.                                                                                                                   |
+| File and Directory Access | filecmp, fileinput, fnmatch, glob, linecache, os.path, pathlib, stat, shutil, tempfile.                                                                           |
+| Functional Programming    | functools, itertools , operator.                                                                                                                                  |
+| Numeric and Mathematics   | cmath, decimal, fractions, math, numbers, random, statistics.                                                                                                     |
+| Data Types                | array, bisect, calendar, collections, collections.abc, copy, datetime, enum, graphlib, heapq, pprint, reprlib, types, weakref, zoneinfo.                          |
+| Runtime Services          | array, atexit, calendar, cmath, copy, datetime, gettext, itertools, locale, math, random, sets, struct, sys, traceback.                                           |
+| Text Processing Services  | string, re, difflib, textwrap, unicodedata, stringprep, readline, rlcompleter.                                                                                    |
+| Binary Data Services      | struct, codecs.                                                                                                                                                   |
 
 ### [base64](https://docs.python.org/3.9/library/base64.html)
 
-This module provides binary data encoding and decoding functions in the formats defined by RFC3548 for base16, base32, and base64. It is used in the HTTP protocol for binary data transmission. 
+This module provides binary data encoding and decoding functions in the formats defined by RFC3548 for base16, base32, and base64. It is used in the HTTP protocol for binary data transmission.
 
 ```python
 >>> dir(base64)
-['MAXBINSIZE', 'MAXLINESIZE', '_85encode', '_A85END', '_A85START', '__all__', '__builtins__', '__cached__', 
-'__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_a85chars', '_a85chars2', 
-'_b32alphabet', '_b32rev', '_b32tab2', '_b85alphabet', '_b85chars', '_b85chars2', '_b85dec', 
-'_bytes_from_decode_data', '_input_type_check', '_urlsafe_decode_translation', '_urlsafe_encode_translation', 
-'a85decode', 'a85encode', 'b16decode', 'b16encode', 'b32decode', 'b32encode', 'b64decode', 'b64encode', 'b85decode', 
-'b85encode', 'binascii', 'bytes_types', 'decode', 'decodebytes', 'decodestring', 'encode', 'encodebytes', 'encodestring', 
+['MAXBINSIZE', 'MAXLINESIZE', '_85encode', '_A85END', '_A85START', '__all__', '__builtins__', '__cached__',
+'__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_a85chars', '_a85chars2',
+'_b32alphabet', '_b32rev', '_b32tab2', '_b85alphabet', '_b85chars', '_b85chars2', '_b85dec',
+'_bytes_from_decode_data', '_input_type_check', '_urlsafe_decode_translation', '_urlsafe_encode_translation',
+'a85decode', 'a85encode', 'b16decode', 'b16encode', 'b32decode', 'b32encode', 'b64decode', 'b64encode', 'b85decode',
+'b85encode', 'binascii', 'bytes_types', 'decode', 'decodebytes', 'decodestring', 'encode', 'encodebytes', 'encodestring',
 'main', 're', 'standard_b64decode', 'standard_b64encode', 'struct', 'test', 'urlsafe_b64decode', 'urlsafe_b64encode']
 ```
 
@@ -1972,7 +1970,7 @@ b'SGkgVGhlcmUh'
 >>> type(b64)
 <class 'bytes'>
 >>> type(bytes_)
-<class 'bytes'>	
+<class 'bytes'>
 >>> b64_decode = b64.decode("UTF-8") # converts bytes object to string object. !!!
 >>> b64_decode
 'SGkgVGhlcmUh'
@@ -2007,7 +2005,7 @@ b'Hi There!'
 ...     print(line_dec)
 ...     with open("file1.b64", "ab+") as f:  # append each line in binairy.
 ...         f.write(line_b64_enc)
-... 
+...
 b'bGluZV8wMQkJPC0tLS0tLQo='
 line_01         <------
 
@@ -2043,7 +2041,7 @@ bGluZV8wNyAJPC0tLS0tLQ==bGluZV8wMQkJPC0tLS0tLQo=bGluZV8wMiAJPC0tLS0tLQo=bGluZV8w
 #### Base32 encoding and decoding
 
 ```python
->>> import base64 
+>>> import base64
 >>> string = "Hi There!"
 >>> bytes_ = string.encode("ascii")
 >>> b32 = base64.b32encode(bytes_)
@@ -2060,7 +2058,7 @@ b'Hi There!'
 #### hexadecimal(Base16) encoding and decoding
 
 ```python
->>> import base64 
+>>> import base64
 >>> string = "Hi There!"
 >>> bytes_ = string.encode("ascii")
 >>> b16 = base64.b16encode(bytes_)
@@ -2086,7 +2084,7 @@ This module provides binary data encoding and decoding functions in binhex4 form
 >>> binhex.binhex('file.txt', 'file1.hqx')
 >>> for line in open('file1.hqx', 'r'):
 ...     print(line)
-... 
+...
 (This file must be converted with BinHex 4.0)
 
 
@@ -2106,7 +2104,7 @@ J#6`YN!B+E'PZC9m`-`N*2#f3"JTXD@jPAc!d)!Nm,C!'#QaTEQ9I-$8J#6`YN!B
 >>> binhex.hexbin('file1.hqx', 'file1.txt')
 >>> for line in open('file1.txt', 'r'):
 ...     print(line)
-... 
+...
 line_01         <------
 
 line_02         <------
@@ -2181,7 +2179,7 @@ Returns a tuple contains the type of exception, the instance of the exception, a
 ...     a = a/3
 ... except:
 ...     print(sys.exc_info())
-... 
+...
 qwe
 (<class 'TypeError'>, TypeError("unsupported operand type(s) for /: 'str' and 'int'"), <traceback object at 0x7f13b8ccb690>)
 
@@ -2202,14 +2200,14 @@ Returns the type of the current running platform.
 'linux'
 ```
 
-**builtin_module_names** 
+**builtin_module_names**
 
 Returns a tuple of strings containing the names of all available modules.
 
 ```python
 >>> sys.builtin_module_names
-('_abc', '_ast', '_codecs', '_collections', '_functools', '_imp', '_io', '_locale', '_operator', '_signal', '_sre', 
-'_stat', '_string', '_symtable', '_thread', '_tracemalloc', '_warnings', '_weakref', 'atexit', 'builtins', 
+('_abc', '_ast', '_codecs', '_collections', '_functools', '_imp', '_io', '_locale', '_operator', '_signal', '_sre',
+'_stat', '_string', '_symtable', '_thread', '_tracemalloc', '_warnings', '_weakref', 'atexit', 'builtins',
 'errno', 'faulthandler', 'gc', 'itertools', 'marshal', 'posix', 'pwd', 'sys', 'time', 'xxsubtype', 'zipimport')
 ```
 
@@ -2258,7 +2256,6 @@ Returns the C API version.
 1013
 ```
 
-
 **stdin, stdout, stderr**
 
 standard input, standard output and standard error stream.
@@ -2270,7 +2267,7 @@ standard input, standard output and standard error stream.
 <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
 >>> sys.stdout.write("Hi there!\n") # print out the message and returns the len of the string.
 Hi there!
-10	
+10
 >>> a = sys.stderr.write("Error\n")
 Error
 ```
@@ -2293,7 +2290,7 @@ Returns an object containing information about the running python interpreter.
 
 ```python
 >>> sys.implementation
-namespace(_multiarch='x86_64-linux-gnu', cache_tag='cpython-37', hexversion=50792176, 
+namespace(_multiarch='x86_64-linux-gnu', cache_tag='cpython-37', hexversion=50792176,
 	name='cpython', version=sys.version_info(major=3, minor=7, micro=6, releaselevel='final', serial=0))
 ```
 
@@ -2307,4 +2304,3 @@ The os module groups together 333 functions or objects.
 >>> len([n for n in dir(os) if not n.startswith("_")])
 313
 ```
-

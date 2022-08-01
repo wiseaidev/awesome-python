@@ -1,6 +1,6 @@
 <!-- MIT License
 
-Copyright (c) 2022, Harmouch101
+Copyright (c) 2022, wiseaidev
 All rights reserved.
  -->
 
@@ -8,30 +8,30 @@ All rights reserved.
     <a href="https://gitter.im/awesome-pycon/community">
        <img src="https://img.shields.io/badge/GITTER-join%20chat-green.svg?style=for-the-badge&logoColor=blue&color=black" alt="Join the chat at https://gitter.im/awesome-pycon/community"/>
     </a>
-    <a href="https://github.com/Harmouch101/awesome-python">
+    <a href="https://github.com/wiseaidev/awesome-python">
        <img src="https://img.shields.io/badge/open_source-%F0%9F%A4%8D-3DA639.svg?style=for-the-badge&logoColor=blue&color=black" alt="Open Source Love"/>
     </a>
-    <a href="https://github.com/Harmouch101/awesome-python/blob/master/LICENSE">
-       <img src="https://img.shields.io/github/license/Harmouch101/awesome-python?style=for-the-badge&logoColor=blue&color=black" alt="License"/>
+    <a href="https://github.com/wiseaidev/awesome-python/blob/master/LICENSE">
+       <img src="https://img.shields.io/github/license/wiseaidev/awesome-python?style=for-the-badge&logoColor=blue&color=black" alt="License"/>
     </a>
-    <a href="https://github.com/Harmouch101/awesome-python/blob/master/CODE_OF_CONDUCT.md">
+    <a href="https://github.com/wiseaidev/awesome-python/blob/master/CODE_OF_CONDUCT.md">
        <img src="https://img.shields.io/badge/code_of_conduct-🌐-ff69b4.svg?style=for-the-badge&logoColor=blue&color=black" alt="Code of Conduct"/>
     </a>
-    <a href="https://github.com/Harmouch101/awesome-python/">
-       <img src="https://img.shields.io/github/repo-size/Harmouch101/awesome-python?style=for-the-badge&logoColor=blue&color=black" alt="Repo Size"/>
+    <a href="https://github.com/wiseaidev/awesome-python/">
+       <img src="https://img.shields.io/github/repo-size/wiseaidev/awesome-python?style=for-the-badge&logoColor=blue&color=black" alt="Repo Size"/>
     </a>
 </div>
 
 <!-- 
-[![Latest Version](https://img.shields.io/github/v/tag/Harmouch101/awesome-python?sort=semver&label=version)](https://github.com/Harmouch101/awesome-python/) -->
+[![Latest Version](https://img.shields.io/github/v/tag/wiseaidev/awesome-python?sort=semver&label=version)](https://github.com/wiseaidev/awesome-python/) -->
 
 <!-- 
-[![Last Commit](https://img.shields.io/github/last-commit/Harmouch101/awesome-python?color=brown&logo=github&logoColor=green&style=for-the-badge)](https://github.com/Harmouch101/awesome-python/commits/master)
+[![Last Commit](https://img.shields.io/github/last-commit/wiseaidev/awesome-python?color=brown&logo=github&logoColor=green&style=for-the-badge)](https://github.com/wiseaidev/awesome-python/commits/master)
  -->
 
 <div align="center">
 <!--     <span>
-        <a href="https://github.com/Harmouch101/awesome-python">
+        <a href="https://github.com/wiseaidev/awesome-python">
             <img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" class="attachment-full size-full jetpack-lazy-image" alt="Fork me on GitHub" data-recalc-dims="1" data-lazy-src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149&is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" align="right" float="right">
         </a>
     </span> --> 
@@ -41,7 +41,7 @@ All rights reserved.
 </div>
 
 <div align="center">
-    <a href="https://github.com/Harmouch101/awesome-python">
+    <a href="https://github.com/wiseaidev/awesome-python">
         <img src="./assets/Banner1.jpg" alt="Awesome Python">
     </a>
     <br>
@@ -343,11 +343,11 @@ This repository serves three primary roles:
 
 <!-- Links -->
 
-[0]: https://harmouch101.github.io/awesome-python/notes/chapter-01:%20The-Language-Basics.html
-[1]: https://harmouch101.github.io/awesome-python/notes/chapter-02:%20Built-In-func-&-Std-Modules.html
+[0]: https://wiseaidev.github.io/awesome-python/notes/chapter-01:%20The-Language-Basics.html
+[1]: https://wiseaidev.github.io/awesome-python/notes/chapter-02:%20Built-In-func-&-Std-Modules.html
 
-[00]: https://harmouch101.github.io/awesome-python/CONTRIBUTING.html
-[01]: https://github.com/harmouch101
+[00]: https://wiseaidev.github.io/awesome-python/CONTRIBUTING.html
+[01]: https://github.com/wiseaidev
 
 [010]: https://www.youtube.com/watch?v=6zu8lrYn6t8
 [0100]: https://intro2017.trey.io/

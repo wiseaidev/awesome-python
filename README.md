@@ -84,7 +84,8 @@ This repository serves three primary roles:
     1.9. [Testing](#Testing)    
     1.10. [Refactoring](#refactoring)    
     1.11. [ML & Statistics](#ml-statistics)    
-    1.12. [Security](#security)  
+    1.12. [Security](#security)   
+    1.13. [Async Programming](#async-programming)   
 
 2. [My Notes/Book](#Notes)   
     2.1. [Chapter-01: The Language Basics](#chapter1)   
@@ -268,6 +269,18 @@ This repository serves three primary roles:
 | :---: | :---: | :------------:      | :------------:     | :------------:     | :------------: |
 | <img src="https://img.youtube.com/vi/LgoGcr8xUiI/0.jpg" width="60px"/> | Practical API Security. <a name="1.12.1"></a>  | [`2019`][1110] [`2018`][1111] |  `03:18:36` |  [`Github`][11100] | --- |
 | <img src="https://img.youtube.com/vi/i4CxLpYhkrM/0.jpg" width="60px"/> | An introduction to secure web development with Django and Python. <a name="1.12.1"></a> | [`2017`][1120] |  `02:56:15` | --- | --- |
+
+---
+
+### 1.13 Async Programming <a name="async-programming"></a>
+
+#### 🔝 [Go To TOC](#TOC).
+
+| Thumbnail |  Video Title | YT Links   |  Duration   | Speaker Deck  | Backup files |
+| :---: | :---: | :------------:      | :------------:     | :------------:     | :------------: |
+| <img src="https://img.youtube.com/vi/iG6fr81xHKA/0.jpg" width="60px"/> | Asynchronous Python for the Complete Beginner. <a name="1.13.1"></a>  | [`2017`][1210] |  `00:30:57` |  [`Gist`][12100] [`2017`][12101] | --- |
+| <img src="https://img.youtube.com/vi/gJ7CnUX_7YQ/0.jpg" width="60px"/> | Asynchronous Web Development with Flask. <a name="1.13.2"></a>  | [`2019`][1220] |  `00:27:21` | [`2019`][12200] | --- |
+| <img src="https://img.youtube.com/vi/M-UcUs7IMIM/0.jpg" width="60px"/> | Get to grips with asyncio in Python 3. <a name="1.13.3"></a>  | [`2017`][1230] |  `00:59:22` | --- | --- |
 
 ---
 
@@ -591,6 +604,15 @@ This repository serves three primary roles:
 [11100]: https://github.com/aenglander/practical-api-security-python-example-flask
 
 [1120]: https://www.youtube.com/watch?v=i4CxLpYhkrM
+
+[1210]: https://www.youtube.com/watch?v=iG6fr81xHKA
+[12100]: https://gist.github.com/miguelgrinberg/f15bc03471f610cfebeba62438435508
+[12101]: https://speakerdeck.com/miguelgrinberg/asynchronous-python-for-the-complete-beginner
+
+[1220]: https://youtu.be/gJ7CnUX_7YQ&t=75
+[12200]: https://speakerdeck.com/miguelgrinberg/asynchronous-web-development-with-flask
+
+[1230]: https://youtu.be/M-UcUs7IMIM?t=169
 
 <!-- Books -->
 

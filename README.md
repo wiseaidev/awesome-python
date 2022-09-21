@@ -3,6 +3,7 @@
 Copyright (c) 2022, wiseaidev
 All rights reserved.
  -->
+# Awesome Python [![Awesome](https://awesome.re/badge-flat.svg)](https://github.com/sindresorhus/awesome)
 
 <div align="center">
     <a href="https://gitter.im/awesome-pycon/community">
@@ -58,38 +59,37 @@ This repository serves three primary roles:
 > Currently maintained by [`Mahmoud Harmouch`][01].  
 
 ---
-
 ## 👉 Table Of Content (TOC). <a name="TOC"></a>
 
-1. [Python Talks](#Talks)   
-    1.1. [Novice Level - Core](#Novice)   
-    1.2. [Intermediate Level - Core](#Intermediate)   
-    1.3. [Generic](#generic)   
-    1.4. [Python 2 and Python 3](#2to3)    
-    1.5. [DSA](#DSA)   
-    1.6. [DevOps](#DevOps)    
-    1.7. [Full-Stack](#Full)   
-    1.8. [Self Care & Life](#SelfCare)    
-    1.9. [Testing](#Testing)    
-    1.10. [Refactoring](#refactoring)    
-    1.11. [ML & Statistics](#ml-statistics)    
-    1.12. [Security](#security)   
-    1.13. [Async Programming](#async-programming)   
+1. [Python Talks](#Talks)  
+    1.1. [Novice Level - Core](#Novice)  
+    1.2. [Intermediate Level - Core](#Intermediate)  
+    1.3. [Generic](#generic)  
+    1.4. [Python 2 and Python 3](#2to3)  
+    1.5. [DSA](#DSA)  
+    1.6. [DevOps](#DevOps)  
+    1.7. [Full-Stack](#Full)  
+    1.8. [Self Care & Life](#SelfCare)  
+    1.9. [Testing](#Testing)  
+    1.10. [Refactoring](#refactoring)  
+    1.11. [ML & Statistics](#ml-statistics)  
+    1.12. [Security](#security)  
+    1.13. [Async Programming](#async-programming)  
 
-2. [Notes by the community](#Notes)   
-    2.1. [Chapter-01: The Language Basics](#chapter1)   
+2. [Notes by the community](#notes)  
+    2.1. [Chapter-01: The Language Basics](#chapter1)  
     2.2. [Chapter-02: Built-In functions and the Std-Modules](#chapter2)  
 
-3. [Python Books](#Books)   
-    3.1. [Novice Level](#books3.1)    
-    3.2. [Intermediate Level](#books3.2)    
-    3.3. [Reference](#books3.3)   
+3. [Python Books](#books)  
+    3.1. [Novice Level](#books3.1)  
+    3.2. [Intermediate Level](#books3.2)  
+    3.3. [Reference](#books3.3)  
 ---
 
 ## 1. 📺 Python Talks <a name="Talks"></a>
-
-#### 🔝 [Go To TOC](#TOC). 
-
+<!--lint disable double-link-->
+#### 🔝 [Go To TOC](#TOC).
+<!--lint enable double-link-->
 ### 1.1 Novice Level <a name="Novice"></a>  
 
 | Thumbnail |  Video Title | YT Links   |  Duration     | Speaker Deck  | Backup files |
@@ -273,7 +273,7 @@ This repository serves three primary roles:
 
 ---
 
-## 2. 📝 Notes by the community. <a name="Notes"></a>
+## 2. 📝 Notes by the community. <a name="notes"></a>
 
 #### 🔝 [Go To TOC](#TOC). 
 
@@ -283,7 +283,7 @@ This repository serves three primary roles:
 
 ---
 
-## 3. 📚 Python Books(Core). <a name="Books">
+## 3. 📚 Python Books(Core). <a name="books">
 
 #### 🔝 [Go To TOC](#TOC). 
 

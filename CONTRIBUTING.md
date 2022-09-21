@@ -82,6 +82,14 @@ Please ensure your pull request adheres to the following guidelines:
 - Search previous suggestions before making a new one, as yours may be a duplicate.
 - Make an individual pull request for each suggestion.
 - Place your note file under the notes folder.
+- Link it in the readme file.
+
+#### Submitting PyCon Videos:
+
+Please ensure your pull request adheres to the following guidelines:
+
+- Search previous suggestions before making a new one, as yours may be a duplicate.
+- Make an individual pull request for each suggestion.
 - Use the following format:
 
 ```html
@@ -104,7 +112,6 @@ Deck`][unique_numbre] | [`Cloud_Provider_link_backup`][unique_numbre] |
 
 - Search previous suggestions before making a new one, as yours may be a duplicate.
 - Make an individual pull request for each suggestion.
-- Place your note file under the notes folder.
 - Use the following format:
 
 ```html

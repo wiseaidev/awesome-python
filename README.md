@@ -87,7 +87,7 @@ This repository serves three primary roles:
     1.12. [Security](#security)   
     1.13. [Async Programming](#async-programming)   
 
-2. [My Notes/Book](#Notes)   
+2. [Notes by the community](#Notes)   
     2.1. [Chapter-01: The Language Basics](#chapter1)   
     2.2. [Chapter-02: Built-In functions and the Std-Modules](#chapter2)  
 
@@ -284,7 +284,7 @@ This repository serves three primary roles:
 
 ---
 
-## 2. 📝 My Notes/Book <a name="Notes"></a>
+## 2. 📝 Notes by the community. <a name="Notes"></a>
 
 #### 🔝 [Go To TOC](#TOC). 
 

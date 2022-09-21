@@ -30,17 +30,6 @@ All rights reserved.
  -->
 
 <div align="center">
-<!--     <span>
-        <a href="https://github.com/wiseaidev/awesome-python">
-            <img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" class="attachment-full size-full jetpack-lazy-image" alt="Fork me on GitHub" data-recalc-dims="1" data-lazy-src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149&is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" align="right" float="right">
-        </a>
-    </span> --> 
-    <span display="inline-block">
-        <h1>😎 Awesome Python!</h1>
-    </span>
-</div>
-
-<div align="center">
     <a href="https://github.com/wiseaidev/awesome-python">
         <img src="./assets/Banner2.PNG" alt="Awesome Python">
     </a>
@@ -51,13 +40,13 @@ All rights reserved.
 
 ## 📜 Summary
 
-A curated list of python tutorials, notes, slides deck, files related to pycon talks, and a handful list of books I read and/or am currently reading. This repository can be used as a reference documentation for mastering the python programming language and other related content like frameworks and such.
+A curated list of python tutorials, notes, slides deck, files related to pycon talks, and a handful list of books that are worth reading. This repository can be used as a reference documentation for mastering the python programming language and other related content like frameworks and such.
 
 This repository serves three primary roles:
 
 1. Sharing an opinionated list of python videos. 
 
-2. Sharing my own notes of what I learned while watching Pycon on YT, reading books, and other resources.
+2. Sharing notes driven by the awesome community.
 
 3. Sharing a handful list of books that can play a significant role in honing your python skills. 
 

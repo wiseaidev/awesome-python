@@ -42,7 +42,7 @@ All rights reserved.
 
 <div align="center">
     <a href="https://github.com/wiseaidev/awesome-python">
-        <img src="./assets/Banner1.jpg" alt="Awesome Python">
+        <img src="./assets/Banner2.PNG" alt="Awesome Python">
     </a>
     <br>
 </div>
